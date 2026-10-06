@@ -4,7 +4,7 @@ Thanks for helping. A few rules keep many people from building the same thing tw
 
 ## Claim before you build
 
-1. Find an issue on the project board, or open one with the feature request template.
+1. Find an issue on the [project board](https://github.com/users/giannacrisha/projects/1) (Todo → In Progress → Done), or open one with the feature request template.
 2. **Comment "I'd like to take this" and wait to be assigned.** Assigned issues get the `in progress` label.
 3. If an assigned issue has no activity for 7 days, the claim lapses and someone else can take it.
 4. PRs for issues assigned to someone else won't be merged, so check first.

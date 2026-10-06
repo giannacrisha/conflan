@@ -102,7 +102,7 @@ data/                generated event JSON (committed by CI)
 
 ## Contributors
 - `CONTRIBUTING.md`: **claim an issue by commenting before you start.** Claims expire after 7 days with no activity. Unclaimed PRs for claimed issues won't be merged.
-- A public GitHub Project board (Ideas → Ready → In progress → Done). Issues are labeled `good first issue`, `adapter`, `core` or `ui`.
+- A public GitHub Project board: https://github.com/users/giannacrisha/projects/1 (Todo → In Progress → Done). Issues are labeled `good first issue`, `adapter`, `core` or `ui`.
 - "Add an adapter for platform X" is the standard first contribution, with a template file and a test fixture.
 - An `AGENTS.md`/`CLAUDE.md` with project conventions, for contributors who use AI tools.
 - License: MIT.
