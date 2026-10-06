@@ -1,0 +1,28 @@
+[
+  {
+    "id": "ia-gathering-26",
+    "name": "2026 IA National Gathering",
+    "timezone": "America/Los_Angeles",
+    "start": "2026-10-23",
+    "end": "2026-10-25",
+    "theme": {
+      "accent": "#1F6F5C"
+    },
+    "platform": "whova",
+    "updatedAt": "2026-10-06T15:09:18.247Z",
+    "sessionCount": 98
+  },
+  {
+    "id": "ghc26",
+    "name": "Grace Hopper Celebration 2026",
+    "timezone": "America/Los_Angeles",
+    "start": "2026-10-26",
+    "end": "2026-10-30",
+    "theme": {
+      "accent": "#41263F"
+    },
+    "platform": "rainfocus",
+    "updatedAt": "2026-10-06T15:09:21.222Z",
+    "sessionCount": 472
+  }
+]

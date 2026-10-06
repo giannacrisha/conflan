@@ -1,0 +1,2550 @@
+{
+  "event": {
+    "id": "ia-gathering-26",
+    "name": "2026 IA National Gathering",
+    "timezone": "America/Los_Angeles",
+    "start": "2026-10-23",
+    "end": "2026-10-25",
+    "theme": {
+      "accent": "#1F6F5C"
+    },
+    "platform": "whova",
+    "trackGroups": [
+      {
+        "name": "Tracks",
+        "tracks": [
+          "Creative Works",
+          "IA Track",
+          "Lightning Talk",
+          "Participatory Workshop",
+          "Plenary",
+          "Projects & Practices",
+          "Site Visit"
+        ]
+      }
+    ],
+    "updatedAt": "2026-10-06T15:09:18.247Z"
+  },
+  "sessions": [
+    {
+      "id": "5571824",
+      "eventId": "ia-gathering-26",
+      "title": "Registration",
+      "start": "2026-10-23T15:30:00.000Z",
+      "end": "2026-10-23T23:00:00.000Z",
+      "room": "Conference Center",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [],
+      "isFixed": true
+    },
+    {
+      "id": "5571861",
+      "eventId": "ia-gathering-26",
+      "title": "Coffee + Tea",
+      "start": "2026-10-23T15:30:00.000Z",
+      "end": "2026-10-23T18:00:00.000Z",
+      "room": "Conference Center",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [],
+      "isFixed": true
+    },
+    {
+      "id": "5561558",
+      "eventId": "ia-gathering-26",
+      "title": "Opening Plenary, Keynote by Alexis Pauline Gumbs",
+      "abstract": "A welcome to the Yolo Bioregion by Wintun/Maidu culture-bearer Diana Almendariz, and a welcome to Imagining America by IA Faculty Director Erica Kohl-Arenas, followed by keynote speaker Alexis Pauline Gumbs on “Every Night”: June Jordan and the Orbit of Freedom.",
+      "start": "2026-10-23T16:30:00.000Z",
+      "end": "2026-10-23T17:45:00.000Z",
+      "room": "Wright Hall, Main Theater",
+      "format": "in-person",
+      "type": "Plenary",
+      "tracks": [
+        "Plenary"
+      ],
+      "levels": [],
+      "speakers": [],
+      "isFixed": true
+    },
+    {
+      "id": "5571890",
+      "eventId": "ia-gathering-26",
+      "title": "Arboretum Sound Lab / Fluid Procession from Wright Hall, Main Theatre",
+      "abstract": "Once the opening plenary concludes, experience the immersive Arboretum Sound Lab as you depart the Wright Hall Main Theatre and head towards Gorman Museum of Native American Art outdoor patio. Linger there to listen to the improvised performance before continuing on to the Conference Center (where you can pick up registration materials and lunch before sessions begin at 12:15pm). \n\nNote: It is a (.5) half-mile paved path from Wright Hall to the Conference Center and takes approximately 10 minutes to walk. An electric cart will be available to assist anyone with mobility needs. \n\nAbout the installation: The Arboretum Sound Lab is a living sound installation that brings musicians into a co-creative process with the sounds and rhythms of the natural environment.The project will transform the Arboretum into an experimental creative ecosystem based on the interplay between human and more-than-human participants—musicians, plants, birds, wind, water, and other elements of the landscape. The project is conceived by music philosopher and composer Karlton Hester in collaboration with musicologist Pierpaolo Polzonetti, with shared creative responsibilities among approximately twenty musicians, including undergraduate and graduate students and faculty from UC Davis.\n\nMusicians: Maleelah Acker (flute); Renato Barsuglia (guitar); Juan Diego D&iacute;az (berimbau); Paul Engle (guitar); Juan Manuel Jaramillo Lleras (live electronics, percussion); Karlton Hester (soprano saxophone, flute, piccolo); Charlie Hankin (violin); Arianna Karp (cello); Beth Levy (violin); Joseph Martin (keyboard); Colin Minigan (bass); Samuel Nelson (trumpet, spoons); Portia Njoku (tuba, sousaphone); Kira O’Grady (oboe); Pierpaolo Polzonetti (tenor saxophone, quena, clarinet); Emilia Pierce (voice); Damien Stoffel (clarinet, Afro-Cuban percussion); Aleyna Wilgermein (trombone); Zo&euml; Wallace (flute); Vodzi Torgboh (Kpetsi: Ewe drum).",
+      "start": "2026-10-23T17:45:00.000Z",
+      "end": "2026-10-23T18:20:00.000Z",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Karlton Hester",
+          "company": "University of California, Santa Cruz"
+        },
+        {
+          "name": "Pierpaolo Polzonetti",
+          "company": "UC Davis"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5561563",
+      "eventId": "ia-gathering-26",
+      "title": "Sheep Shift - Community Mural and Grazing Event",
+      "abstract": "Shift Happens began in 2024 with a poetry jam inspired by the UC Davis Sheepmowers. In 2021, the university supplemented their fleet of loud and polluting gas-powered lawn mowers with a flock of wooly, four-legged landscapers, known as the Sheepmowers. These eco-friendly, highly engaging and nearly silent partners are instrumental in maintaining the vibrant green spaces across our sprawling campus. The use of sheep to graze the lawns reduces the university's carbon footprint and eliminates the need for fossil fuel-powered machinery, thus markedly curbing greenhouse gas emissions.\n\nFor the first phase of Shift Happens, twenty-five UC Davis sheep (“the Sheepmowers”) were stenciled with words and phrases related to climate change and allowed to graze on the lawn in front of the mural location. Visitors were invited to spot word combinations and phrases unwittingly arranged by the sheep and to compose their own climate change poems based on the results. The “sheep-sourced” poems were gathered and published on social media and on campus websites.\n\nUsing climate change poems generated by the Sheepmowers as creative inspiration, community participants were then invited to submit their designs for a 975 square foot campus climate-action mural. The contest encouraged individuals to submit mural ideas that vividly portray the interplay between the university's innovative use of sheep for lawn maintenance and its commitment to renewable energy sources. Muralist Leon Willis worked with the contest winner, Kimberly Morales McMullen, to create the final mural design which currently graces the walls of a structure currently shielding an amalgamation of pipes and tanks that provide an important, but interim, function in supporting the Big Shift. Mr. Willis installed the mural in the Spring of 2026, using a “paint-by-numbers” approach. The mural was recently completed during a public mural painting event, providing community members an opportunity to join in the creation of the piece.\n\nWe are proposing to celebrate the completion of the community mural with a Sheepmowers grazing event in front of the mural during the IA Conference. Visitors will be invited to learn about the history of the project while relaxing in chairs and picnic blankets.\n\nVISIT MAP TO SEE LOCATION : http://campusmap.ucdavis.edu/?b=55",
+      "start": "2026-10-23T18:00:00.000Z",
+      "end": "2026-10-23T22:00:00.000Z",
+      "room": "Off Site (See description for more information)",
+      "format": "in-person",
+      "type": "Creative Works",
+      "tracks": [
+        "Creative Works"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Haven Kiers",
+          "title": "Assistant Professor of Landscape Architecture",
+          "company": "University of California, Davis"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5571895",
+      "eventId": "ia-gathering-26",
+      "title": "The IA Clearing",
+      "abstract": "The 2026 IA Clearing invites us to reflect together on the theme of transitions for IA and the world. In the registration hub there are three Clearing spaces: an interactive reflection wall, a maker space, and an audio nook to respond to this year’s magical questions. At each space you will find prompts, engagement instructions, and creative materials. See you there!",
+      "start": "2026-10-23T18:00:00.000Z",
+      "end": "2026-10-24T00:00:00.000Z",
+      "room": "Conference Center",
+      "format": "in-person",
+      "type": "IA Track",
+      "tracks": [
+        "IA Track"
+      ],
+      "levels": [],
+      "speakers": [],
+      "isFixed": false
+    },
+    {
+      "id": "5585478",
+      "eventId": "ia-gathering-26",
+      "title": "Lunch",
+      "start": "2026-10-23T18:15:00.000Z",
+      "end": "2026-10-23T19:15:00.000Z",
+      "room": "Conference Center",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [],
+      "isFixed": true
+    },
+    {
+      "id": "5524622",
+      "eventId": "ia-gathering-26",
+      "title": "Projects and Practices 1",
+      "abstract": "Includes:\n• Storying Community: The South Asian American Digital Archive (Amber Abbas)\n• Visualizing Voices: Community Empowerment Through Collaborative Art (Reiko Huffman, Azlan Smith)\n• Desert Diaspora (Najima Rainey)\n• Documenting Urban Farming in Flint — a Longitudinal Project (Geri Alumit Zeldes)",
+      "start": "2026-10-23T19:15:00.000Z",
+      "end": "2026-10-23T20:30:00.000Z",
+      "room": "Ballroom B, Conference Center",
+      "format": "in-person",
+      "type": "Projects & Practices",
+      "tracks": [
+        "Projects & Practices"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Amber Abbas"
+        },
+        {
+          "name": "Reiko Huffman"
+        },
+        {
+          "name": "Azlan Smith"
+        },
+        {
+          "name": "Najima Rainey"
+        },
+        {
+          "name": "Geri Alumit Zeldes"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524632",
+      "eventId": "ia-gathering-26",
+      "title": "Creating an Arts Equity Commons with Artists in Communities of Practice Residencies @ UC Santa Barbara",
+      "abstract": "How do artists participate in, benefit from and contribute to ongoing directions, shared goals and renewed activation of campus resources and spaces?\n\nHow do participatory, collaborative, arts-based practices directly engage with campus faculty, staff and students to explore new possibilities for organizational transformation?\n\nHow can an Arts Equity Commons assess its impact on individuals, institutional partners and organizational culture?\n\nThis workshop highlights the outcomes and impact of a campus artist-in-residence program pilot at UC Santa Barbara that took place over four years (2022-2026), serving as a unique model to explore ways in which working contemporary artists engage with faculty, staff and students in the reimagining of academic culture to collectively explore new possibilities for institutional transformation within and beyond disciplinary boundaries.\n\nThe Arts Equity Commons (AEC) at the University of California Santa Barbara (UCSB) formed in 2022 as a cooperative consortium of faculty and student colleagues in the Department of Art (Art), History of Art and Architecture (HAA), and the Art, Design, and Architecture Museum (ADAM). This group emerged out of the transitional wake of the pandemic and in response to our campus climate survey's call for collective racial reckoning. The Arts Equity Commons at UCSB was funded by a systemwide initiative of the University of California, Office of the Provost to advance faculty diversity and improve campus climate by supporting innovative programs that improve equity, access and belonging across all UC campuses.\n\nIn a multi-year effort involving organizing, planning and collaboration with numerous academic and community partners through dramatic shifts in the political climate, AEC co-hosted more than 30 artists in multiple forms of residency at UCSB. Artists were offered open access to faculty, department research labs, studios, exhibition spaces and a vast array of special collections and technical resources. This facilitated unprecedented opportunities for artists and, simultaneously, increased exposure to the arts by sectors of our campus that may not otherwise have access.\n\nA critical investment was made in an ongoing program assessment during the final year of campus residencies. This introduced an external consultant and campus evaluator, along with an innovative technology platform designed by GivePulse. This platform offered crucial mechanisms for tracking, self-reflection, engagement with program participants, and the capacity to capture many unseen connections and collaborative opportunities built over time and across space throughout the project. This evaluative process resulted in a compelling set of both quantitative and qualitative data demonstrating the impact of artists and their transformative capacity to bring imagination and change to institutional culture—outcomes often not visible in most arts/artist-focused programs and more importantly, not valued as an instrumental force in culture change.",
+      "start": "2026-10-23T19:15:00.000Z",
+      "end": "2026-10-23T20:30:00.000Z",
+      "room": "Ballroom A, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Kim Yasuda",
+          "title": "Professor of Public Practice, Emeritus",
+          "company": "UC Santa Barbara"
+        },
+        {
+          "name": "Susan Drange",
+          "title": "Higher Education Consultant",
+          "company": "External Program Evaluator"
+        },
+        {
+          "name": "George Luc",
+          "title": "Co-Founder and CEO of GivePulse",
+          "company": "GivePulse, Inc."
+        },
+        {
+          "name": "Elena Yu",
+          "title": "Independent Artist, Worth Ryder Art Gallery Manager",
+          "company": "UC Berkeley "
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524633",
+      "eventId": "ia-gathering-26",
+      "title": "Little Bird Lab's Smoke Stories: Imagining Futures We Want to Inhabit",
+      "abstract": "What happens when scientists, artists, and community members share a space designed for inquiry? Little Bird Lab's Smoke Stories Collaboratory gathers stories from humans and birds side by side, discovering patterns, ideas, and shared wonderings that emerge from purposeful listening.\n\nThis participatory workshop addresses wildfire, an increasingly pervasive and destructive part of our changing landscape through storytelling and collective imagining. Wildfire smoke infiltrates our neighborhoods, invades our homes, and diffuses into our bloodstream. As summers grow warmer and drier, and given the complicated history of fire suppression in North America, wildfire seasons are becoming longer and more intense.\n\nSmoke Stories collects stories from birds and humans breathing the same air, exploring how geography, culture, and the necessity of meeting basic needs shape responses to wildfire and smoke. Our workshop invites participants to use birds as a creative conduit for playful making and envisioning. Listen, draw, respond, and dream as a way to practice imagining shared futures we want to inhabit and leave with a collaborative Smoke Stories zine.",
+      "start": "2026-10-23T19:15:00.000Z",
+      "end": "2026-10-23T20:30:00.000Z",
+      "room": "Conf Room A, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Michelle Swinehart",
+          "title": "Assistant Teaching Professor",
+          "company": "Portland State University"
+        },
+        {
+          "name": "M. Michelle Illuminato",
+          "title": "Professor of Art, Head of CORE",
+          "company": "Portland State University"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524635",
+      "eventId": "ia-gathering-26",
+      "title": "Ourtopia: Imagining Our Dream World Beyond the Troubles",
+      "abstract": "This workshop treats imagination as a practical skill for communities in transition. Participants are guided through prompts that help them draw their own dream world, and those drawings are then combined into a shared landscape through Ourtopia, a collaborative art experiment we launched in Belfast, where we collected around 35 dream cities. The method puts the individual back into the planning of our shared future rather than leaving them in the passenger seat. The session invites participants into the method, into the growing library it builds, and into running the experiment themselves.",
+      "start": "2026-10-23T19:15:00.000Z",
+      "end": "2026-10-23T20:30:00.000Z",
+      "room": "Art Studio, Manetti Shrem Museum",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Gianna Crisha Saludo",
+          "company": "Brandeis University"
+        },
+        {
+          "name": "Sumitra Rajagopal",
+          "company": "Brandeis University"
+        },
+        {
+          "name": "Jae Fioribello",
+          "company": "Brandeis University"
+        },
+        {
+          "name": "Kayla Anderson",
+          "title": "Student ",
+          "company": "Brandeis University"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524636",
+      "eventId": "ia-gathering-26",
+      "title": "Loss is the Lesson: A Creative Storyboarding Workshop for Grief, Hope, and Agency in Higher Education",
+      "abstract": "What would it mean for everyone to learn grieving practices in education? How can we reimagine teaching and learning with grief, hope, and agency at the center?\n\nWith current environmental realities, wars, violence, institutional retrenchment in the wake of political pressures, and personal losses, the outside world permeates the classroom and its lessons. Particularly in the Western academy, grief is rarely discussed in the academic context despite the losses we all carry and the ongoing grieving processes around us. Though many educators wish to encourage students to bring their whole selves to the classroom, this goal is often situated as an auxiliary aim instead of integrated into academic practice.\n\nIn this session, participants will explore how situating grief, creativity, and hope as entangled transdisciplinary practices can help us reimagine the capacities that learners will need throughout their lives and careers, especially with futures in transition. With examples from environmental education as well as antiracist praxis within the “anti-DEI” climate in higher education, participants will surface how loss emerges in their educational contexts. Then, participants will create collaborative storyboards focused on transforming that loss into hope, agency, and care as a collective grieving practice.",
+      "start": "2026-10-23T19:15:00.000Z",
+      "end": "2026-10-23T20:30:00.000Z",
+      "room": "AGR Hall, 138 Alumni Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Ijeoma Njaka",
+          "title": "Assistant Provost for Transformational Teaching & Learning and Doctoral Candidate",
+          "company": "College Unbound and North Carolina State University"
+        },
+        {
+          "name": "Noah Martin",
+          "title": "Associate Director for Environmental Curriculum Design",
+          "company": "Georgetown University"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524649",
+      "eventId": "ia-gathering-26",
+      "title": "Joy As Resistance: Take a Stand and Build Community Through Collective Creation",
+      "abstract": "The time we live in calls for both resistance and for building new ways of being in community with each other and with our planet. Last spring, at Lansing Community College through our annual Take A Stand! Sit In! social justice forum, we focused on joy – Joy as Resistance – and that is the focus of this workshop. Joy generates energy. Joy builds hope. Joy creates community. By cultivating joy, we open spaces for resistance, creating layers of resistance for ourselves, our work and our communities. Participants will learn about the Take A Stand forum, its history and impact, and gain ideas and inspiration for developing something similar. Most importantly, the majority of the workshop will be spent experiencing the joy of collective creation, both individually and as a group, responding to prompts that explore ways of restoration and the challenges of our time. We will then come together to share our creations and our experience in creating.",
+      "start": "2026-10-23T19:15:00.000Z",
+      "end": "2026-10-23T20:30:00.000Z",
+      "room": "Allewelt Conference Room, 105 Alumni Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Melissa Kaplan",
+          "title": "Arts & Sciences Outreach and Academic Coordinator",
+          "company": "Lansing Community College"
+        },
+        {
+          "name": "Anne Heutsche",
+          "title": "Professor - History ",
+          "company": "Lansing Community College"
+        },
+        {
+          "name": "Annescia Dillard",
+          "title": "Program and Office Specialist",
+          "company": "Lansing Community College"
+        },
+        {
+          "name": "Barb Clauer",
+          "title": "Professor",
+          "company": "Lansing Community College"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524736",
+      "eventId": "ia-gathering-26",
+      "title": "La Peña del SurCo: An Intergenerational Gathering of Music, Creative Wellbeing and Collective Care",
+      "abstract": "In this participatory workshop, participants will explore how communities can cultivate and sustain connection, belonging, and hope through Latin American arts practices. We draw on the experience of La Pe&ntilde;a del SurCo, a monthly Latin American music gathering established in 2023 to foster intergenerational wellbeing and diasporic belonging in Tucson, Arizona. Initiated by university music professors in collaboration with Latin American immigrant community musicians, La Pe&ntilde;a has become a space where people across generations, cultures, and lived experiences strengthen relationships through music, storytelling, dance, food, artistic expression, and shared cultural traditions. Over the years, it has evolved into a thriving community hub that nurtures care, lifelong learning, and collective wellbeing while creating opportunities to process political violence, displacement, and uncertainty through creative practice and cultural participation. As active co-facilitators of La Pe&ntilde;a del SurCo, we propose to lead an interactive IA Pe&ntilde;a featuring participatory music-making, guided reflection, storytelling, and small-group dialogue. Together, we will explore community music gatherings as spaces of connection, care, and collective imagination while also exploring strategies for creating inclusive gatherings that foster creative wellbeing, mutual support, critical reflection, and intergenerational learning. Through musical examples, personal narratives, and facilitated discussion, our session will examine how cultural memory, participatory arts practices, and intergenerational knowledge can sustain communities during periods of social and political change. Participants will also reflect on their own communities, the lands they inhabit, the relationships that shape their lives, and their experiences of migration, transition, and belonging. The workshop will conclude with a collaborative visioning activity in which participants identify practices, relationships, and community assets that can support collective wellbeing in their own contexts. Finally, offering an experiential and reflective model for exploring how intergenerational artistic engagement and culturally grounded gatherings can strengthen belonging, nurture resilience, and imagine healthier, more connected communities.",
+      "start": "2026-10-23T19:15:00.000Z",
+      "end": "2026-10-23T20:30:00.000Z",
+      "room": "Conf Room B, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Gabriela Ocadiz",
+          "title": "Assistant Professor of Music Education",
+          "company": "University of Arizona"
+        },
+        {
+          "name": "Jennie Gubner",
+          "title": "Associate Professor of Music",
+          "company": "University of Arizona"
+        },
+        {
+          "name": "Esteban Hernández Parra",
+          "title": "Assistant Professor, Viola",
+          "company": "University of Arizona"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5571797",
+      "eventId": "ia-gathering-26",
+      "title": "Creative Works",
+      "abstract": "Includes:\n• CAAN We...? A Time Capsule of Climate Care (Glenda Drew, Brett Snyder)\n• Bien Juntitos: Restoring Collective Spirit Through the Stories of Latino Elders (Janine Mapurunga)\n• You are not a Monster (Dorothy Santos)\n• in-to-me-ii-see: repair begins with intimacy (Mei Bowyer)\n• Growing Together: Cultivating a Culture of Sustainability through Collective Creation (Emmy Weldon)\n• Reimagining burned landscapes: New ways of seeing at the intersection of art and science (Jasquelin Pena, Adrianne Smits)\n• Media Arts in Climate Fiction (Cli-Fi) World-Building (Niki D. Gallardo)",
+      "start": "2026-10-23T19:15:00.000Z",
+      "end": "2026-10-24T00:00:00.000Z",
+      "room": "Alumni Center",
+      "format": "in-person",
+      "type": "Creative Works",
+      "tracks": [
+        "Creative Works"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Glenda Drew"
+        },
+        {
+          "name": "Brett Snyder"
+        },
+        {
+          "name": "Janine Mapurunga"
+        },
+        {
+          "name": "Dorothy Santos"
+        },
+        {
+          "name": "Mei Bowyer"
+        },
+        {
+          "name": "Emmy Weldon"
+        },
+        {
+          "name": "Jasquelin Pena"
+        },
+        {
+          "name": "Adrianne Smits"
+        },
+        {
+          "name": "Niki D. Gallardo"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5571909",
+      "eventId": "ia-gathering-26",
+      "title": "Break",
+      "start": "2026-10-23T20:30:00.000Z",
+      "end": "2026-10-23T21:00:00.000Z",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [],
+      "isFixed": true
+    },
+    {
+      "id": "5524638",
+      "eventId": "ia-gathering-26",
+      "title": "Projects and Practices 2",
+      "abstract": "Includes:\n• Media Arts in Climate Fiction (Cli-fi) World-Building: Reimagining the future of climate change to challenge climate doomerism (Niki D. Gallardo)\n• The Language of Unlearning: Experiential leadership lessons from the snows of the Andes to the rainforest of the Ecuadorian Amazon (Paul Terry, Ilona Ballreich)\n• Along the River and To the Wall: Place-Based Public Humanities for Restoring Collective Spirit in the Borderlands (Zaira Martin, Cynthia Bejarano, Claudia Casillas)",
+      "start": "2026-10-23T21:00:00.000Z",
+      "end": "2026-10-23T22:15:00.000Z",
+      "room": "Ballroom C, Conference Center",
+      "format": "in-person",
+      "type": "Projects & Practices",
+      "tracks": [
+        "Projects & Practices"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Niki D. Gallardo"
+        },
+        {
+          "name": "Paul Terry"
+        },
+        {
+          "name": "Ilona Ballreich"
+        },
+        {
+          "name": "Zaira Martin"
+        },
+        {
+          "name": "Cynthia Bejarano"
+        },
+        {
+          "name": "Claudia Casillas"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524643",
+      "eventId": "ia-gathering-26",
+      "title": "Alternate ROOTS: The Book - Imagine activist artists in the U S South Creating an alternative artist-led organization and sustaining it for 50Years!",
+      "abstract": "The new publication, Stories from Alternate ROOTS: It'llTake some Tellin', represents 50 years of sustained cultural organizing by this legendary, multicultural organization at the intersection of art, activism, and community. The book recounts the struggles and triumphs of the artists and organizations who founded and continue to lead ROOTS. It beautifully captures how a values-driven organization has applied imagination to some of the major challenges of the past half century including racism, poverty, violence, and the eroding of the natural world.&Acirc;\n\nThe session consists of three parts. First, one of the book's co-architects, MK Wegman, lays out the the book's organization around ROOTS' mission statement, originally adopted in 1988 and 1996 and alive today:&Acirc; &Acirc;\n\nAlternate ROOTS is an organization based in the Southern USA whose mission is to support the creation and presentation of original art, in all its forms, which is rooted in a particular community of place, tradition, or spirit. As a coalition of cultural workers, we strive to be allies in the elimination of all forms of oppression. ROOTS is committed to social and economic justice and the protection of the natural world and addresses these concerns through its program and services.\n\nThen longtime ROOTer Lisa Mount and ROOTS ally Jan Cohen-Cruz describe their contributions. Lynne Elizabeth, editor of New Village Press, the book's publisher and a longtime friend of IA, points out what is especially unique in the book's conception. Lizzy Cooper Davis, familiar with ROOTS and an IA Board member, then responds to the book, foregrounding what IA stands to learn from ROOTS.\n\nThen we will break into three groups, looking closely at IA's mission and imagining how we could more fully enact it. We will use story circles to that end, a process originally developed by the Free Southern Theater and brought to ROOTS by the iconic playwright/ performer John O'Neal.\n\nLastly, we'll come back together to discuss how an organization's mission statement can be translated into concrete action. Reflecting the trajectory of a sister organization, what does the book importantly tell us about the role of art and culture in transitions?",
+      "start": "2026-10-23T21:00:00.000Z",
+      "end": "2026-10-23T22:15:00.000Z",
+      "room": "Ballroom A, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "M K Wegmann",
+          "title": "Member, Voting Board Member",
+          "company": "Alternate ROOTS"
+        },
+        {
+          "name": "Jan Cohen-Cruz",
+          "title": "Engaged Arts Associate",
+          "company": "Imagining America"
+        },
+        {
+          "name": "Lynne Elizabeth",
+          "company": "New Village Press"
+        },
+        {
+          "name": "Lisa Mount",
+          "title": "Director",
+          "company": "Artistic Logistics"
+        },
+        {
+          "name": "Lizzy Davis",
+          "title": "Associate Professor and Graduate Program Director",
+          "company": "Emerson College"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524644",
+      "eventId": "ia-gathering-26",
+      "title": "From Waste to Witness: Ecological Repair Through Collective Making",
+      "abstract": "Transformation is a participatory workshop exploring how collaborative making practices can help restore collective spirit during periods of ecological and social transition. Grounded in the work of EcoPress Sacramento, this session invites participants to engage directly with reclaimed plastic materials while reflecting on the emotional, social, and environmental relationships embedded within systems of waste, extraction, and repair.\n\nAs communities confront climate instability, pollution, displacement, burnout, and environmental grief, many people are searching for tangible ways to reconnect with one another and imagine more collective futures. This workshop examines how creative fabrication practices, public art, and material transformation can serve as tools for collective care, storytelling, and ecological imagination within landscapes that may be beyond full restoration.\n\nParticipants will engage in collaborative art-making activities using reclaimed and repurposed plastics sourced from local community waste streams. Through guided reflection prompts and small-group discussion, participants will explore questions such as: What do we carry forward through transition? What forms of repair are possible within damaged systems? How can creative practice help communities move from isolation and disposability toward interdependence and collective stewardship?\n\nDrawing from interdisciplinary practices spanning environmental art, community fabrication, public engagement, disability-informed adaptation, and circular material systems, the workshop centers making not as individual production, but as a relational and community-rooted process. Participants will contribute to shared material outcomes while exchanging stories, strategies, and visions for collective thriving in uncertain times.\n\nThis session aligns with the themes of transitions, creative community arts, ecological repair, and practices of collective spirit by offering an embodied and accessible approach to ecological dialogue. Rather than positioning sustainability as a perfect solution, the workshop embraces the “mucky middle” of transition: the imperfect, ongoing work of learning how to care for one another and live responsibly within damaged yet deeply interconnected environments.\"",
+      "start": "2026-10-23T21:00:00.000Z",
+      "end": "2026-10-23T22:15:00.000Z",
+      "room": "Ballroom B, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Sam Mejia",
+          "title": "CEO/Founder",
+          "company": "EcoPress Sacramento"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524645",
+      "eventId": "ia-gathering-26",
+      "title": "Lotería and Laughter, Communal Comfort in Tumultuous Tides",
+      "abstract": "Art can come from anywhere and be anything, and has always been integral to relaying messages both inside and outside of formalized institutions. In a world currently operating on hyper-capitalism, rising technology use for destruction, war, and violence, and corporatization of even places intended for creativity and self-expression, this workshop is intentionally a moment for conference participants to breathe, pause, and reflect, to engage in paths of conocimiento (Anzald&uacute;a) and to allow transition to foster momentum and imagination rather than fear and potential stagnation.\n\nAdopting loteria (and a Chicane Studies course assignment) as foundation, we will guide participants through a revisionist creation of cards and versos to collectively create a full and playable set. We will introduce the history and context of the game, after which each participant will select 1-2 classic cards as the basis for their creative, conference-theme-related revision. Each card will be accompanied by its verso, English translations (including linguistic play in Spanish lost in English), and prompt questions. Art supplies will be available at each table. As an example, a participant working with El Mundo with its image of a muscular Atlas-y figure carrying the globe on his back (verso, “El mundo es una bola, y nosotros, un bol&oacute;n”) might imagine a response to the “weight of the world,” or latch on to the geometry of the circle, or play with the cognate resonance of ball, balloon/globo, globe. Play will be the process.\n\nLoter&iacute;a is the comfort of home, especially when making larger life decisions and tricky transitions. Loter&iacute;a is a beacon, a reminder of community support in difficult moments. Loteria lets us know that “we should celebrate love in … community as a measure of healing” (adrienne maree brown, Pleasure Activism, 62).",
+      "start": "2026-10-23T21:00:00.000Z",
+      "end": "2026-10-23T22:15:00.000Z",
+      "room": "Art Studio, Manetti Shrem Museum",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Rebecca Joyce Garay",
+          "title": "Professor",
+          "company": "New Mexico State University"
+        },
+        {
+          "name": "Diana Dávila Silva",
+          "title": "Freelance Artist, Graduate Student, Production Coordinator",
+          "company": "New Mexico State University"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524646",
+      "eventId": "ia-gathering-26",
+      "title": "Entering Care: A Dialogic Approach",
+      "abstract": "Many people are feeling alone, struggling mentally and physically during these uncertain times. “The problematisation of care and attention to its failings is particularly timely for the current political moment. Various crises are forcing us to ask about established notions of care and whether they are adequate for addressing these challenges” (Askins, [2015](https://rgs-ibg-onlinelibrary-wiley-com.proxy-tu.researchport.umd.edu/doi/full/10.1111/area.12502#area12502-bib-0001); Robinson, [2011](https://rgs-ibg-onlinelibrary-wiley-com.proxy-tu.researchport.umd.edu/doi/full/10.1111/area.12502#area12502-bib-0027) in Hanrahan & Smith, 2020, p. 231).\"Shouting 'self-care' at people who actually need 'community care' is how we fail people,\" writes community organizer Nakita Valerio. In this participatory workshop, we offer collective nourishment of body, mind, and spirit to engage participants with the transition of intentionally awakening to community connections and shared possibilities and away from silos. This session incorporates the humanities: art, poetry, metaphor, and storytelling as entry points for shared experiences to vision America as a caring space. Participants will be invited to engage in dialogic inquiry to explore collective agencies for being, imagining, and caring with and for self and each other. Key inquiries include:\n\n&middot; “How might street art be seen as a collective/community response, emotive expression? Call to action?”\n\n&middot; What does care look like now?\n\n&middot; “How do you want to be cared for or comforted in this space?”\n\n&middot; “Using a multi-sensory approach, how do you imagine what preparing for and accessing care would be like for you in community?”\n\n&middot; “In the world I want to live in…”\n\nParticipants will be asked to co-commit to a collective spirit goal at the conclusion of the session.\n\nSource: Hanrahan KB, Smith CE. Interstices of Care: Re-Imagining the geographies of care. Area. 2020;52:230–234. https://doi-org.proxy-tu.researchport.umd.edu/10.1111/area.12502",
+      "start": "2026-10-23T21:00:00.000Z",
+      "end": "2026-10-23T22:15:00.000Z",
+      "room": "Conf Room B, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Katherine Orlando",
+          "title": "Dialogue Fellow, Graduate program director for Instructional Leadership and Professional Development",
+          "company": "Towson University"
+        },
+        {
+          "name": "Manda Wittebort",
+          "company": "Southwestern University "
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524648",
+      "eventId": "ia-gathering-26",
+      "title": "“The City of ___:” Manifesting Our Disability Justice Dreams",
+      "abstract": "For our contribution to the 2026 IA National Gathering, the Nest Collab: A Disability and Chronic Illness Justice Project will lead a workshop on disability justice and prefigurative politics. \n\nOur main offering for this workshop, the “City of ____” exercise, brings participants together to build an imaginary city that meets everyone’s access needs and dreams. By engaging in this collective disability justice dreaming, participants will create cityscapes that support residents’ basic needs while remaining both accessible and sustainable. Participants work on this activity in small groups of 5-6 people, depending on the size of the session, and will be given materials to document their cities. We hope that this activity will leave participants with renewed dreams for disability justice and collective care.",
+      "start": "2026-10-23T21:00:00.000Z",
+      "end": "2026-10-23T22:15:00.000Z",
+      "room": "AGR Hall, 138 Alumni Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Sangeeta Sarkar",
+          "title": "Doctoral Student",
+          "company": "UC Davis"
+        },
+        {
+          "name": "Ryan Lee Cartwright",
+          "company": "UC Davis"
+        },
+        {
+          "name": "Emalee Love",
+          "title": "Graduuate Student Researcher",
+          "company": "UC Davis"
+        },
+        {
+          "name": "Manuel Alonzo",
+          "company": "UC Davis"
+        },
+        {
+          "name": "Elliott Fukui",
+          "company": "Mad Queer Organizing Strategies"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524661",
+      "eventId": "ia-gathering-26",
+      "title": "Stories of the Tides: The Workshop",
+      "abstract": "What sustains us when things are changing? We have all experienced transitions; no matter whether we met those moments with grace or fear, sharing our experiences builds our collective spirit for what awaits us around the next corner. The story circle is an ancient technology developed to combat our deep fear that we might be all alone in a dangerous world. \n\nThis workshop will bring participants together to create a safe and pleasurable space through theater games that inspire silliness and play, as well as getting to know each other through embodied practice. After this warm-up period, we will share stories exploring our experiences of transition and upheaval. Stories of resilience or struggle, community or isolation, triumph or challenge - we need to hear it all!\n\nI will record these stories so that I can transform them into a verbatim theatrical text that will be performed by UC-Davis theater students on the last day of the Gathering.",
+      "start": "2026-10-23T21:00:00.000Z",
+      "end": "2026-10-23T22:15:00.000Z",
+      "room": "Conf Room A, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Jessica Bauman",
+          "title": "Community-engaged Theater Artist",
+          "company": "Independent artist"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5571911",
+      "eventId": "ia-gathering-26",
+      "title": "Break / Snack",
+      "start": "2026-10-23T22:15:00.000Z",
+      "end": "2026-10-23T22:45:00.000Z",
+      "room": "Conference Center",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [],
+      "isFixed": true
+    },
+    {
+      "id": "5524650",
+      "eventId": "ia-gathering-26",
+      "title": "IA Publicly Active Graduate Education (PAGE) Fellows Lightning Talks",
+      "abstract": "Vivian Nguyen — PhD student in Higher Education, University of Michigan, Ann Arbor\n\nAlyssa Ramos — Masters student in Fine Arts in Theatre Education and Applied Theatre at Emerson College\n\nScherly Virgill — PhD student in American Studies at University of Maryland, College Park\n\nStar Liao — Masters student in Film and Media Arts MFA at Emerson College\n\nJulianne Liu — Master student in Environmental Justice at University of Michigan, Ann Arbor\n\nSergio Pe&ntilde;a — Ph.D. student in Communication Arts & Sciences and Women's, Gender & Sexuality Studies at Penn State\n\nChamila Gunamunige — Ph.D. Student in Performance as a Public Practice at University of Texas, Austin\n\nHannah Brancato — Ph.D. Student in Department of American Studies, University of Maryland, College Park",
+      "start": "2026-10-23T22:45:00.000Z",
+      "end": "2026-10-24T00:00:00.000Z",
+      "room": "Ballroom A, Conference Center",
+      "format": "in-person",
+      "type": "Lightning Talk",
+      "tracks": [
+        "Lightning Talk"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Page Fellows",
+          "company": "PAGE"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524651",
+      "eventId": "ia-gathering-26",
+      "title": "Projects and Practices 3",
+      "abstract": "Includes:\n• Ancestral Ground: Healing Whiteness and Cultivating Regenerative Futures (Zara Zimbardo, Aryeh Shell)\n• Learnings in Belonging from I-House Davis (Shelly Gilbride)\n• Bonding Forms: Building Relationship though an Intercommunity Ceramics Exploration (Isabel Llosa)\n• Pictures from Home (Eric Sung)",
+      "start": "2026-10-23T22:45:00.000Z",
+      "end": "2026-10-24T00:00:00.000Z",
+      "room": "Ballroom B, Conference Center",
+      "format": "in-person",
+      "type": "Projects & Practices",
+      "tracks": [
+        "Projects & Practices"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Zara Zimbardo"
+        },
+        {
+          "name": "Aryeh Shell"
+        },
+        {
+          "name": "Shelly Gilbride"
+        },
+        {
+          "name": "Isabel Llosa"
+        },
+        {
+          "name": "Eric Sung"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524656",
+      "eventId": "ia-gathering-26",
+      "title": "Projects and Practices 4",
+      "abstract": "Includes:\n• Reading to Understand, Listening to Hear: Sharing Learning and Dialogue with the Campus Community Book Project (Megan Macklin)\n• From Florida, With Love and Solidarity: Creating \"Community\" in Transitional Times at a Hispanic-Serving State University (Carolina Villalba, Kristine Acosta, Tania Cepero López, Marta Gierczyk)\n• A Humanist and Eco-spiritual basis for Students’ Conscientious Objection to AI (Ashwin Vaidya)\n• Designing with Intentionality: Operationalizing an Ethics of Care to Transform Scholarly Culture (Keyanah Nurse, Christiana Ares-Christian)",
+      "start": "2026-10-23T22:45:00.000Z",
+      "end": "2026-10-24T00:00:00.000Z",
+      "room": "Ballroom C, Conference Center",
+      "format": "in-person",
+      "type": "Projects & Practices",
+      "tracks": [
+        "Projects & Practices"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Megan Macklin"
+        },
+        {
+          "name": "Carolina Villalba"
+        },
+        {
+          "name": "Kristine Acosta"
+        },
+        {
+          "name": "Tania Cepero López"
+        },
+        {
+          "name": "Marta Gierczyk"
+        },
+        {
+          "name": "Ashwin Vaidya"
+        },
+        {
+          "name": "Keyanah Nurse"
+        },
+        {
+          "name": "Christiana Ares-Christian"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524663",
+      "eventId": "ia-gathering-26",
+      "title": "Mapping Your Creative DNA",
+      "abstract": "In a world increasingly driven by external metrics and rapid-fire output, the most potent tool for innovation often lies dormant within. Mapping Your Creative DNA explores the intersection of creative thinking, psychological well-being, and the “hidden strengths” accessible through intentional, embodied practice. Rather than treating design thinking as a purely professional methodology, this workshop argues that creative resilience flourishes at the intersection of heritage, sensation, and identity — and that everyone, regardless of formal creative training, holds untapped creative capacity. Participants leave with a tactile “Creative DNA” roadmap, a felt experience of sensory priming, and a Design Identity Statement to carry into their next project.",
+      "start": "2026-10-23T22:45:00.000Z",
+      "end": "2026-10-24T00:00:00.000Z",
+      "room": "Art Studio, Manetti Shrem Museum",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Anna Smith",
+          "title": "Faculty (4-year institution)",
+          "company": "James Madison University"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524664",
+      "eventId": "ia-gathering-26",
+      "title": "My Relationship With America",
+      "abstract": "This will be an Interactive Storytelling Workshop which includes Performance, Reflective Writing, Dialogue and Collaborative Meaning-Making. We will use this format to explore how our individual experiences help us define Identity, Belonging, Community and ultimately our understanding of America at large. As America continues on its path of Cultural Transformation, Social Uncertainty and Political Polarization; we have created this space for individuals to reflect upon their own stories of identity and belonging, while developing relationships based upon the differences among each other.\n\nWe will begin the workshop by doing a 10-15 min performance segment of \"My Relationships with America\", a Multidisciplinary Work that was developed using the storytelling and reflections of many members of our local community. This performance will serve as an invitation to enter into the central questions of the workshop: How does your personal history inform your relationship with America? What are some of the stories you hold about Belonging, Exclusion, Resilience and Hope? And finally, how can you successfully navigate the personal and collective transitions occurring in your life and/or community?\n\nUsing a combination of Guided Activities such as Reflective Writing, Paired Conversations, Small Group Dialogue, Movement Exercises and Collaborative Storytelling, the participants will continue to develop their ability to articulate moments of transition within their own lives and communities. The participants will also examine how larger societal, governmental and cultural factors affect their experience.\n\nAt the end of the workshop, we will conclude with a Collective Reflection where we will weave together insights from the participants into a Shared Narrative of Possibility, Resiliency and Connection. Using Performance, Participatory Dialogue and Creative Practice; \"My Relationship with America\" provides an opportunity for participants to break out of Isolationism and find a greater sense of self-awareness, knowledge of others and an appreciation for the Communities that they are assisting in shaping.",
+      "start": "2026-10-23T22:45:00.000Z",
+      "end": "2026-10-24T00:00:00.000Z",
+      "room": "Community Education Room, Manetti Shrem Museum",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Joshua Slack",
+          "title": "Cultural Organizer",
+          "company": "Pan Valley Institute"
+        },
+        {
+          "name": "tsim+nuj (chee new) Vang",
+          "company": "Pan Valley Institute"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524665",
+      "eventId": "ia-gathering-26",
+      "title": "Big Feels: A Glossary of Academic Vibes and Affects for the Undercommons",
+      "abstract": "For academics who work in community partnership to create public knowledge, precarity defines the tidal condition of our profession rather than its deviance. In this participatory workshop, we propose to turn to the feelings provoked by this state of permanent transition by collectively creating a glossary of feelings that arise from conducting engaged scholarship amid the seachange(s) of our times.\n\nOur workshop builds on our work curating the ongoing Imagining America series “Tools for the Undercommons” (inspired by Harney and Moten), which has solicited conversations with academics alongside poets, children’s authors, chefs, dancers, media artists, and more to discuss and propose methods and strategies for traversing intertwined worlds of the university, community and creative work. In our first year, we found that, more often than not, our gatherings served the unforeseen purpose of providing space to surface, tend to, enact, and witness the affective undercurrents of academic life. As Sianne Ngai writes, “...Emotions [are] unusually knotted or condensed ‘interpretations of predicaments’” (Ugly Feelings, 3).\n\nDrawing from scholars who have examined the political uses of affective study (Sianne Ngai, Cathy Park Hong, Heather Love, Ann Cvetkovich, Lauren Berlant), this workshop centers the emotional dimension of inhabiting and navigating academia. We begin with an introduction framing theories and our own practices that gave rise to our conceptualization of a “glossary” as a conceit for our common study. An individual brainstorm session follows where participants will generate a short list of “big feelings,” reflecting on the projects, partnerships and encounters that provoke, reveal, or foreclose our emotional events. After a share-out, the workshop will conclude with participants developing an “entry” for a prototype zine-lexicon, the “The A-Z of Academic Big Feels.”\n\nTogether, we will consider, and name, the contained paranoia, playful aggression, dark hopefulness, embattled jubilance, and so forth as perhaps important indices of a larger structure of feeling (Williams)—the “vibes” of a profession in, and of transition. In doing this, we hope to understand how emotion overwhelms or energizes other forms of resilience/resistance that we enact as we “stay with the trouble” (Haraway) of our ongoing work as scholar-practioners of the undercommons.",
+      "start": "2026-10-23T22:45:00.000Z",
+      "end": "2026-10-24T00:00:00.000Z",
+      "room": "AGR Hall, 138 Alumni Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Jacqueline Barrios",
+          "company": "University of Arizona"
+        },
+        {
+          "name": "Harris Kornstein",
+          "title": "Assistant Professor, Public & Applied Humanities",
+          "company": "University of Arizona"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524666",
+      "eventId": "ia-gathering-26",
+      "title": "Performing Our Future in an Uncertain Future: More Than the Funding",
+      "abstract": "This session will follow the journey of Performing Our Future, a multicultural national coalition that brought communities together across areas of division to create a foundation of ideas towards improving the living conditions of their communities.\n\nThis coalition started as an idea when organizations convened in Uniontown, AL, almost a decade ago, where they discovered that each of those communities was experiencing a rapidly changing economy and a desperate need for innovation. From that time to now, organizations have changed, funding streams have disappeared, but the connection between these individuals has remained intact.\n\nIn this session, we will talk about the successes and challenges of Performing Our Future. We will discuss how these experiences help to shape a framework for principles of cultural organizing and economic development. How we crafted shared language and knowledge exchanges by spending time together, and the shared dream of continuing the collective work and including underrepresented voices within our coalition.\"",
+      "start": "2026-10-23T22:45:00.000Z",
+      "end": "2026-10-24T00:00:00.000Z",
+      "room": "Allewelt Conference Room, 105 Alumni Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Tiffany Sturdivant",
+          "title": "Executive Director",
+          "company": "Appalshop"
+        },
+        {
+          "name": "Denise Johnson"
+        },
+        {
+          "name": "John Harris",
+          "title": "Organizer",
+          "company": "Community"
+        },
+        {
+          "name": "Gwen Johnson",
+          "title": "Co-Director",
+          "company": "Letcher County Culture Hub/ Hemphill Community Center"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5571913",
+      "eventId": "ia-gathering-26",
+      "title": "Transportation from Conference Center to International Center",
+      "start": "2026-10-24T00:00:00.000Z",
+      "end": "2026-10-24T00:30:00.000Z",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [],
+      "isFixed": false
+    },
+    {
+      "id": "5561559",
+      "eventId": "ia-gathering-26",
+      "title": "Welcome Reception",
+      "abstract": "An evening reception with food and drinks, celebrating Imagining America's Publicly Active Graduate Education (PAGE) fellows, IA/Joy of Giving Something undergraduate student fellows, Randy Martin Spirit Awardee, and Julie Ellison Vision Awardee.\n\nThe opening night reception is generously sponsored by the American Council of Learned Societies (ACLS). \n\nTransportation to and from the UC Davis Conference Center is donated by Unitrans, on their signature double-decker buses. All Unitrans drivers and supervisors are UC Davis undergraduate students - one of the many things that makes Unitrans such a special service here in Davis!",
+      "start": "2026-10-24T00:30:00.000Z",
+      "end": "2026-10-24T02:00:00.000Z",
+      "room": "International Center",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [],
+      "isFixed": true
+    },
+    {
+      "id": "5571915",
+      "eventId": "ia-gathering-26",
+      "title": "Transportation from International Center to Conference Center",
+      "start": "2026-10-24T01:45:00.000Z",
+      "end": "2026-10-24T02:15:00.000Z",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [],
+      "isFixed": false
+    },
+    {
+      "id": "5582318",
+      "eventId": "ia-gathering-26",
+      "title": "Lila Downs: Cambias mi Mundo",
+      "abstract": "Ticket info coming shortly!",
+      "start": "2026-10-24T02:30:00.000Z",
+      "end": "2026-10-24T04:00:00.000Z",
+      "room": "Mondavi Center for Performing Arts",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [],
+      "isFixed": false
+    },
+    {
+      "id": "5571862",
+      "eventId": "ia-gathering-26",
+      "title": "Coffee + Tea",
+      "start": "2026-10-24T15:30:00.000Z",
+      "end": "2026-10-24T23:00:00.000Z",
+      "room": "Conference Center",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [],
+      "isFixed": true
+    },
+    {
+      "id": "5571919",
+      "eventId": "ia-gathering-26",
+      "title": "Registration",
+      "start": "2026-10-24T15:30:00.000Z",
+      "end": "2026-10-24T23:00:00.000Z",
+      "room": "Conference Center",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [],
+      "isFixed": true
+    },
+    {
+      "id": "5571867",
+      "eventId": "ia-gathering-26",
+      "title": "Creative Works",
+      "abstract": "Includes:\n• CAAN We...? A Time Capsule of Climate Care (Glenda Drew, Brett Snyder)\n• Bien Juntitos: Restoring Collective Spirit Through the Stories of Latino Elders (Janine Mapurunga)\n• You are not a Monster (Dorothy Santos)\n• in-to-me-ii-see: repair begins with intimacy (Mei Bowyer)\n• Growing Together: Cultivating a Culture of Sustainability through Collective Creation (Emmy Weldon)\n• Reimagining burned landscapes: New ways of seeing at the intersection of art and science (Jasquelin Pena, Adrianne Smits)\n• Media Arts in Climate Fiction (Cli-Fi) World-Building (Niki D. Gallardo)",
+      "start": "2026-10-24T16:00:00.000Z",
+      "end": "2026-10-25T00:00:00.000Z",
+      "room": "Alumni Center",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Glenda Drew"
+        },
+        {
+          "name": "Brett Snyder"
+        },
+        {
+          "name": "Janine Mapurunga"
+        },
+        {
+          "name": "Dorothy Santos"
+        },
+        {
+          "name": "Mei Bowyer"
+        },
+        {
+          "name": "Emmy Weldon"
+        },
+        {
+          "name": "Jasquelin Pena"
+        },
+        {
+          "name": "Adrianne Smits"
+        },
+        {
+          "name": "Niki D. Gallardo"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5571922",
+      "eventId": "ia-gathering-26",
+      "title": "The IA Clearing",
+      "start": "2026-10-24T16:00:00.000Z",
+      "end": "2026-10-25T00:00:00.000Z",
+      "room": "Conference Center",
+      "format": "in-person",
+      "type": "IA Track",
+      "tracks": [
+        "IA Track"
+      ],
+      "levels": [],
+      "speakers": [],
+      "isFixed": false
+    },
+    {
+      "id": "5524667",
+      "eventId": "ia-gathering-26",
+      "title": "Projects and Practices 5",
+      "abstract": "Includes:\n• Shifting Sands: One (or Two, or Three) Model(s) for an Emergent Playmaking Process (Oona Hatton, Lucas Hatton)\n• Saving Our Lives Hear Our Truths (SOLHOT) Studio: A Sonic Collaboratory  (Blair Smith, Jessica Robinson, Porshé Garner, Blair E. Smith)\n• Dear Charles Dickens, Love, South LA: Literature, Place and Belonging (Jacqueline Barrios)",
+      "start": "2026-10-24T16:30:00.000Z",
+      "end": "2026-10-24T17:45:00.000Z",
+      "room": "Ballroom C, Conference Center",
+      "format": "in-person",
+      "type": "Projects & Practices",
+      "tracks": [
+        "Projects & Practices"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Oona Hatton"
+        },
+        {
+          "name": "Lucas Hatton"
+        },
+        {
+          "name": "Blair Smith"
+        },
+        {
+          "name": "Jessica Robinson"
+        },
+        {
+          "name": "Porshé Garner"
+        },
+        {
+          "name": "Blair E. Smith"
+        },
+        {
+          "name": "Jacqueline Barrios"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524672",
+      "eventId": "ia-gathering-26",
+      "title": "Centering Ourselves For Impact In Turbulent Times",
+      "abstract": "This Centering and Interactive workshop will utilize research, historical knowledge, cross generational wisdom, engaged activities and the arts, to connect participants and explore empowered possibilities for change and transition. As we navigate challenges before us and in the future, attendees will have the opportunity to consider what their “assignment” is when it comes to making an intentional impact in their own lives and community, in this moment. On a foundation of establishing our own solid self care practices, and remembering to breathe, participants will have the chance to still themselves, in unity with others, and continue their journey towards their fully empowered capabilities. Accents of the Arts, will be intermingled with academic findings, which share best practices for surviving and even thriving during troubled times. By momentarily transitioning into a calm space, attendees will be encouraged to focus, be creative and strategic, enabling them to imagine and plan for intentional impact, in a variety of spaces. Based on the African Principle of Sankofa, which means go back and fetch it, we will look to the past, to imagine and plan for a healthier future. Our ancestors remind us that there is much we can accomplish when we connect at the “root” level and act as human ecological forces for a better world. When we combine core practices with humane intentions, anything is possible .\n\nAfter a guided interactive meditation, designed to relax and center the mind, body and spirit, the following modalities will be incorporated into the rest of the session:\n\n- Engaged information: sharing highlighting research around best practices for surviving and thriving during turbulent times\n\n- Informed Spoken Word: creatively and interactively performed, designed to spark and inspire the imagination and leave imprints of hope on everyone in the room\n\n- Strategic Movement: to release stress and connect individuals to the strength and power they possess within to circumvent obstacles\n\n- Mini pods: sharing and communicating responses to questions which assist people in what might be their “flow points”/ next steps for individual and collective change, as we address a plethora of challenges with tough transitions\n\n- Musical Immersion: to lock in any insights gained during our time together",
+      "start": "2026-10-24T16:30:00.000Z",
+      "end": "2026-10-24T17:45:00.000Z",
+      "room": "Ballroom A, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Sandy Holman",
+          "company": "The Culture C.O-.O.P. / UC Davis Alumni"
+        },
+        {
+          "name": "Mark Miller",
+          "company": "UC Davis Alumni"
+        },
+        {
+          "name": "Samona Whitehead",
+          "company": "Sacramento State University"
+        },
+        {
+          "name": "Charles Frost",
+          "company": "Master Drummer and Teacher"
+        },
+        {
+          "name": "M'ster Lewis",
+          "company": "Community Collaborator"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524673",
+      "eventId": "ia-gathering-26",
+      "title": "AI Toolkit for Imagining America",
+      "abstract": "The workshop we propose will use the AI toolkit we developed with Anuj Vaidya (Imagining America) as the basis for faculty to think through how they want to present (and perhaps use) GenAI in their classes. Even though Chat GPT 3.5 was released in November 2022, the constant change in the AI world (from chatbots to agents, for example) is a textbook example of transition. No longer a definite boundary, ‘transition’ in the GenAI space appears to be permanent.\n\nBased on 20+ years of teaching art history to undergraduate students at a regional comprehensive university (now R2), the strongest thread Mayhall pulls, and the one that she expects students to find useful over their lifetime, is what she calls ‘critical looking.’ Other disciplines in the arts, humanities, and design can find related methods that not only inform their disciplinary and career objectives, but which are more broadly applicable to other aspects of people’s lives. One of the goals of the workshop is for participants to find the methodologies that might survive across this permanent state of transition.\n\nThe concept of ‘embodiment’ is a helpful lens for this work. Taking off from the idea that human experience is at once a necessary condition for consciousness and the unique identifier of life, it also emphasizes the network of experiences, objects, events, and concepts in which human bodies are embedded. For example, critical looking in art history involves using one’s eyes, but ranges further to include prior knowledge, comparison, context, and physical environment. Embodiment, on this view, is a primarily ‘social’ concept, as bodily experience is constantly affected and shaped by the network in which it happens. Community building as a classroom practice is an example of this notion of embodiment and can counter the alienation and isolation many of our students feel, as well as help us begin to build trust with our students, the foundation for creating an environment in which learning can happen, with GenAI, or not.",
+      "start": "2026-10-24T16:30:00.000Z",
+      "end": "2026-10-24T17:45:00.000Z",
+      "room": "Ballroom B, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Marguerite Mayhall",
+          "title": "Assistant Professor of Latin American Art History",
+          "company": "Kean University"
+        },
+        {
+          "name": "Ashwin Vaidya",
+          "title": "Professor",
+          "company": "Montclair State University"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524674",
+      "eventId": "ia-gathering-26",
+      "title": "Tending the Tidepool: Collective Ritual for Re-enchanting the Commons",
+      "abstract": "In times of profound transition, restoring collective spirit requires practices that reconnect us to one another and to the more-than-human worlds that model resilience, reciprocity, and interdependence. This interactive workshop invites participants to draw inspiration from tidepool ecosystems: places where diverse forms of life coexist in a habitat where rapid change is an inescapable constant. \n\nAnimated by Silvia Federici’s framing of commoning as re-enchanting the world by “recovering the power of collectively deciding our fate on this earth,” we aim to create a ritual space where participants can examine the themes of this conference through the playful embodied experience of collaborative artmaking. \n\nUsing prompts guided by observations of tidepool ecologies, simple tools, and sensuous materials that require no prior art experience, participants will engage in somatic sensemaking through creative interaction with materials and each other, and explore how we might cultivate more deeply interconnected communities capable of new forms of flourishing in a changed world. Together, we will pool these emergent communities of form and color into a shared ecosystem, collectively embodying a moment of tending the commons through the practice of co-creation.",
+      "start": "2026-10-24T16:30:00.000Z",
+      "end": "2026-10-24T17:45:00.000Z",
+      "room": "Conf Room A, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Perrin Teal Sullivan",
+          "title": "STEAM education",
+          "company": "university of alaska fairbanks"
+        },
+        {
+          "name": "Emily Norton",
+          "title": "Director, Design Thinking Initiative and Lecturer of Practice",
+          "company": "Smith College"
+        },
+        {
+          "name": "Megan Lyster",
+          "title": "Assistant Director, Wurtele Center for Leadership",
+          "company": "Smith College"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524675",
+      "eventId": "ia-gathering-26",
+      "title": "Cultivating Collective Spirit Through Poetry: A Multi-Organizational and Inter-Generational Approach",
+      "abstract": "We are proposing a complete session aligns with the following two themes: 1) creative community arts and 5) practices of collective spirit. We will bring together scholarly, civic, and creative members of the Davis community. Presenters include community poets, a public engaged scholar, and the Arts & Culture Manager of the City of Davis. Each presentation explains one of the elements that contribute to a thriving, authentic community poetry culture in Davis.\n\nPresentation 1: Poetry Night\n\nPresenter: Dr. Andy Jones, UC Davis English Department and City of Davis Poet Laureate (2014-2018)\n\nFor over 20 years, Dr. Andy has been hosting a twice-monthly poetry night that brings together voices across the Central Valley. He will discuss the joy and the required facilitation to create a space where young voices from k-12 and college students are cultivated, community poets are nurtured, poet laureates are hosted, and established poets in the region and beyond are showcased.\n\nPresentation 2: Civic Role in Showcasing Poetry\n\nPresenter: Rachel Hartsough, Arts & Culture Manager of the City of Davis\n\nRachel will share the strategies and relationships involved in promoting poetry in the community through local government. She will highlight the city’s laureates program and how to put poetry into the physical civic space through collaborative art installations.\n\nPresentation 3: Lived and Intergenerational Experiences of Community Poets\n\nPresenter: Mercedes Ib&aacute;&ntilde;ez, current poet laureate for City of Davis\n\nPoetry reading and reflection by Mercedes Ib&aacute;&ntilde;ez (2025-2027), a Peruvian immigrant and long-time Davis resident who captivates with evocative imagery and wraps us with irony. She will invite readings from former City of Davis Poet Laureates, Allegra Silverstein (inaugural, 2010-2012) and Julia Levine (2021-2024).\"",
+      "start": "2026-10-24T16:30:00.000Z",
+      "end": "2026-10-24T17:45:00.000Z",
+      "room": "Conf Room B, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Mercedes Ibanez",
+          "title": "Retired psychologist, writer. poet.",
+          "company": "Poet Laureate for City of Davis"
+        },
+        {
+          "name": "Rachel Hartsough",
+          "title": "Arts & Culture Manager",
+          "company": "City of Davis"
+        },
+        {
+          "name": "Andy Jones"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524676",
+      "eventId": "ia-gathering-26",
+      "title": "Collective and Creative Thriving During “Tides of Transition”",
+      "abstract": "This session will include an overview of our succcess as a multi-institional IA Collaboratory and will include hands-on activities using the creative tools we used over the course of the last year during our various collaboratory sessions.\n\nAfter years of careful planning, in spring 2026 the \"B'More with Imagination\" collaboratory brought together three delegation from Towson University, Maryland Institute College of the Arts (MICA) and University of Maryland Baltimore County (UMBC). Students, staff, and faculty joined together for a daylong workshop during which we engaged in a self-reflective investigation and critique about the nature of our work in higher education. We asked ourselves: If we are not thriving, how can we support the thriving of others? (and), in during these tides of transition across the nation and in the landscape of higher education, how do we resist inequitable institutuional structures and restore our communites to spaces of support and justice?\n\nThe goal of IA collaboratories is to imagine sites of resistance and restoration. We will use our workshop time to exchange ideas with other IA members about how communities (like our collaboratory) can restore the collective spirit of positive change.",
+      "start": "2026-10-24T16:30:00.000Z",
+      "end": "2026-10-24T17:45:00.000Z",
+      "room": "Allewelt Conference Room, 105 Alumni Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Morna McNulty",
+          "title": "professor",
+          "company": "towson university"
+        },
+        {
+          "name": "Romy Hübler",
+          "title": "Director, Office for Social Impact",
+          "company": "Towson University"
+        },
+        {
+          "name": "Rosemary Riel",
+          "title": "Associate Director of Career Education and Equity",
+          "company": "Towson University"
+        },
+        {
+          "name": "David Hoffman",
+          "title": "Director, Center for Democracy and Civic Life",
+          "company": "UMBC"
+        },
+        {
+          "name": "Tess McRae",
+          "title": "Assistant Director for Connective Learning",
+          "company": "Center for Democracy and Civic Life, UMBC"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524677",
+      "eventId": "ia-gathering-26",
+      "title": "Lightning Talks 2",
+      "abstract": "Includes:\n• Holding onto Purpose in Computer Science: Community-Engaged Optimization Projects Amid AI Transitions (Barbara Anthony)\n• Platicás in Vocational Choices Among Southwestern U.S. College Students (Halin Chung)\n• Artists’ Books and Zines as a Community-Centered Creative Social Practice (Anjelika Deogirikar Grossman)\n• Flood Tide: Voices from the Cohort Ecosystem (Amanda Grace Esons)\n• Music as a Vehicle for Community Dialogue on Societal Issues (Brian Kaufman)\n• You Are Not Alone. Not Even Close. (Ed Kiggins)\n• Plural Perspectives: Imagining an Intersectional Investigation of Power and Photovoice Possibilities (Adriana Ponce)",
+      "start": "2026-10-24T16:30:00.000Z",
+      "end": "2026-10-24T17:45:00.000Z",
+      "room": "AGR Hall, 138 Alumni Center",
+      "format": "in-person",
+      "type": "Lightning Talk",
+      "tracks": [
+        "Lightning Talk"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Barbara Anthony"
+        },
+        {
+          "name": "Halin Chung"
+        },
+        {
+          "name": "Anjelika Deogirikar Grossman"
+        },
+        {
+          "name": "Amanda Grace Esons"
+        },
+        {
+          "name": "Brian Kaufman"
+        },
+        {
+          "name": "Ed Kiggins"
+        },
+        {
+          "name": "Adriana Ponce"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5561561",
+      "eventId": "ia-gathering-26",
+      "title": "Restorative Listening",
+      "abstract": "Dear America, Imagine Listening... During this workshop you will engage in a holistic listening practice that cultivates fully embodied listening as a path to increased empathy. *Participants will receive a listening handbook that they can use to intentionally listen during this weekend and beyond! Participants should dress to move. A limited number of yoga mats will be provided, however, feel free to bring your own. The instructor will provide accessible movement options.",
+      "start": "2026-10-24T16:30:00.000Z",
+      "end": "2026-10-24T17:45:00.000Z",
+      "room": "West Conference Room, 131 Alumni Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Margaret Kemp",
+          "title": "Professor Theatre and Dance",
+          "company": "University of California, Davis"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5571924",
+      "eventId": "ia-gathering-26",
+      "title": "Break",
+      "start": "2026-10-24T17:45:00.000Z",
+      "end": "2026-10-24T18:15:00.000Z",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [],
+      "isFixed": true
+    },
+    {
+      "id": "5524686",
+      "eventId": "ia-gathering-26",
+      "title": "Projects and Practices 6",
+      "abstract": "Includes:\n• Scaling Community Compost through Authentic Outreach (Charlotte Roberts, Carla Doughty)\n• So you want to build a climate action arts network? (Brett Snyder, Jennifer Parker, Karolina Karlic)\n• Fracking Water as a Tasty Beverage?!: a tale of successful artistic activism to protect the water of New Mexico (L.M. Bogad)\n• We Live in Public: Homeless Encampments as Freedom Schools (Carla Belinda Orendorff)",
+      "start": "2026-10-24T18:15:00.000Z",
+      "end": "2026-10-24T19:30:00.000Z",
+      "room": "Ballroom C, Conference Center",
+      "format": "in-person",
+      "type": "Projects & Practices",
+      "tracks": [
+        "Projects & Practices"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Charlotte Roberts"
+        },
+        {
+          "name": "Carla Doughty"
+        },
+        {
+          "name": "Brett Snyder"
+        },
+        {
+          "name": "Jennifer Parker"
+        },
+        {
+          "name": "Karolina Karlic"
+        },
+        {
+          "name": "L.M. Bogad"
+        },
+        {
+          "name": "Carla Belinda Orendorff"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524691",
+      "eventId": "ia-gathering-26",
+      "title": "IA Member Session: What Should We Carry Forward? Reflecting on Imagining America’s Significance and Impact at the Moment of Transition",
+      "abstract": "In 2027, Imagining America (IA) will begin a new chapter as the consortium transitions from the University of California, Davis to Penn State. While institutional transitions inevitably involve changes in leadership and location, they also offer a rare opportunity for a community to pause, reflect, and imagine the future. Rather than viewing this transition simply as an organizational handoff, this session invites IA members to consider it as a moment of collective stewardship—a chance to reflect on and reaffirm what has made IA distinctive while pointing to new possibilities.\n\nMembers of PSU's transition team and IA’s NAB invite everyone for a facilitated conversation about IA's significance and evolving identity. Recognizing that participants bring different experiences with IA and forms of knowledge, the session creates space for institutional memory, fresh perspectives, critical reflection, and imaginative thinking. The objective is not to develop plans but to engage the community in a conversation that honors IA's history and impact, how IA speaks to the moment, and what ideas should inspire IA’s future.\n\nFollowing brief opening reflections from the NAB and PSU, participants will engage in facilitated small-group discussions, using the same sequence of broad, open-ended questions for dialogue across experiences and perspectives. The questions will start with the personal, move to our collective sense of identity, and then reflect on the moment:\n\n- Personal: How has IA impacted you personally?How did you become connected with IA and how does IA support you and your work?\n\n- What grounds us?What values, relationships, practices, and ways of working have made IA a distinctive community, and what should remain central regardless of where the consortium is housed?\n\n- What is changing around us?As the landscape of higher education, public impact scholarship, arts, humanities, and community engagement continues to evolve, what opportunities and challenges can help IA engage the moment?\n\n- What future do we want to create together?How might this transition serve as a catalyst for new forms of collaboration, leadership, membership, and publicly engaged practice?\n\nWe will end the session by pondering:\n\n- We hope IA never loses...\n\n- One opportunity we hope IA embraces over the next decade is...\n\n- One step that could move us in that direction is...\"",
+      "start": "2026-10-24T18:15:00.000Z",
+      "end": "2026-10-24T19:30:00.000Z",
+      "room": "Ballroom A, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Paul Schadewald",
+          "title": "Associate Director",
+          "company": "Bringing Theory to Practice"
+        },
+        {
+          "name": "Mallika Bose",
+          "company": "Penn State University"
+        },
+        {
+          "name": "B. Stephen Carpenter II",
+          "company": "Penn State University"
+        },
+        {
+          "name": "Sylvia Spears",
+          "title": "Provost/VP for Distinguished Professor of Educational Equity & Social Justice",
+          "company": "College Unbound"
+        },
+        {
+          "name": "Milmon Harrison",
+          "company": "UC Davis"
+        },
+        {
+          "name": "Craig Newchaffer",
+          "company": "Penn State University"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524692",
+      "eventId": "ia-gathering-26",
+      "title": "The Meaning is as Fragile as the Flesh Between Us.",
+      "abstract": "The Meaning is as Fragile as the Flesh Between Us invites participants to explore how they've embodied the meanings and nuances found in synonym pairs. Facing one another, participants read word pairs aloud (harm/hurt, delicate/fragile, quiet/silent for example) and then express their personal, embodied understanding of each pair's similarities and differences — using any language available to them, including movement and visual art.\n\nThis project grew from my search for meaning in Arabic, my paternal family's native language, which I was never taught growing up after they emigrated from Lebanon in the 1970s. Trying to learn Arabic as an adult, I struggled to grasp its contextual nuance — a frustration that led me to question just how well I truly understood English, the language I was taught.\n\nSpoken and written language alone can't fully capture our deeply felt and embodied experiences. We've all been silenced, and we've all chosen silence to protect ourselves. We've been quiet out of fear, and quiet in awe. Our mental models shape how we interpret these moments, and how well we understand each other depends on our worldviews and lived experience.\n\nIn the workshop, I'll ground participants in the project's roots and meaning, then guide them through word-pair prompts with rotating partners before closing with a group reflection.\n\nPast participants have surfaced forgotten family histories, personal struggles, and points where the personal meets the political — often turning to movement, drawing, and other nonverbal forms to express understandings that come from feeling rather than knowing.",
+      "start": "2026-10-24T18:15:00.000Z",
+      "end": "2026-10-24T19:30:00.000Z",
+      "room": "Ballroom B, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Jason Kotoch",
+          "title": "Foundations Director in the Department of Art, University of Massachusetts, Amherst",
+          "company": "University of Massachusetts, Amherst"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524694",
+      "eventId": "ia-gathering-26",
+      "title": "Pipeline to Praxis: Devising an Interdisciplinary Course on Mass Incarceration",
+      "abstract": "This interactive session shares an interdisciplinary course in development across Theatre and Sociology – a project still in its \"\"mucky middle,\"\" where two disciplines with different epistemologies and different relationships to \"\"the system\"\" under study are arguing the shape of a collaboration into being. The course centers Dominique Morisseau's script Pipeline, alongside other theatrical forms, to examine the school-to-prison pipeline as both structural phenomenon and lived human experience, pairing the sociological study of mass incarceration – its roots in racial capitalism, legal architecture, and institutional abandonment – with the embodied, relational tools of theatre-making: devised performance, dramaturgy, verbatim theatre, and ensemble-based practice.\n\nWe come to this Gathering not with a fully finished model but with live tensions we are still metabolizing: How does a discipline built on data and structural critique sit alongside one built on embodiment and felt experience? How do you ask students to make art about systems that have harmed real people without flattening that harm into material? What does it mean to build a classroom as a site of collective care when the subject matter is itself about the failure of care?\n\nMorisseau's Pipeline, with its portrait of a Black mother navigating an educational system designed to fail her son, anchors the course. Students read the play alongside scholarship on incarceration, then workshop new scenes, beginning with collecting oral history through understanding verbatim theatre practices, and build original performance pieces – holding someone else's story with both rigor and tenderness.\n\nThis session shares the course's conceptual framework, pedagogical objectives, proposed readings, and open questions about what emerges when the sociology of incarceration and the theatre of witness are brought into sustained, unresolved conversation. Participants will join an embodied practice warm-up, a short creative-writing exercise using interviews as source material, small group presentations using their writing, and group discussion.\"",
+      "start": "2026-10-24T18:15:00.000Z",
+      "end": "2026-10-24T19:30:00.000Z",
+      "room": "Conf Room B, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Janet Hayatshahi",
+          "title": "Associate Professor, Theatre",
+          "company": "Seattle University"
+        },
+        {
+          "name": "Sarah Cribbs",
+          "title": "Associate Professor",
+          "company": "Randolph-Macon College"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524695",
+      "eventId": "ia-gathering-26",
+      "title": "Conviviendo con Cascabel de Dos Ríos: The fandango as a musical space of collectivity",
+      "abstract": "Cascabel de Dos R&iacute;os is a Sacramento-based collective dedicated to the education and promotion of fandango music through free community-led workshops. We are a grassroots, community-based, intergenerational group of Latine musicians, dancers, and poets of all levels who gather regularly to teach and support one another as students of the fandango.\n\nThe fandango is a participatory musical gathering where people play a traditional music commonly referred to as “son jarocho,” a popular music from what is now Veracruz, M&eacute;xico, rooted in Indigenous and African histories resistance in the face of settler colonial practices.\n\nIn a fandango, musicians gather one one side of a wooden platform dancing and improvising music and verses about their lives. On the other side of the circle are the cooks, parents, children, spectators, and hosts, who although not musicians, are also vital to the fandango. Though the fandango involves playing music, it is the practice of being in community that lies at its core. The fandango is not about performing for others, but about creating alongside others, musicians and non-musicians alike. We call this convivencia, the convivial, relational act of coming together.\n\nIn this participatory workshop we invite participants to convivir with one another through the elements of the fandango (song, dance, improvisation) by teaching “La Guacamaya,” a traditional song about the macaw. The workshop will be broken up into three parts:\n\n1. An introduction to the sociohistorical context of the fandango, and instruction in how to play the instruments, dance, and sing along. (Instruments will be provided).\n\n2. An opportunity to engage in a “fandanguito” where participants are able to make music collaboratively with the support of members of Cascabel de Dos R&iacute;os.\n\n3. A guided reflection where we invite participants to think about their embodied experiences when collaboratively making music.\n\nParticipants will be able to engage in collaborative musicking even if it is their first time playing an instrument, or their first time singing Spanish. As a collective, we engage in pedagogical practices that enable people to participate regardless of prior musical and linguistic experience. We have learned these practices from our elders, and have also built upon them as a diasporic, multilingual community learning music in Spanish within an English-dominant context.\n\nInstrument will be provided. If participants have their own instruments they are also welcome to bring them.",
+      "start": "2026-10-24T18:15:00.000Z",
+      "end": "2026-10-24T19:30:00.000Z",
+      "room": "Community Education Room, Manetti Shrem Museum",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Cascabel de Dos Ríos",
+          "company": "Cascabel de Dos Ríos"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524696",
+      "eventId": "ia-gathering-26",
+      "title": "abcBLITZ: A Pedagogy for Landscapes in Transition",
+      "abstract": "This workshop invites participants into the abcBLITZ, a place-elicitation methodology developed through Mapping Meaning, an interdisciplinary community of scholars and practitioners who gather in diverse landscapes and bioregions to study emergent environmental issues.\n\nThe method borrows its structure from the BioBlitz, a term coined in 1996 by National Park Service naturalist Susan Rudy to describe an intense, time-bound period of biological surveying, in which participants fan out to record as many species as possible within a designated area. Mapping Meaning adapted this model to probe what it might mean to holistically \"\"experience,\"\" \"\"assess,\"\" \"\"know,\"\" and \"\"teach\"\" place, not only its biodiversity but its cultural and artistic histories as well. The result is the abcBLITZ, where abc stands for arts, biology, and culture, as well as the metaphorical building blocks of \"\"life/language.\"\" It is at once a method and a provocation: if land is a text, how do we read it, and how do we make that reading transformative rather than simply enlightening?\n\nWe most recently applied this method at Lake Powell, a reservoir on the Colorado River whose falling waters and resurfacing canyon walls make it a vivid example of the kind of transition unfolding across much of the West, where drought, fire, and shifting water regimes are unsettling old stories about place faster than new ones can take hold.\n\nAfter a short framing conversation about landscapes in transition and what the abcBLITZ offers as a way of reading them, participants will move outdoors for a guided walking session, attending with their full senses to a shared site and to what it asks of us as its meanings shift underfoot. Groups will reconvene to synthesize what surfaced, and we will close with a collective harvest, naming shared patterns and holding open tensions together. Participants leave with the abcBLITZ pedagogy and protocol to adapt in their own transitioning landscapes.\"",
+      "start": "2026-10-24T18:15:00.000Z",
+      "end": "2026-10-24T19:30:00.000Z",
+      "room": "Conf Room A, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Melanie Armstrong",
+          "company": "University of Wyoming"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524697",
+      "eventId": "ia-gathering-26",
+      "title": "Beauty Survives The Breaking: Permanent Blooms Through Turbulent Times",
+      "abstract": "I am proposing an interactive and collaborative ceramic art installation called \"\"Beauty Survives The Breaking: Permanent Blooms Through Turbulent Times\"\". My idea for the installation started in December 2025 in response to the anxiety that I was battling due to the immigration policies of today. In an attempt to transmute my sorrow, I started working on this project to convey my feelings and thoughts. My scientific training in plant biology and genetics led me to start sketching “strange blooms.” These unusual blooms consisted of different parts of plants assembled together into chimeric flowers, creating blooms one cannot find in nature but are beautiful in their strangeness. My story became “strange blooms in a strange setting” to describe my state of existence as an alien, the name people like me are called in legal proceedings. The blooms I create will be ceramic and they do not wilt or die thereby making them permanent.\n\nFor my session, I plan to give the participants a short demo with instructions on how to work with clay using simple tools. I will encourage them to create their own bloom - whatever they imagine at the moment. I will have created a foundational ceramic garden in my studio prior to the session. Participants will craft their blooms, petal by petal, and then add them to the pre-existing garden I installed at the space for the session. I am not expecting perfect, life-like blooms; instead, I am hoping for unusual and diverse blooms created by the participants, showing beauty in diversity and uniqueness rather than conforming to a uniform expectation. As they place their creations on the framework I provide, I expect a wide assortment of blooms. We will see our garden grow to reflect the community we live in, made up of people with diverse lineage, backgrounds, and qualities; each of us presented as our own bloom. I will ask the participants to write and add their wishes for the current community as small notes to be included with their blooms.\n\nAt the end, we will view the garden, spending time to get to know each bloom and the wish it carries. I intend this session to be both an emotional and sensory experience, where attendees can express their child-like core through their hands and also where they are given time to explore their current emotional state.\"",
+      "start": "2026-10-24T18:15:00.000Z",
+      "end": "2026-10-24T19:30:00.000Z",
+      "room": "Allewelt Conference Room, 105 Alumni Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Pinar Brummer",
+          "title": "Artist",
+          "company": "Pixley Ceramics"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5571926",
+      "eventId": "ia-gathering-26",
+      "title": "Lunch (food trucks)",
+      "start": "2026-10-24T19:30:00.000Z",
+      "end": "2026-10-24T20:30:00.000Z",
+      "room": "Conference Center",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [],
+      "isFixed": true
+    },
+    {
+      "id": "5524698",
+      "eventId": "ia-gathering-26",
+      "title": "Projects and Practices 7",
+      "abstract": "Includes:\n• Environmental Imaginaries in Caribbean Freedom Theatre (Sheryl-Ann Simpson)\n• Punking Borders: Chicanismo in Sonoran Alternative Music Scenes (Evan Martin-Casler)\n• Mapping Artist and Culture Bearer Journeys: Visualizing Growth, Cultural Leadership and Collective Care (Melanie Meinzer, Daniela Alvarez)\n• Rooted and Renewed: Restorative Practices Across Generations (Armoni Easley)",
+      "start": "2026-10-24T20:30:00.000Z",
+      "end": "2026-10-24T21:45:00.000Z",
+      "room": "Ballroom B, Conference Center",
+      "format": "in-person",
+      "type": "Projects & Practices",
+      "tracks": [
+        "Projects & Practices"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Sheryl-Ann Simpson"
+        },
+        {
+          "name": "Evan Martin-Casler"
+        },
+        {
+          "name": "Melanie Meinzer"
+        },
+        {
+          "name": "Daniela Alvarez"
+        },
+        {
+          "name": "Armoni Easley"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524703",
+      "eventId": "ia-gathering-26",
+      "title": "Projects and Practices 8",
+      "abstract": "Includes:\n• The Train. The Station: Imagining Collaboration & Democracy. A First Trip Report (Jon Winet, Jonathan Rattner, Bridget Draxler, Eliot Parker, Andrea Feeser)\n• From Panic to Prepared: Rebuilding Community Trust Through Emergency Health Literacy (Destiny Kanning)\n• Creating the Curriculum We Want: Weaving Values and Purpose into Curricular Transformation (Amy Howard, Paul Schadewald, Daniel Youd, Donna Oliver, Dianna Shandy)\n• Before We Can Imagine Together: Rethinking Public Engagement in Times of Transition (Ruben Morales Jr.)",
+      "start": "2026-10-24T20:30:00.000Z",
+      "end": "2026-10-24T21:45:00.000Z",
+      "room": "Ballroom C, Conference Center",
+      "format": "in-person",
+      "type": "Projects & Practices",
+      "tracks": [
+        "Projects & Practices"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Jon Winet"
+        },
+        {
+          "name": "Jonathan Rattner"
+        },
+        {
+          "name": "Bridget Draxler"
+        },
+        {
+          "name": "Eliot Parker"
+        },
+        {
+          "name": "Andrea Feeser"
+        },
+        {
+          "name": "Destiny Kanning"
+        },
+        {
+          "name": "Amy Howard"
+        },
+        {
+          "name": "Paul Schadewald"
+        },
+        {
+          "name": "Daniel Youd"
+        },
+        {
+          "name": "Donna Oliver"
+        },
+        {
+          "name": "Dianna Shandy"
+        },
+        {
+          "name": "Ruben Morales Jr."
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524708",
+      "eventId": "ia-gathering-26",
+      "title": "HUMANities x Tech: Imagining and Building Public Futures Together",
+      "abstract": "In a world transformed by AI, the humanities belong at the center of how we teach, develop, and question emerging technology. AI systems are built from language, images, archives, histories, classifications, labor, and culture. They shape how stories are told, how people are categorized, how knowledge is valued, and how futures are imagined. We can no longer ignore the ways emerging technologies are reshaping public life. The urgent question is who gets to shape AI, and whether the communities most affected have any say in how it is built.\n\nThis participatory workshop is led by Hunter College faculty and artists developing a new interdisciplinary major at the intersection of humanities, technology, design, media, and public life. It unfolds in three movements.\n\nWe open with a dynamic video showcase of our HUMANities x Tech series, showing what happens when computer scientists, philosophers, musicians, filmmakers, and artists work together to put human values at the center of every encounter with emerging technology. Two interdisciplinary faculty pairs then demonstrate their collaborative work: one explores how virtual reality can expand access to and transform our understanding of the ancient Japanese tea ceremony, asking what is gained and what is lost when embodied cultural ritual meets immersive technology. The second presents their work on AI-guided music completion, examining what happens when generative AI finishes the unfinished compositions of Bach, and what that reveals about creativity, authorship, and the limits of the machine.\n\nIn the final movement, participants enter the HUMANities x Tech Futures Lab. Working in small groups, they choose one AI-shaped system from public life, such as a housing application portal, a school admissions tool, a public benefits chatbot, a hiring algorithm, or a social media recommendation feed. They discuss who builds it, who uses it, who is affected by it, who is left out, and what values are built into it. Each group then shares one redesign principle, one critical question, and one possible intervention. Together, these responses create a collective map of how the public humanities can help shape AI-powered futures.\n\nParticipants leave with shared language, a reusable activity model, and a clearer sense of how humanistic inquiry can guide technology toward more public, ethical, and livable futures.\"\"\"",
+      "start": "2026-10-24T20:30:00.000Z",
+      "end": "2026-10-24T21:45:00.000Z",
+      "room": "Ballroom A, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Erica Chito Childs",
+          "title": "Dean, School of Arts and Sciences",
+          "company": "Hunter College-City University of New York"
+        },
+        {
+          "name": "Amelia Winger-Bearskin",
+          "company": "Hunter College-CUNY"
+        },
+        {
+          "name": "Mari Kole",
+          "title": "adjunct lecturer",
+          "company": "Hunter College-CUNY"
+        },
+        {
+          "name": "Nan Jia"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524709",
+      "eventId": "ia-gathering-26",
+      "title": "Sketching the Shield: Arts-Based Rituals to Navigate Complex Institutional Transitions",
+      "abstract": "When entering new complex institutional leadership roles, leaders particularly women of color, artists, and culture-bearers, face a pervasive systemic challenge: the institution will constantly attempt to shrink them into a single, predictable bucket that serves immediate bureaucratic needs. To survive these transitions without experiencing profound burnout, losing physical wellness or sacrificing a multi-dimensional identity, leaders must actively build a “shield”--a creative, proactive practice of self-reclamation that anchors their expansive vision and firm boundaries.\n\nLed by an artist, clinician, and Associate Dean this deeply experiential 75-minute participatory workshop invites participants out of traditional institutional time and into a sacred, reflective container designed to ground the mind, body, and spirit during seasons of professional transition.\n\nUsing the natural lifecycle of the Chinese bamboo tree as a macro-framework, the session demonstrates how to nurture an inner garden when external results are still invisible. The workshop utilizes a unique combination of immersive soundscapes, original recorded songwriting, visual sketching, and somatic ritual. The facilitator will clear the space using Tingsha bells and share her own raw, arts-based survival blueprints. The session incorporates original musical reflections including tracks like “As I Say Goodbye” and “My Inner Garden” as sonic mirrors to process the complex emotional transitions of leaving an old season and cultivating self-preservation.\n\nRather than engaging in traditional academic lecture, participants will actively engage in their own co-creation. Using a provided reflective tool, attendees will visually sketch their own personal “Shield” mapping out the diverse, multi-dimensional pieces of who they are (including wellness, community, and joy) and committing to a grounding value statement that protects them from being compartmentalized by their institutions. While sketching, participants will interact with shared oracle and intention decks to spark deeper intuition. The session will conclude with a communal vocal chant, leaving participants rooted, re-centered, and equipped with a physical tool to navigate their ongoing institutional journeys.\"",
+      "start": "2026-10-24T20:30:00.000Z",
+      "end": "2026-10-24T21:45:00.000Z",
+      "room": "Conf Room A, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Melita Belgrave",
+          "title": "Associate Dean / Associate Professor",
+          "company": "Arizona State University"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524710",
+      "eventId": "ia-gathering-26",
+      "title": "Visionary Backshadowing: Leaping Forward and Looking Back from 2046",
+      "abstract": "This session will engage participants in generating the power and will to bring about a better world by liberating themselves from the constraints and deceptions of linear time. Guided initially by a “visionary backshadowing” worksheet, participants will project themselves forward to the thriving America that will exist in the year 2046 as the result of our collective efforts over the next 20 years. From the vantage of 2046, they will look back over the previous 20 years (the ones we have not yet lived, but will) and outline the (imagined) history of that era. What were the major breakthroughs? What were the significant conflicts and tension points, and how were they resolved? What was the very last domino to fall that produced the thriving society of 2046? What role did Imagining America play in all of this?\n\nParticipants will work individually and in small groups to develop and share their imagined histories and make meaning from the overlaps, differences, surprises, and unresolved questions, then collectively make meanings and identify potential commitments to move us toward the future(s) we envision.\n\nAside from the ideas about the next 20 years that will emerge from the conversations, participants will learn how to lead a visionary backshadowing activity they can use in their own spaces.",
+      "start": "2026-10-24T20:30:00.000Z",
+      "end": "2026-10-24T21:45:00.000Z",
+      "room": "Conf Room B, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "David Hoffman",
+          "title": "Director, Center for Democracy and Civic Life",
+          "company": "UMBC"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524711",
+      "eventId": "ia-gathering-26",
+      "title": "Crafting Community: Co-Curricular Programming in Times of Crisis",
+      "abstract": "In 2024, amid the heightened political uncertainty of the upcoming presidential election, members of Emory University’s Institute of the Liberal Arts (ILA) felt the need to build new kinds of spaces for conversation and community. In response, a group of faculty and students initiated Memes & Mandates, a co-curricular program of student-led discussion events that brought together changing constellations of students, faculty, and community members to make sense of the impact of the political moment on our everyday lives at and beyond academia.\n\nThe success and continued relevance of this program led to the creation of an ongoing initiative we are calling Crafting Community. Under this umbrella, we invite students to design and implement three-part programs that are critically responsive to the urgency of our contemporary moment, alternating between discussion-centric and creative modes of engagement. In the first year we hosted four programs, including “Is this fascism yet?” and “Cooking up community,” each of which created meaningful opportunities to process the crises of our political present and build up a shared sense of agency through conversation and creative practice—an extension of our departmental pedagogy beyond the more structured environment of the classroom. In turn, activities and conversations that happened in the program have made their way back into our classrooms as well, for example, when a student brought a discussion they had prepared for Memes & Mandates on Kamala Harris and race and gender stereotyping back to a class on Visual Culture.\n\nOur workshop shares this program as a model for empowering community and creativity in times of perpetual crisis that could be adapted for many environments. The 75 minutes will be divided into four parts:  1.  Gathering, recognizing who is in the learning community through a brief ice-breaking activity (10 min) 2. Introduction to the Crafting Community program as developed by the Institute for the Liberal Arts (15 minutes). 3. Organization into groups who will create a collage zine focused on the process of transformation (40 min.)  4.  Return to larger group for collective reflection. (10 min.)",
+      "start": "2026-10-24T20:30:00.000Z",
+      "end": "2026-10-24T21:45:00.000Z",
+      "room": "AGR Hall, 138 Alumni Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Kim Loudermilk",
+          "title": "Associate Teaching Professor and Director, Institute for the Liberal Arts",
+          "company": "Emory University"
+        },
+        {
+          "name": "Julia Tulke",
+          "company": "Emory University"
+        },
+        {
+          "name": "Rose Deighton-Mohammed",
+          "company": "Emory University"
+        },
+        {
+          "name": "Kennedie Black",
+          "company": "Emory University"
+        },
+        {
+          "name": "Jackie Hampton",
+          "title": "Emory Student",
+          "company": "Emory University "
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524712",
+      "eventId": "ia-gathering-26",
+      "title": "Lanterns to the Spiral Garden: Stewardship Cycles for Restoring Collective Spirit in the Mucky Middle",
+      "abstract": "Lanterns to the Spiral Garden is a participatory workshop for people trying to restore collective spirit in communities that are tired, overextended, and in transition. Drawing from cooperative housing, landscape stewardship, accessibility practice, and community-based design, this session offers a simple cycle for moving from overwhelm into shared action: observe what is happening, name needs and harms clearly, map roles and resources, design a small intervention, act together, document what changed, and return with care.\n\nThe workshop begins with a brief visual framing of a “stewardship cycle” developed through work in Davis cooperative housing: design jam, work party, reflection, documentation, and renewed practice. Participants will then work in small groups with a real or imagined community transition: a neglected common space, a conflict that keeps resurfacing, a breakdown in communication, a climate-related adaptation, or a moment of organizational turnover. Each group will map the transition as a living system, identifying roots, barriers, people affected, forms of knowledge already present, and one small repair action that could be taken within a week.\n\nRather than treating restoration as a return to a perfect past, the session asks what becomes possible when repair is partial, practical, cyclical, and collectively held. Participants will use prompts from permaculture, cooperative process, access-centered facilitation, and arts-based reflection to translate abstract values into visible practices. We will close by creating a shared “spiral garden” of commitments: small actions, facilitation tools, questions, and rituals participants can carry back to their own campuses, organizations, neighborhoods, and households.\n\nThis session is designed for students, artists, educators, organizers, cooperative members, and anyone working in the mucky middle of change. No specialized background is required. Participants will leave with a flexible template for hosting design jams, stewardship conversations, and collective repair processes in their own communities.",
+      "start": "2026-10-24T20:30:00.000Z",
+      "end": "2026-10-24T21:45:00.000Z",
+      "room": "Founders Board Room,104 Alumni Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Sahar Tai-Seale",
+          "title": "Vice President",
+          "company": "Solar Community Housing Association"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524713",
+      "eventId": "ia-gathering-26",
+      "title": "Foraging For Samples: A Field Guide to Applied Imagination",
+      "abstract": "How are you applying imagination to your work? Where have you been inspired by the imaginative work of others? How are you cross pollinating creative and community practice?\n\nIn this interactive session, two members of our collaboratory will first describe our budding project, A Field Guide to Applied Imagination, an artist-informed book and probably website and/or media space about how artists and cultural organizers contribute imaginative practices and ways of thinking to sectors such as gender and racial justice, healthcare, immigration rights, climate justice, and equitable community development. We’ll then invite participants to share their work and practices through the same lens, “applied imagination,” asking: In what ways is imagination a central tool of your work? Or how could this framing enable new articulations of your practice? How might engagement with others on their uses and applications of imagination benefit your own work and that of your students, collaborators, communities, and the field? We’ll then invite session attendees to collaborate on terms, techniques, and practices of this kind of work. Attendees will work either individually, in pairs, or collectively to brainstorm, share stories, and co-create new structures and forms for naming and labelling various parts of our field.\n\nThe role of the imagination and creativity in the struggle for an equitable world remains undervalued. We think of our project as an “exploded encyclopedia” where we illuminate terms, techniques, and practices from the field through creative “definitions” using playful forms and structures. Examples of terms are social practice, utopia, radical joy, repair, and collaboration. “Definitions” for these terms might include poetry, illustration, graphic design, dialogue, sound languages, and other forms that allow the term to breathe and blossom on the page or screen.",
+      "start": "2026-10-24T20:30:00.000Z",
+      "end": "2026-10-24T21:45:00.000Z",
+      "room": "Allewelt Conference Room, 105 Alumni Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Dana Edell",
+          "title": "Associate Professor",
+          "company": "Emerson College"
+        },
+        {
+          "name": "Jan Cohen-Cruz",
+          "title": "Engaged Arts Associate",
+          "company": "Imagining America"
+        },
+        {
+          "name": "Lizzy Davis",
+          "title": "Associate Professor and Graduate Program Director",
+          "company": "Emerson College"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524714",
+      "eventId": "ia-gathering-26",
+      "title": "Art, Belonging, and Collective Thriving Through Transition",
+      "abstract": "Every transition—whether personal, organizational, political, or cultural—invites us to reimagine how we relate to ourselves and one another. In times of uncertainty, belonging becomes more than a feeling; it becomes a practice that restores collective spirit and helps communities navigate change together. This interactive workshop explores how arts-based and somatic practices cultivate belonging, resilience, and collective care while creating new possibilities for connection across difference.\n\nDrawing on nearly four decades of community-rooted practice, Destiny Arts Center will share its creative youth development model, developed through work with more than 6,000 young people annually, most of whom are BIPOC and from low-income communities. Grounded in movement arts, martial arts, hip hop and theater, Destiny's approach demonstrates how movement and somatic arts strengthen identity, emotional regulation, leadership, and healthy relationships while interrupting cycles of violence through belonging.\n\nParticipants will engage in embodied movement, reflective dialogue, collaborative creative exercises, and storytelling to experience how belonging is intentionally cultivated through shared practice. They will reflect on their own experiences of transition while exchanging ideas across disciplines, creating opportunities for collective learning and critical imagination.\n\nFacilitators will introduce Destiny's framework—Art + Belonging + Identity = Violence Prevention—and demonstrate how trauma-informed, culturally responsive arts and somatic practices help people regulate emotions, build trust, and move through uncertainty together. Participants will also experience embodied practices led by renowned somatic practitioner Tesfaye Tekelu, exploring how movement and martial arts foster grounding, connection, courage, and collective healing.\n\nGrounded in Destiny's work yet designed for broad application, this workshop offers artists, educators, organizers, scholars, and community leaders adaptable practices for cultivating belonging in schools, cultural institutions, and communities. Participants will leave with practical tools, renewed inspiration, and a deeper understanding of how creative and embodied practices can restore collective spirit, strengthen community relationships, and help imagine more just, connected, and flourishing futures.",
+      "start": "2026-10-24T20:30:00.000Z",
+      "end": "2026-10-24T21:45:00.000Z",
+      "room": "Community Education Room, Manetti Shrem Museum",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Archana Nagraj",
+          "title": "Executive Director",
+          "company": "Destiny Arts Center"
+        },
+        {
+          "name": "Tesfaye Teklu",
+          "company": "Destiny Arts Center"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5571927",
+      "eventId": "ia-gathering-26",
+      "title": "Transportation to Site Visits",
+      "start": "2026-10-24T21:45:00.000Z",
+      "end": "2026-10-24T22:15:00.000Z",
+      "room": "Conference Center",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [],
+      "isFixed": false
+    },
+    {
+      "id": "5620854",
+      "eventId": "ia-gathering-26",
+      "title": "If you are not attending a community site visit, consider these activities and public events!",
+      "abstract": "View the exhibits at the Gorman Museum of Native American Art (181 Old Davis Rd) until 5:00pm\n\nVisit the galleries or make zines at Art Spark at the Manetti Shrem Museum of Art (254 Old Davis Road) until 5:00pm \n\nCheck out art spaces in downtown Davis and take home a souvenir from the Pence Gallery (212 D Street, until 5:00pm) or The Artery (207 G Street, until 6:00pm) \n\nEnjoy the Davis Jazz and Beat Festival in downtown Davis (521 1st Street, until 9:00pm). Visit natsoulas.com/davis-jazz-beat-festival for details. \n\nPurchase an evening ticket for \"Taylor Mac & Matt Ray: An Evening from the Queer Songbook,\" at the Mondavi Center for Performing Arts. Visit https://www.mondaviarts.org/whats-on/taylor-mac-and-matt-ray for details.",
+      "start": "2026-10-24T22:00:00.000Z",
+      "end": "2026-10-25T01:00:00.000Z",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [],
+      "isFixed": false
+    },
+    {
+      "id": "5524715",
+      "eventId": "ia-gathering-26",
+      "title": "It Begins with a Seed: UC Davis Student Farm",
+      "abstract": "Site visit registration will happen separately in EventBrite.\n\nThis site visit is an invitation to the UC Davis Student Farm, an almost 50 year old space started by students who dreamt big and refused to accept existing paradigms of harm by sustaining visions of different, more welcoming futures. Read more.",
+      "start": "2026-10-24T22:15:00.000Z",
+      "end": "2026-10-25T00:30:00.000Z",
+      "room": "UC Davis Student Farm",
+      "format": "in-person",
+      "type": "Site Visit",
+      "tracks": [
+        "Site Visit"
+      ],
+      "levels": [],
+      "speakers": [],
+      "isFixed": false
+    },
+    {
+      "id": "5524716",
+      "eventId": "ia-gathering-26",
+      "title": "Climate Action: A Risograph Poster Making Workshop",
+      "abstract": "Site visit registration will happen separately in EventBrite.\n\nIn this hands-on poster making workshop participants will learn about Risograph poster making techniques, be exposed to a variety of climate communication material, and have a chance to make a poster in an edition large enough to be shared with all workshop participants. Read more.",
+      "start": "2026-10-24T22:15:00.000Z",
+      "end": "2026-10-25T00:30:00.000Z",
+      "room": "UC Davis Design Department",
+      "format": "in-person",
+      "type": "Site Visit",
+      "tracks": [
+        "Site Visit"
+      ],
+      "levels": [],
+      "speakers": [],
+      "isFixed": false
+    },
+    {
+      "id": "5524717",
+      "eventId": "ia-gathering-26",
+      "title": "66 Years in the Making: A Site Visit to Davis Arts Center's Enduring Canvas of Community, Creativity, and Change",
+      "abstract": "Site visit registration will happen separately in EventBrite.\n\nDuring this site visit, participants will tour the Davis Arts Center's seven art studio spaces, discovering how community programming is woven into every corner of the space and engage with a public exhibition on wetland stewardship, showcasing the eco-cultural and artistic practice of Wintun/Maidu culture-bearer Diana Almendariz and YoloSol Collective. Read more.",
+      "start": "2026-10-24T22:15:00.000Z",
+      "end": "2026-10-25T00:30:00.000Z",
+      "room": "Davis Arts Center",
+      "format": "in-person",
+      "type": "Site Visit",
+      "tracks": [
+        "Site Visit"
+      ],
+      "levels": [],
+      "speakers": [],
+      "isFixed": false
+    },
+    {
+      "id": "5524718",
+      "eventId": "ia-gathering-26",
+      "title": "Past into Practice: Finding Creative Inspiration in Museums and Archives",
+      "abstract": "Site visit registration will happen separately in EventBrite.\n\nPresented by the Yolo County Historical Collection, Yolo County Archives, and YoloArts, this workshop focuses on how artists, scholars, and other creators can use archives and museum collections to inspire works of art and other projects that reimagine, interpret, or facilitate discussion about complicated local histories. Read more.",
+      "start": "2026-10-24T22:15:00.000Z",
+      "end": "2026-10-25T00:30:00.000Z",
+      "room": "Yolo County Historical Collection, Yolo County Archives, and YoloArts",
+      "format": "in-person",
+      "type": "Site Visit",
+      "tracks": [
+        "Site Visit"
+      ],
+      "levels": [],
+      "speakers": [],
+      "isFixed": false
+    },
+    {
+      "id": "5524719",
+      "eventId": "ia-gathering-26",
+      "title": "Tule Traditions and Wetland Art",
+      "abstract": "Site visit registration will happen separately in EventBrite.\n\nHosted by the Yolo Basin Foundation, this site visit invites participants to learn about the ecology, cultural history, significance, and Indigenous stewardship of the Yolo Basin with hands-on tule making activities and a mural tour. Read more.",
+      "start": "2026-10-24T22:15:00.000Z",
+      "end": "2026-10-25T00:30:00.000Z",
+      "room": "Yolo Bypass Wildlife Area Headquarters",
+      "format": "in-person",
+      "type": "Site Visit",
+      "tracks": [
+        "Site Visit"
+      ],
+      "levels": [],
+      "speakers": [],
+      "isFixed": false
+    },
+    {
+      "id": "5524720",
+      "eventId": "ia-gathering-26",
+      "title": "International House, Davis: What does culture mean?",
+      "abstract": "Site visit registration will happen separately in EventBrite.\n\nJoin us on a site visit to International House Davis to explore and celebrate what culture means to us. I-House is a vibrant Davis hub for international culture and community that cultivates learning and connection through sharing and supporting the contributions of local artists and cultural practitioners. Read more.",
+      "start": "2026-10-24T22:15:00.000Z",
+      "end": "2026-10-25T00:30:00.000Z",
+      "room": "International House, Davis",
+      "format": "in-person",
+      "type": "Site Visit",
+      "tracks": [
+        "Site Visit"
+      ],
+      "levels": [],
+      "speakers": [],
+      "isFixed": false
+    },
+    {
+      "id": "5524721",
+      "eventId": "ia-gathering-26",
+      "title": "Art in the Garden: Place-based Third Spaces and Community Creativity",
+      "abstract": "Site visit registration will happen separately in EventBrite.\n\nThis site visit will be co-hosted by the Third Space Art Collective and the UC Davis Arboretum and Public Garden and coincide with Art in the Garden, a collaborative, free, public art-making event put on by both organizations. Learn from Third Space artists, make art in the garden, and plant a seedling in the Arboretum! Read more.",
+      "start": "2026-10-24T22:15:00.000Z",
+      "end": "2026-10-25T00:30:00.000Z",
+      "room": "Third Space Art Collective / UC Davis Arboretum and Public Garden",
+      "format": "in-person",
+      "type": "Site Visit",
+      "tracks": [
+        "Site Visit"
+      ],
+      "levels": [],
+      "speakers": [],
+      "isFixed": false
+    },
+    {
+      "id": "5524722",
+      "eventId": "ia-gathering-26",
+      "title": "TANA Taller Arte del Nuevo Amanecer",
+      "abstract": "Site visit registration will happen separately in EventBrite.\n\nParticipants will visit Taller Arte del Nuevo Amanecer (TANA), a community-based art center and screen-printing studio in Woodland, California. Our staff team will welcome participants, introduce the organization and its community-based arts programming, and provide an overview of screen printing and the workshop activities. Read more.",
+      "start": "2026-10-24T22:15:00.000Z",
+      "end": "2026-10-25T00:30:00.000Z",
+      "room": "TANA",
+      "format": "in-person",
+      "type": "Site Visit",
+      "tracks": [
+        "Site Visit"
+      ],
+      "levels": [],
+      "speakers": [],
+      "isFixed": false
+    },
+    {
+      "id": "5571928",
+      "eventId": "ia-gathering-26",
+      "title": "Transportation Return from Site Visits to Conference Center",
+      "start": "2026-10-25T00:30:00.000Z",
+      "end": "2026-10-25T01:00:00.000Z",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [],
+      "isFixed": false
+    },
+    {
+      "id": "5571863",
+      "eventId": "ia-gathering-26",
+      "title": "Coffee + Tea",
+      "start": "2026-10-25T15:30:00.000Z",
+      "end": "2026-10-25T20:00:00.000Z",
+      "room": "Conference Center",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [],
+      "isFixed": true
+    },
+    {
+      "id": "5571908",
+      "eventId": "ia-gathering-26",
+      "title": "Registration",
+      "start": "2026-10-25T15:30:00.000Z",
+      "end": "2026-10-25T18:00:00.000Z",
+      "room": "Conference Center",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [],
+      "isFixed": true
+    },
+    {
+      "id": "5524725",
+      "eventId": "ia-gathering-26",
+      "title": "Projects and Practices 9",
+      "abstract": "Includes:\n• Replacing the 710 Freeway: Seizing the Opportunity to Shift the Story of Pasadena through Youth Leadership and Public Space Advocacy (Marcus Renner)\n• Embodying Resilience, Disembodying Violence: The Migrant Body v. The Transnational Anti-Migration Apparatus (Pedro Lacerda)\n• Designing beyond Data Collection: Accountability in Environmental Justice (Akshita Sivakumar)\n• Playing Through Transition: Gamified Experiences that Restore Curiosity, Connection, and Collective Spirit (Bethany Stearns)",
+      "start": "2026-10-25T16:00:00.000Z",
+      "end": "2026-10-25T17:15:00.000Z",
+      "room": "Ballroom C, Conference Center",
+      "format": "in-person",
+      "type": "Projects & Practices",
+      "tracks": [
+        "Projects & Practices"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Marcus Renner"
+        },
+        {
+          "name": "Pedro Lacerda"
+        },
+        {
+          "name": "Akshita Sivakumar"
+        },
+        {
+          "name": "Bethany Stearns"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524731",
+      "eventId": "ia-gathering-26",
+      "title": "Community Reading: As We Recall",
+      "abstract": "In June 2023, Woodland, CA school board trustee Emily MacDonald sparked outrage by calling transgender identity a “social contagion,” igniting a grassroots recall effort that ultimately removed her from office by a 2:1 vote. That campaign became the basis for As We Recall, a documentary play created by Oona Hatton and Lucas Hatton from more than twenty oral histories collected from recall organizers and participants. Through a series of Community Readings, the 2024 play As We Recall created space for activists, trans/LGBTQ+ individuals and their families, and other concerned community members to revisit the campaign’s challenges and triumphs. The Community Readings also opened space for collective reflection on protecting students, confronting hate, and sustaining democratic process. The second iteration of the play (2025) moves towards a more experimental, interrogative, and trans-centered approach. The third version (2026) works to retain elements of the earlier performances while introducing a thread of history and science to provide some context for the ongoing attack on transgender identities. This interactive workshop/presentation will offer excerpts from each of the play’s three iterations (some of which include audience involvement) as well as an abbreviated version of one of our devising workshops. This Participatory Workshop is a companion to the Practice Presentation “Shifting Sands: One (or Two, or Three) Model(s) for an Emergent Playmaking Process,” which describes our multi-year development process in more detail.",
+      "start": "2026-10-25T16:00:00.000Z",
+      "end": "2026-10-25T17:15:00.000Z",
+      "room": "Ballroom A, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Oona Hatton",
+          "title": "Co-Artistic Director/Professor",
+          "company": "Davis Repertory Theatre/San José State University"
+        },
+        {
+          "name": "Lucas Hatton",
+          "company": "Davis Repertory Theatre"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524732",
+      "eventId": "ia-gathering-26",
+      "title": "Data Labs for Trying Times (or, inviting organizational transformation through metaphor)",
+      "abstract": "In this session, we will explore the \"data lab\" as a tool for energizing and restoring collective spirit in the face of troubling (institutional) times. The data lab is a homegrown data analysis practice developed at the Bonner Center for Civic Engagement at the University of Richmond to foster collective inquiry in assessment. It is part of our effort to practice \"democratically engaged assessment\" (Bandy et al. 2018), assessment that embodies the values of democratic engagement, navigating constraints and inevitable tension points while empowering all participants.\n\nIn a data lab, people with a common investment in a program, center, class, or shared experience come together to look carefully and playfully at artifacts (data) that emerge from that common investment. Two key goals are building inquiry cultures and refining programs and curriculum based on evidence. We have learned that intentionally encouraging creative interaction with the data we are studying is critical to the data lab's success. While it is tempting to simply let participants discuss artifacts in the ways already familiar to most of us, we instead strive to set up distinctive and spirited interactions with data. In data labs, creativity and playfulness matter because we are aiming to freshen people's relationship with the act of assessment itself. As part of a larger assessment ecosystem, we have found data labs especially beneficial in that they help to catalyze an inclusive, collaborative, and ongoing practice of meaning-making. In the best light, data labs are a tool for restoring our collective spirits in the face of ongoing and increasing pressures on higher education. But after 15 years of experimenting with this practice, we are also keenly aware of the data lab's limitations. If the emphasis of the lab is only on restoring our spirits, how then do we translate our collective meaning-making back to the institutional \"strategy keepers\" who often don't speak the lab's playful language? Can the data lab be not only a transformational assessment practice but also a translational tool? How do we need to grow, stretch, and even rethink the lab for this to be possible?\n\nIn this session, we will introduce the data lab, experience it in workshop format, and honestly reflect on the lab in the context of our shared institutional pressures to imagine data lab futures with participants.",
+      "start": "2026-10-25T16:00:00.000Z",
+      "end": "2026-10-25T17:15:00.000Z",
+      "room": "Ballroom B, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Sylvia Gale",
+          "title": "Executive Director, Bonner Center for Civic Engagement",
+          "company": "University of Richmond"
+        },
+        {
+          "name": "Alexandra Byrum",
+          "title": "Director of Communications and Community Relations",
+          "company": "Bonner Center for Civic Engagement, University of Richmond"
+        },
+        {
+          "name": "April Kim",
+          "company": "Bonner Center for Civic Engagement, University of Richmond"
+        },
+        {
+          "name": "Judy Pryor-Ramirez",
+          "company": "Wagner Graduate School of Public Service, New York University"
+        },
+        {
+          "name": "Blake Stack",
+          "company": "Bonner Center for Civic Engagement, University of Richmond"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524733",
+      "eventId": "ia-gathering-26",
+      "title": "Let's Not Talk About the War",
+      "abstract": "Let's Not Talk About the War is a participatory workshop led by two Middle Eastern artists living in the United States while their home regions are at war. The collaboration revolves around AI and its use throughout the war: systems that calculate targets, classify bodies, and automate suspicion. While the artists cannot resolve this horrible use of the technology, they can put their own bodies in front of it and demonstrate how similar tools can be turned toward listening, caring, translating, and repairing.\n\nThe title emerges from an observation: conversations about the war easily reflect it, hardening into oppositional views that lack nuance and care, which is why many prefer to avoid them altogether. We would prefer to avoid them too. But we are so embedded in the war that staying silent is not available to us. While it continues, we are interested in showing how the tools used to fuel the war can instead amplify the connection between people. How they can bridge gaps and hold a place for difference rather than violently resolve it.\n\nThe session opens with a live demonstration. We sit across from each other and speak through an AI system that mediates our conversation. It translates, reframes, and sometimes misunderstands, and we let those moments stand, because even the failures reveal how the system shapes what passes between us, and how it can be questioned and critiqued. The room sees the prompts and hears the replies as they happen. Our goal is not a finished dialogue but a real one, in which the machine works toward holding us together despite our differences.\n\nWe then teach the method. In small groups, participants build their own AI-mediated dialogue scores: short, improvisatory protocols that use prompt-based AI to hold a difficult exchange without forcing it shut. They test, practice, and revise their dialogues and then we gather as a group to close the workshop by sharing scores and entering one another's dialogues, again holding difference and misunderstanding as vital features of the conversation.\n\nThe workshop does not offer AI as a solution to war, trauma, or political violence. It offers a partial, accountable, unfinished process for spending time with the technology and considering it otherwise.",
+      "start": "2026-10-25T16:00:00.000Z",
+      "end": "2026-10-25T17:15:00.000Z",
+      "room": "Conf Room A, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Avital Meshi",
+          "title": "New Media and Performance Artist - PhD Student Performance Studies",
+          "company": "UC Davis"
+        },
+        {
+          "name": "Iliya Giyahchi",
+          "company": "UC Davis"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524734",
+      "eventId": "ia-gathering-26",
+      "title": "Mapping Climate Stories: Place-Based Zine Making for Collective Action",
+      "abstract": "This workshop introduces two methods of arts-based participatory action research (ABPAR)—place-based mapping and zine-making—to build shared understandings of environmental and climate issues and to connect those insights to collective action. Grounded in the premise that climate change and environmental challenges are experienced primarily through the places and communities we inhabit and navigate, engaging a participatory action research framework invites workshop participants to examine and share about the places that have impacted their own experience and, together, consider how local knowledge can inform broader conversations about environmental justice and climate action across communities. By centering arts-based approaches, participants are encouraged to map their experiences and tell the story of their climate journey in an easily shareable zine format.\n\nWhile climate communications often focus on translating scientific data, this workshop uses collective place-based narratives as the starting point for building networks of action. The workshop will begin with a brief introduction to ABPAR, approaches to mapping place-based storytelling, and the history of zines as a grassroots publication and community organizing tool. Participants will receive an illustrated handout outlining the workshop, including a mapping activity for use during the first creative activity of the session. Working in small groups, participants complete the mapping portion of the handout and discuss significant places and experiences that have shaped their climate journeys, followed by a brief discussion. The educational takeaway additionally serves as an adaptable ABPAR activity for classroom, museum, and community settings.\n\nWorking individually or collaboratively, participants will then have the opportunity to translate the mapped narratives of their climate journeys into an eight-page mini-zine. Pre-folded paper zines and digital templates will be made available. Through writing, drawing, collage, and visual storytelling methods, participants are encouraged to imagine responses to environmental challenges rooted in their own communities. Participants leave with a drafted zine, workshop materials, and a facilitation model that can be adapted to support community dialogue and collective climate action.",
+      "start": "2026-10-25T16:00:00.000Z",
+      "end": "2026-10-25T17:15:00.000Z",
+      "room": "Conf Room B, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Marianna Davison",
+          "title": "Postdoctoral Scholar",
+          "company": "Research Justice Shop, The University of California, Irvine"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524735",
+      "eventId": "ia-gathering-26",
+      "title": "Hands Joining Hands: Micro Economies of Care for Mucky Middles",
+      "abstract": "This workshop is an interactive act of sharing care and capturing joy in unexpected places, a joy that frequently lives inside susus.\n\nA susu is a communal savings practice. A group pools money or resources at set times. Each member puts in a “hand,” i.e., their contribution, and the pot circles from member to member until everyone has received a payout. Savings like this have many names and span many cultures. Long before banks existed or money was invented, people pooled in reciprocal ways.\n\nYears in and around these circles, as an Afro-Caribbean scholar close to the practice, have led me to what I call Micro Economies of Care and its four principles: honoring the care people already practice (Recognition Over Replacement); holding each other up rather than overseeing (Support Over Regulation); learning together rather than instructing (Learning Over Teaching); and embracing what people have, not what they lack (Anti-Deficit Framing).\n\nThis economic practice is built for the transitions we are living through, offering timely ways to hold each other afloat in life’s mucky middles: arrival, loss, remaking. When a job ends or a child is born, a micro economy of care forms fast, a rotating pot for the new baby’s needs. The same logic scales: nonprofits that lost grant funding might share a worker pool circulating between them, a return to the in-kind labor exchanged long before money existed.\n\nDuring the workshop, we put these mutualistic principles to work. First, each person makes a memoryscape, a small zine mapping some of their memories around money, resources, and care. Then we form groups: micro economies of care as life rafts. Each group is named for an oceanic ecosystem, such as a kelp forest, where species survive by depending on one another, as we do in our rafts. Offering what we discovered while memoryscaping, we pool a story, a skill, or a small resource toward a shared end, such as food for a mini pantry where families take turns receiving groceries.\n\nAt the close, we name something this practice carries yet rarely marks: a eudaimonic joy, the quiet joy of shared giving rather than visible celebration. In troubled times, naming it becomes its own counterforce to fear and scarcity. Story-sharers leave with a felt sense of how these joy-bearing economies steady us when the tide turns rocky, and of value that lives in interdependent relationships.",
+      "start": "2026-10-25T16:00:00.000Z",
+      "end": "2026-10-25T17:15:00.000Z",
+      "room": "AGR Hall, 138 Alumni Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Sonya Squires Caesar",
+          "company": "University of Maryland Baltimore County"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5561562",
+      "eventId": "ia-gathering-26",
+      "title": "Restorative Listening",
+      "abstract": "Dear America, Imagine Listening... During this workshop you will engage in a holistic listening practice that cultivates fully embodied listening as a path to increased empathy. *Participants will receive a listening handbook that they can use to intentionally listen during this weekend and beyond! Participants should dress to move. A limited number of yoga mats will be provided, however, feel free to bring your own. The instructor will provide accessible movement options.",
+      "start": "2026-10-25T16:00:00.000Z",
+      "end": "2026-10-25T17:15:00.000Z",
+      "room": "West Conference Room, 131 Alumni Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Margaret Kemp",
+          "title": "Professor Theatre and Dance",
+          "company": "University of California, Davis"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5571901",
+      "eventId": "ia-gathering-26",
+      "title": "Creative Works",
+      "abstract": "Includes:\n• CAAN We...? A Time Capsule of Climate Care (Glenda Drew, Brett Snyder)\n• Bien Juntitos: Restoring Collective Spirit Through the Stories of Latino Elders (Janine Mapurunga)\n• You are not a Monster (Dorothy Santos)\n• in-to-me-ii-see: repair begins with intimacy (Mei Bowyer)\n• Growing Together: Cultivating a Culture of Sustainability through Collective Creation (Emmy Weldon)\n• Reimagining burned landscapes: New ways of seeing at the intersection of art and science (Jasquelin Pena, Adrianne Smits)\n• Media Arts in Climate Fiction (Cli-Fi) World-Building (Niki D. Gallardo)",
+      "start": "2026-10-25T16:00:00.000Z",
+      "end": "2026-10-25T19:00:00.000Z",
+      "room": "Alumni Center",
+      "format": "in-person",
+      "type": "Creative Works",
+      "tracks": [
+        "Creative Works"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Glenda Drew"
+        },
+        {
+          "name": "Brett Snyder"
+        },
+        {
+          "name": "Janine Mapurunga"
+        },
+        {
+          "name": "Dorothy Santos"
+        },
+        {
+          "name": "Mei Bowyer"
+        },
+        {
+          "name": "Emmy Weldon"
+        },
+        {
+          "name": "Jasquelin Pena"
+        },
+        {
+          "name": "Adrianne Smits"
+        },
+        {
+          "name": "Niki D. Gallardo"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5571916",
+      "eventId": "ia-gathering-26",
+      "title": "The IA Clearing",
+      "start": "2026-10-25T16:00:00.000Z",
+      "end": "2026-10-25T18:00:00.000Z",
+      "room": "Conference Center",
+      "format": "in-person",
+      "type": "IA Track",
+      "tracks": [
+        "IA Track"
+      ],
+      "levels": [],
+      "speakers": [],
+      "isFixed": false
+    },
+    {
+      "id": "5571931",
+      "eventId": "ia-gathering-26",
+      "title": "Break",
+      "start": "2026-10-25T17:15:00.000Z",
+      "end": "2026-10-25T17:30:00.000Z",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [],
+      "isFixed": true
+    },
+    {
+      "id": "5524738",
+      "eventId": "ia-gathering-26",
+      "title": "Projects and Practices 10",
+      "abstract": "Includes:\n• Creation: Land-based Art as a Tool of Reclamation (Mayzong Lee, Mads Goodwin Clark)\n• The Story-Casters' Loom: Weaving Our Stories of the Far Horizon* (Michaela Daystar, Sabrina Marie Chase)\n• Chai Stories-Practice as Research (PaR) PROJECT (Praveen Maripelly)\n• Stories of the Tide: The Performance (Jessica Bauman)",
+      "start": "2026-10-25T17:30:00.000Z",
+      "end": "2026-10-25T18:45:00.000Z",
+      "room": "Ballroom A, Conference Center",
+      "format": "in-person",
+      "type": "Projects & Practices",
+      "tracks": [
+        "Projects & Practices"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Mayzong Lee"
+        },
+        {
+          "name": "Mads Goodwin Clark"
+        },
+        {
+          "name": "Michaela Daystar"
+        },
+        {
+          "name": "Sabrina Marie Chase"
+        },
+        {
+          "name": "Praveen Maripelly"
+        },
+        {
+          "name": "Jessica Bauman"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524744",
+      "eventId": "ia-gathering-26",
+      "title": "Re-enchanting Higher Education: Possibilities for Human-Centered Learning in Impossible Times",
+      "abstract": "Public confidence in higher education may be inching back, but the mood on our campuses—and in our classrooms—tells a more complicated story. Students have been sold on the value of college as a pathway to economic mobility, and we continue to make that promise. But in the process, we may have helped create a transactional culture in which the deeper purposes of higher education—the spark of discovery, the pleasure of deep thinking, the search for meaning—feel sidelined, even indulgent, in what seems to be our inevitable march toward workforce preparation.\n\nThis session begins with a different premise: that this divide is a false one. A truly human-centered education—one that asks students to wrestle with big questions, engage across difference, and imagine themselves as agents in a complex world—is not separate from career readiness. It is its deepest and most durable form. Yet we are not very good at naming or demonstrating that connection in ways that resonate with students, families, or the broader public.\n\nDrawing on our essay “Finding Purpose and Reawakening Joy: An Open Letter to Exhausted Colleagues,” we invite participants into a highly interactive workshop designed to model the kind of learning environment we are trying to reclaim for both disengaged students and exhausted faculty and staff. Through brief shared readings, moments of reflection, and collaborative “imagination labs,” participants will explore six familiar challenges—from declining enrollment to digital overwhelm—not simply as problems to be managed, but as openings for rethinking purpose.\n\nWorking together, participants will generate bold, sometimes speculative responses: new rhetorical framing, curricular innovation, policy changes, alternative use of campus spaces, reimagined student experiences that connect meaning and work. What might it look like to design institutions where intellectual curiosity, community, and joy are not luxuries—but the very foundation of how students prepare for their futures?\n\nRather than offering solutions or best practices, this session creates space for collective imagination—an opportunity to step briefly out of crisis mode and into the kind of generative, hopeful conversation many of us remember as central to why we entered this work in the first place.",
+      "start": "2026-10-25T17:30:00.000Z",
+      "end": "2026-10-25T18:45:00.000Z",
+      "room": "Conf Room A, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Kate McCarthy",
+          "title": "Professor, ALO",
+          "company": "California State University Chico"
+        },
+        {
+          "name": "Ellie Ertle",
+          "company": "California State University, Chico"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524745",
+      "eventId": "ia-gathering-26",
+      "title": "Resting Like Lichen",
+      "abstract": "A guided workshop into sharing worlds with lichen as slow partying and supportive napping. Part walk, part discussion, part magnifying glass inquiry, part guided napping. Building on our performance piece [Lichen Metropolis](https://www.metropolis.dk/en/dorte-bjerre-jensen-joe-dumit-lichen-metropolis-slow-partying-at-the-end-of-the-world/) in Copenhagen this past year, it will be a site-specific encounter with the (trans)local lichen of Davis. Drawing upon classes and research at UC Davis into Rest as Resistance (Tricia Hersey) where we rest so that we are able to day dream and imagine better worlds (when we have not enough rest we have trouble imagining). Lichen do not care about individuality, countability, production, or reproduction - they cover 8% of the planet's surface and may have been the first terrestial inhabitants - yet biology finds them strange and difficult to classify. They do not care about classifications either. They are portals for imagining otherwise worldings together. We draw upon movement, performance work, critical humanities, and disability studies to reconfigure sensoriums and ecosystems.",
+      "start": "2026-10-25T17:30:00.000Z",
+      "end": "2026-10-25T18:45:00.000Z",
+      "room": "Moss Patio, Alumni Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Joseph Dumit",
+          "title": "Chair of Performance Studies, Professor of Science & Technology Studies and Anthropology",
+          "company": "UC Davis"
+        },
+        {
+          "name": "Dorte Bjerre Jensen",
+          "title": "PhD candidate",
+          "company": "UC Davis Performance Studies"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524746",
+      "eventId": "ia-gathering-26",
+      "title": "Otro mundo es posible: why do we need to imagine an alternative to the global economy?",
+      "abstract": "This participatory workshop invites the audience to imagine an alternative economy where collective well-being is a priority over capital profit. We will start naming and confronting some of the challenges, rising global emissions and social inequalities, and then we will transition into what a hopeful vision of the future looks like. It invites people to reflect on what a thriving place looks like and what do we need to get there while caring for our environment and its people. This workshop integrates concepts from solidarity economy, degrowth and doughnut economics. Through participatory activities, story telling and art, we will reflect on what things are going well in our communities and what things need to be addressed. Participants that are already involved in community efforts will have the opportunity to share and reflect how their work is contributing to a more sustainable and equitable community that prioritizes well being over profit. Participants that are not yet involved in community organizing will have an opportunity to envision what that would look like and where to start.",
+      "start": "2026-10-25T17:30:00.000Z",
+      "end": "2026-10-25T18:45:00.000Z",
+      "room": "Conf Room B, Conference Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Pablo G",
+          "company": "Postgrowth Futures"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524747",
+      "eventId": "ia-gathering-26",
+      "title": "Dance & The Art of Transitions",
+      "abstract": "Session participants will be moving! Beginning with a gentle warm-up set to music, participants will be encouraged to move in the room following verbal prompts such as \"now take your awareness into your arms, and your wrists and your fingers,\" gradually expanding the movement explorations as people become more comfortable.\n\nFrom there, the class will continue with movement games that allow participants to explore different movement levels, different rhythms and tempos, their ability to shift direction, and six movement qualities (vibratory, sustained, percussive, pendular, focused resistance, and stillness). Please note that this presentation/experience is appropriate for both people with dance training and those who have never danced before, and can be adapted for all abilities, including anyone who needs to sit in a chair.\n\nAfter building a comfort level with moving in the room, the improvisational movement games will shift towards working with others in ways that are fun and build community.\n\nA gentle stretch would wind things up, followed by a short Q&A if people had questions or anything they would like to share about the process.",
+      "start": "2026-10-25T17:30:00.000Z",
+      "end": "2026-10-25T18:45:00.000Z",
+      "room": "AGR Hall, 138 Alumni Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Pamela Trokanski",
+          "title": "Artistic Director for the Dance Theatre, Teacher and Business Owner at the Dance Workshop",
+          "company": "Pamela Trokanski Dance Theatre / Dance Workshop"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524748",
+      "eventId": "ia-gathering-26",
+      "title": "Collective Poetry, Collective Care",
+      "abstract": "Instead of presenting research findings, this workshop invites participants into the collaborative poetic inquiry process used within an arts-based dissertation exploring how radical care is envisioned in ourselves and in communities . Participants will collectively investigate their own understandings of care through guided reflection, paired interviews, and collaborative found poetry. Working in small groups, participants will transform stories, conversations, and shared language into collective poems that illuminate how care is experienced, offered, withheld, and imagined within our communities.\n\nTogether we will consider how poetic inquiry can function as both a research methodology and a community-building practice that centers relational knowledge, reciprocity, and collective imagination. Participants will leave with practical facilitation strategies for using collaborative poetry within their community organizations, artistic practices, and participatory research opportunities. Poetry when written by ourselves moves us from an idealistic version of our hopes to a realized version of our hopes.",
+      "start": "2026-10-25T17:30:00.000Z",
+      "end": "2026-10-25T18:45:00.000Z",
+      "room": "Allewelt Conference Room, 105 Alumni Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Matt Denney",
+          "title": "Assistant Professor, School of Theatre, Film & TV",
+          "company": "University of Arizona"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5534213",
+      "eventId": "ia-gathering-26",
+      "title": "Projects and Practices 11",
+      "abstract": "Includes:\n• The Missing Seat: Reimagining Father Engagement to Restore Community and Collective Spirit (Khaled Ashraf)\n• Building Power Where You Are: Philly's Declaration of Interdependence (Jendaiya Hill)\n• Art, Memory, and The Troubles: Creative Peacebuilding in Northern Ireland (Sumitra Rajagopal, Kayla Anderson, Jae Fioribello, Gianna Crisha Saludo)\n• Multilingualism, Identity, and Community: Collaborative Research on Indigenous Mexican Languages in California's Central Coast (Matthew Kogan, Carla Suarez Soto, Eli Sharf, Valeria Hernandez-Melchor, Grace Hernandez, Lena Szerwo, Fe Silva-Robles, Nereida Robles, Pranav Anand, Saskia Nauenberg Dunkell)",
+      "start": "2026-10-25T17:30:00.000Z",
+      "end": "2026-10-25T18:45:00.000Z",
+      "room": "Ballroom C, Conference Center",
+      "format": "in-person",
+      "type": "Projects & Practices",
+      "tracks": [
+        "Projects & Practices"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Khaled Ashraf"
+        },
+        {
+          "name": "Jendaiya Hill"
+        },
+        {
+          "name": "Sumitra Rajagopal"
+        },
+        {
+          "name": "Kayla Anderson"
+        },
+        {
+          "name": "Jae Fioribello"
+        },
+        {
+          "name": "Gianna Crisha Saludo"
+        },
+        {
+          "name": "Matthew Kogan"
+        },
+        {
+          "name": "Carla Suarez Soto"
+        },
+        {
+          "name": "Eli Sharf"
+        },
+        {
+          "name": "Valeria Hernandez-Melchor"
+        },
+        {
+          "name": "Grace Hernandez"
+        },
+        {
+          "name": "Lena Szerwo"
+        },
+        {
+          "name": "Fe Silva-Robles"
+        },
+        {
+          "name": "Nereida Robles"
+        },
+        {
+          "name": "Pranav Anand"
+        },
+        {
+          "name": "Saskia Nauenberg Dunkell"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5571933",
+      "eventId": "ia-gathering-26",
+      "title": "Lunch",
+      "start": "2026-10-25T18:45:00.000Z",
+      "end": "2026-10-25T19:15:00.000Z",
+      "room": "Conference Center",
+      "format": "in-person",
+      "tracks": [],
+      "levels": [],
+      "speakers": [],
+      "isFixed": true
+    },
+    {
+      "id": "5561564",
+      "eventId": "ia-gathering-26",
+      "title": "Closing Plenary",
+      "abstract": "The closing plenary of the IA National Gathering will celebrate the theme of transitions, and Imagining America's planned transition from a decade hosted at the University of California, Davis to Penn State University, starting July 1, 2027. Featuring the voices of IA staff and National Advisory Board leadership, the closing plenary will include a creative participatory synthesis of what we learn together in the IA Clearing spaces that ask us to imagine the world and Imagining America we want to see and live in 2046. It will also provide an opportunity to thank the UC Davis staff team and welcome Penn State as the new host of the national consortium.",
+      "start": "2026-10-25T19:15:00.000Z",
+      "end": "2026-10-25T20:15:00.000Z",
+      "room": "Ballroom A+B+C, Conference Center",
+      "format": "in-person",
+      "type": "Plenary",
+      "tracks": [
+        "Plenary"
+      ],
+      "levels": [],
+      "speakers": [],
+      "isFixed": true
+    },
+    {
+      "id": "5562947",
+      "eventId": "ia-gathering-26",
+      "title": "Bike Tour of Davis Mosaics",
+      "abstract": "Join us for a meandering bike ride to visit some of Davis’s beautiful mosaic public artworks. Many of our public mosaics are located in the arboretum, on campus, or downtown. The bike ride will be approximately 3 miles long (approximately 1 hour) with frequent stops to examine the mosaic artwork. We will start and end at the UC Davis Conference Center. We will provide 5-10 bikes to participants on a first-come first-served basis with prior sign-ups. If you have your own bike, please bring it to ride along! \n\nNote: please sign up for this experience through a separate registration process. More info forthcoming!",
+      "start": "2026-10-25T20:30:00.000Z",
+      "end": "2026-10-25T22:00:00.000Z",
+      "room": "Conference Center",
+      "format": "in-person",
+      "type": "Site Visit",
+      "tracks": [
+        "Site Visit"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Sophia Simon",
+          "title": "PhD Candidate",
+          "company": "UC Davis"
+        }
+      ],
+      "isFixed": false
+    }
+  ]
+}

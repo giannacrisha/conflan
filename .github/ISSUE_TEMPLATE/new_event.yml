@@ -1,0 +1,22 @@
+name: Add an event
+description: Ask for an event to be added to the planner
+labels: [event]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Event name and dates
+    validations:
+      required: true
+  - type: input
+    id: agenda
+    attributes:
+      label: Link to the public agenda
+      description: Whova embed, RainFocus catalog, Sched page, or anything else
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Agenda platform (if you know it)
+      options: [Whova, RainFocus, Sched, Sessionize, Other, Not sure]

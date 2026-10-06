@@ -1,0 +1,25 @@
+name: Feature request
+description: Suggest something the planner should do
+labels: [idea]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's the problem?
+      description: What were you trying to do at the event, and what got in the way?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+  - type: input
+    id: event
+    attributes:
+      label: Which event were you planning for?
+  - type: checkboxes
+    id: build
+    attributes:
+      label: Want to build it?
+      options:
+        - label: I'd like to work on this (a maintainer will assign it to you)

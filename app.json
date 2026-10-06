@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "app-scaffold",
-    "slug": "app-scaffold",
+    "name": "Conflan",
+    "slug": "conflan",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "appscaffold",
+    "scheme": "conflan",
     "userInterfaceStyle": "automatic",
     "ios": {
       "icon": "./assets/expo.icon"
@@ -32,7 +32,8 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
-      ]
+      ],
+      "expo-sqlite"
     ],
     "experiments": {
       "typedRoutes": true,

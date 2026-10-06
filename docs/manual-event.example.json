@@ -1,0 +1,25 @@
+{
+  "trackGroups": [{ "name": "Tracks", "tracks": ["AI", "Careers"] }],
+  "sessions": [
+    {
+      "id": "opening",
+      "title": "Opening Keynote",
+      "start": "2026-11-12 09:00",
+      "end": "2026-11-12 10:00",
+      "room": "Main Hall",
+      "isFixed": true
+    },
+    {
+      "id": "ai-101",
+      "title": "Intro to LLM Apps",
+      "abstract": "Build a small app in an hour.",
+      "start": "2026-11-12 10:15",
+      "end": "2026-11-12 11:00",
+      "room": "Room A",
+      "type": "Workshop",
+      "tracks": ["AI"],
+      "levels": ["student", "early"],
+      "speakers": [{ "name": "Ada Lovelace", "company": "Analytical Engines" }]
+    }
+  ]
+}

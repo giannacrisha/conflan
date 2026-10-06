@@ -1,56 +1,42 @@
-# Welcome to your Expo app 👋
+# Conflan
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+One schedule planner for every conference and hackathon. Set up your profile once, add an event, and build your schedule one time block at a time, with sessions recommended for you. Export to your calendar or a phone wallpaper.
 
-## Get started
+Unofficial and open source. Not affiliated with AnitaB.org, Whova, RainFocus or any event listed here. If an event needs seat reservations, make them in the official app.
 
-1. Install dependencies
+**Status:** Phase 1 (data and core logic) is done. See [PLAN.md](PLAN.md) for the roadmap.
 
-   ```bash
-   npm install
-   ```
+## Events
 
-2. Start the app
+| Event | Dates | Platform |
+|---|---|---|
+| 2026 IA National Gathering | Oct 23-25, 2026 | Whova |
+| Grace Hopper Celebration 2026 | Oct 26-30, 2026 | RainFocus |
 
-   ```bash
-   npx expo start
-   ```
+Want another one? [Open an "Add an event" issue](../../issues/new?template=new_event.yml).
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Run it
 
 ```bash
-npm run reset-project
+npm install
+npm run sync      # download agendas into data/
+npm test
+npx expo start    # press w for web, i for iOS simulator
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## How it works
 
-### Other setup steps
+```
+src/adapters/   one file per agenda platform -> shared Session format
+src/core/       pure TypeScript: time zones, slots, recommendations, .ics export
+src/app/        screens (Expo Router)
+scripts/sync.ts runs adapters, writes data/events/<id>.json
+```
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+- **Slots:** overlapping sessions are grouped into time blocks (`src/core/slots.ts`). Each block closes at the typical end time of its sessions, so one long session can't swallow the next block.
+- **Recommendations:** each session gets a score and a "Why this" explanation from your tracks, career level and interests (`src/core/score.ts`). No AI involved, so every recommendation can be explained.
+- **Data refresh:** a GitHub Action runs `npm run sync` every 6 hours and commits any agenda changes.
 
-## Learn more
+## Contributing
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Yes please. Read [CONTRIBUTING.md](CONTRIBUTING.md) first, especially the part about claiming issues.
