@@ -9,6 +9,9 @@ export type Speaker = {
   name: string;
   title?: string;
   company?: string;
+  /** Short plain-text bio, trimmed by the adapter */
+  bio?: string;
+  linkedIn?: string;
 };
 
 export type Session = {

@@ -2,12 +2,13 @@
 // The public catalog widget calls POST /api/sessions with two header ids that
 // are embedded in the catalog page source (apiToken -> rfApiProfileId, widgetId -> rfWidgetId).
 
-import { stripHtml, normalizeLevel, uniq } from '../core/text';
+import { clip, stripHtml, normalizeLevel, uniq } from '../core/text';
 import { utcStringToIso } from '../core/time';
 import type { EventConfig, EventData, Format, RainFocusSource, Session, TrackGroup } from '../core/types';
 
 const API = 'https://events.rainfocus.com/api/sessions';
 const PAGE_SIZE = 50;
+const BIO_MAX = 400;
 
 type RfAttr = { attribute: string; value: string };
 type RfTime = {
@@ -26,7 +27,7 @@ export type RfItem = {
   abstract?: string;
   times?: RfTime[];
   attributevalues?: RfAttr[];
-  participants?: { fullName?: string; jobTitle?: string; companyName?: string }[];
+  participants?: { fullName?: string; jobTitle?: string; companyName?: string; bio?: string; linkedIn?: string }[];
 };
 
 type RfPage = {
@@ -101,7 +102,13 @@ export function mapRainFocus(items: RfItem[], eventId: string, src: RainFocusSou
         levels: uniq(attrs(item, 'Career Level').flatMap(normalizeLevel)),
         speakers: (item.participants ?? [])
           .filter((p) => p.fullName)
-          .map((p) => ({ name: p.fullName!, title: p.jobTitle || undefined, company: p.companyName || undefined })),
+          .map((p) => ({
+            name: p.fullName!,
+            title: p.jobTitle || undefined,
+            company: p.companyName || undefined,
+            bio: clip(stripHtml(p.bio), BIO_MAX),
+            linkedIn: p.linkedIn?.startsWith('http') ? p.linkedIn : undefined,
+          })),
         isFixed: FIXED_TYPES.has(type ?? '') || FIXED_TITLE.test(item.title),
         sourceUrl: item.day ? `${src.catalogUrl}?tab.day=${item.day}` : src.catalogUrl,
       });

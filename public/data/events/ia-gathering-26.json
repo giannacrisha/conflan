@@ -23,7 +23,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-06T15:29:22.480Z"
+    "updatedAt": "2026-10-06T15:32:39.418Z"
   },
   "sessions": [
     {
@@ -86,7 +86,8 @@
         },
         {
           "name": "Pierpaolo Polzonetti",
-          "company": "UC Davis"
+          "company": "UC Davis",
+          "bio": "Pierpaolo Polzonetti (professor of musicology at the University of California, Davis) introduced the term \"gastromusicology\" in the late 1990s, in two articles about representations of conviviality in Verdi's operas. He is the author of various essays on food and music, including Feasting and Fasting in Opera: From Renaissance Banquets to the Callas Diet (University of Chicago Press, 2021) and…"
         }
       ],
       "isFixed": false
@@ -109,7 +110,8 @@
         {
           "name": "Haven Kiers",
           "title": "Assistant Professor of Landscape Architecture",
-          "company": "University of California, Davis"
+          "company": "University of California, Davis",
+          "bio": "Haven Kiers is an assistant professor of landscape architecture in the Department of Human Ecology at UC Davis. Her research investigates the intersection of ecology, human health, and aesthetics through projects exploring the environmental benefits, technological progress, and cultural acceptance of green infrastructure and sustainable design"
         }
       ],
       "isFixed": false
@@ -195,12 +197,14 @@
         {
           "name": "Kim Yasuda",
           "title": "Professor of Public Practice, Emeritus",
-          "company": "UC Santa Barbara"
+          "company": "UC Santa Barbara",
+          "bio": "Kim Yasuda is a professor emerita of art and public practice at UC Santa Barbara and served has served as lead principal investigator for two UC systemwide funding initiatives, including a 2022 Advancing Faculty Diversity (AFD) grant to improve campus climate and faculty retention, and a 2019 Multicampus Research Programs and Initiatives (MRPI) planning grant for a UC Placemaking Initiative to…"
         },
         {
           "name": "Susan Drange",
           "title": "Higher Education Consultant",
-          "company": "External Program Evaluator"
+          "company": "External Program Evaluator",
+          "bio": "Susan M. Drange, Ph.D., conducted the program evaluation of the UCSB Arts Equity Commons program, focusing on the Across Fields: Visual Exchange Forums portion of the program. In 2024, at the request of the University of California Office of the President, Dr. Drange conducted a program evaluation of the first six cycles of the UC Advancing Faculty Diversity Program which consisted of 55 projects…"
         },
         {
           "name": "George Luc",
@@ -210,7 +214,8 @@
         {
           "name": "Elena Yu",
           "title": "Independent Artist, Worth Ryder Art Gallery Manager",
-          "company": "UC Berkeley "
+          "company": "UC Berkeley ",
+          "bio": "Elena Yu is an interdisciplinary artist whose practice aims to examine and affect the formation of collective memory through engagement with the materials and processes of archives. Her work incorporates textiles, found objects, drawing, performance, and social practice, and is deeply informed by her work as an arts organizer and educator. Elena has exhibited, performed, and hosted workshops in…"
         }
       ],
       "isFixed": false
@@ -233,12 +238,14 @@
         {
           "name": "Michelle Swinehart",
           "title": "Assistant Teaching Professor",
-          "company": "Portland State University"
+          "company": "Portland State University",
+          "bio": "Michelle Swinehart is an Assistant Teaching Professor at Portland State University where she teaches courses focused on developing ways to imagine, reflect and design. She loves developing community partnerships with the likes of the dSchool, Portland Art Museum, Narrative4 and StoryCorps. Recently she’s been working on an art+science exchange with Dr. Jamie Cornelius, founder of the Little Bird…"
         },
         {
           "name": "M. Michelle Illuminato",
           "title": "Professor of Art, Head of CORE",
-          "company": "Portland State University"
+          "company": "Portland State University",
+          "bio": "M. Michelle Illuminato creates events, public exchanges, and artworks that help to reveal the complicated and often contradictory relationship between people, their culture, and the land they live on. She works individually as well as collaborating with artists and scientists including Next Question, whose projects have been exhibited nationally and in Italy, Poland, Germany, and Serbia. Her work…"
         }
       ],
       "isFixed": false
@@ -273,7 +280,8 @@
         {
           "name": "Kayla Anderson",
           "title": "Student ",
-          "company": "Brandeis University"
+          "company": "Brandeis University",
+          "bio": "Kayla Anderson is a junior at Brandeis university studying Biology and Health Science and Social Policy on the Pre-medical track. She is involved in peer education work to encourage health and wellness techniques through the campus and advocacy for underrepresented topics in wellness."
         }
       ],
       "isFixed": false
@@ -324,22 +332,26 @@
         {
           "name": "Melissa Kaplan",
           "title": "Arts & Sciences Outreach and Academic Coordinator",
-          "company": "Lansing Community College"
+          "company": "Lansing Community College",
+          "bio": "Melissa Kaplan is a producer, community builder, and podcaster (Galaxy Forum and Inside LCC on LCC Connect). She serves as Outreach and Academic Coordinator for the Arts and Sciences Division at Lansing Community College where she creates multidisciplinary collaborations exploring a wide range of themes such as climate change, mental health, and environmental justice, through stage production,…"
         },
         {
           "name": "Anne Heutsche",
           "title": "Professor - History ",
-          "company": "Lansing Community College"
+          "company": "Lansing Community College",
+          "bio": "Anne Heutsche is a Professor of History at Lansing Community College. I have been teaching at the college as an adjunct and now full-time instructor. Outside the classroom, I was the co-faculty director of the Centre for Engaged Inclusion for five years. I served as the faculty coordinator for the AAC&U Committing to Equity and Inclusive Excellence: Campus-Based Strategies for Student Success. As…"
         },
         {
           "name": "Annescia Dillard",
           "title": "Program and Office Specialist",
-          "company": "Lansing Community College"
+          "company": "Lansing Community College",
+          "bio": "Annescia Dillard is a Program and Office Specialist at Lansing Community College's Center for Teaching Excellence, where she brings a natural talent for programming, accessibility, and aligning complex systems through collaborative innovation. Deeply committed to equity and social justice, she serves on several campus-wide committees, including the Take A Stand! Sit In! organizing committee. For…"
         },
         {
           "name": "Barb Clauer",
           "title": "Professor",
-          "company": "Lansing Community College"
+          "company": "Lansing Community College",
+          "bio": "Barbara Clauer is an English professor at Lansing Community College and creator of the LCC Community-Generated Poetry Project, which was inspired by a session she attended at an Imagining America conference held at UC Davis in 2017."
         }
       ],
       "isFixed": false
@@ -362,17 +374,20 @@
         {
           "name": "Gabriela Ocadiz",
           "title": "Assistant Professor of Music Education",
-          "company": "University of Arizona"
+          "company": "University of Arizona",
+          "bio": "Dr. Gabriela Ocádiz is a music teacher educator, researcher, and scholar. Her teaching experience is founded on building community through her practice. Having lived in four different countries (Mexico, Colombia, the United States, and Canada) has provided her with ample and diverse professional experience which includes teaching a Kodaly-based early childhood program, and elementary, middle…"
         },
         {
           "name": "Jennie Gubner",
           "title": "Associate Professor of Music",
-          "company": "University of Arizona"
+          "company": "University of Arizona",
+          "bio": "Jennie Gubner is a socially engaged interdisciplinary scholar, violinist, visual ethnographer, and educator specializing in creative wellbeing, Latin American participatory music practices, and applied and creative research methodologies. She holds a Ph.D. in Ethnomusicology from UCLA and is Assistant Professor of Music at the University of Arizona, where she chairs a graduate interdisciplinary…"
         },
         {
           "name": "Esteban Hernández Parra",
           "title": "Assistant Professor, Viola",
-          "company": "University of Arizona"
+          "company": "University of Arizona",
+          "bio": "I am a migrant mestizo musician from Colombia, engaging with musical practices that reclaim local identities and ancestral pedagogies in Abya Yala.\nI learn with my students and colleagues through TucSon Jarocho, La Peña del Surco, \nTUSD, Arizona ViolAcademy, AZ Phil, Bloomington Early Music Festival, Tanguí \nChirimía and Ensamble Visionaries."
         }
       ],
       "isFixed": false
@@ -488,16 +503,19 @@
         {
           "name": "M K Wegmann",
           "title": "Member, Voting Board Member",
-          "company": "Alternate ROOTS"
+          "company": "Alternate ROOTS",
+          "bio": "MK Wegmann (MK Arts Co) is a lifelong New Orleanian who has been active in the arts and culture community throughout her life and work. She has 50+ years of experience in presenting and producing for non-profit visual and performing arts organizations and is an advocate for social and racial justice. She served as Director of the Contemporary Arts Center for its first fourteen years, and continues…"
         },
         {
           "name": "Jan Cohen-Cruz",
           "title": "Engaged Arts Associate",
-          "company": "Imagining America"
+          "company": "Imagining America",
+          "bio": "Jan Cohen-Cruz (PhD, NYU Performance Studies), began her professional life performing in street theater and cofacilitating a theater workshop in a maximum-security prison. She taught at NYU for 28 years, initiating an applied theater minor in the Drama Department and cofounding the Department of Art and Public Policy. In 2012, Jan received the Association for Theatre in Higher Education’s Award…"
         },
         {
           "name": "Lynne Elizabeth",
-          "company": "New Village Press"
+          "company": "New Village Press",
+          "bio": "Lynne Elizabeth is the founding director of New Village Press, an independent nonprofit publisher of progressive books, primarily in the humanities and social sciences. The press evolved from a periodical of the same name twenty years ago and now publishes ten to twelve nonfiction titles per year. New Village books are distributed by New York University Press. Lynne is also the coeditor/coauthor…"
         },
         {
           "name": "Lisa Mount",
@@ -507,7 +525,8 @@
         {
           "name": "Lizzy Davis",
           "title": "Associate Professor and Graduate Program Director",
-          "company": "Emerson College"
+          "company": "Emerson College",
+          "bio": "Lizzy Cooper Davis (she/her) is an artist and scholar interested in how the arts can facilitate community conversation, resistance, and change. She is particularly focused on cultural work within Black freedom movements and is currently working on an applied theatre project with returning citizens in partnership with Ritual4Return, the Emerson Prison Initiative, and New Beginnings Reentry…"
         }
       ],
       "isFixed": false
@@ -530,7 +549,8 @@
         {
           "name": "Sam Mejia",
           "title": "CEO/Founder",
-          "company": "EcoPress Sacramento"
+          "company": "EcoPress Sacramento",
+          "bio": "Sam Mejia is a Sacramento-based interdisciplinary artist, environmental advocate, and founder of EcoPress Sacramento, a community-driven creative initiative focused on transforming discarded materials into art, functional objects, and educational experiences. With a background in marine biology, museum studies, and environmental science, Mejia’s artistic practice explores the relationships between…"
         }
       ],
       "isFixed": false
@@ -553,12 +573,14 @@
         {
           "name": "Rebecca Joyce Garay",
           "title": "Professor",
-          "company": "New Mexico State University"
+          "company": "New Mexico State University",
+          "bio": "Dr. Rebecca Joyce Garay is a faculty member in the Department of Borderlands and Ethnic Studies (BEST) at New Mexico State University. An academic (no A) and an educator by vocation, she loves teaching Chicane and Ethnic Studies, believing fundamentally in collaborative knowledge-creation and empowering visions of more just presents and futures. She appreciates and writes about cultural production…"
         },
         {
           "name": "Diana Dávila Silva",
           "title": "Freelance Artist, Graduate Student, Production Coordinator",
-          "company": "New Mexico State University"
+          "company": "New Mexico State University",
+          "bio": "Currently a graduate student in the NMSU Global program for Curriculum and Instruction, Diana utilizes pedagogical experience and Chicana/Latina feminism theory as her compass when creating art, workshops, and as an educator for students in creative fields. She embraces contradictions and nuance in both art and education, and hopes to continue demonstrating that art functions to express, shift…"
         }
       ],
       "isFixed": false
@@ -581,7 +603,8 @@
         {
           "name": "Katherine Orlando",
           "title": "Dialogue Fellow, Graduate program director for Instructional Leadership and Professional Development",
-          "company": "Towson University"
+          "company": "Towson University",
+          "bio": "I am a first-generation college student and life-long learner and unlearner. I serve as a graduate program director for Towson University's Instructional Leadership and Professional Development Department and teach courses for current and future school leaders. At Towson, I also serve as a Dialogue Fellow, Dialogue@TU steering committee member and facilitator, and am a certified life and…"
         },
         {
           "name": "Manda Wittebort",
@@ -608,7 +631,8 @@
         {
           "name": "Sangeeta Sarkar",
           "title": "Doctoral Student",
-          "company": "UC Davis"
+          "company": "UC Davis",
+          "bio": "Sangeeta Sarkar (they/them) is an incoming second-year doctoral student in the Cultural Studies graduate group at UC Davis. They hold a B.S.E. and M.S.E. in Bioengineering from the University of Pennsylvania, and an M.A. in Environment & Community from Cal Poly Humboldt. Sangeeta’s research focuses on concepts of home and belonging in the queer South Asian diaspora. Outside of academia, they enjoy…"
         },
         {
           "name": "Ryan Lee Cartwright",
@@ -617,11 +641,13 @@
         {
           "name": "Emalee Love",
           "title": "Graduuate Student Researcher",
-          "company": "UC Davis"
+          "company": "UC Davis",
+          "bio": "Love (they/them) is a disabled queer nonbinary artist, academic, and activist. Love studies the ways in which disabled folks creatively navigate the oppressive food system in order to feed themselves. They suggest that these creative choices may act as a blueprint for creating a more sustainable and accessible food future. Their passions include community care, fiber arts, frogs, and rock hunting.…"
         },
         {
           "name": "Manuel Alonzo",
-          "company": "UC Davis"
+          "company": "UC Davis",
+          "bio": "Manuel Alonzo Jr. is a PhD student in the English Department at the University of California, Davis, specializing in American culture and disability studies. His work explores the intersections of cultural narratives, identity, and embodiment, particularly in marginalized communities. He has presented at conferences including the 2024 MMLA and the 9th Annual Gender and Sexuality Conference at the…"
         },
         {
           "name": "Elliott Fukui",
@@ -648,7 +674,8 @@
         {
           "name": "Jessica Bauman",
           "title": "Community-engaged Theater Artist",
-          "company": "Independent artist"
+          "company": "Independent artist",
+          "bio": "Jessica Bauman is a director and community-engaged theater maker. Jessica recently finished a year as an Artist in Residence at University Settlement, where she developed “Anyone There?,” a new piece exploring the fundamental human experience of Connection in the context of the Loneliness Epidemic. Together with Mexican director Ramón Verdugo, she co-created and co-directed “The Frontera Project,”…"
         }
       ],
       "isFixed": false
@@ -781,7 +808,8 @@
         {
           "name": "Anna Smith",
           "title": "Faculty (4-year institution)",
-          "company": "James Madison University"
+          "company": "James Madison University",
+          "bio": "Anna Marie Smith is an Assistant Professor of Industrial Design at James Madison University. Anna has been learning through making since she was a little girl, playing with dough scraps in her family’s pizzeria. As a designer, she is a cross-pollinator who has worked in performing arts, education, and design direction. As an educator, she is passing on the hand-making modality of her…"
         }
       ],
       "isFixed": false
@@ -804,7 +832,8 @@
         {
           "name": "Joshua Slack",
           "title": "Cultural Organizer",
-          "company": "Pan Valley Institute"
+          "company": "Pan Valley Institute",
+          "bio": "Joshua Slack is an actor, writer, photographer and director and is the Cultural Organizer for Pan Valley Institute. He serves as a vessel to bring life to his community by telling stories and depicting images of those from marginalized backgrounds at the forefront. He has studied at Fresno State, majoring in both Theater Arts - Acting emphasis, and Africana Studies, as well as studied at Stella…"
         },
         {
           "name": "tsim+nuj (chee new) Vang",
@@ -830,12 +859,14 @@
       "speakers": [
         {
           "name": "Jacqueline Barrios",
-          "company": "University of Arizona"
+          "company": "University of Arizona",
+          "bio": "Dr. Jacqueline Jean Jacqueline Barrios studies the global 19th century, literature, and the city, which she extends in interdisciplinary, socially engaged projects within the public humanities. Her current scholarship investigates London-Pacific trans-urban imaginaries—geographies of East Asian Pacific Rim entanglement with the British capital. Dr. Barrios specializes in projects that connect…"
         },
         {
           "name": "Harris Kornstein",
           "title": "Assistant Professor, Public & Applied Humanities",
-          "company": "University of Arizona"
+          "company": "University of Arizona",
+          "bio": "Harris Kornstein is a scholar and artist whose research and practice broadly focuses on queer play through contemporary technologies and digital cultures, media art/activism, visual culture, disability, and queer and trans studies. Their current book project considers what we might learn from drag performers to creatively counter many of the harms of digital technologies (related to surveillance,…"
         }
       ],
       "isFixed": false
@@ -858,7 +889,8 @@
         {
           "name": "Tiffany Sturdivant",
           "title": "Executive Director",
-          "company": "Appalshop"
+          "company": "Appalshop",
+          "bio": "Tiffany Sturdivant (she/her) is a Mississippi-raised Southern girl. In her former career, she was a healthcare professional (nurse) for 13 years. Her expertise spanned across home healthcare, pediatrics, and geriatrics. She was also a community activist in Columbus, MS, where she spent a decade leading a youth-based nonprofit organization focused on growing the community through fun and festivals.…"
         },
         {
           "name": "Denise Johnson"
@@ -866,12 +898,14 @@
         {
           "name": "John Harris",
           "title": "Organizer",
-          "company": "Community"
+          "company": "Community",
+          "bio": "John Harris grew up in Louisiana and was reared with a social consciousness and community spirit that still drives him today. John is the secretary of the national coalition of organizers known as Performing Our Future. During the Baltimore Delegation's work on the West Baltimore Re-Imagining and Redevelopment Project, John was named one of the Distinguished Community Fellows, Whitman '49…"
         },
         {
           "name": "Gwen Johnson",
           "title": "Co-Director",
-          "company": "Letcher County Culture Hub/ Hemphill Community Center"
+          "company": "Letcher County Culture Hub/ Hemphill Community Center",
+          "bio": "Gwen Johnson is a dedicated community leader from Hemphill, Kentucky, with deep roots in the region's coal mining heritage. She has been actively involved with the Hemphill Community Center for over 25 years, where she serves as the Co-Director. Under her leadership, the center has become a vital hub for cultural and economic activities, including hosting music, dance, and arts workshops, and…"
         }
       ],
       "isFixed": false
@@ -1107,7 +1141,8 @@
         {
           "name": "Marguerite Mayhall",
           "title": "Assistant Professor of Latin American Art History",
-          "company": "Kean University"
+          "company": "Kean University",
+          "bio": "I am a tenured art historian at Kean University in the Fine Arts Department, and teach classes in modern Latin American art history, Pre-Columbian art history, sacred space and sacred landscape, and general education art history surveys. My interest in GenAI comes from my research in the discourse around 'the sacred,' space, embodiment, and consciousness. I've been teaching and talking with…"
         },
         {
           "name": "Ashwin Vaidya",
@@ -1135,17 +1170,20 @@
         {
           "name": "Perrin Teal Sullivan",
           "title": "STEAM education",
-          "company": "university of alaska fairbanks"
+          "company": "university of alaska fairbanks",
+          "bio": "perrin is an artist, designer, and educator driven by a belief that the arts cultivate forms of knowledge and kinship that are essential to our agency and well-being – as individuals, communities, and ecosystems – in the face of complex challenges. Her work in STEAM education focuses on integrating art and STEM practices to help learners of all ages develop new perspectives and enhanced capacity…"
         },
         {
           "name": "Emily Norton",
           "title": "Director, Design Thinking Initiative and Lecturer of Practice",
-          "company": "Smith College"
+          "company": "Smith College",
+          "bio": "Emily Tamzen Norton (she/they) is the director of the Design Thinking Initiative and lecturer at Smith College. With a B.F.A. in furniture design from Rhode Island School of Design and an MDES in contextual design from Design Academy Eindhoven. Her practice has ranged from residencies in abandoned industrial sites, cardboard constructionist squatting, balloon mapping of wetlands, facilitating…"
         },
         {
           "name": "Megan Lyster",
           "title": "Assistant Director, Wurtele Center for Leadership",
-          "company": "Smith College"
+          "company": "Smith College",
+          "bio": "Megan Lyster has supported students, faculty, and staff in designing and implementing project-based learning experiences since 2007. After receiving a Master of Arts from Prescott College, she taught courses in design and social innovation at Hampshire College before transitioning to supporting faculty as the Instructional Designer for Experiential Learning in the Amherst College Center for…"
         }
       ],
       "isFixed": false
@@ -1168,7 +1206,8 @@
         {
           "name": "Mercedes Ibanez",
           "title": "Retired psychologist, writer. poet.",
-          "company": "Poet Laureate for City of Davis"
+          "company": "Poet Laureate for City of Davis",
+          "bio": "Originally from Peru, resident of Davis since 1976. Retired psychologist. My literary career started early while growing up in Peru. I have 5 books of poetry - four in Spanish and one in English. I won a National Literary Award in Peru in 1972. Currently, I am the Poet Laureate of the City of Davis."
         },
         {
           "name": "Rachel Hartsough",
@@ -1199,27 +1238,32 @@
         {
           "name": "Morna McNulty",
           "title": "professor",
-          "company": "towson university"
+          "company": "towson university",
+          "bio": "Morna McNulty has been an educator/arts-integration specialist with students of all ages for 25 years. She is a professor in the College of Education at Towson University. In addition to her work as an educator, she has published several of her photographs in various journals, co-produced the documentary film Voices of Baltimore: Life Under Segregation, and published Blood’s Will, a vampire novel."
         },
         {
           "name": "Romy Hübler",
           "title": "Director, Office for Social Impact",
-          "company": "Towson University"
+          "company": "Towson University",
+          "bio": "Romy is Director of the Office for Social Impact at Towson University. She has more than 15 years of experience researching, teaching and working in civic learning and community engagement fields. She supports students, staff, and faculty in developing the dispositions, skills, and knowledge needed to create thriving communities in which members are active co-creators of a shared future. Romy is a…"
         },
         {
           "name": "Rosemary Riel",
           "title": "Associate Director of Career Education and Equity",
-          "company": "Towson University"
+          "company": "Towson University",
+          "bio": "Rosemary F. Riel is Filipina American, born and raised in Columbus, OH and transplanted to Baltimore, MD in 2004. Her day job for 20+ years has involved managing multi-level initiatives within four distinct university cultures and mobilizing a broad range of interdisciplinary and interprofessional educators, spirited students, and activated community leaders to unpack health and social inequities.…"
         },
         {
           "name": "David Hoffman",
           "title": "Director, Center for Democracy and Civic Life",
-          "company": "UMBC"
+          "company": "UMBC",
+          "bio": "David Hoffman is the founding director of UMBC’s Center for Democracy and Civic Life. Before coming to UMBC in 2003, he was a practicing attorney and a leader in nonprofit organizations that addressed social challenges through community organizing. Initially as the first full-time advisor to UMBC's Student Government Association and later as an Honors College Faculty Fellow and leader of…"
         },
         {
           "name": "Tess McRae",
           "title": "Assistant Director for Connective Learning",
-          "company": "Center for Democracy and Civic Life, UMBC"
+          "company": "Center for Democracy and Civic Life, UMBC",
+          "bio": "Tess McRae is assistant director for connective learning with the Center for Democracy and Civic Life at the University of Maryland, Baltimore County (UMBC). She has eight years of experience as a facilitator, course instructor, and designer of practices and pedagogical approaches that support engagement, belonging, and civic contributions in educational settings. Tess was a founding staff member…"
         }
       ],
       "isFixed": false
@@ -1422,12 +1466,14 @@
         {
           "name": "Janet Hayatshahi",
           "title": "Associate Professor, Theatre",
-          "company": "Seattle University"
+          "company": "Seattle University",
+          "bio": "Janet Hayatshahi is an actor, director, and educator based in Seattle. She served as Associate Artistic Director and ensemble member of San Diego’s Sledgehammer Theatre and ensemble member of Chicago’s Eclipse Theatre Company. Currently an Assistant Professor of Theatre at Seattle University, Janet teaches performance courses and focuses her time in the classroom on stewarding the next generation…"
         },
         {
           "name": "Sarah Cribbs",
           "title": "Associate Professor",
-          "company": "Randolph-Macon College"
+          "company": "Randolph-Macon College",
+          "bio": "Sarah E. Cribbs, Ph.D., is a passionate DEI leader, researcher, and human-centered problem solver with experience and proven success partnering cross-organizationally to plan, design, develop and deliver sustained and sustainable progress across multiple industries. She is currently an associate professor of sociology at Randolph-Macon College where she teaches courses related to social…"
         }
       ],
       "isFixed": false
@@ -1494,7 +1540,8 @@
         {
           "name": "Pinar Brummer",
           "title": "Artist",
-          "company": "Pixley Ceramics"
+          "company": "Pixley Ceramics",
+          "bio": "Pinar Brummer is a ceramic artist and the owner of Pixley Ceramics based in Davis, California. A native of Türkiye, she has resided in the United States for 25 years. She has a graduate degree in Plant Genetics."
         }
       ],
       "isFixed": false
@@ -1626,7 +1673,8 @@
         {
           "name": "Mari Kole",
           "title": "adjunct lecturer",
-          "company": "Hunter College-CUNY"
+          "company": "Hunter College-CUNY",
+          "bio": "Mari Abe Kole was born and raised in Tokyo and is a practitioner of the Urasenke tea ceremony tradition, having received comprehensive training under Soyo Sakurai and Soko Sakurai, the daughter and granddaughter of the Fourteenth Grand Master, Tantansai. Raised in a household devoted to the classical arts, her mother was a Nihon buyō dancer; she approaches instruction to honor tradition and…"
         },
         {
           "name": "Nan Jia"
@@ -1652,7 +1700,8 @@
         {
           "name": "Melita Belgrave",
           "title": "Associate Dean / Associate Professor",
-          "company": "Arizona State University"
+          "company": "Arizona State University",
+          "bio": "Melita Belgrave serves as Associate Dean for Student Culture and Engagement for Herberger Institute for Design and the Arts and Associate Professor for Music Therapy at Arizona State University. Belgrave's research interests include music therapy and music-based interventions for older adults with dementia, older adults in wellness settings and intergenerational programming. Additionally, she…"
         }
       ],
       "isFixed": false
@@ -1675,7 +1724,8 @@
         {
           "name": "David Hoffman",
           "title": "Director, Center for Democracy and Civic Life",
-          "company": "UMBC"
+          "company": "UMBC",
+          "bio": "David Hoffman is the founding director of UMBC’s Center for Democracy and Civic Life. Before coming to UMBC in 2003, he was a practicing attorney and a leader in nonprofit organizations that addressed social challenges through community organizing. Initially as the first full-time advisor to UMBC's Student Government Association and later as an Honors College Faculty Fellow and leader of…"
         }
       ],
       "isFixed": false
@@ -1698,7 +1748,8 @@
         {
           "name": "Kim Loudermilk",
           "title": "Associate Teaching Professor and Director, Institute for the Liberal Arts",
-          "company": "Emory University"
+          "company": "Emory University",
+          "bio": "Kim Loudermilk's teaching focuses on social movements and the media, advertising, contemporary cultural studies, and issues in higher education. In addition to her teaching, she helped to develop and, for 10 years, directed the IDEAS (Interdisciplinary Exploration and Scholarship) program, which seeks to bring interdisciplinary thinking to students from across the campus and to promote the values…"
         },
         {
           "name": "Julia Tulke",
@@ -1710,12 +1761,14 @@
         },
         {
           "name": "Kennedie Black",
-          "company": "Emory University"
+          "company": "Emory University",
+          "bio": "Kennedie Black is a graduate student, educator, and scholar of American history and culture. She graduated from Emory University in May 2026 with a B.A. in American Studies and American History, where her work explored questions of race, gender, culture, education, and community. At Emory, she was a student and an IDEAS Fellow in the Institute of the Liberal Arts (ILA), including through its…"
         },
         {
           "name": "Jackie Hampton",
           "title": "Emory Student",
-          "company": "Emory University "
+          "company": "Emory University ",
+          "bio": "Jackie Hampton is a graduate of the Emory University Institute for the Liberal Arts, where she studied urbanism and helped start a community building program called \"Crafting Community.\" Her workshops used artistic projects, from zine making to screen printing, to bring students, faculty, and community members together."
         }
       ],
       "isFixed": false
@@ -1738,7 +1791,8 @@
         {
           "name": "Sahar Tai-Seale",
           "title": "Vice President",
-          "company": "Solar Community Housing Association"
+          "company": "Solar Community Housing Association",
+          "bio": "Sahar Tai-Seale is a community design practitioner, cooperative stewardship organizer, and interdisciplinary student whose work connects participatory design, housing, education, accessibility, and ecological care. She currently serves as Vice President of Solar Community Housing Association (SCHA), a seven-community housing cooperative, following work in cooperative governance, landscape…"
         }
       ],
       "isFixed": false
@@ -1761,17 +1815,20 @@
         {
           "name": "Dana Edell",
           "title": "Associate Professor",
-          "company": "Emerson College"
+          "company": "Emerson College",
+          "bio": "Dana Edell (she/her) is an activist-scholar-artist-educator. She has produced and co-directed 80+ original plays and 7 albums of music written and performed by teenage girls and nonbinary youth addressing social justice issues and has worked as a theater teaching artist with people of all ages in public and private elementary, middle and high schools, adult prisons, and youth correctional…"
         },
         {
           "name": "Jan Cohen-Cruz",
           "title": "Engaged Arts Associate",
-          "company": "Imagining America"
+          "company": "Imagining America",
+          "bio": "Jan Cohen-Cruz (PhD, NYU Performance Studies), began her professional life performing in street theater and cofacilitating a theater workshop in a maximum-security prison. She taught at NYU for 28 years, initiating an applied theater minor in the Drama Department and cofounding the Department of Art and Public Policy. In 2012, Jan received the Association for Theatre in Higher Education’s Award…"
         },
         {
           "name": "Lizzy Davis",
           "title": "Associate Professor and Graduate Program Director",
-          "company": "Emerson College"
+          "company": "Emerson College",
+          "bio": "Lizzy Cooper Davis (she/her) is an artist and scholar interested in how the arts can facilitate community conversation, resistance, and change. She is particularly focused on cultural work within Black freedom movements and is currently working on an applied theatre project with returning citizens in partnership with Ritual4Return, the Emerson Prison Initiative, and New Beginnings Reentry…"
         }
       ],
       "isFixed": false
@@ -1794,7 +1851,8 @@
         {
           "name": "Archana Nagraj",
           "title": "Executive Director",
-          "company": "Destiny Arts Center"
+          "company": "Destiny Arts Center",
+          "bio": "Archana Nagraj, M.P.H., M.S.W., is a nonprofit executive and champion for creative youth development. Archana is the Executive Director of Destiny Arts Center, an Oakland based non-profit that ignites and inspires social change through the arts. With nearly three decades of experience spanning social work, public health, education, and nonprofit leadership, Archana is passionate about building…"
         },
         {
           "name": "Tesfaye Teklu",
@@ -2083,7 +2141,8 @@
         {
           "name": "Alexandra Byrum",
           "title": "Director of Communications and Community Relations",
-          "company": "Bonner Center for Civic Engagement, University of Richmond"
+          "company": "Bonner Center for Civic Engagement, University of Richmond",
+          "bio": "Alexandra Byrum is the director of communications and community relations for the Bonner Center for Civic Engagement (CCE) at the University of Richmond. She directs the CCE's internal and external communications, supports key community engagement initiatives, and serves as the CCE's liaison to arts and culture partners to amplify learning opportunities and deepen regional collaboration.\n\nShe…"
         },
         {
           "name": "April Kim",
@@ -2118,7 +2177,8 @@
         {
           "name": "Avital Meshi",
           "title": "New Media and Performance Artist - PhD Student Performance Studies",
-          "company": "UC Davis"
+          "company": "UC Davis",
+          "bio": "Avital Meshi is a new media and performance artist working at the intersection of AI and the body. Through wearable systems and durational performance, she invites viewers to become entangled with machine algorithms and to question how these systems reshape human identity and social life. Meshi is a PhD student in Performance Studies and Science and Technology Studies at UC Davis. She holds an MFA…"
         },
         {
           "name": "Iliya Giyahchi",
@@ -2145,7 +2205,8 @@
         {
           "name": "Marianna Davison",
           "title": "Postdoctoral Scholar",
-          "company": "Research Justice Shop, The University of California, Irvine"
+          "company": "Research Justice Shop, The University of California, Irvine",
+          "bio": "Marianna Davison, Ph.D. (she/they), is an art historian, educator, and community-engaged researcher whose work brings together contemporary art, environmental humanities, and climate justice. She is a Postdoctoral Scholar with the Research Justice Shop at UC Irvine, where she collaborates on community-based research and environmental education initiatives. Davison's research focuses on arts-based…"
         }
       ],
       "isFixed": false
@@ -2322,7 +2383,8 @@
         {
           "name": "Kate McCarthy",
           "title": "Professor, ALO",
-          "company": "California State University Chico"
+          "company": "California State University Chico",
+          "bio": "As an Academic Affairs administrator at Chico State, Kate McCarthy has led student success and equity programs and initiatives related to academic preparation, first-year experience, general education and critical success courses, undergraduate research, and community-engaged learning. She has served at Chico State for over 30 years, 20 of which as Professor of Comparative Religion. She is…"
         },
         {
           "name": "Ellie Ertle",
@@ -2349,12 +2411,14 @@
         {
           "name": "Joseph Dumit",
           "title": "Chair of Performance Studies, Professor of Science & Technology Studies and Anthropology",
-          "company": "UC Davis"
+          "company": "UC Davis",
+          "bio": "Joseph Dumit is an anthropologist of passions and performance, brains and games, AI and computers, contact improvisation and slownesses, drugs and facts. He is Chair of Performance Studies, and Professor of Science & Technology Studies, and Anthropology at University of California Davis; and Professor in Interdisciplinary Data Collaborations in Anthropology at Aarhus University. He’s a core member…"
         },
         {
           "name": "Dorte Bjerre Jensen",
           "title": "PhD candidate",
-          "company": "UC Davis Performance Studies"
+          "company": "UC Davis Performance Studies",
+          "bio": "Danish artist Dorte Bjerre Jensen’s (DBJ) work is anchored in an evolving artistic inquiry into multisensory relations of ecological attention through the moving sensing bodymind. DBJ’s hybrid artistic productions include site-specific/sensitive live art installations, participatory performances,lectures,workshops,labs,activism, writing and being a parent. DBJ holds a Master in Fine Arts from the…"
         }
       ],
       "isFixed": false
@@ -2399,7 +2463,8 @@
         {
           "name": "Pamela Trokanski",
           "title": "Artistic Director for the Dance Theatre, Teacher and Business Owner at the Dance Workshop",
-          "company": "Pamela Trokanski Dance Theatre / Dance Workshop"
+          "company": "Pamela Trokanski Dance Theatre / Dance Workshop",
+          "bio": "Pamela Trokanski received her BA in Dance from SUNY Empire State college. In addition to teaching at and running the Dance Workshop since August of 1984, she has directed the Pamela Trokanski Dance Theatre (since 1985), The Third Stage (a multi-generational contemporary company with dancers ranging in age from 9 - 90+, since 1994), and the PTDT Apprentice Company (since 2009). This year, PTDT…"
         }
       ],
       "isFixed": false
@@ -2422,7 +2487,8 @@
         {
           "name": "Matt Denney",
           "title": "Assistant Professor, School of Theatre, Film & TV",
-          "company": "University of Arizona"
+          "company": "University of Arizona",
+          "bio": "Matt Denney is a Filipino-American Certified Intimacy Director through Intimacy Professionals Education Collective. He is the co-founder of Consent Creatives of Arizona which works towards safer rehearsal rooms across Arizona. He is currently pursuing a Ph.D. in Higher Education, focusing on Theatre for Social Justice. Matt has a broad range of experience, having worked at various theaters across…"
         }
       ],
       "isFixed": false

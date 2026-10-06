@@ -46,3 +46,9 @@ export function normalizeLevel(label: string): SessionLevel[] {
 export function uniq<T>(xs: T[]): T[] {
   return [...new Set(xs)];
 }
+
+/** Trims long text at a word boundary */
+export function clip(text: string | undefined, max: number): string | undefined {
+  if (!text || text.length <= max) return text;
+  return text.slice(0, text.lastIndexOf(' ', max)).trimEnd() + '…';
+}

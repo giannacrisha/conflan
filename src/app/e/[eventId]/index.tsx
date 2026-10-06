@@ -107,6 +107,11 @@ export default function Planner() {
             onPress={() => router.push({ pathname: '/e/[eventId]/setup', params: { eventId } })}>
             Topics
           </Text>
+          <Text
+            style={styles.link}
+            onPress={() => router.push({ pathname: '/e/[eventId]/people', params: { eventId } })}>
+            People
+          </Text>
           <Button
             label="Export ⤓"
             accent={model.accent}
@@ -211,6 +216,12 @@ function Sidebar({ model, index, onSelectDay }: { model: PlanModel; index: numbe
         label="Export ⤓"
         accent={model.accent}
         onPress={() => router.push({ pathname: '/e/[eventId]/export', params: { eventId } })}
+      />
+      <Button
+        label="People to meet"
+        variant="ghost"
+        accent={model.accent}
+        onPress={() => router.push({ pathname: '/e/[eventId]/people', params: { eventId } })}
       />
       <Text style={styles.link} onPress={() => Linking.openURL(LINKS.featureRequest)}>
         💡 Request a feature

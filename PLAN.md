@@ -98,7 +98,7 @@ data/                generated event JSON (committed by CI)
 9. App Store and Play Store release, using `expo-calendar` export.
 10. Alternate app icons per event theme (the `expo-alternate-app-icons` config plugin). Icons are bundled at build time, so new event icons ship with app updates.
 11. Organizer side: upload agendas, set the theme, see analytics (session interest before the event, topic demand, comparisons across events). Analytics needs a backend and attendee consent, so it gets planned separately.
-12. Speaker matching.
+12. Speaker matching. ✅ done Oct 6 ("People to meet", ranked by session fit, bio keywords and shared sessions)
 
 ## Contributors
 - `CONTRIBUTING.md`: **claim an issue by commenting before you start.** Claims expire after 7 days with no activity. Unclaimed PRs for claimed issues won't be merged.

@@ -39,6 +39,7 @@ scripts/sync.ts runs adapters, writes public/data/events/<id>.json
 
 - **Slots:** overlapping sessions are grouped into time blocks (`src/core/slots.ts`). Each block closes at the typical end time of its sessions, so one long session can't swallow the next block.
 - **Recommendations:** each session gets a score and a "Why this" explanation from your tracks, career level and interests (`src/core/score.ts`). No AI involved, so every recommendation can be explained.
+- **People to meet:** speakers ranked by how well their sessions and bios fit you (`src/core/speakers.ts`).
 - **Data refresh:** a GitHub Action runs `npm run sync` every 6 hours and commits any agenda changes.
 
 ## Contributing

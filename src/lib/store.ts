@@ -42,7 +42,11 @@ export const usePlanner = create<PlannerState>()(
       pick: (eventId, sessionId, sameSlot) =>
         set((s) => {
           const others = (s.picks[eventId] ?? []).filter((id) => id !== sessionId && !sameSlot.includes(id));
-          return { picks: { ...s.picks, [eventId]: [...others, sessionId] } };
+          return {
+            picks: { ...s.picks, [eventId]: [...others, sessionId] },
+            // Opening an event from a shared link and picking adds it to My events
+            myEvents: s.myEvents.includes(eventId) ? s.myEvents : [...s.myEvents, eventId],
+          };
         }),
       unpick: (eventId, sessionId) =>
         set((s) => ({ picks: { ...s.picks, [eventId]: (s.picks[eventId] ?? []).filter((id) => id !== sessionId) } })),

@@ -1,13 +1,13 @@
 // Whova events. The public embedded agenda page loads the whole agenda from
 // one GET endpoint, keyed by the event id in the embed URL.
 
-import { stripHtml, uniq } from '../core/text';
+import { clip, stripHtml, uniq } from '../core/text';
 import { zonedToUtc } from '../core/time';
 import type { EventConfig, EventData, Session, Speaker, WhovaSource } from '../core/types';
 
 const API = 'https://whova.com/xems/apis/event_webpage/agenda/public/get_agendas/';
 
-type WhPerson = { name?: string; title?: string; aff?: string };
+type WhPerson = { name?: string; title?: string; aff?: string; bio?: string };
 export type WhSession = {
   id: number;
   name: string;
@@ -36,7 +36,12 @@ function speakersOf(s: WhSession): Speaker[] {
   return Object.values(s.speaker ?? {})
     .flat()
     .filter((p) => p?.name)
-    .map((p) => ({ name: p.name!, title: p.title || undefined, company: p.aff || undefined }));
+    .map((p) => ({
+      name: p.name!,
+      title: p.title || undefined,
+      company: p.aff || undefined,
+      bio: clip(stripHtml(p.bio), 400),
+    }));
 }
 
 /** Collects every top-level session object in Whova's nested time_ranges arrays */
