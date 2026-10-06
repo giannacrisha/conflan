@@ -33,7 +33,15 @@ async function main() {
     try {
       const data = await loadEvent(config);
       data.sessions.sort((a, b) => a.start.localeCompare(b.start) || a.id.localeCompare(b.id));
-      await writeFile(`${OUT}/events/${config.id}.json`, JSON.stringify(data, null, 2) + '\n');
+      // Keep the previous timestamp when nothing changed, so scheduled syncs
+      // don't commit a new file every run
+      const path = `${OUT}/events/${config.id}.json`;
+      const previous = await readFile(path, 'utf8')
+        .then((raw) => JSON.parse(raw) as EventData)
+        .catch(() => undefined);
+      const comparable = (d: EventData) => JSON.stringify({ ...d, event: { ...d.event, updatedAt: '' } });
+      if (previous && comparable(previous) === comparable(data)) data.event.updatedAt = previous.event.updatedAt;
+      await writeFile(path, JSON.stringify(data, null, 2) + '\n');
       const { trackGroups, ...meta } = data.event;
       index.set(config.id, { ...meta, sessionCount: data.sessions.length });
 
