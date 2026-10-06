@@ -4,7 +4,9 @@ One schedule planner for every conference and hackathon. Set up your profile onc
 
 Unofficial and open source. Not affiliated with AnitaB.org, Whova, RainFocus or any event listed here. If an event needs seat reservations, make them in the official app.
 
-**Status:** Phase 1 (data and core logic) is done. See [PLAN.md](PLAN.md) for the roadmap.
+**Try it:** https://giannacrisha.github.io/conflan
+
+**Status:** The web version is live (Phases 1 and 2). App Store and Play Store releases are next. See [PLAN.md](PLAN.md) for the roadmap.
 
 ## Events
 
@@ -19,7 +21,7 @@ Want another one? [Open an "Add an event" issue](../../issues/new?template=new_e
 
 ```bash
 npm install
-npm run sync      # download agendas into data/
+npm run sync      # download agendas into public/data/
 npm test
 npx expo start    # press w for web, i for iOS simulator
 ```
@@ -30,7 +32,9 @@ npx expo start    # press w for web, i for iOS simulator
 src/adapters/   one file per agenda platform -> shared Session format
 src/core/       pure TypeScript: time zones, slots, recommendations, .ics export
 src/app/        screens (Expo Router)
-scripts/sync.ts runs adapters, writes data/events/<id>.json
+src/lib/        data loading, saved state, downloads
+src/ui/         shared components
+scripts/sync.ts runs adapters, writes public/data/events/<id>.json
 ```
 
 - **Slots:** overlapping sessions are grouped into time blocks (`src/core/slots.ts`). Each block closes at the typical end time of its sessions, so one long session can't swallow the next block.

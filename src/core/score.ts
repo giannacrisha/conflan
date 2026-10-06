@@ -73,19 +73,12 @@ export function scoreSession(session: Session, ctx: ScoreContext): Omit<Scored, 
 
   if (profile.interests.length) {
     const haystack = `${session.title}\n${session.abstract ?? ''}`;
-    const hits = profile.interests.filter((k) =>
-      new RegExp(`\\b${escapeRe(k.trim())}\\b`, 'i').test(haystack),
-    );
+    const hits = profile.interests.filter((k) => new RegExp(`\\b${escapeRe(k.trim())}\\b`, 'i').test(haystack));
     score += Math.min(hits.length, WEIGHTS.maxKeywordHits) * WEIGHTS.keyword;
     reasons.push(...hits.slice(0, WEIGHTS.maxKeywordHits));
   }
 
-  if (
-    profile.format &&
-    session.format &&
-    session.format !== 'hybrid' &&
-    session.format !== profile.format
-  ) {
+  if (profile.format && session.format && session.format !== 'hybrid' && session.format !== profile.format) {
     score += WEIGHTS.formatMismatch;
     reasons.push(session.format === 'virtual' ? 'Virtual only' : 'In person only');
   }

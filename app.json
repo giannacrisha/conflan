@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "conflan",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "light",
     "ios": {
       "icon": "./assets/expo.icon"
     },
@@ -20,7 +20,7 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "output": "static",
+      "output": "single",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
@@ -33,11 +33,12 @@
           "imageWidth": 76
         }
       ],
-      "expo-sqlite"
+      "expo-sqlite",
+      "expo-sharing"
     ],
     "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
+      "reactCompiler": true,
+      "baseUrl": "/conflan"
     }
   }
 }

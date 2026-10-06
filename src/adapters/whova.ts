@@ -62,7 +62,9 @@ export function mapWhova(data: WhAgenda, eventId: string): Session[] {
     const subs = (s.programs ?? []).flat();
     const tracks = uniq((s.tracks ?? []).map((t) => t.name));
     const subList = subs.map((p) => {
-      const who = speakersOf(p).map((x) => x.name).join(', ');
+      const who = speakersOf(p)
+        .map((x) => x.name)
+        .join(', ');
       return `• ${p.name}${who ? ` (${who})` : ''}`;
     });
     const abstract = [stripHtml(s.desc), subList.length ? `Includes:\n${subList.join('\n')}` : undefined]

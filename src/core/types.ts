@@ -46,6 +46,8 @@ export type RainFocusSource = {
   /** Catalog day tabs, YYYYMMDD */
   days: string[];
   catalogUrl: string;
+  /** Display order for track groups (e.g. GHC pillars); others follow alphabetically */
+  groupOrder?: string[];
 };
 
 export type WhovaSource = {

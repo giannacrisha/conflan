@@ -6,7 +6,10 @@ import type { Session } from './types';
 const CRLF = '\r\n';
 
 function icsDate(iso: string) {
-  return new Date(iso).toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+  return new Date(iso)
+    .toISOString()
+    .replace(/[-:]/g, '')
+    .replace(/\.\d{3}/, '');
 }
 
 export function escapeText(s: string) {
@@ -46,12 +49,8 @@ export function toIcs(
     `X-WR-CALNAME:${escapeText(calendarName)}`,
   ];
   for (const s of sessions) {
-    const speakers = s.speakers
-      .map((p) => [p.name, p.company].filter(Boolean).join(', '))
-      .join('; ');
-    const description = [speakers && `Speakers: ${speakers}`, s.abstract, s.sourceUrl]
-      .filter(Boolean)
-      .join('\n\n');
+    const speakers = s.speakers.map((p) => [p.name, p.company].filter(Boolean).join(', ')).join('; ');
+    const description = [speakers && `Speakers: ${speakers}`, s.abstract, s.sourceUrl].filter(Boolean).join('\n\n');
     lines.push(
       'BEGIN:VEVENT',
       `UID:${s.eventId}-${s.id}@conflan`,

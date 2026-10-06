@@ -27,6 +27,7 @@ export const EVENTS: EventConfig[] = [
       widgetId: 'nZeaLE1j83n6gXiMHiTabDVB3jCLgG0P',
       days: ['20261027', '20261028', '20261029', '20261030'],
       catalogUrl: 'https://ghc.anitab.org/session-catalog',
+      groupOrder: ['Train', 'Hire', 'Advance', 'Fund'],
     },
   },
 ];

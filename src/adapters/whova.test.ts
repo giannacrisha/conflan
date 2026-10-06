@@ -10,8 +10,43 @@ const data: WhAgenda = {
     {
       date: 'Oct 23, 2026',
       time_ranges: [
-        ['08:30', [[{ sessions: [{ id: 1, name: 'Registration', calendar_stime: '2026-10-23 08:30:00', calendar_etime: '2026-10-23 16:00:00', place: 'Conference Center', tracks: [] }] }]]],
-        ['09:30', [[{ sessions: [{ id: 2, name: 'Opening Plenary', calendar_stime: '2026-10-23 09:30:00', calendar_etime: '2026-10-23 10:45:00', tracks: [{ name: 'Plenary' }] }] }]]],
+        [
+          '08:30',
+          [
+            [
+              {
+                sessions: [
+                  {
+                    id: 1,
+                    name: 'Registration',
+                    calendar_stime: '2026-10-23 08:30:00',
+                    calendar_etime: '2026-10-23 16:00:00',
+                    place: 'Conference Center',
+                    tracks: [],
+                  },
+                ],
+              },
+            ],
+          ],
+        ],
+        [
+          '09:30',
+          [
+            [
+              {
+                sessions: [
+                  {
+                    id: 2,
+                    name: 'Opening Plenary',
+                    calendar_stime: '2026-10-23 09:30:00',
+                    calendar_etime: '2026-10-23 10:45:00',
+                    tracks: [{ name: 'Plenary' }],
+                  },
+                ],
+              },
+            ],
+          ],
+        ],
         [
           '12:15',
           [
@@ -29,8 +64,19 @@ const data: WhAgenda = {
                     speaker: {},
                     programs: [
                       [
-                        { id: 31, name: 'Storying Community', calendar_stime: '2026-10-23 12:15:00', calendar_etime: '2026-10-23 13:30:00', speaker: { Speaker: [{ name: 'Amber Abbas', aff: 'SAADA' }] } },
-                        { id: 32, name: 'Desert Diaspora', calendar_stime: '2026-10-23 12:15:00', calendar_etime: '2026-10-23 13:30:00' },
+                        {
+                          id: 31,
+                          name: 'Storying Community',
+                          calendar_stime: '2026-10-23 12:15:00',
+                          calendar_etime: '2026-10-23 13:30:00',
+                          speaker: { Speaker: [{ name: 'Amber Abbas', aff: 'SAADA' }] },
+                        },
+                        {
+                          id: 32,
+                          name: 'Desert Diaspora',
+                          calendar_stime: '2026-10-23 12:15:00',
+                          calendar_etime: '2026-10-23 13:30:00',
+                        },
                       ],
                     ],
                   },
@@ -63,7 +109,9 @@ describe('mapWhova', () => {
     const block = byId['3'];
     expect(block.title).toBe('Projects and Practices 1');
     expect(block.tracks).toEqual(['Projects & Practices']);
-    expect(block.abstract).toBe('Four short projects\n\nIncludes:\n• Storying Community (Amber Abbas)\n• Desert Diaspora');
+    expect(block.abstract).toBe(
+      'Four short projects\n\nIncludes:\n• Storying Community (Amber Abbas)\n• Desert Diaspora',
+    );
     expect(block.speakers).toEqual([{ name: 'Amber Abbas', company: 'SAADA', title: undefined }]);
   });
 });

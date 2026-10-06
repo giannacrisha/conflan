@@ -6,13 +6,16 @@
     "@expo/ui": "~57.0.22",
     "eslint-config-expo": "~57.0.2",
     "expo": "~57.0.27",
+    "expo-clipboard": "~57.0.2",
     "expo-constants": "~57.0.21",
     "expo-device": "~57.0.2",
+    "expo-file-system": "~57.0.7",
     "expo-font": "~57.0.4",
     "expo-glass-effect": "~57.0.4",
     "expo-image": "~57.0.5",
     "expo-linking": "~57.0.12",
     "expo-router": "~57.0.25",
+    "expo-sharing": "~57.0.22",
     "expo-splash-screen": "~57.0.9",
     "expo-sqlite": "~57.0.4",
     "expo-status-bar": "~57.0.1",
@@ -35,6 +38,7 @@
     "@types/react": "~19.2.2",
     "eslint": "^9.39.5",
     "eslint-config-expo": "~57.0.2",
+    "prettier": "^3.9.9",
     "tsx": "^4.23.15",
     "typescript": "~6.0.3",
     "vitest": "^5.0.3"
@@ -48,7 +52,8 @@
     "lint": "expo lint",
     "sync": "tsx scripts/sync.ts",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write ."
   },
   "private": true
 }

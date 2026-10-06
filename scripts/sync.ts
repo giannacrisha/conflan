@@ -1,5 +1,5 @@
 /// <reference types="node" />
-// Imports every event in src/events.config.ts and writes static JSON to data/.
+// Imports every event in src/events.config.ts and writes static JSON to public/data/.
 // Usage: npm run sync            (all events)
 //        npm run sync -- ghc26   (one event)
 
@@ -9,7 +9,7 @@ import { buildDays } from '../src/core/slots';
 import type { EventData } from '../src/core/types';
 import { EVENTS } from '../src/events.config';
 
-const OUT = 'data';
+const OUT = 'public/data';
 
 type IndexEntry = Omit<EventData['event'], 'trackGroups'> & { sessionCount: number };
 

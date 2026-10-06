@@ -42,9 +42,7 @@ export function buildDays(sessions: Session[], timeZone: string): DayPlan[] {
   return [...days.keys()].sort().map((day) => {
     const list = days.get(day)!.sort(byStart);
     const fixed = list.filter((s) => s.isFixed);
-    const background = list.filter(
-      (s) => !s.isFixed && durationMinutes(s.start, s.end) > BACKGROUND_MINUTES,
-    );
+    const background = list.filter((s) => !s.isFixed && durationMinutes(s.start, s.end) > BACKGROUND_MINUTES);
     const choices = list.filter((s) => !fixed.includes(s) && !background.includes(s));
 
     // A slot closes at the median end of its sessions, so one long session

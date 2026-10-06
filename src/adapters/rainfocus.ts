@@ -111,7 +111,7 @@ export function mapRainFocus(items: RfItem[], eventId: string, src: RainFocusSou
 }
 
 /** Pillar -> sub-track groups, built from what the catalog actually uses */
-export function trackGroupsFromItems(items: RfItem[]): TrackGroup[] {
+export function trackGroupsFromItems(items: RfItem[], order: string[] = []): TrackGroup[] {
   const groups = new Map<string, Set<string>>();
   for (const item of items) {
     for (const a of item.attributevalues ?? []) {
@@ -122,7 +122,10 @@ export function trackGroupsFromItems(items: RfItem[]): TrackGroup[] {
       groups.set(m[1], g);
     }
   }
-  return [...groups.entries()].map(([name, tracks]) => ({ name, tracks: [...tracks].sort() }));
+  const rank = (name: string) => (order.includes(name) ? order.indexOf(name) : order.length);
+  return [...groups.entries()]
+    .map(([name, tracks]) => ({ name, tracks: [...tracks].sort() }))
+    .sort((a, b) => rank(a.name) - rank(b.name) || a.name.localeCompare(b.name));
 }
 
 export async function loadRainFocus(config: EventConfig, fetchFn: typeof fetch = fetch): Promise<EventData> {
@@ -134,7 +137,7 @@ export async function loadRainFocus(config: EventConfig, fetchFn: typeof fetch =
     event: {
       ...rest,
       platform: source.platform,
-      trackGroups: trackGroupsFromItems(items),
+      trackGroups: trackGroupsFromItems(items, src.groupOrder),
       updatedAt: new Date().toISOString(),
     },
     sessions: mapRainFocus(items, config.id, src),

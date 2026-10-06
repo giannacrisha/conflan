@@ -8,7 +8,9 @@ const item = (n: number, over: Partial<RfItem> = {}): RfItem => ({
   title: ` Talk ${n} `,
   type: 'Presentation',
   abstract: '<p>Learn &amp; grow</p>',
-  times: [{ sessionTimeID: `t${n}`, utcStartTime: '2026/10/28 16:00:00', utcEndTime: '2026/10/28 16:45:00', room: '252ABC' }],
+  times: [
+    { sessionTimeID: `t${n}`, utcStartTime: '2026/10/28 16:00:00', utcEndTime: '2026/10/28 16:45:00', room: '252ABC' },
+  ],
   attributevalues: [
     { attribute: 'Session Type', value: 'Presentation' },
     { attribute: 'Career Level', value: 'Student/Early Career' },
@@ -27,7 +29,13 @@ const config: EventConfig = {
   start: '2026-10-26',
   end: '2026-10-30',
   theme: { accent: '#41263F' },
-  source: { platform: 'rainfocus', apiProfileId: 'p', widgetId: 'w', days: ['20261028'], catalogUrl: 'https://x/catalog' },
+  source: {
+    platform: 'rainfocus',
+    apiProfileId: 'p',
+    widgetId: 'w',
+    days: ['20261028'],
+    catalogUrl: 'https://x/catalog',
+  },
 };
 
 const json = (body: unknown) => ({ ok: true, json: async () => body }) as Response;

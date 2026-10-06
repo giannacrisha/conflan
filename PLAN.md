@@ -87,7 +87,7 @@ data/                generated event JSON (committed by CI)
 2. Write the schema and the `rainfocus` and `whova` adapters, then `sync.ts`. Check the session counts against each source.
 3. Write `slots.ts`, `score.ts` and `ics.ts`, with unit tests.
 
-**Phase 2: web MVP (Oct 10-21)**
+**Phase 2: web MVP (Oct 10-21)** ✅ done Oct 6, live at https://giannacrisha.github.io/conflan
 4. Onboarding, My events, per-event setup.
 5. Planner: timeline (A) and split view (E), day tabs, slot picker, conflict flags, fixed blocks.
 6. Export to .ics and wallpaper; share link (picked IDs in the URL).

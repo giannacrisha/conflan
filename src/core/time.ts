@@ -68,11 +68,24 @@ export function minuteOfDay(iso: string, timeZone: string): number {
 
 /** "9:00 AM" in the event zone */
 export function formatTime(iso: string, timeZone: string): string {
-  return new Intl.DateTimeFormat('en-US', { timeZone, hour: 'numeric', minute: '2-digit' }).format(
-    new Date(iso),
-  );
+  return new Intl.DateTimeFormat('en-US', { timeZone, hour: 'numeric', minute: '2-digit' }).format(new Date(iso));
 }
 
 export function durationMinutes(start: string, end: string): number {
   return Math.round((Date.parse(end) - Date.parse(start)) / 60000);
+}
+
+/** "2026-10-28" -> "Wed 28" (short) or "Wednesday, Oct 28" (long) */
+export function formatDay(day: string, style: 'short' | 'long' = 'short'): string {
+  const date = new Date(`${day}T12:00:00Z`);
+  if (style === 'long') {
+    return new Intl.DateTimeFormat('en-US', {
+      timeZone: 'UTC',
+      weekday: 'long',
+      month: 'short',
+      day: 'numeric',
+    }).format(date);
+  }
+  const weekday = new Intl.DateTimeFormat('en-US', { timeZone: 'UTC', weekday: 'short' }).format(date);
+  return `${weekday} ${date.getUTCDate()}`;
 }

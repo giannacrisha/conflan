@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { dayKey, formatTime, minuteOfDay, utcStringToIso, zonedToUtc } from './time';
+import { dayKey, formatDay, formatTime, minuteOfDay, utcStringToIso, zonedToUtc } from './time';
 
 const LA = 'America/Los_Angeles';
 
@@ -21,5 +21,12 @@ describe('time', () => {
     expect(dayKey(late, LA)).toBe('2026-10-28');
     expect(minuteOfDay(late, LA)).toBe(22 * 60 + 30);
     expect(formatTime('2026-10-28T16:00:00.000Z', LA)).toBe('9:00 AM');
+  });
+});
+
+describe('formatDay', () => {
+  it('formats day keys without shifting the date', () => {
+    expect(formatDay('2026-10-28')).toBe('Wed 28');
+    expect(formatDay('2026-10-28', 'long')).toBe('Wednesday, Oct 28');
   });
 });
