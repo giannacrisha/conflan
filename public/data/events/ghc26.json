@@ -50,7 +50,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-07T05:39:06.022Z"
+    "updatedAt": "2026-10-07T13:09:08.706Z"
   },
   "sessions": [
     {
@@ -921,7 +921,7 @@
       "id": "1772253429577001ucI0-1781624451469001sOTX",
       "eventId": "ghc26",
       "title": "Prompt. Judge. Decide. A Workshop on Engineering Judgment with AI",
-      "abstract": "AI-generated technical proposals often look impressive: polished language, multiple architectural patterns, exhaustive sections. But beneath the surface, they mask weak assumptions and pages of confident-sounding text with little substance. When a 50-line feature becomes a 500-line design document, the bottleneck shifts from writing to discernment.\n\nAs AI makes it easy to generate more content, engineers must get better at judging what actually matters. Without this skill, teams risk approving unclear designs and building systems that are hard to maintain.\n\nThis hands-on workshop builds two essential skills: designing effective prompts for technical problems and applying sound judgment to evaluate and refine AI responses. Through guided exercises, participants learn to separate signal from noise, surface assumptions and trade-offs, and shape AI output into concise, decision-ready proposals.\n\nParticipants leave with practical frameworks and prompting patterns they can apply immediately.",
+      "abstract": "Bring your laptop and create a free Claude account before the session. This is a hands-on workshop.\n\nAI-generated technical proposals can look impressive: polished language, detailed designs, and confident recommendations. But producing more technical content is no longer the hard part. Knowing what to trust, challenge, and act on is.\n\nThis workshop sharpens two skills that matter most when engineers work with AI:\n\nFirst, engineering judgment. You’ll practice evaluating a realistic technical proposal: identifying what matters, questioning assumptions and evidence, weighing alternatives and cost, and deciding what you would recommend.\n\nSecond, effective AI-assisted technical design. You’ll work with an AI assistant and use techniques to frame the problem clearly, provide the right context and constraints, uncover gaps, explore alternatives, challenge recommendations, and turn the output into a design you can confidently bring to your team.\n\nYou’ll leave with practical frameworks and techniques to get stronger results from AI while raising the quality of your engineering work.",
       "start": "2026-10-28T16:00:00.000Z",
       "end": "2026-10-28T17:00:00.000Z",
       "room": "Ballroom A",
@@ -936,7 +936,7 @@
       ],
       "speakers": [
         {
-          "name": "Linda Pulikal",
+          "name": "Linda Pulickal",
           "title": "Team Lead",
           "company": "Nvidia",
           "bio": "Linda Pulickal is a Senior Software Engineer at Nvidia with 12 years of experience building software that operates at scale. Over the course of her career, she has worked as an individual contributor, tech lead, and engineering manager, developing ML ranking and personalization models, large data platforms, and security systems. She currently leads hardware data security initiatives at Nvidia,…",
@@ -1402,36 +1402,6 @@
           "company": "Rarity Enterprises LLC",
           "bio": "Rarity Le'mons Bey is a sign language interpreter, educator, consultant, and founder/CEO of a multilingual language services company (ASL/English/Spanish). She designs academic enrichment courses in e-commerce, entrepreneurship, financial literacy, public speaking, and time management, while creating music as a content creator. Currently developing professional and technical consulting and…",
           "linkedIn": "https://linkedin.com/in/rarity-le-mons-bey-b4a708212"
-        }
-      ],
-      "isFixed": false,
-      "sourceUrl": "https://ghc.anitab.org/session-catalog?tab.day=20261028"
-    },
-    {
-      "id": "1771944260547001Jmu0-1781624454656001sQte",
-      "eventId": "ghc26",
-      "title": "From Visibility to Impact: Building Tech Personal Brands That Open Real Opportunities",
-      "abstract": "In today’s tech ecosystem, personal branding is no longer optional, it’s a powerful tool for career growth, leadership visibility, and community impact. As an engineer, community builder, and speaker who has mentored thousands and worked across startups and tech spaces, I’ve seen how authentic storytelling and strategic positioning can unlock real opportunities beyond resumes.\n\nIn this session, I will share practical frameworks to help students in tech build personal brands rooted in clarity, credibility, and consistency. Rather than focusing on vanity metrics, I will explore how to use storytelling, community engagement, AI-assisted workflows, and growth systems to create meaningful professional presence.\n\nThis talk aligns with GHC’s mission of empowering individuals in tech by helping them take ownership of their voice, build leadership pathways early, and create inclusive communities that uplift others while advancing their own careers.",
-      "start": "2026-10-28T17:15:00.000Z",
-      "end": "2026-10-28T18:00:00.000Z",
-      "room": "Virtual",
-      "format": "virtual",
-      "type": "Presentation",
-      "featured": false,
-      "tracks": [
-        "Digital Branding & Storytelling"
-      ],
-      "levels": [
-        "student",
-        "early"
-      ],
-      "speakers": [
-        {
-          "name": "Kashvi Arora",
-          "title": "Product Manager",
-          "company": "Guru Gobind Singh Indraprastha University",
-          "bio": "Kashvi Arora is an engineer, community builder, and public speaker working at the intersection of technology, creativity, and personal branding. She has collaborated with 30+ startups, mentored 200K+ students, and curated 200+ technical and leadership-driven events across India. She focuses on helping students and creators build authentic personal brands, leverage AI and storytelling, and create…",
-          "linkedIn": "https://www.linkedin.com/in/kashvi15/"
         }
       ],
       "isFixed": false,
@@ -11501,27 +11471,6 @@
       "sourceUrl": "https://ghc.anitab.org/session-catalog?tab.day=20261029"
     },
     {
-      "id": "1770424616414001Fz4n-1781624474161001s534",
-      "eventId": "ghc26",
-      "title": "PETSEC NEXUS: Funding Cybersecurity Innovation from Idea to Global Scale",
-      "abstract": "Cybersecurity startups face a dual challenge: proving technical excellence while securing sustainable funding in a competitive global market. PETSEC NEXUS explores how founders, executives, and innovation leaders can successfully move from concept to investment-ready ventures. This session examines real-world funding pathways, investor expectations, and growth strategies specific to security-focused companies operating in emerging and global ecosystems. Attendees will gain executive-level insights into structuring ventures for scalability, communicating value to investors, and building partnerships that unlock capital while maintaining technical credibility and trust.",
-      "start": "2026-10-29T22:30:00.000Z",
-      "end": "2026-10-29T23:15:00.000Z",
-      "room": "Virtual",
-      "format": "virtual",
-      "type": "Presentation",
-      "featured": false,
-      "tracks": [
-        "Entrepreneurship & Startups"
-      ],
-      "levels": [
-        "senior"
-      ],
-      "speakers": [],
-      "isFixed": false,
-      "sourceUrl": "https://ghc.anitab.org/session-catalog?tab.day=20261029"
-    },
-    {
       "id": "1771011337123001gtpM-1781624472243001spq3",
       "eventId": "ghc26",
       "title": "Become a Stronger Software Engineer Interview Candidate",
@@ -12811,35 +12760,6 @@
           "company": "Bank of America",
           "bio": "Technology Product Manager - Technology Delivery",
           "linkedIn": "https://www.linkedin.com/in/lisa-pugh"
-        }
-      ],
-      "isFixed": false,
-      "sourceUrl": "https://ghc.anitab.org/session-catalog?tab.day=20261030"
-    },
-    {
-      "id": "1771958217330001cMO1-1781624485159001sR95",
-      "eventId": "ghc26",
-      "title": "How to successfully incorporate AI, blockchain in Textiles & Handcrafted based Startups to scale",
-      "abstract": "Handcrafted sees meteoric rise and growing at 11 YOY and valued at 2 Trillion by 2034\n\nElevating Marginalized communities, creating sustainable livelihoods, emancipating rural artisans\n\nPreserving artforms from becoming extinct, upskilling, adhering UNSDG by alleviating poverty and bridging social inequities, recycling, using ecofriendly materials\n\nFor many of our artisans, craft is more than just a source of income. It’s a form of expression that’s closely connected to their history and identity. \n\nThese crafts - and the stories that come with them - form the foundation of each handcrafted product. Each one is a celebration of the unique and longstanding tradition of Indian design.\n\nWe value our relationships with the artisans that they bring our products to life and are focused on making an increased impact in their life too. The ability to hire women artisan from Rajasthan’s villages and contribute to their economic empowerment is joy.",
-      "start": "2026-10-30T18:15:00.000Z",
-      "end": "2026-10-30T19:00:00.000Z",
-      "room": "Virtual 7641",
-      "format": "virtual",
-      "type": "Presentation",
-      "featured": false,
-      "tracks": [
-        "Entrepreneurship & Startups"
-      ],
-      "levels": [
-        "senior"
-      ],
-      "speakers": [
-        {
-          "name": "Surbhi Agarwal",
-          "title": "FOUNDER CEO",
-          "company": "THE ART EXOTICA",
-          "bio": "I am delighted to present before you, our organization’s portfolio and the niche product mix which is our USP which is the need of the hour for a sustainable future. Our Core Philosophy:- We have the vision to create something which is AUTHENTIC (Undisputed Originality), TIMELESS (Unaffected by Seasons), ELEGANT (Graceful and Stylish), BESPOKE (Made to Measure) We are into Manufacturing & Exports…",
-          "linkedIn": "https://www.linkedin.com/in/surbhi-a-880b397/"
         }
       ],
       "isFixed": false,
