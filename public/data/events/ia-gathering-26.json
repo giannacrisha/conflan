@@ -23,7 +23,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-06T22:35:31.908Z"
+    "updatedAt": "2026-10-07T05:39:03.859Z"
   },
   "sessions": [
     {
@@ -952,7 +952,7 @@
       "id": "5582318",
       "eventId": "ia-gathering-26",
       "title": "Lila Downs: Cambias mi Mundo",
-      "abstract": "Promo Code: IAGROUP\n\n20% off tickets for Lila Downs on Friday, October 23, 2026 at 7:30pm\n\nSTEP 1: Please create a Mondavi Center account or log in HERE \n\nSTEP 2: Navigate to seat map here: https://www.mondaviarts.org/whats-on/lila-downs\n\nSTEP 4: Click the “Tickets” Button \n\nSTEP 4: Scroll below the seat map and enter your group’s unique promo code into the promotion code box: IAGROUP\n\nSTEP 5: Click “APPLY CODE” \n\nSTEP 6: Select the seats of your choice\n\nSTEP 7: Click \"CONTINUE\"\n\nSTEP 8: Select the ticket type from the dropdown menu that applies to you (Regular or UCD Staff/Faculty)\n\nSTEP 9: Click “CONTINUE” to add the ticket(s) to cart \n\nSTEP 10: Continue through the purchase path. If your cart does not indicate anything under \"Total Saving\", please ensure the promo code is still entered in the promotion code box at the top of your page.\n\nIf you have any questions, please feel free to reach out to me! The Ticket Office can also help process tickets over the phone or in person for anyone who needs assistance. The Ticket Office is open Tuesday-Friday, noon to 5pm. We can be reached at 530-754-2787.",
+      "abstract": "Promo Code: IAGROUP\n\n20% off tickets for Lila Downs on Friday, October 23, 2026 at 7:30pm\n\nSTEP 1: Please create a Mondavi Center account or log in HERE \n\nSTEP 2: Navigate to seat map here: https://www.mondaviarts.org/whats-on/lila-downs\n\nSTEP 4: Click the “Tickets” Button \n\nSTEP 4: Scroll below the seat map and enter your group’s unique promo code into the promotion code box: IAGROUP\n\nSTEP 5: Click “APPLY CODE” \n\nSTEP 6: Select the seats of your choice\n\nSTEP 7: Click \"CONTINUE\"\n\nSTEP 8: Select the ticket type from the dropdown menu that applies to you (Regular or UCD Staff/Faculty)\n\nSTEP 9: Click “CONTINUE” to add the ticket(s) to cart \n\nSTEP 10: Continue through the purchase path. If your cart does not indicate anything under \"Total Saving\", please ensure the promo code is still entered in the promotion code box at the top of your page.\n\nThe Ticket Office can also help process tickets over the phone or in person for anyone who needs assistance. The Ticket Office is open Tuesday-Friday, noon to 5pm. We can be reached at 530-754-2787.",
       "start": "2026-10-24T02:30:00.000Z",
       "end": "2026-10-24T04:00:00.000Z",
       "room": "Mondavi Center for Performing Arts",
@@ -1726,6 +1726,12 @@
           "title": "Director, Center for Democracy and Civic Life",
           "company": "UMBC",
           "bio": "David Hoffman is the founding director of UMBC’s Center for Democracy and Civic Life. Before coming to UMBC in 2003, he was a practicing attorney and a leader in nonprofit organizations that addressed social challenges through community organizing. Initially as the first full-time advisor to UMBC's Student Government Association and later as an Honors College Faculty Fellow and leader of…"
+        },
+        {
+          "name": "Tess McRae",
+          "title": "Assistant Director for Connective Learning",
+          "company": "Center for Democracy and Civic Life, UMBC",
+          "bio": "Tess McRae is assistant director for connective learning with the Center for Democracy and Civic Life at the University of Maryland, Baltimore County (UMBC). She has eight years of experience as a facilitator, course instructor, and designer of practices and pedagogical approaches that support engagement, belonging, and civic contributions in educational settings. Tess was a founding staff member…"
         }
       ],
       "isFixed": false

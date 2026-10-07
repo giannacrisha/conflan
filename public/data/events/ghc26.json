@@ -50,7 +50,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-06T22:35:33.891Z"
+    "updatedAt": "2026-10-07T05:39:06.022Z"
   },
   "sessions": [
     {
@@ -937,7 +937,7 @@
       "speakers": [
         {
           "name": "Linda Pulikal",
-          "title": "Senior Software Engineer",
+          "title": "Team Lead",
           "company": "Nvidia",
           "bio": "Linda Pulickal is a Senior Software Engineer at Nvidia with 12 years of experience building software that operates at scale. Over the course of her career, she has worked as an individual contributor, tech lead, and engineering manager, developing ML ranking and personalization models, large data platforms, and security systems. She currently leads hardware data security initiatives at Nvidia,…",
           "linkedIn": "https://www.linkedin.com/in/lindapulickal/"
@@ -14842,13 +14842,6 @@
           "company": "UL Solutions",
           "bio": "Angela Williams has built a reputation as an Information Technology and Cybersecurity change agent, innovative thought leader, and business and digital enabler. She is an accomplished, well-respected, and collaborative technology executive with extensive IT and cybersecurity experience.\n\nAngela currently serves as SVP, Chief Information Security Officer with UL Solutions - a global independent…",
           "linkedIn": "https://www.linkedin.com/in/angela-c-williams/"
-        },
-        {
-          "name": "Arati Chavan",
-          "title": "VP, Cyber Security",
-          "company": "McKesson",
-          "bio": "Arati Chavan is Vice President of Cyber Security at McKesson, where she leads a global team and security strategy for one of the largest healthcare organizations in the United States. In this role, Arati is responsible for securing and modernizing enterprise access across highly regulated environments, ensuring patient trust, regulatory compliance, and business agility at scale.\nA recognized…",
-          "linkedIn": "https://www.linkedin.com/in/arati-chavan"
         },
         {
           "name": "Tracy Griffin",
