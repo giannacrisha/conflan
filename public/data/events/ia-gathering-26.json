@@ -23,7 +23,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-07T05:39:03.859Z"
+    "updatedAt": "2026-10-07T22:59:39.848Z"
   },
   "sessions": [
     {
@@ -310,48 +310,6 @@
           "name": "Noah Martin",
           "title": "Associate Director for Environmental Curriculum Design",
           "company": "Georgetown University"
-        }
-      ],
-      "isFixed": false
-    },
-    {
-      "id": "5524649",
-      "eventId": "ia-gathering-26",
-      "title": "Joy As Resistance: Take a Stand and Build Community Through Collective Creation",
-      "abstract": "The time we live in calls for both resistance and for building new ways of being in community with each other and with our planet. Last spring, at Lansing Community College through our annual Take A Stand! Sit In! social justice forum, we focused on joy – Joy as Resistance – and that is the focus of this workshop. Joy generates energy. Joy builds hope. Joy creates community. By cultivating joy, we open spaces for resistance, creating layers of resistance for ourselves, our work and our communities. Participants will learn about the Take A Stand forum, its history and impact, and gain ideas and inspiration for developing something similar. Most importantly, the majority of the workshop will be spent experiencing the joy of collective creation, both individually and as a group, responding to prompts that explore ways of restoration and the challenges of our time. We will then come together to share our creations and our experience in creating.",
-      "start": "2026-10-23T19:15:00.000Z",
-      "end": "2026-10-23T20:30:00.000Z",
-      "room": "Allewelt Conference Room, 105 Alumni Center",
-      "format": "in-person",
-      "type": "Participatory Workshop",
-      "tracks": [
-        "Participatory Workshop"
-      ],
-      "levels": [],
-      "speakers": [
-        {
-          "name": "Melissa Kaplan",
-          "title": "Arts & Sciences Outreach and Academic Coordinator",
-          "company": "Lansing Community College",
-          "bio": "Melissa Kaplan is a producer, community builder, and podcaster (Galaxy Forum and Inside LCC on LCC Connect). She serves as Outreach and Academic Coordinator for the Arts and Sciences Division at Lansing Community College where she creates multidisciplinary collaborations exploring a wide range of themes such as climate change, mental health, and environmental justice, through stage production,…"
-        },
-        {
-          "name": "Anne Heutsche",
-          "title": "Professor - History ",
-          "company": "Lansing Community College",
-          "bio": "Anne Heutsche is a Professor of History at Lansing Community College. I have been teaching at the college as an adjunct and now full-time instructor. Outside the classroom, I was the co-faculty director of the Centre for Engaged Inclusion for five years. I served as the faculty coordinator for the AAC&U Committing to Equity and Inclusive Excellence: Campus-Based Strategies for Student Success. As…"
-        },
-        {
-          "name": "Annescia Dillard",
-          "title": "Program and Office Specialist",
-          "company": "Lansing Community College",
-          "bio": "Annescia Dillard is a Program and Office Specialist at Lansing Community College's Center for Teaching Excellence, where she brings a natural talent for programming, accessibility, and aligning complex systems through collaborative innovation. Deeply committed to equity and social justice, she serves on several campus-wide committees, including the Take A Stand! Sit In! organizing committee. For…"
-        },
-        {
-          "name": "Barb Clauer",
-          "title": "Professor",
-          "company": "Lansing Community College",
-          "bio": "Barbara Clauer is an English professor at Lansing Community College and creator of the LCC Community-Generated Poetry Project, which was inspired by a session she attended at an Imagining America conference held at UC Davis in 2017."
         }
       ],
       "isFixed": false
@@ -652,6 +610,48 @@
         {
           "name": "Elliott Fukui",
           "company": "Mad Queer Organizing Strategies"
+        }
+      ],
+      "isFixed": false
+    },
+    {
+      "id": "5524649",
+      "eventId": "ia-gathering-26",
+      "title": "Joy As Resistance: Take a Stand and Build Community Through Collective Creation",
+      "abstract": "The time we live in calls for both resistance and for building new ways of being in community with each other and with our planet. Last spring, at Lansing Community College through our annual Take A Stand! Sit In! social justice forum, we focused on joy – Joy as Resistance – and that is the focus of this workshop. Joy generates energy. Joy builds hope. Joy creates community. By cultivating joy, we open spaces for resistance, creating layers of resistance for ourselves, our work and our communities. Participants will learn about the Take A Stand forum, its history and impact, and gain ideas and inspiration for developing something similar. Most importantly, the majority of the workshop will be spent experiencing the joy of collective creation, both individually and as a group, responding to prompts that explore ways of restoration and the challenges of our time. We will then come together to share our creations and our experience in creating.",
+      "start": "2026-10-23T21:00:00.000Z",
+      "end": "2026-10-23T22:15:00.000Z",
+      "room": "Allewelt Conference Room, 105 Alumni Center",
+      "format": "in-person",
+      "type": "Participatory Workshop",
+      "tracks": [
+        "Participatory Workshop"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Melissa Kaplan",
+          "title": "Arts & Sciences Outreach and Academic Coordinator",
+          "company": "Lansing Community College",
+          "bio": "Melissa Kaplan is a producer, community builder, and podcaster (Galaxy Forum and Inside LCC on LCC Connect). She serves as Outreach and Academic Coordinator for the Arts and Sciences Division at Lansing Community College where she creates multidisciplinary collaborations exploring a wide range of themes such as climate change, mental health, and environmental justice, through stage production,…"
+        },
+        {
+          "name": "Anne Heutsche",
+          "title": "Professor - History ",
+          "company": "Lansing Community College",
+          "bio": "Anne Heutsche is a Professor of History at Lansing Community College. I have been teaching at the college as an adjunct and now full-time instructor. Outside the classroom, I was the co-faculty director of the Centre for Engaged Inclusion for five years. I served as the faculty coordinator for the AAC&U Committing to Equity and Inclusive Excellence: Campus-Based Strategies for Student Success. As…"
+        },
+        {
+          "name": "Annescia Dillard",
+          "title": "Program and Office Specialist",
+          "company": "Lansing Community College",
+          "bio": "Annescia Dillard is a Program and Office Specialist at Lansing Community College's Center for Teaching Excellence, where she brings a natural talent for programming, accessibility, and aligning complex systems through collaborative innovation. Deeply committed to equity and social justice, she serves on several campus-wide committees, including the Take A Stand! Sit In! organizing committee. For…"
+        },
+        {
+          "name": "Barb Clauer",
+          "title": "Professor",
+          "company": "Lansing Community College",
+          "bio": "Barbara Clauer is an English professor at Lansing Community College and creator of the LCC Community-Generated Poetry Project, which was inspired by a session she attended at an Imagining America conference held at UC Davis in 2017."
         }
       ],
       "isFixed": false

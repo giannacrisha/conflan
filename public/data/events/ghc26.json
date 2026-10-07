@@ -50,7 +50,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-07T13:09:08.706Z"
+    "updatedAt": "2026-10-07T22:59:43.127Z"
   },
   "sessions": [
     {
@@ -5144,17 +5144,17 @@
       ],
       "speakers": [
         {
+          "name": "Suvi Rayananonda",
+          "title": "Divisional Vice President IT",
+          "company": "Abbott",
+          "bio": "Suvi Rayananonda is Divisional Vice President of Information Technology for Abbott Diabetes Care, where she leads the technology strategy and digital transformation agenda for Abbott’s rapidly growing diabetes business. With nearly three decades of experience in healthcare, medical devices, and global consulting, she has driven large-scale transformations across the value chain, from customer…"
+        },
+        {
           "name": "Alex Mandl",
           "title": "IT Director, Data, Analytics and AI Solutions",
           "company": "Abbott",
           "bio": "Alexandra Mandl is a Director of IT at Abbott, where she leads strategic initiatives focused on modernizing how technology is delivered and leveraged across the enterprise. With more than 25 years of experience spanning software development, business process transformation, data strategy, and digital innovation, she has held leadership roles across a variety of business and technology…",
           "linkedIn": "https://www.linkedin.com/in/alexandra-mandl-3122662/"
-        },
-        {
-          "name": "Suvi Rayananonda",
-          "title": "Divisional Vice President IT",
-          "company": "Abbott",
-          "bio": "Suvi Rayananonda is Divisional Vice President of Information Technology for Abbott Diabetes Care, where she leads the technology strategy and digital transformation agenda for Abbott’s rapidly growing diabetes business. With nearly three decades of experience in healthcare, medical devices, and global consulting, she has driven large-scale transformations across the value chain, from customer…"
         },
         {
           "name": "Nichole Meister",
@@ -7321,17 +7321,17 @@
       "levels": [],
       "speakers": [
         {
-          "name": "Lisa Mirth",
-          "title": "Product Designer",
-          "company": "Apple, Inc.",
-          "bio": "Lisa Mirth is a seasoned Information Technology professional with over two decades of experience. She specializes in accessibility and inclusive design. As a Senior Product Designer at Apple, she leads initiatives to integrate accessibility best practices into product design, ensuring that technology is more inclusive for all users. As a legally blind designer, Lisa brings a unique perspective,…"
-        },
-        {
           "name": "Tatiana Lee",
           "title": "Apple TV Accessibility Lead",
           "company": "Apple, Inc.",
           "bio": "Tatiana Lee is an Accessibility Lead at Apple TV, spearheading initiatives that promote authentic representation of people with disabilities in original content. With over a decade of experience, she collaborates with various teams to enhance diverse storytelling. Her advocacy has been recognized by Forbes and CNET. She is committed to fostering a sense of belonging for people with disabilities…",
           "linkedIn": "https://www.linkedin.com/in/tatilee512/"
+        },
+        {
+          "name": "Lisa Mirth",
+          "title": "Product Designer",
+          "company": "Apple, Inc.",
+          "bio": "Lisa Mirth is a seasoned Information Technology professional with over two decades of experience. She specializes in accessibility and inclusive design. As a Senior Product Designer at Apple, she leads initiatives to integrate accessibility best practices into product design, ensuring that technology is more inclusive for all users. As a legally blind designer, Lisa brings a unique perspective,…"
         }
       ],
       "isFixed": false,
@@ -10312,9 +10312,9 @@
         },
         {
           "name": "Anya Derbakova",
-          "title": "Sr. Solutions Architect",
+          "title": "Sr. Applied AI Solutions Architect",
           "company": "Amazon Web Services",
-          "bio": "Anya Derbakova is a seasoned technologist and AWS Senior Solutions Architect with a passion for making complex technology accessible, practical, and impactful. Her career spans enterprise software, open source innovation, startups, and cloud. Anya began her journey at IBM, where she was a core contributor to the Linux Foundation Hyperledger Fabric open source project. Drawn to the energy of…",
+          "bio": "Anya is a seasoned technologist and AWS Senior Applied AI Solutions Architect with a passion for making complex technology accessible, practical, and impactful. At AWS Anya works with enterprise customers specializing at the intersection of generative AI, agentic systems, security, and compliance. She helps organizations navigate the critical and often overlooked challenge of moving AI from…",
           "linkedIn": "https://www.linkedin.com/in/annadderbakova/"
         },
         {
@@ -12378,16 +12378,16 @@
       ],
       "speakers": [
         {
-          "name": "Evie Richards",
-          "title": "Sr Commercial Skilling Manager",
-          "company": "Microsoft",
-          "bio": "With 8 years of experience as a Consultant, Cloud Solution Architect, and now Commercial Skilling Manager at Microsoft, my focus has centered on empowering hundreds of global companies to adopt and uncover the power of new technologies. Currently, I have the pleasure of partnering with our most strategic customers in the Manufacturing & Mobility space to realize their AI business goals by…"
-        },
-        {
           "name": "Jessica Sponseller",
           "title": "Senior Skilling Manager",
           "company": "Microsoft",
           "bio": "I started my career as an elementary school teacher, spending eight years in the classroom before earning my Master’s in Learning Design and Leadership with a focus on digital learning. Today, I work at Microsoft in audience insights and strategy for higher‑education, helping shape short‑form skilling content that meets students where they are and supports their career and AI journeys."
+        },
+        {
+          "name": "Evie Richards",
+          "title": "Sr Commercial Skilling Manager",
+          "company": "Microsoft",
+          "bio": "With 8 years of experience as a Consultant, Cloud Solution Architect, and now Commercial Skilling Manager at Microsoft, my focus has centered on empowering hundreds of global companies to adopt and uncover the power of new technologies. Currently, I have the pleasure of partnering with our most strategic customers in the Manufacturing & Mobility space to realize their AI business goals by…"
         },
         {
           "name": "Nike Owens",
