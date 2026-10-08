@@ -50,7 +50,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-07T22:59:43.127Z"
+    "updatedAt": "2026-10-08T05:47:16.443Z"
   },
   "sessions": [
     {
@@ -140,6 +140,7 @@
       "abstract": "Morning Movement for Stronger Bodies, Sharper Minds & Better Days \n\nBefore the sessions start, the meetings begin, and the ideas start flowing, take 45 minutes for you. \n\nGHC Power Up is a new morning movement series designed to help attendees start the day feeling energized, grounded, and ready to take on GHC. Across three mornings, attendees can choose from yoga, HIIT, and full-body fitness experiences led by dynamic wellness instructors Reina Dominguez and Paris Jackson. \n\nBecause showing up as your best self isn't just about what you know. It's also about taking care of the body and mind that make everything else possible. \n\nWhether you want to stretch, sweat, reset, or simply make space for yourself before a full conference day, Power Up is your invitation to move. \n\nWednesday | POWER UP: Cardio Dance with Paris Jackson, Founder of Sweat Sessions \n\nKick off GHC with energy. Join Coach P for a high-energy Cardio Dance workout combining upbeat music, rhythmic movement, and muscle-focused exercises for a full-body, feel-good fitness experience. \n\nParticipants will dance, groove, and sweat through movements designed to elevate the heart rate and work the body from head to toe. No dance experience is required, and the class is designed for all fitness levels. \n\nThursday | GHC POWER UP: HIIT Reset with Reina Dominguez, Founder of The Inner Edge Training \n\nTurn up the energy before the conference day begins. This high-energy fitness experience is designed to get your heart pumping, challenge your body, and build strength while allowing participants to work at their own level. \n\nReina brings more than 15 years of experience in intentional movement and combines functional fitness, performance coaching, and an inclusive approach designed to leave participants feeling energized, capable, and connected. \n\nFriday | GHC POWER UP: Flow State with Reina Dominguez, Founder of The Inner Edge Training \n\nClose out GHC with Flow State, a mindful yoga flow designed to improve mobility, release tension, and reconnect mind and body. \n\nThrough intentional movement and breathwork, participants will build space, restore balance, and leave feeling grounded, energized, and ready for the day ahead.",
       "start": "2026-10-28T14:00:00.000Z",
       "end": "2026-10-28T14:45:00.000Z",
+      "room": "Hilton Lanai Terrace (5th Floor)",
       "format": "in-person",
       "type": "Networking & Events",
       "featured": false,
@@ -1095,6 +1096,7 @@
       "abstract": "Join us for a powerful celebration honoring the incredible technologists of color who are redefining the tech landscape. This is your space to unite with a vibrant community of diverse trail-blazers, share your triumphs, and spark the collaborative networks and leadership opportunities that drive systemic change and elevate our collective power.",
       "start": "2026-10-28T17:00:00.000Z",
       "end": "2026-10-28T18:30:00.000Z",
+      "room": "Hilton Pacific Ballroom C (2nd Floor)",
       "format": "in-person",
       "type": "Networking & Events",
       "featured": false,
@@ -1124,7 +1126,8 @@
           "name": "Mattie Toia",
           "title": "Vice President Engineering, Infrastructure",
           "company": "Uber",
-          "bio": "The Vice President of Engineering at Uber leading Infrastructure, Mattie has more than two decades of experience building and operating large-scale infra, reliability, and systems. They previously served as Head of Infra at Shopify and led cloud-native SRE organizations at Google."
+          "bio": "The Vice President of Engineering at Uber leading Infrastructure, Mattie has more than two decades of experience building and operating large-scale infra, reliability, and systems. They previously served as Head of Infra at Shopify and led cloud-native SRE organizations at Google.",
+          "linkedIn": "https://www.linkedin.com/in/mattie-toia?utm_source=share_via&utm_content=profile&utm_medium=member_android"
         },
         {
           "name": "Aarathi Vidyasagar",
@@ -2585,8 +2588,8 @@
     {
       "id": "1772163077940001mEDK-1781624447250001sVwf",
       "eventId": "ghc26",
-      "title": "Agent-Driven Development: Architecting Autonomous Workflows for the Modern SDLC",
-      "abstract": "AI has transformed how we write code but our operational overhead - manual Jira grooming, triaging security vulnerabilities, and regression testing - remains a bottleneck. To achieve maximum benefit,we must move beyond \"chatbots (prompting) toward Agent-Driven Development (ADD): a framework for orchestrating autonomous, self-healing workflows across the SDLC.\n\nIn this session, we will deep-dive into the architecture of \"Agentic Loops\" that handle the heavy lifting of modern engineering. We will explore three real-world case studies:\n\nThe Project Pilot: Automating Jira backlog refinement and requirement mapping.\n\nThe Security Shield: Intelligent vulnerability triaging and automated remediation suggestions.\n\nThe Quality Loop: AI-driven Test Generation that evolves with your codebase.\n\nAttendees will leave with a technical blueprint for selecting the right orchestration hooks, ensuring data privacy, and implementing \"human-in-the-loop\" checkpoints to scale AI-augmented operations with confidence",
+      "title": "Agent-Driven Development: Is Your SDLC Ready?",
+      "abstract": "AI has transformed how we write code, and it is now beginning to act rather than only suggest - taking on multi-step work across the software lifecycle, from Jira grooming and vulnerability remediation to test generation and incident response, with fewer human checkpoints along the way. This session explores a shift that comes with that: the advantage moves from the capability of the agent toward the quality of the system we build around it.\n\nWe will look at the patterns that tend to surface as delegation grows - where an agent can quietly inherit a team's assumptions, satisfy a metric without meeting the goal, or pass its checks while missing the intent - and the workflow qualities that help keep them in check: discoverable context, clear constraints, well-scoped tools, independent evidence, and a reliable path to recovery.\n\nAttendees will leave with a simple way to reason about control (guardrail → evidence → authorization), a perspective on matching autonomy to the reversibility of each decision, a move from AI-activity metrics toward verified-outcome metrics, and a short readiness check they can try on a workflow they already have.",
       "start": "2026-10-28T18:30:00.000Z",
       "end": "2026-10-28T19:15:00.000Z",
       "room": "256AB",
@@ -3131,6 +3134,7 @@
       "abstract": "Vibrancy, collaboration, and community in action! Join us as we celebrate our vibrant Latine tech community and the cultural wealth we bring to the future of technology. Come connect with fellow changemakers, build meaningful professional bonds, and find inspiration in a welcoming, high-energy space dedicated to lifting up Latine voices, leadership, and success in tech.",
       "start": "2026-10-28T19:30:00.000Z",
       "end": "2026-10-28T21:00:00.000Z",
+      "room": "Hilton Pacific Ballroom C (2nd Floor)",
       "format": "in-person",
       "type": "Networking & Events",
       "featured": false,
@@ -6228,6 +6232,7 @@
       "abstract": "Honoring Our Roots, Shaping Our Future In 1987, Dr. Anita Borg and 12 computer scientists started one of the first and largest global email networks exclusively for women in computing. That single spark created Systers and ultimately inspired the creation of GHC itself. This reception is your chance to network across generations and experience the power of collective support. Come for the connection, stay for the community, and help us write the next chapter.",
       "start": "2026-10-28T23:30:00.000Z",
       "end": "2026-10-29T01:00:00.000Z",
+      "room": "Hilton Avalon Ballroom (Main Floor)",
       "format": "in-person",
       "type": "Networking & Events",
       "featured": false,
@@ -6244,6 +6249,7 @@
       "abstract": "Morning Movement for Stronger Bodies, Sharper Minds & Better Days \n\nBefore the sessions start, the meetings begin, and the ideas start flowing, take 45 minutes for you. \n\nGHC Power Up is a new morning movement series designed to help attendees start the day feeling energized, grounded, and ready to take on GHC. Across three mornings, attendees can choose from yoga, HIIT, and full-body fitness experiences led by dynamic wellness instructors Reina Dominguez and Paris Jackson. \n\nBecause showing up as your best self isn't just about what you know. It's also about taking care of the body and mind that make everything else possible. \n\nWhether you want to stretch, sweat, reset, or simply make space for yourself before a full conference day, Power Up is your invitation to move. \n\nWednesday | POWER UP: Cardio Dance with Paris Jackson, Founder of Sweat Sessions \n\nKick off GHC with energy. Join Coach P for a high-energy Cardio Dance workout combining upbeat music, rhythmic movement, and muscle-focused exercises for a full-body, feel-good fitness experience. \n\nParticipants will dance, groove, and sweat through movements designed to elevate the heart rate and work the body from head to toe. No dance experience is required, and the class is designed for all fitness levels. \n\nThursday | GHC POWER UP: HIIT Reset with Reina Dominguez, Founder of The Inner Edge Training \n\nTurn up the energy before the conference day begins. This high-energy fitness experience is designed to get your heart pumping, challenge your body, and build strength while allowing participants to work at their own level. \n\nReina brings more than 15 years of experience in intentional movement and combines functional fitness, performance coaching, and an inclusive approach designed to leave participants feeling energized, capable, and connected. \n\nFriday | GHC POWER UP: Flow State with Reina Dominguez, Founder of The Inner Edge Training \n\nClose out GHC with Flow State, a mindful yoga flow designed to improve mobility, release tension, and reconnect mind and body. \n\nThrough intentional movement and breathwork, participants will build space, restore balance, and leave feeling grounded, energized, and ready for the day ahead.",
       "start": "2026-10-29T14:00:00.000Z",
       "end": "2026-10-29T14:45:00.000Z",
+      "room": "Hilton Lanai Terrace (5th Floor)",
       "format": "in-person",
       "type": "Networking & Events",
       "featured": false,
@@ -7344,6 +7350,7 @@
       "abstract": "Proud, powerful, and changing the face of tech! Join us as we celebrate our incredible LGBTQIA+ community and the diverse voices driving innovation forward. Come connect with fellow changemakers, share your story, and be part of a welcoming, inclusive space where authenticity meets leadership and tech excellence thrives.",
       "start": "2026-10-29T17:00:00.000Z",
       "end": "2026-10-29T18:30:00.000Z",
+      "room": "Hilton Pacific Ballroom C (2nd Floor)",
       "format": "in-person",
       "type": "Networking & Events",
       "featured": false,
@@ -9381,6 +9388,7 @@
       "abstract": "Excellence, innovation, and community in action! Join us for an inspiring celebration dedicated to elevating Black technologists who are shaping the future of the industry. This is your space to connect with brilliant minds, exchange ideas, and build the meaningful networks and leadership opportunities that move our community forward.",
       "start": "2026-10-29T19:30:00.000Z",
       "end": "2026-10-29T21:00:00.000Z",
+      "room": "Hilton Pacific Ballroom C (2nd Floor)",
       "format": "in-person",
       "type": "Networking & Events",
       "featured": false,
@@ -10643,7 +10651,8 @@
         {
           "name": "Gagan Reen",
           "title": "SVP of AI",
-          "company": "Virtusa"
+          "company": "Virtusa",
+          "bio": "Gagan Reen is the Technology Sector Consulting Growth Leader at EY . He is a seasoned executive with more than 25 years of experience helping organizations navigate growth, transformation, and innovation. His career spans leadership roles at EY, Google, PwC, IBM, and Wipro, where he has advised Fortune 500 executives and boards on business strategy, digital transformation, and emerging…"
         },
         {
           "name": "Tony Wilkins",
@@ -11394,6 +11403,7 @@
       "abstract": "To the innovators, problem-solvers, and future-builders! Join us for a vibrant celebration of our global community of technologists. Whether you’re a seasoned pro or just starting your journey, come mingle with peers, spark fresh collaborations, and celebrate the collective passion that powers the AnitaB.org community every single day.",
       "start": "2026-10-29T22:00:00.000Z",
       "end": "2026-10-29T23:30:00.000Z",
+      "room": "Hilton Pacific Ballroom C (2nd Floor)",
       "format": "in-person",
       "type": "Networking & Events",
       "featured": false,
@@ -11915,7 +11925,15 @@
       "levels": [
         "senior"
       ],
-      "speakers": [],
+      "speakers": [
+        {
+          "name": "Christine Hudson",
+          "title": "Leader",
+          "company": "MNFST AI",
+          "bio": "Christine Hudson is a transformation strategist and pragmatist, and co-author of the forthcoming book \"Practice Makes Culture: How Welcoming Elephants, Creating Ownership, and Facilitating Daily Practice Transform Organizations.\" She specializes in bridging technology and human systems to improve strategy deployment and create high-performing organizations. A polyglot in both human and programming…",
+          "linkedIn": "https://www.linkedin.com/in/christinelh/"
+        }
+      ],
       "isFixed": false,
       "sourceUrl": "https://ghc.anitab.org/session-catalog?tab.day=20261029"
     },
@@ -12413,6 +12431,7 @@
       "abstract": "Morning Movement for Stronger Bodies, Sharper Minds & Better Days \n\nBefore the sessions start, the meetings begin, and the ideas start flowing, take 45 minutes for you. \n\nGHC Power Up is a new morning movement series designed to help attendees start the day feeling energized, grounded, and ready to take on GHC. Across three mornings, attendees can choose from yoga, HIIT, and full-body fitness experiences led by dynamic wellness instructors Reina Dominguez and Paris Jackson. \n\nBecause showing up as your best self isn't just about what you know. It's also about taking care of the body and mind that make everything else possible. \n\nWhether you want to stretch, sweat, reset, or simply make space for yourself before a full conference day, Power Up is your invitation to move. \n\nWednesday | POWER UP: Cardio Dance with Paris Jackson, Founder of Sweat Sessions \n\nKick off GHC with energy. Join Coach P for a high-energy Cardio Dance workout combining upbeat music, rhythmic movement, and muscle-focused exercises for a full-body, feel-good fitness experience. \n\nParticipants will dance, groove, and sweat through movements designed to elevate the heart rate and work the body from head to toe. No dance experience is required, and the class is designed for all fitness levels. \n\nThursday | GHC POWER UP: HIIT Reset with Reina Dominguez, Founder of The Inner Edge Training \n\nTurn up the energy before the conference day begins. This high-energy fitness experience is designed to get your heart pumping, challenge your body, and build strength while allowing participants to work at their own level. \n\nReina brings more than 15 years of experience in intentional movement and combines functional fitness, performance coaching, and an inclusive approach designed to leave participants feeling energized, capable, and connected. \n\nFriday | GHC POWER UP: Flow State with Reina Dominguez, Founder of The Inner Edge Training \n\nClose out GHC with Flow State, a mindful yoga flow designed to improve mobility, release tension, and reconnect mind and body. \n\nThrough intentional movement and breathwork, participants will build space, restore balance, and leave feeling grounded, energized, and ready for the day ahead.",
       "start": "2026-10-30T14:00:00.000Z",
       "end": "2026-10-30T14:45:00.000Z",
+      "room": "Hilton Lanai Terrace (5th Floor)",
       "format": "in-person",
       "type": "Networking & Events",
       "featured": false,
@@ -12470,6 +12489,7 @@
       "abstract": "Lead the way, shape the future, and expand your legacy Join us for an exclusive gathering designed for senior leaders, executives, and seasoned tech professionals looking to cultivate high-level connections, share strategic insights, and explore executive leadership roles within the AnitaB.org community.",
       "start": "2026-10-30T17:00:00.000Z",
       "end": "2026-10-30T18:30:00.000Z",
+      "room": "Hilton Pacific Ballroom C (2nd Floor)",
       "format": "in-person",
       "type": "Networking & Events",
       "featured": false,
@@ -14477,6 +14497,7 @@
       "abstract": "Pivot, power up, and own your next professional chapter Join us for a dynamic session tailored for mid-career technologists ready to break through boundaries, scale their impact, and step into intentional leadership.",
       "start": "2026-10-30T19:30:00.000Z",
       "end": "2026-10-30T21:00:00.000Z",
+      "room": "Hilton Pacific Ballroom C (2nd Floor)",
       "format": "in-person",
       "type": "Networking & Events",
       "featured": false,
@@ -16069,6 +16090,7 @@
       "abstract": "Launch your journey, build your toolkit, and find your pack Join us for an energetic meetup designed specifically for early-career technologists, recent grads, and career-switchers looking to make a splash in the industry. Meet inspiring mentors, connect with fellow rising stars, and unlock the community support and foundational skills you need to navigate your tech career with absolute confidence.",
       "start": "2026-10-30T22:00:00.000Z",
       "end": "2026-10-30T23:30:00.000Z",
+      "room": "Hilton Pacific Ballroom C (2nd Floor)",
       "format": "in-person",
       "type": "Networking & Events",
       "featured": false,
