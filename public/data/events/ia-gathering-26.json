@@ -23,7 +23,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-07T22:59:39.848Z"
+    "updatedAt": "2026-10-09T22:32:37.005Z"
   },
   "sessions": [
     {
@@ -216,36 +216,6 @@
           "title": "Independent Artist, Worth Ryder Art Gallery Manager",
           "company": "UC Berkeley ",
           "bio": "Elena Yu is an interdisciplinary artist whose practice aims to examine and affect the formation of collective memory through engagement with the materials and processes of archives. Her work incorporates textiles, found objects, drawing, performance, and social practice, and is deeply informed by her work as an arts organizer and educator. Elena has exhibited, performed, and hosted workshops in…"
-        }
-      ],
-      "isFixed": false
-    },
-    {
-      "id": "5524633",
-      "eventId": "ia-gathering-26",
-      "title": "Little Bird Lab's Smoke Stories: Imagining Futures We Want to Inhabit",
-      "abstract": "What happens when scientists, artists, and community members share a space designed for inquiry? Little Bird Lab's Smoke Stories Collaboratory gathers stories from humans and birds side by side, discovering patterns, ideas, and shared wonderings that emerge from purposeful listening.\n\nThis participatory workshop addresses wildfire, an increasingly pervasive and destructive part of our changing landscape through storytelling and collective imagining. Wildfire smoke infiltrates our neighborhoods, invades our homes, and diffuses into our bloodstream. As summers grow warmer and drier, and given the complicated history of fire suppression in North America, wildfire seasons are becoming longer and more intense.\n\nSmoke Stories collects stories from birds and humans breathing the same air, exploring how geography, culture, and the necessity of meeting basic needs shape responses to wildfire and smoke. Our workshop invites participants to use birds as a creative conduit for playful making and envisioning. Listen, draw, respond, and dream as a way to practice imagining shared futures we want to inhabit and leave with a collaborative Smoke Stories zine.",
-      "start": "2026-10-23T19:15:00.000Z",
-      "end": "2026-10-23T20:30:00.000Z",
-      "room": "Conf Room A, Conference Center",
-      "format": "in-person",
-      "type": "Participatory Workshop",
-      "tracks": [
-        "Participatory Workshop"
-      ],
-      "levels": [],
-      "speakers": [
-        {
-          "name": "Michelle Swinehart",
-          "title": "Assistant Teaching Professor",
-          "company": "Portland State University",
-          "bio": "Michelle Swinehart is an Assistant Teaching Professor at Portland State University where she teaches courses focused on developing ways to imagine, reflect and design. She loves developing community partnerships with the likes of the dSchool, Portland Art Museum, Narrative4 and StoryCorps. Recently she’s been working on an art+science exchange with Dr. Jamie Cornelius, founder of the Little Bird…"
-        },
-        {
-          "name": "M. Michelle Illuminato",
-          "title": "Professor of Art, Head of CORE",
-          "company": "Portland State University",
-          "bio": "M. Michelle Illuminato creates events, public exchanges, and artworks that help to reveal the complicated and often contradictory relationship between people, their culture, and the land they live on. She works individually as well as collaborating with artists and scientists including Next Question, whose projects have been exhibited nationally and in Italy, Poland, Germany, and Serbia. Her work…"
         }
       ],
       "isFixed": false
@@ -566,7 +536,7 @@
         },
         {
           "name": "Manda Wittebort",
-          "company": "Southwestern University "
+          "company": "Southwestern University"
         }
       ],
       "isFixed": false
@@ -648,7 +618,7 @@
           "bio": "Annescia Dillard is a Program and Office Specialist at Lansing Community College's Center for Teaching Excellence, where she brings a natural talent for programming, accessibility, and aligning complex systems through collaborative innovation. Deeply committed to equity and social justice, she serves on several campus-wide committees, including the Take A Stand! Sit In! organizing committee. For…"
         },
         {
-          "name": "Barb Clauer",
+          "name": "Barbara Clauer",
           "title": "Professor",
           "company": "Lansing Community College",
           "bio": "Barbara Clauer is an English professor at Lansing Community College and creator of the LCC Community-Generated Poetry Project, which was inspired by a session she attended at an Imagining America conference held at UC Davis in 2017."
@@ -897,8 +867,8 @@
         },
         {
           "name": "John Harris",
-          "title": "Organizer",
-          "company": "Community",
+          "title": "Baltimore Delegation",
+          "company": "Performing Our Future",
           "bio": "John Harris grew up in Louisiana and was reared with a social consciousness and community spirit that still drives him today. John is the secretary of the national coalition of organizers known as Performing Our Future. During the Baltimore Delegation's work on the West Baltimore Re-Imagining and Redevelopment Project, John was named one of the Distinguished Community Fellows, Whitman '49…"
         },
         {
@@ -1771,7 +1741,7 @@
           "bio": "Kennedie Black is a graduate student, educator, and scholar of American history and culture. She graduated from Emory University in May 2026 with a B.A. in American Studies and American History, where her work explored questions of race, gender, culture, education, and community. At Emory, she was a student and an IDEAS Fellow in the Institute of the Liberal Arts (ILA), including through its…"
         },
         {
-          "name": "Jackie Hampton",
+          "name": "Ava Hampton",
           "title": "Emory Student",
           "company": "Emory University ",
           "bio": "Jackie Hampton is a graduate of the Emory University Institute for the Liberal Arts, where she studied urbanism and helped start a community building program called \"Crafting Community.\" Her workshops used artistic projects, from zine making to screen printing, to bring students, faculty, and community members together."
