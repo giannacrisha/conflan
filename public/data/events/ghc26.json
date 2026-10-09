@@ -50,7 +50,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-08T23:14:16.270Z"
+    "updatedAt": "2026-10-09T05:51:57.440Z"
   },
   "sessions": [
     {
@@ -2080,6 +2080,12 @@
       "levels": [],
       "speakers": [
         {
+          "name": "Jennifer Salaam",
+          "title": "Manager, Product Delivery Management - Enterprise Products",
+          "company": "Bloomberg LP",
+          "bio": "Jennifer Salaam leads the Enterprise Products’ Product Delivery Management (PDM) team at Bloomberg. She partners with Engineering and Product leaders to build empowered, multidisciplinary teams that deliver the right products efficiently and at scale. In her role, she works closely with Enterprise Products’ leadership to drive ambitious outcomes, strengthen cross-functional collaboration,…"
+        },
+        {
           "name": "Parul Jalota",
           "title": "Global Head of Engineering for Macro Data",
           "company": "Bloomberg LP",
@@ -2090,12 +2096,6 @@
           "title": "Global Head of Data AI",
           "company": "Bloomberg LP",
           "bio": "Gillian Chin is the Global Head of Data AI at Bloomberg, where she leads the development and scaling of LLM-powered systems that combine automation, evaluation, and human-in-the-loop workflows to support AI products used globally. Her work focuses on operationalizing agentic AI responsibly at scale and building reliable AI systems that deliver meaningful real-world impact. She previously worked as…"
-        },
-        {
-          "name": "Jennifer Salaam",
-          "title": "Manager, Product Delivery Management - Enterprise Products",
-          "company": "Bloomberg LP",
-          "bio": "Jennifer Salaam leads the Enterprise Products’ Product Delivery Management (PDM) team at Bloomberg. She partners with Engineering and Product leaders to build empowered, multidisciplinary teams that deliver the right products efficiently and at scale. In her role, she works closely with Enterprise Products’ leadership to drive ambitious outcomes, strengthen cross-functional collaboration,…"
         },
         {
           "name": "Lisa Bravo",
@@ -4898,24 +4898,11 @@
       ],
       "speakers": [
         {
-          "name": "Liza Ogwel",
-          "title": "Technical Program Manager",
-          "company": "Amazon Web Services",
-          "bio": "Liza is a Technical Program Manager at Amazon Web Services (AWS), driving strategic initiatives within the AWS Specialists and Partners organization. With a master's degree in Organizational Leadership from Gonzaga University and extensive experience in technical program management, she specializes in bridging the gap between complex technical solutions and business outcomes. As an Amazon Bar…",
-          "linkedIn": "https://www.linkedin.com/in/lizaogwel"
-        },
-        {
-          "name": "Vanessa Hernandez Mateos",
-          "title": "AWS Senior Solutions Architect for Public Sector",
-          "company": "Amazon Web Services",
-          "bio": "Vanessa has more than 23 years of experience in customer facing technical roles, starting as a Service Management Specialist, and then developing a career as Cloud Solutions Architect, currently attending public sector accounts at AWS Mexico, where she recently received the “AWSome All Stars Award” for showing Leadership Principles such as Ownership and Earn Trust. She worked previously for the…"
-        },
-        {
-          "name": "Aditi Singh",
-          "title": "Sr. Technical Account Manager",
-          "company": "Amazon Web Services",
-          "bio": "Aditi Singh is a Senior Technical Account Manager at AWS, where she supports Hi-Tech and Semiconductor companies in running large-scale EDA, HPC, and Generative AI workloads in the cloud. She specializes in designing resilient high-performance compute and storage environments for semiconductor design flows and enabling AI-powered  optimizing and monitoring solutions. An active member of AWS…",
-          "linkedIn": "https://www.linkedin.com/in/aditissingh/"
+          "name": "Priya Balgi",
+          "title": "Sr. Business Intelligence Engineer",
+          "company": "Amazon",
+          "bio": "Priya Balgi is a Senior Business Intelligence Engineer at Amazon Web Services (AWS), where she focuses on applying Generative Artificial Intelligence (AI) to large-scale data systems to drive intelligent, data-informed decision-making. Her work spans advanced analytics, automation, and the operationalization of AI models to extract meaningful insights from complex datasets. With extensive…",
+          "linkedIn": "https://www.linkedin.com/in/priya-balgi/"
         },
         {
           "name": "Vida Azimi",
@@ -4925,6 +4912,19 @@
           "linkedIn": "https://www.linkedin.com/in/vidaazimi/"
         },
         {
+          "name": "Aditi Singh",
+          "title": "Sr. Technical Account Manager",
+          "company": "Amazon Web Services",
+          "bio": "Aditi Singh is a Senior Technical Account Manager at AWS, where she supports Hi-Tech and Semiconductor companies in running large-scale EDA, HPC, and Generative AI workloads in the cloud. She specializes in designing resilient high-performance compute and storage environments for semiconductor design flows and enabling AI-powered  optimizing and monitoring solutions. An active member of AWS…",
+          "linkedIn": "https://www.linkedin.com/in/aditissingh/"
+        },
+        {
+          "name": "Vanessa Hernandez Mateos",
+          "title": "AWS Senior Solutions Architect for Public Sector",
+          "company": "Amazon Web Services",
+          "bio": "Vanessa has more than 23 years of experience in customer facing technical roles, starting as a Service Management Specialist, and then developing a career as Cloud Solutions Architect, currently attending public sector accounts at AWS Mexico, where she recently received the “AWSome All Stars Award” for showing Leadership Principles such as Ownership and Earn Trust. She worked previously for the…"
+        },
+        {
           "name": "Anisha Salunkhe",
           "title": "Cloud Applications Architect",
           "company": "Amazon Web Services",
@@ -4932,11 +4932,11 @@
           "linkedIn": "https://www.linkedin.com/in/anishasalunkhe/"
         },
         {
-          "name": "Priya Balgi",
-          "title": "Sr. Business Intelligence Engineer",
-          "company": "Amazon",
-          "bio": "Priya Balgi is a Senior Business Intelligence Engineer at Amazon Web Services (AWS), where she focuses on applying Generative Artificial Intelligence (AI) to large-scale data systems to drive intelligent, data-informed decision-making. Her work spans advanced analytics, automation, and the operationalization of AI models to extract meaningful insights from complex datasets. With extensive…",
-          "linkedIn": "https://www.linkedin.com/in/priya-balgi/"
+          "name": "Liza Ogwel",
+          "title": "Technical Program Manager",
+          "company": "Amazon Web Services",
+          "bio": "Liza is a Technical Program Manager at Amazon Web Services (AWS), driving strategic initiatives within the AWS Specialists and Partners organization. With a master's degree in Organizational Leadership from Gonzaga University and extensive experience in technical program management, she specializes in bridging the gap between complex technical solutions and business outcomes. As an Amazon Bar…",
+          "linkedIn": "https://www.linkedin.com/in/lizaogwel"
         }
       ],
       "isFixed": false,
@@ -5164,17 +5164,17 @@
       ],
       "speakers": [
         {
-          "name": "Suvi Rayananonda",
-          "title": "Divisional Vice President IT",
-          "company": "Abbott",
-          "bio": "Suvi Rayananonda is Divisional Vice President of Information Technology for Abbott Diabetes Care, where she leads the technology strategy and digital transformation agenda for Abbott’s rapidly growing diabetes business. With nearly three decades of experience in healthcare, medical devices, and global consulting, she has driven large-scale transformations across the value chain, from customer…"
-        },
-        {
           "name": "Alex Mandl",
           "title": "IT Director, Data, Analytics and AI Solutions",
           "company": "Abbott",
           "bio": "Alexandra Mandl is a Director of IT at Abbott, where she leads strategic initiatives focused on modernizing how technology is delivered and leveraged across the enterprise. With more than 25 years of experience spanning software development, business process transformation, data strategy, and digital innovation, she has held leadership roles across a variety of business and technology…",
           "linkedIn": "https://www.linkedin.com/in/alexandra-mandl-3122662/"
+        },
+        {
+          "name": "Suvi Rayananonda",
+          "title": "Divisional Vice President IT",
+          "company": "Abbott",
+          "bio": "Suvi Rayananonda is Divisional Vice President of Information Technology for Abbott Diabetes Care, where she leads the technology strategy and digital transformation agenda for Abbott’s rapidly growing diabetes business. With nearly three decades of experience in healthcare, medical devices, and global consulting, she has driven large-scale transformations across the value chain, from customer…"
         },
         {
           "name": "Nichole Meister",
@@ -8323,11 +8323,11 @@
       ],
       "speakers": [
         {
-          "name": "Michelle Lerner",
-          "title": "Sales Leader",
-          "company": "Self",
-          "bio": "Michelle brings a people-first, channel-hardened perspective that uniquely bridges psychology, partnership, and performance. With over 30 years in the technology channel and a BA in Psychology, she understands that careers are shaped as much by mindset, motivation, and energy as by skills and titles. Guided by Stephen Covey's 7 Habits of Highly Effective People and the Youness Equation, Michelle…",
-          "linkedIn": "https://www.linkedin.com/in/lernermichelle/"
+          "name": "Swathi Nagaram",
+          "title": "Senior cloud solution architect - GCP",
+          "company": "NetApp Pvt Ltd",
+          "bio": "I am Cloud Solution Architect for GCP at NetApp, I serve as a strategic technical voice, presenting our NetApp storage product offerings at major industry events and collaborating directly with customers to solve their most pressing real-time cloud challenges. With 17 years of experience spanning the evolution of modern data, my career has traversed the full technical spectrum—from designing and…",
+          "linkedIn": "https://linkedin.com/in/nagaram-swathi"
         },
         {
           "name": "Natalina Govia",
@@ -8336,11 +8336,11 @@
           "bio": "Natalina’s IT journey began working part-time for a VAR in high school. That early exposure sparked a lasting passion for IT and set the foundation for a 20+ year career, including more than a decade at NetApp. With her deep ecosystem experience, she currently leads revenue growth programs, activating GSI & MSP partnerships, scaling co-sell motions, and translating complex portfolio value into…"
         },
         {
-          "name": "Swathi Nagaram",
-          "title": "Senior cloud solution architect - GCP",
-          "company": "NetApp Pvt Ltd",
-          "bio": "I am Cloud Solution Architect for GCP at NetApp, I serve as a strategic technical voice, presenting our NetApp storage product offerings at major industry events and collaborating directly with customers to solve their most pressing real-time cloud challenges. With 17 years of experience spanning the evolution of modern data, my career has traversed the full technical spectrum—from designing and…",
-          "linkedIn": "https://linkedin.com/in/nagaram-swathi"
+          "name": "Michelle Lerner",
+          "title": "Sales Leader",
+          "company": "Self",
+          "bio": "Michelle brings a people-first, channel-hardened perspective that uniquely bridges psychology, partnership, and performance. With over 30 years in the technology channel and a BA in Psychology, she understands that careers are shaped as much by mindset, motivation, and energy as by skills and titles. Guided by Stephen Covey's 7 Habits of Highly Effective People and the Youness Equation, Michelle…",
+          "linkedIn": "https://www.linkedin.com/in/lernermichelle/"
         },
         {
           "name": "Lindsay Totten",
@@ -8850,18 +8850,18 @@
       ],
       "speakers": [
         {
-          "name": "Elizabeth Fuentes",
-          "title": "Developer Advocate, genAI",
-          "company": "AWS",
-          "bio": "As Developer Advocate, helping developers build production-ready AI applications. With a background spanning data analytics, machine learning, and developer education, she specializes in making complex AI concepts accessible through hands-on tutorials, open-source projects, and live demos. She creates practical resources for RAG systems, agentic workflows, and multimodal applications—focusing on…",
-          "linkedIn": "https://www.linkedin.com/in/lizfue/"
-        },
-        {
           "name": "Sandhya Subramani",
           "title": "Senior Developer Advocate",
           "company": "Amazon Web Services",
           "bio": "Sandhya Subramani is a Sr. Developer Advocate with 8+ years of experience in Applied AI Research, specializing in Large Language Models and agentic AI systems. She has developed and deployed AI solutions at organizations including Amazon, Warner Bros, and Fidelity Investments. Her work centers on turning cutting edge research into practical applications, and she is passionate about helping…",
           "linkedIn": "https://www.linkedin.com/in/sandhyasubramani/"
+        },
+        {
+          "name": "Elizabeth Fuentes",
+          "title": "Developer Advocate, genAI",
+          "company": "AWS",
+          "bio": "As Developer Advocate, helping developers build production-ready AI applications. With a background spanning data analytics, machine learning, and developer education, she specializes in making complex AI concepts accessible through hands-on tutorials, open-source projects, and live demos. She creates practical resources for RAG systems, agentic workflows, and multimodal applications—focusing on…",
+          "linkedIn": "https://www.linkedin.com/in/lizfue/"
         },
         {
           "name": "Laura Salinas",
@@ -10430,16 +10430,16 @@
       ],
       "speakers": [
         {
-          "name": "Christine Gonzales",
-          "title": "VP of Global Compliance",
-          "company": "Paypal"
-        },
-        {
           "name": "Mudita Tiwari",
           "title": "Global Head of PayPal World Product Management",
           "company": "PayPal",
           "bio": "Mudita Tiwari is a results - driven technology leader with nearly two decades of experience at the intersection of product,\nengineering, and innovation. At PayPal, her team focuses on building global platform solutions for payment network and wallet interoperability. Her team also builds Agentic AI - first developer experiences for B2B integrations, and solutions for next generation of omni -…",
           "linkedIn": "https://www.linkedin.com/in/muditatiwari/"
+        },
+        {
+          "name": "Christine Gonzales",
+          "title": "VP of Global Compliance",
+          "company": "Paypal"
         },
         {
           "name": "Stacy Rosenthal",
@@ -10658,17 +10658,17 @@
       ],
       "speakers": [
         {
+          "name": "Gagan Reen",
+          "title": "SVP of AI",
+          "company": "Virtusa",
+          "bio": "Gagan Reen is the Technology Sector Consulting Growth Leader at EY . He is a seasoned executive with more than 25 years of experience helping organizations navigate growth, transformation, and innovation. His career spans leadership roles at EY, Google, PwC, IBM, and Wipro, where he has advised Fortune 500 executives and boards on business strategy, digital transformation, and emerging…"
+        },
+        {
           "name": "Matt Wallaert",
           "title": "Chief Experience Officer",
           "company": "Oceans Talent",
           "bio": "Chief Experience Officer at Oceans, helping to bring high-quality job opportunities to international markets so that talented people don’t have to emigrate to grow. With nearly two decades of experience spanning startups, Fortune 500 companies, and social impact initiatives, Matt has been a pioneer in translating behavioral science into practical leadership and organizational change. He is the…",
           "linkedIn": "https://www.linkedin.com/in/mattwallaert"
-        },
-        {
-          "name": "Gagan Reen",
-          "title": "SVP of AI",
-          "company": "Virtusa",
-          "bio": "Gagan Reen is the Technology Sector Consulting Growth Leader at EY . He is a seasoned executive with more than 25 years of experience helping organizations navigate growth, transformation, and innovation. His career spans leadership roles at EY, Google, PwC, IBM, and Wipro, where he has advised Fortune 500 executives and boards on business strategy, digital transformation, and emerging…"
         },
         {
           "name": "Tony Wilkins",
@@ -12412,10 +12412,11 @@
       ],
       "speakers": [
         {
-          "name": "Jessica Sponseller",
-          "title": "Senior Skilling Manager",
+          "name": "Nike Owens",
+          "title": "Sr Learning & Skilling Mgr",
           "company": "Microsoft",
-          "bio": "I started my career as an elementary school teacher, spending eight years in the classroom before earning my Master’s in Learning Design and Leadership with a focus on digital learning. Today, I work at Microsoft in audience insights and strategy for higher‑education, helping shape short‑form skilling content that meets students where they are and supports their career and AI journeys."
+          "bio": "Nike Owens is a Senior Learning & Skilling Manager on the Audience & Outbound team within Microsoft's Global Skilling organization, where she drives audience strategy to help business professionals discover, adopt, and build practical AI skills. She works at the intersection of learning experience, content strategy, and growth, translating what real professionals need into skilling that is…",
+          "linkedIn": "https://www.linkedin.com/in/nikeowens/"
         },
         {
           "name": "Evie Richards",
@@ -12424,11 +12425,10 @@
           "bio": "With 8 years of experience as a Consultant, Cloud Solution Architect, and now Commercial Skilling Manager at Microsoft, my focus has centered on empowering hundreds of global companies to adopt and uncover the power of new technologies. Currently, I have the pleasure of partnering with our most strategic customers in the Manufacturing & Mobility space to realize their AI business goals by…"
         },
         {
-          "name": "Nike Owens",
-          "title": "Sr Learning & Skilling Mgr",
+          "name": "Jessica Sponseller",
+          "title": "Senior Skilling Manager",
           "company": "Microsoft",
-          "bio": "Nike Owens is a Senior Learning & Skilling Manager on the Audience & Outbound team within Microsoft's Global Skilling organization, where she drives audience strategy to help business professionals discover, adopt, and build practical AI skills. She works at the intersection of learning experience, content strategy, and growth, translating what real professionals need into skilling that is…",
-          "linkedIn": "https://www.linkedin.com/in/nikeowens/"
+          "bio": "I started my career as an elementary school teacher, spending eight years in the classroom before earning my Master’s in Learning Design and Leadership with a focus on digital learning. Today, I work at Microsoft in audience insights and strategy for higher‑education, helping shape short‑form skilling content that meets students where they are and supports their career and AI journeys."
         },
         {
           "name": "Nandita Sampath",
@@ -13515,6 +13515,44 @@
         }
       ],
       "isFixed": true,
+      "sourceUrl": "https://ghc.anitab.org/session-catalog?tab.day=20261030"
+    },
+    {
+      "id": "1791514104942001cHfE-1791520918256001y06n",
+      "eventId": "ghc26",
+      "title": "Navigating the Corporate Maze: Strategies for New Technologists and Career-Changers",
+      "abstract": "Starting a career in tech is about more than mastering technical skills. Success often depends on understanding how organizations work, building meaningful relationships, communicating effectively, and knowing how to advocate for yourself in environments that may feel unfamiliar. These are your power skills: skills that will take you beyond the computer screen into long-term success in the workplace. \n\nIn this interactive skill-building session, attendees will learn how to navigate the corporate landscape with confidence, whether they are entering the workforce for the first time, transitioning from another industry, or returning to work after a career break. Through real-world examples, practical frameworks, and actionable advice, participants will gain insight into the unspoken aspects of workplace success, networking with purpose, and thriving through uncertainty and change. \n\nAttendees will leave with strategies to accelerate their professional growth through power skill development. \n\nKey Takeaways \n\nUnderstand the unwritten rules and dynamics of corporate environments. \nBuild effective relationships with managers, peers, mentors, and sponsors. \nDevelop strategies for communicating impact and increasing visibility. \nLearn how to navigate ambiguity, organizational change, and competing priorities. \nCultivate confidence in the workplace for success in your role and career advancement.",
+      "start": "2026-10-30T18:15:00.000Z",
+      "end": "2026-10-30T19:15:00.000Z",
+      "room": "Ballroom BC",
+      "format": "in-person",
+      "type": "Workshop",
+      "featured": false,
+      "tracks": [
+        "Career Pathways & Transitions"
+      ],
+      "levels": [],
+      "speakers": [
+        {
+          "name": "Erika Karsh",
+          "title": "Manager, Workforce Advancement",
+          "company": "AnitaB.org",
+          "bio": "o Erika currently serves as the Manager of Workforce Advancement at AnitaB.org, where she has managed the AnitaB.org Apprenticeship Pathway Program (APP) since 2022. During this time, Erika has developed systems and processes to stabilize and expand APP for more individuals to break into tech through alternative pathways. Erika has over 10 years of experience in STEM education and advocacy with a…"
+        },
+        {
+          "name": "Marlena Roberson-Bullard",
+          "title": "Workforce Advancement Coordinator",
+          "company": "AnitaB.org",
+          "bio": "Marlena has served as the Workforce Advancement Coordinator at AnitaB.org since 2022. She works diligently with AnitaB.org’s Apprenticeship Pathway Program to offer individuals a non-traditional pathway into the tech industry. Before pursuing a career in the field of technology, Marlena began as a Spanish instructor for inner-city youth by helping native-speakers learn English alongside teaching…"
+        },
+        {
+          "name": "Taneya Boyde",
+          "title": "Software Engineer",
+          "company": "Intuit",
+          "bio": "Taneya “Neya” Boyde is a technologist with a career spanning content creation, marketing, and software engineering. Prior to transitioning into software engineering, she worked as a marketer, building her career and developing strengths in communication, strategy, and understanding how others connect with products and experiences. \n\nNeya’s path into tech has included a cloud engineering fellowship…"
+        }
+      ],
+      "isFixed": false,
       "sourceUrl": "https://ghc.anitab.org/session-catalog?tab.day=20261030"
     },
     {
@@ -14874,18 +14912,18 @@
       ],
       "speakers": [
         {
-          "name": "Terry Vicencio",
-          "title": "Sr Principal Engineer",
-          "company": "Workday",
-          "bio": "Terry Vicencio is a Senior Principal Technical Architect in Payroll Development at Workday. She works with engineering and product teams designing payroll solutions and integrations. Her experience includes evaluating potential Workday investments in early stage and emerging companies, as well as working with acquired companies to integrate their products and architectures into Workday’s…",
-          "linkedIn": "https://www.linkedin.com/in/terry-vicencio-16b711/"
-        },
-        {
           "name": "Rama Lanka",
           "title": "Sr Principal Engineer",
           "company": "Workday",
           "bio": "Rama Lanka is a Technical Architect at Workday with a 25-year pedigree spanning the Oracle E-Business Suite to the modern Workday Financials cloud. After a decade of being a feature-delivery bot, she pivoted to defining architectural investments that keep codebases from spontaneously combusting. Whether she’s leading critical M&A integrations or architecting the next generation of agentic…",
           "linkedIn": "https://www.linkedin.com/in/rama-lanka-011694/"
+        },
+        {
+          "name": "Terry Vicencio",
+          "title": "Sr Principal Engineer",
+          "company": "Workday",
+          "bio": "Terry Vicencio is a Senior Principal Technical Architect in Payroll Development at Workday. She works with engineering and product teams designing payroll solutions and integrations. Her experience includes evaluating potential Workday investments in early stage and emerging companies, as well as working with acquired companies to integrate their products and architectures into Workday’s…",
+          "linkedIn": "https://www.linkedin.com/in/terry-vicencio-16b711/"
         },
         {
           "name": "Subha Narasimhan",
