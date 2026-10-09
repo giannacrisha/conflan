@@ -50,7 +50,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-09T05:51:57.440Z"
+    "updatedAt": "2026-10-09T13:03:32.453Z"
   },
   "sessions": [
     {
@@ -9740,7 +9740,7 @@
           "name": "Suhana .",
           "title": "Software Engineer",
           "company": "Google",
-          "bio": "Suhana is a software engineer on the Keras team at Google, where she architects the next generation of deep learning infrastructure. Her work focuses on the Keras multi-backend implementation, creating a unified interface that enables high-performance model development across diverse machine learning frameworks. By building scalable and framework-agnostic tooling, she empowers developers to…",
+          "bio": "Suhana is a software engineer at Google, where she architects the next generation of deep learning infrastructure. Her work focuses on the Keras multi-backend implementation, creating a unified interface that enables high-performance model development across diverse machine learning frameworks. By building scalable and framework-agnostic tooling, she empowers developers to leverage the best of the…",
           "linkedIn": "https://www.linkedin.com/in/suhana-491949224/"
         }
       ],
