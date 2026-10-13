@@ -50,7 +50,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-13T00:30:36.608Z"
+    "updatedAt": "2026-10-13T14:02:13.451Z"
   },
   "sessions": [
     {
@@ -1124,8 +1124,8 @@
         },
         {
           "name": "Arpita Kumari",
-          "title": "Credit Risk Analyst",
-          "company": "Avant",
+          "title": "Credit Policy & Decision Analyst",
+          "company": "Reach Financial",
           "bio": "Arpita Kumari is a Credit Risk Analyst at Avant with a Bachelor's degree in Computer Science and a Master's in Business Analytics. With 3 years of software engineering experience between her degrees, she brings a unique perspective that bridges both technical and business-oriented roles in tech. Arpita has been passionate about diversity, equity, and inclusion throughout her career, from leading…",
           "linkedIn": "https://www.linkedin.com/in/arpitarkumari/"
         }
@@ -3877,16 +3877,16 @@
       ],
       "speakers": [
         {
-          "name": "Parul Manek",
-          "title": "VP, Enterprise+Cloud",
-          "company": "Microsoft Corporation",
-          "bio": "Parul Manek is Vice President in CoPilot, Agents & Platforms division, leading Product Management and Engineering, as part of Enterprise and Cloud business. Parul’s primary focus is on Enterprise business, market expansion and service quality. She is responsible for driving Microsoft 365 growth through international expansion, public sector offerings, and investment in enterprise targeted…"
-        },
-        {
           "name": "Kristin Petchnick",
           "title": "Partner PM Manager",
           "company": "Microsoft",
           "bio": "Kristin Petchnick helps Microsoft's Sovereign customers transition to the cloud and adopt AI capabilities. This involves coordinating across Microsoft engineering organizations to deliver core platform experiences across Azure, M365, AI, and Security; with the goal of ensuring organizations and end users can fulfill their respective missions. Prior to her current position, Kristin spent much of…"
+        },
+        {
+          "name": "Parul Manek",
+          "title": "VP, Enterprise+Cloud",
+          "company": "Microsoft Corporation",
+          "bio": "Parul Manek is Vice President in CoPilot, Agents & Platforms division, leading Product Management and Engineering, as part of Enterprise and Cloud business. Parul’s primary focus is on Enterprise business, market expansion and service quality. She is responsible for driving Microsoft 365 growth through international expansion, public sector offerings, and investment in enterprise targeted…"
         },
         {
           "name": "Denise Gramsky",
