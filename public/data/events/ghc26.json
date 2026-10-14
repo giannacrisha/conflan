@@ -50,7 +50,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-13T14:02:13.451Z"
+    "updatedAt": "2026-10-14T04:38:29.351Z"
   },
   "sessions": [
     {
@@ -5352,17 +5352,17 @@
       ],
       "speakers": [
         {
+          "name": "Suvi Rayananonda",
+          "title": "Divisional Vice President IT",
+          "company": "Abbott",
+          "bio": "Suvi Rayananonda is Divisional Vice President of Information Technology for Abbott Diabetes Care, where she leads the technology strategy and digital transformation agenda for Abbott’s rapidly growing diabetes business. With nearly three decades of experience in healthcare, medical devices, and global consulting, she has driven large-scale transformations across the value chain, from customer…"
+        },
+        {
           "name": "Alex Mandl",
           "title": "IT Director, Data, Analytics and AI Solutions",
           "company": "Abbott",
           "bio": "Alexandra Mandl is a Director of IT at Abbott, where she leads strategic initiatives focused on modernizing how technology is delivered and leveraged across the enterprise. With more than 25 years of experience spanning software development, business process transformation, data strategy, and digital innovation, she has held leadership roles across a variety of business and technology…",
           "linkedIn": "https://www.linkedin.com/in/alexandra-mandl-3122662/"
-        },
-        {
-          "name": "Suvi Rayananonda",
-          "title": "Divisional Vice President IT",
-          "company": "Abbott",
-          "bio": "Suvi Rayananonda is Divisional Vice President of Information Technology for Abbott Diabetes Care, where she leads the technology strategy and digital transformation agenda for Abbott’s rapidly growing diabetes business. With nearly three decades of experience in healthcare, medical devices, and global consulting, she has driven large-scale transformations across the value chain, from customer…"
         },
         {
           "name": "Nichole Meister",

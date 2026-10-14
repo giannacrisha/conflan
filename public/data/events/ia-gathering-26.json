@@ -23,7 +23,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-13T00:30:34.403Z"
+    "updatedAt": "2026-10-14T04:38:27.874Z"
   },
   "sessions": [
     {
@@ -697,7 +697,8 @@
           "name": "Star Liao"
         },
         {
-          "name": "Julianne Liu"
+          "name": "Julianne Liu",
+          "company": "University of Michigan"
         },
         {
           "name": "Sergio Peña",
@@ -1422,7 +1423,8 @@
         },
         {
           "name": "Craig Newchaffer",
-          "company": "Penn State University"
+          "title": "Dean, College of Health and Human Development",
+          "company": "Pennsylvania State University"
         }
       ],
       "isFixed": false
@@ -2505,7 +2507,7 @@
       "id": "5534213",
       "eventId": "ia-gathering-26",
       "title": "Projects and Practices 11",
-      "abstract": "Includes:\n• The Missing Seat: Reimagining Father Engagement to Restore Community and Collective Spirit (Khaled Ashraf)\n• Building Power Where You Are: Philly's Declaration of Interdependence (Jendaiya Hill)\n• Art, Memory, and The Troubles: Creative Peacebuilding in Northern Ireland (Sumitra Rajagopal, Kayla Anderson, Jae Fioribello, Gianna Crisha Saludo)\n• Multilingualism, Identity, and Community: Collaborative Research on Indigenous Mexican Languages in California's Central Coast (Matthew Kogan, Carla Suarez Soto, Eli Sharf, Valeria Hernandez-Melchor, Grace Hernandez, Lena Szerwo, Fe Silva-Robles, Nereida Robles, Pranav Anand, Saskia Nauenberg Dunkell)",
+      "abstract": "Includes:\n• Building Power Where You Are: Philly's Declaration of Interdependence (Jendaiya Hill)\n• Art, Memory, and The Troubles: Creative Peacebuilding in Northern Ireland (Sumitra Rajagopal, Kayla Anderson, Jae Fioribello, Gianna Crisha Saludo)\n• Multilingualism, Identity, and Community: Collaborative Research on Indigenous Mexican Languages in California's Central Coast (Matthew Kogan, Carla Suarez Soto, Eli Sharf, Valeria Hernandez-Melchor, Grace Hernandez, Lena Szerwo, Fe Silva-Robles, Nereida Robles, Pranav Anand, Saskia Nauenberg Dunkell)",
       "start": "2026-10-25T17:30:00.000Z",
       "end": "2026-10-25T18:45:00.000Z",
       "room": "Ballroom C, Conference Center",
@@ -2516,9 +2518,6 @@
       ],
       "levels": [],
       "speakers": [
-        {
-          "name": "Khaled Ashraf"
-        },
         {
           "name": "Jendaiya Hill"
         },
