@@ -23,7 +23,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-14T04:38:27.874Z"
+    "updatedAt": "2026-10-15T21:14:49.648Z"
   },
   "sessions": [
     {
@@ -683,7 +683,8 @@
           "company": "PAGE"
         },
         {
-          "name": "Vivian Nguyen"
+          "name": "Vivian Nguyen",
+          "company": "University of Michigan"
         },
         {
           "name": "Alyssa Ramos",
@@ -694,7 +695,8 @@
           "name": "Scherly Virgill"
         },
         {
-          "name": "Star Liao"
+          "name": "Star Liao",
+          "company": "Emerson College"
         },
         {
           "name": "Julianne Liu",
@@ -1105,7 +1107,8 @@
       "speakers": [
         {
           "name": "Sandy Holman",
-          "company": "The Culture C.O-.O.P. / UC Davis Alumni"
+          "title": "Director",
+          "company": "The Culture C. O.-O.P"
         },
         {
           "name": "Mark Miller",
@@ -2600,7 +2603,7 @@
       "id": "5562947",
       "eventId": "ia-gathering-26",
       "title": "Bike Tour of Davis Mosaics",
-      "abstract": "Join us for a meandering bike ride to visit some of Davis’s beautiful mosaic public artworks. Many of our public mosaics are located in the arboretum, on campus, or downtown. The bike ride will be approximately 3 miles long (approximately 1 hour) with frequent stops to examine the mosaic artwork. We will start and end at the UC Davis Conference Center. We will provide 5-10 bikes to participants on a first-come first-served basis with prior sign-ups. If you have your own bike, please bring it to ride along! \n\nNote: please sign up for this experience through a separate registration process. More info forthcoming!",
+      "abstract": "Join us for a meandering bike ride to visit some of Davis’s beautiful mosaic public artworks. Many of our public mosaics are located in the arboretum, on campus, or downtown. The bike ride will be approximately 3 miles long (approximately 1 hour) with frequent stops to examine the mosaic artwork. We will start and end at the UC Davis Conference Center. We will provide 10 bikes to participants on a first-come first-served basis with prior sign-ups. If you have your own bike, please bring it to ride along! \n\nSIGN UP HERE: https://forms.gle/FYqJ1A1762h5BVWC8",
       "start": "2026-10-25T20:30:00.000Z",
       "end": "2026-10-25T22:00:00.000Z",
       "room": "Conference Center",
