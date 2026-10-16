@@ -23,7 +23,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-15T21:14:49.648Z"
+    "updatedAt": "2026-10-16T20:54:00.327Z"
   },
   "sessions": [
     {
@@ -272,14 +272,14 @@
       "levels": [],
       "speakers": [
         {
-          "name": "Ijeoma Njaka",
-          "title": "Assistant Provost for Transformational Teaching & Learning and Doctoral Candidate",
-          "company": "College Unbound and North Carolina State University"
-        },
-        {
           "name": "Noah Martin",
           "title": "Associate Director for Environmental Curriculum Design",
           "company": "Georgetown University"
+        },
+        {
+          "name": "Ijeoma Njaka",
+          "title": "Assistant Provost for Transformational Teaching & Learning and Doctoral Candidate",
+          "company": "College Unbound and North Carolina State University"
         }
       ],
       "isFixed": false
@@ -610,7 +610,7 @@
         },
         {
           "name": "Emalee Love",
-          "title": "Graduuate Student Researcher",
+          "title": "Graduate Student Researcher",
           "company": "UC Davis",
           "bio": "Love (they/them) is a disabled queer nonbinary artist, academic, and activist. Love studies the ways in which disabled folks creatively navigate the oppressive food system in order to feed themselves. They suggest that these creative choices may act as a blueprint for creating a more sustainable and accessible food future. Their passions include community care, fiber arts, frogs, and rock hunting.…"
         },
@@ -1055,7 +1055,7 @@
       "id": "5524667",
       "eventId": "ia-gathering-26",
       "title": "Projects and Practices 5",
-      "abstract": "Includes:\n• Shifting Sands: One (or Two, or Three) Model(s) for an Emergent Playmaking Process (Oona Hatton, Lucas Hatton)\n• Saving Our Lives Hear Our Truths (SOLHOT) Studio: A Sonic Collaboratory  (Blair Smith, Jessica Robinson, Porshé Garner, Blair E. Smith)\n• Dear Charles Dickens, Love, South LA: Literature, Place and Belonging (Jacqueline Barrios)",
+      "abstract": "Includes:\n• Shifting Sands: One (or Two, or Three) Model(s) for an Emergent Playmaking Process (Oona Hatton, Lucas Hatton)\n• Saving Our Lives Hear Our Truths (SOLHOT) Studio: A Sonic Collaboratory  (Blair Smith, Jessica Robinson, Porshé Garner, Blair E. Smith)\n• Dear Charles Dickens, Love, South LA: Literature, Place and Belonging (Jacqueline Barrios)\n• From Panic to Prepared: Rebuilding Community Trust Through Emergency Health Literacy (Destiny Kanning)",
       "start": "2026-10-24T16:30:00.000Z",
       "end": "2026-10-24T17:45:00.000Z",
       "room": "Ballroom C, Conference Center",
@@ -1086,6 +1086,9 @@
         },
         {
           "name": "Jacqueline Barrios"
+        },
+        {
+          "name": "Destiny Kanning"
         }
       ],
       "isFixed": false
@@ -1603,7 +1606,7 @@
       "id": "5524703",
       "eventId": "ia-gathering-26",
       "title": "Projects and Practices 8",
-      "abstract": "Includes:\n• The Train. The Station: Imagining Collaboration & Democracy. A First Trip Report (Jon Winet, Jonathan Rattner, Bridget Draxler, Eliot Parker, Andrea Feeser)\n• From Panic to Prepared: Rebuilding Community Trust Through Emergency Health Literacy (Destiny Kanning)\n• Creating the Curriculum We Want: Weaving Values and Purpose into Curricular Transformation (Amy Howard, Paul Schadewald, Daniel Youd, Donna Oliver, Dianna Shandy)\n• Before We Can Imagine Together: Rethinking Public Engagement in Times of Transition (Ruben Morales Jr.)",
+      "abstract": "Includes:\n• The Train. The Station: Imagining Collaboration & Democracy. A First Trip Report (Jon Winet, Jonathan Rattner, Bridget Draxler, Eliot Parker, Andrea Feeser)\n• Creating the Curriculum We Want: Weaving Values and Purpose into Curricular Transformation (Amy Howard, Paul Schadewald, Daniel Youd, Donna Oliver, Dianna Shandy)\n• Before We Can Imagine Together: Rethinking Public Engagement in Times of Transition (Ruben Morales Jr.)",
       "start": "2026-10-24T20:30:00.000Z",
       "end": "2026-10-24T21:45:00.000Z",
       "room": "Ballroom C, Conference Center",
@@ -1628,9 +1631,6 @@
         },
         {
           "name": "Andrea Feeser"
-        },
-        {
-          "name": "Destiny Kanning"
         },
         {
           "name": "Amy Howard"
