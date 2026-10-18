@@ -23,7 +23,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-17T20:27:16.529Z"
+    "updatedAt": "2026-10-18T15:45:31.815Z"
   },
   "sessions": [
     {
@@ -1157,7 +1157,8 @@
         {
           "name": "Ashwin Vaidya",
           "title": "Professor",
-          "company": "Montclair State University"
+          "company": "Montclair State University",
+          "bio": "I am a professor of mathematics and physics at Montclair State University. I teach undergraduate and masters courses in the area of applied mathematics. My scholarly interests are in the area of complex systems and self organization which essentially tries to understand how patterns and organization emerge in nature, whether in physics, biology or social sciences. I'm also very interested in the…"
         }
       ],
       "isFixed": false
