@@ -23,7 +23,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-20T04:33:42.741Z"
+    "updatedAt": "2026-10-20T11:22:03.776Z"
   },
   "sessions": [
     {
@@ -82,6 +82,7 @@
       "speakers": [
         {
           "name": "Karlton Hester",
+          "title": "Associate Dean",
           "company": "University of California, Santa Cruz"
         },
         {
@@ -237,6 +238,7 @@
       "speakers": [
         {
           "name": "Gianna Crisha Saludo",
+          "title": "Software Entrepreneurship Teaching Assistant",
           "company": "Brandeis University"
         },
         {
@@ -273,9 +275,7 @@
       "levels": [],
       "speakers": [
         {
-          "name": "Noah Martin",
-          "title": "Associate Director for Environmental Curriculum Design",
-          "company": "Georgetown University"
+          "name": "Noah Martin"
         },
         {
           "name": "Ijeoma Njaka",
@@ -1222,7 +1222,9 @@
           "company": "City of Davis"
         },
         {
-          "name": "Andy Jones"
+          "name": "Andy Jones",
+          "title": "Continuing Lecturer",
+          "company": "The University Writing Program at UC Davis"
         }
       ],
       "isFixed": false
@@ -1859,7 +1861,7 @@
           "bio": "Archana Nagraj, M.P.H., M.S.W., is a nonprofit executive and champion for creative youth development. Archana is the Executive Director of Destiny Arts Center, an Oakland based non-profit that ignites and inspires social change through the arts. With nearly three decades of experience spanning social work, public health, education, and nonprofit leadership, Archana is passionate about building…"
         },
         {
-          "name": "Tesfaye Teklu",
+          "name": "Tesfaye Tekelu",
           "company": "Destiny Arts Center"
         }
       ],
@@ -2158,6 +2160,7 @@
         },
         {
           "name": "Blake Stack",
+          "title": "Sr. Associate Director, Student Engagement",
           "company": "Bonner Center for Civic Engagement, University of Richmond"
         }
       ],
