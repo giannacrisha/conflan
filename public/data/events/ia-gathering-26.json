@@ -23,7 +23,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-20T11:22:03.776Z"
+    "updatedAt": "2026-10-20T21:29:52.154Z"
   },
   "sessions": [
     {
@@ -56,7 +56,7 @@
       "id": "5561558",
       "eventId": "ia-gathering-26",
       "title": "Opening Plenary, Keynote by Alexis Pauline Gumbs",
-      "abstract": "A welcome to the Yolo Bioregion by Wintun/Maidu culture-bearer Diana Almendariz, and a welcome to Imagining America by IA Faculty Director Erica Kohl-Arenas, followed by keynote speaker Alexis Pauline Gumbs on “Every Night”: June Jordan and the Orbit of Freedom.\n\nThe Opening Plenary will be livestreamed at the following link: https://vimeo.com/event/6102796/fb5292aa31",
+      "abstract": "A welcome to the Yolo Bioregion by Wintun/Maidu culture-bearer Diana Almendariz, and a welcome to Imagining America by IA Faculty Director Erica Kohl-Arenas, followed by keynote speaker Alexis Pauline Gumbs on “Every Night”: June Jordan and the Orbit of Freedom.",
       "start": "2026-10-23T16:30:00.000Z",
       "end": "2026-10-23T17:45:00.000Z",
       "room": "Wright Hall, Main Theater",
@@ -759,7 +759,7 @@
       "id": "5524656",
       "eventId": "ia-gathering-26",
       "title": "Projects and Practices 4",
-      "abstract": "Includes:\n• Reading to Understand, Listening to Hear: Sharing Learning and Dialogue with the Campus Community Book Project (Megan Macklin)\n• From Florida, With Love and Solidarity: Creating \"Community\" in Transitional Times at a Hispanic-Serving State University (Carolina Villalba, Kristine Acosta, Tania Cepero López, Marta Gierczyk)\n• A Humanist and Eco-spiritual basis for Students’ Conscientious Objection to AI (Ashwin Vaidya)\n• Designing with Intentionality: Operationalizing an Ethics of Care to Transform Scholarly Culture (Keyanah Nurse, Christiana Ares-Christian)",
+      "abstract": "Includes:\n• Reading to Understand, Listening to Hear: Sharing Learning and Dialogue with the Campus Community Book Project (Megan Macklin)\n• From Florida, With Love and Solidarity: Creating \"Community\" in Transitional Times at a Hispanic-Serving State University (Carolina Villalba, Tania Cepero López, Marta Gierczyk)\n• A Humanist and Eco-spiritual basis for Students’ Conscientious Objection to AI (Ashwin Vaidya)\n• Designing with Intentionality: Operationalizing an Ethics of Care to Transform Scholarly Culture (Keyanah Nurse, Christiana Ares-Christian)",
       "start": "2026-10-23T22:45:00.000Z",
       "end": "2026-10-24T00:00:00.000Z",
       "room": "Ballroom C, Conference Center",
@@ -775,9 +775,6 @@
         },
         {
           "name": "Carolina Villalba"
-        },
-        {
-          "name": "Kristine Acosta"
         },
         {
           "name": "Tania Cepero López"
@@ -1115,8 +1112,9 @@
           "company": "UC Davis Alumni"
         },
         {
-          "name": "Samona Whitehead",
-          "company": "Sacramento State University"
+          "name": "Samona Whiteside",
+          "title": "Recording Artist",
+          "company": "Independent"
         },
         {
           "name": "Charles Frost",
@@ -1786,7 +1784,7 @@
       "abstract": "Lanterns to the Spiral Garden is a participatory workshop for people trying to restore collective spirit in communities that are tired, overextended, and in transition. Drawing from cooperative housing, landscape stewardship, accessibility practice, and community-based design, this session offers a simple cycle for moving from overwhelm into shared action: observe what is happening, name needs and harms clearly, map roles and resources, design a small intervention, act together, document what changed, and return with care.\n\nThe workshop begins with a brief visual framing of a “stewardship cycle” developed through work in Davis cooperative housing: design jam, work party, reflection, documentation, and renewed practice. Participants will then work in small groups with a real or imagined community transition: a neglected common space, a conflict that keeps resurfacing, a breakdown in communication, a climate-related adaptation, or a moment of organizational turnover. Each group will map the transition as a living system, identifying roots, barriers, people affected, forms of knowledge already present, and one small repair action that could be taken within a week.\n\nRather than treating restoration as a return to a perfect past, the session asks what becomes possible when repair is partial, practical, cyclical, and collectively held. Participants will use prompts from permaculture, cooperative process, access-centered facilitation, and arts-based reflection to translate abstract values into visible practices. We will close by creating a shared “spiral garden” of commitments: small actions, facilitation tools, questions, and rituals participants can carry back to their own campuses, organizations, neighborhoods, and households.\n\nThis session is designed for students, artists, educators, organizers, cooperative members, and anyone working in the mucky middle of change. No specialized background is required. Participants will leave with a flexible template for hosting design jams, stewardship conversations, and collective repair processes in their own communities.",
       "start": "2026-10-24T20:30:00.000Z",
       "end": "2026-10-24T21:45:00.000Z",
-      "room": "Founders Board Room,104 Alumni Center",
+      "room": "Allewelt Conference Room, 105 Alumni Center",
       "format": "in-person",
       "type": "Participatory Workshop",
       "tracks": [
@@ -1810,7 +1808,7 @@
       "abstract": "How are you applying imagination to your work? Where have you been inspired by the imaginative work of others? How are you cross pollinating creative and community practice?\n\nIn this interactive session, two members of our collaboratory will first describe our budding project, A Field Guide to Applied Imagination, an artist-informed book and probably website and/or media space about how artists and cultural organizers contribute imaginative practices and ways of thinking to sectors such as gender and racial justice, healthcare, immigration rights, climate justice, and equitable community development. We’ll then invite participants to share their work and practices through the same lens, “applied imagination,” asking: In what ways is imagination a central tool of your work? Or how could this framing enable new articulations of your practice? How might engagement with others on their uses and applications of imagination benefit your own work and that of your students, collaborators, communities, and the field? We’ll then invite session attendees to collaborate on terms, techniques, and practices of this kind of work. Attendees will work either individually, in pairs, or collectively to brainstorm, share stories, and co-create new structures and forms for naming and labelling various parts of our field.\n\nThe role of the imagination and creativity in the struggle for an equitable world remains undervalued. We think of our project as an “exploded encyclopedia” where we illuminate terms, techniques, and practices from the field through creative “definitions” using playful forms and structures. Examples of terms are social practice, utopia, radical joy, repair, and collaboration. “Definitions” for these terms might include poetry, illustration, graphic design, dialogue, sound languages, and other forms that allow the term to breathe and blossom on the page or screen.",
       "start": "2026-10-24T20:30:00.000Z",
       "end": "2026-10-24T21:45:00.000Z",
-      "room": "Allewelt Conference Room, 105 Alumni Center",
+      "room": "Founders Board Room,104 Alumni Center",
       "format": "in-person",
       "type": "Participatory Workshop",
       "tracks": [
