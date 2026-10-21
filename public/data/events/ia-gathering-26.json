@@ -23,7 +23,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-21T04:25:59.183Z"
+    "updatedAt": "2026-10-21T21:31:39.374Z"
   },
   "sessions": [
     {
@@ -252,9 +252,8 @@
         },
         {
           "name": "Kayla Anderson",
-          "title": "Student ",
-          "company": "Brandeis University",
-          "bio": "Kayla Anderson is a junior at Brandeis university studying Biology and Health Science and Social Policy on the Pre-medical track. She is involved in peer education work to encourage health and wellness techniques through the campus and advocacy for underrepresented topics in wellness."
+          "title": "Bridge To Wellness Peer Educator",
+          "company": "Brandeis University"
         }
       ],
       "isFixed": false
@@ -313,16 +312,15 @@
           "bio": "Anne Heutsche is a Professor of History at Lansing Community College. I have been teaching at the college as an adjunct and now full-time instructor. Outside the classroom, I was the co-faculty director of the Centre for Engaged Inclusion for five years. I served as the faculty coordinator for the AAC&U Committing to Equity and Inclusive Excellence: Campus-Based Strategies for Student Success. As…"
         },
         {
-          "name": "Annescia Dillard",
-          "title": "Program and Office Specialist",
-          "company": "Lansing Community College",
-          "bio": "Annescia Dillard is a Program and Office Specialist at Lansing Community College's Center for Teaching Excellence, where she brings a natural talent for programming, accessibility, and aligning complex systems through collaborative innovation. Deeply committed to equity and social justice, she serves on several campus-wide committees, including the Take A Stand! Sit In! organizing committee. For…"
-        },
-        {
           "name": "Barbara Clauer",
           "title": "Professor",
           "company": "Lansing Community College",
           "bio": "Barbara Clauer is an English professor at Lansing Community College and creator of the LCC Community-Generated Poetry Project, which was inspired by a session she attended at an Imagining America conference held at UC Davis in 2017."
+        },
+        {
+          "name": "Annescia Dillard",
+          "title": "Program and Office Specialist",
+          "company": "Lansing Community College"
         }
       ],
       "isFixed": false
@@ -492,12 +490,6 @@
           "name": "Lisa Mount",
           "title": "Director",
           "company": "Artistic Logistics"
-        },
-        {
-          "name": "Lizzy Davis",
-          "title": "Associate Professor and Graduate Program Director",
-          "company": "Emerson College",
-          "bio": "Lizzy Cooper Davis (she/her) is an artist and scholar interested in how the arts can facilitate community conversation, resistance, and change. She is particularly focused on cultural work within Black freedom movements and is currently working on an applied theatre project with returning citizens in partnership with Ritual4Return, the Emerson Prison Initiative, and New Beginnings Reentry…"
         }
       ],
       "isFixed": false
@@ -689,8 +681,8 @@
         },
         {
           "name": "Alyssa Vera Ramos",
-          "title": "Facilitator & Retreat Design Consultant",
-          "company": "The Practice"
+          "title": "Graduate Student: Applied Theatre MFA",
+          "company": "Emerson College"
         },
         {
           "name": "Scherly Virgill",
@@ -1109,7 +1101,7 @@
         },
         {
           "name": "Mark Miller",
-          "company": "UC Davis Alumni"
+          "company": "Lawrence Livermore Labs"
         },
         {
           "name": "Samona Whiteside",
@@ -1255,10 +1247,10 @@
           "bio": "Romy is Director of the Office for Social Impact at Towson University. She has more than 15 years of experience researching, teaching and working in civic learning and community engagement fields. She supports students, staff, and faculty in developing the dispositions, skills, and knowledge needed to create thriving communities in which members are active co-creators of a shared future. Romy is a…"
         },
         {
-          "name": "Rosemary Riel",
+          "name": "Rosemary F. Riel",
           "title": "Assoc Director, Career Education and Equity",
           "company": "Towson University",
-          "bio": "Rosemary F. Riel is Filipina American, born and raised in Columbus, OH and transplanted to Baltimore, MD in 2004. Her day job for 20+ years has involved managing multi-level initiatives within four distinct university cultures and mobilizing a broad range of interdisciplinary and interprofessional educators, spirited students, and activated community leaders to unpack health and social inequities.…"
+          "bio": "Rosemary F. Riel is Filipina American, born and raised in Columbus, OH and transplanted to Baltimore, MD in 2004. Her 'world of work' for 20+ years has involved multilevel experiential education initiatives that mobilize iinterdisciplinary professionals, university students, and community leaders to unpack health inequities. She is most inspired when cultivating personal introspection and…"
         },
         {
           "name": "David Hoffman",
@@ -1827,12 +1819,6 @@
           "title": "Engaged Arts Associate",
           "company": "Imagining America",
           "bio": "Jan Cohen-Cruz (PhD, NYU Performance Studies), began her professional life performing in street theater and cofacilitating a theater workshop in a maximum-security prison. She taught at NYU for 28 years, initiating an applied theater minor in the Drama Department and cofounding the Department of Art and Public Policy. In 2012, Jan received the Association for Theatre in Higher Education’s Award…"
-        },
-        {
-          "name": "Lizzy Davis",
-          "title": "Associate Professor and Graduate Program Director",
-          "company": "Emerson College",
-          "bio": "Lizzy Cooper Davis (she/her) is an artist and scholar interested in how the arts can facilitate community conversation, resistance, and change. She is particularly focused on cultural work within Black freedom movements and is currently working on an applied theatre project with returning citizens in partnership with Ritual4Return, the Emerson Prison Initiative, and New Beginnings Reentry…"
         }
       ],
       "isFixed": false
@@ -2112,8 +2098,8 @@
       "speakers": [
         {
           "name": "Oona Hatton",
-          "title": "Co-Artistic Director/Professor",
-          "company": "Davis Repertory Theatre/San José State University"
+          "title": "Professor",
+          "company": "San José State University"
         },
         {
           "name": "Lucas Hatton",
@@ -2212,28 +2198,6 @@
           "title": "Postdoctoral Scholar",
           "company": "Research Justice Shop, The University of California, Irvine",
           "bio": "Marianna Davison, Ph.D. (she/they), is an art historian, educator, and community-engaged researcher whose work brings together contemporary art, environmental humanities, and climate justice. She is a Postdoctoral Scholar with the Research Justice Shop at UC Irvine, where she collaborates on community-based research and environmental education initiatives. Davison's research focuses on arts-based…"
-        }
-      ],
-      "isFixed": false
-    },
-    {
-      "id": "5524735",
-      "eventId": "ia-gathering-26",
-      "title": "Hands Joining Hands: Micro Economies of Care for Mucky Middles",
-      "abstract": "This workshop is an interactive act of sharing care and capturing joy in unexpected places, a joy that frequently lives inside susus.\n\nA susu is a communal savings practice. A group pools money or resources at set times. Each member puts in a “hand,” i.e., their contribution, and the pot circles from member to member until everyone has received a payout. Savings like this have many names and span many cultures. Long before banks existed or money was invented, people pooled in reciprocal ways.\n\nYears in and around these circles, as an Afro-Caribbean scholar close to the practice, have led me to what I call Micro Economies of Care and its four principles: honoring the care people already practice (Recognition Over Replacement); holding each other up rather than overseeing (Support Over Regulation); learning together rather than instructing (Learning Over Teaching); and embracing what people have, not what they lack (Anti-Deficit Framing).\n\nThis economic practice is built for the transitions we are living through, offering timely ways to hold each other afloat in life’s mucky middles: arrival, loss, remaking. When a job ends or a child is born, a micro economy of care forms fast, a rotating pot for the new baby’s needs. The same logic scales: nonprofits that lost grant funding might share a worker pool circulating between them, a return to the in-kind labor exchanged long before money existed.\n\nDuring the workshop, we put these mutualistic principles to work. First, each person makes a memoryscape, a small zine mapping some of their memories around money, resources, and care. Then we form groups: micro economies of care as life rafts. Each group is named for an oceanic ecosystem, such as a kelp forest, where species survive by depending on one another, as we do in our rafts. Offering what we discovered while memoryscaping, we pool a story, a skill, or a small resource toward a shared end, such as food for a mini pantry where families take turns receiving groceries.\n\nAt the close, we name something this practice carries yet rarely marks: a eudaimonic joy, the quiet joy of shared giving rather than visible celebration. In troubled times, naming it becomes its own counterforce to fear and scarcity. Story-sharers leave with a felt sense of how these joy-bearing economies steady us when the tide turns rocky, and of value that lives in interdependent relationships.",
-      "start": "2026-10-25T16:00:00.000Z",
-      "end": "2026-10-25T17:15:00.000Z",
-      "room": "AGR Hall, 138 Alumni Center",
-      "format": "in-person",
-      "type": "Participatory Workshop",
-      "tracks": [
-        "Participatory Workshop"
-      ],
-      "levels": [],
-      "speakers": [
-        {
-          "name": "Sonya Squires-Caesar, PhD",
-          "company": "University of Maryland Baltimore County"
         }
       ],
       "isFixed": false
@@ -2455,7 +2419,7 @@
       "id": "5524747",
       "eventId": "ia-gathering-26",
       "title": "Dance & The Art of Transitions",
-      "abstract": "Session participants will be moving! Beginning with a gentle warm-up set to music, participants will be encouraged to move in the room following verbal prompts such as \"now take your awareness into your arms, and your wrists and your fingers,\" gradually expanding the movement explorations as people become more comfortable.\n\nFrom there, the class will continue with movement games that allow participants to explore different movement levels, different rhythms and tempos, their ability to shift direction, and six movement qualities (vibratory, sustained, percussive, pendular, focused resistance, and stillness). Please note that this presentation/experience is appropriate for both people with dance training and those who have never danced before, and can be adapted for all abilities, including anyone who needs to sit in a chair.\n\nAfter building a comfort level with moving in the room, the improvisational movement games will shift towards working with others in ways that are fun and build community.\n\nA gentle stretch would wind things up, followed by a short Q&A if people had questions or anything they would like to share about the process.",
+      "abstract": "Here's something to think about...\n\nDance predates written history. It was one of the ways we spoke with our Gods, it held the knowledge and lore of the tribe, it told the stories that educated the young, it helped us communicate and connect with each other, it was used as ceremony for celebration and commemoration. It was also used to remind us that we were a part of the larger fabric of the world.\n\nHistorically speaking, if we start with any ethnic dance form, movement was traditionally used for one of, or some combination of, three important goals: \n\n1) To connect you to yourself for healing or spiritual purposes\n\n2) To build and strengthen the bonds of community and\n\n3) To remind us of our place in the fabric of the greater world that we share with other beings.\n\nAs we evolved our communities, the concept and purposes of dance evolved but at the heart of it, dance remains a very powerful tool for connecting with ourselves, our communities, and our world.\n\nI like to say that dancing changes everything: Body, Brain, and Being and studies show this to be true. We know for example, that movement can release endorphins and help relieve stress. We know that brains respond to integrating movement with a musical beat, while responding to external cues. We also know anecdotally that being comfortable with moving in space has positive repercussions in the ways that we feel about ourselves in relation to the world.\n\nAnother thing that we also know is that dance is movement (although stillness can be a part of that) and that we are moving beings. From the time we were toddlers, movement was how we explored the world. \n\nDance is all about transitions from one shape to the next.\n\nDoris Humphrey’s, who wrote the Art of Making Dances, wrote about fall and recovery. She called it “The arc between two deaths” - one death was standing, static. The other, laying, motionless on the floor. The movement between the two – that is an arc, that is life. We won’t be falling at the workshop, but the idea I would like you to take away with you is that life is movement, and we are transitioning all the time.\n\nThis is a skill that you have...Think about any time that you have had to navigate a crowd. You don’t go randomly bumping into people like bumper cars. (At least mostly :)) Sometimes transitions are easy, and sometimes they are more difficult, but they are still doable.\n\nAnd that’s what Dance and The Art of Transitions is all about. It’s using dance as a tool for your body, brain, and being to relieve stress and think creatively, while connecting with others. When talking about how dance builds and strengthens the bonds of community, I have often added, “without which we do not survive” which I believe are important words, especially now.\n\nThe class description\n\nSession participants will be moving! Beginning with a gentle warm-up set to music, participants will be encouraged to move in the room following verbal prompts such as \"now take your awareness into your arms, and your wrists and your fingers,\" gradually expanding the movement explorations as people become more comfortable. \n\nFrom there, the class will continue with movement games that allow participants to explore different movement levels, different rhythms and tempos, their ability to shift direction, and six movement qualities (vibratory, sustained, percussive, pendular, focused resistance, and stillness). Please note that this presentation/experience is appropriate for both those who have never danced before as well as people with dance experience, and can be adapted for all abilities, including anyone who needs to sit in a chair.\n\nAfter building a comfort level with moving in the room, the improvisational movement games will shift towards working with others in ways that are fun and build community.",
       "start": "2026-10-25T17:30:00.000Z",
       "end": "2026-10-25T18:45:00.000Z",
       "room": "AGR Hall, 138 Alumni Center",
