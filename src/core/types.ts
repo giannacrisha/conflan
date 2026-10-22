@@ -1,6 +1,8 @@
 // Shared schema. Every adapter converts its platform's agenda into these types,
 // and everything in the app reads only these types.
 
+import type { ThemeVariant } from './palette';
+
 export type CareerLevel = 'student' | 'early' | 'mid' | 'senior';
 export type SessionLevel = CareerLevel | 'all';
 export type Format = 'in-person' | 'virtual' | 'hybrid';
@@ -79,7 +81,8 @@ export type EventConfig = {
   /** YYYY-MM-DD in the event timezone */
   start: string;
   end: string;
-  theme: { accent: string; logo?: string };
+  /** `variants` are the event's swappable color options, matching its branding */
+  theme: { accent: string; logo?: string; variants?: ThemeVariant[] };
   /** Cancelled events stay readable for people who added them but aren't offered or re-synced */
   status?: 'cancelled';
   source: EventSource;

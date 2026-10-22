@@ -8,7 +8,8 @@ import type { PlanModel } from '@/lib/use-plan';
 import { usePlanner } from '@/lib/store';
 import { enter, haptic, PressableScale } from './motion';
 import { SessionCard } from './session-card';
-import { C, F, R } from './theme';
+import { F, R, type Theme } from './theme';
+import { useStyles, useTheme } from './theme-context';
 
 type Row = { kind: 'fixed'; start: string; session: Session } | { kind: 'slot'; start: string; slot: Slot };
 
@@ -23,6 +24,8 @@ export function Timeline({
   activeSlotId?: string;
   onOpenSlot: (slotId: string) => void;
 }) {
+  const C = useTheme();
+  const styles = useStyles(makeStyles);
   const { tz } = model;
   const pick = usePlanner((s) => s.pick);
   const unpick = usePlanner((s) => s.unpick);
@@ -114,6 +117,8 @@ function SlotRow({
   active: boolean;
   onOpen: () => void;
 }) {
+  const C = useTheme();
+  const styles = useStyles(makeStyles);
   const { tz } = model;
   const pickedHere = slot.sessionIds.filter((id) => model.picked.has(id));
   const ranked = model.ranked.get(slot.id) ?? [];
@@ -153,8 +158,10 @@ function SlotRow({
       accessibilityRole="button"
       style={[styles.open, active && styles.openActive]}>
       <View style={{ flex: 1, gap: 3 }}>
-        <Text style={styles.openTitle}>{ranked.length === 1 ? 'Optional' : 'Choose a session'}</Text>
-        <Text style={[styles.openSub, active && { color: C.body }]} numberOfLines={2}>
+        <Text style={[styles.openTitle, active && { color: C.onAccent }]}>
+          {ranked.length === 1 ? 'Optional' : 'Choose a session'}
+        </Text>
+        <Text style={[styles.openSub, active && { color: C.onAccent }]} numberOfLines={2}>
           {formatTime(slot.start, tz)}–{formatTime(slot.end, tz)} · {label}
         </Text>
       </View>
@@ -167,62 +174,63 @@ function SlotRow({
 
 const RAIL = 80;
 
-const styles = StyleSheet.create({
-  wrap: { gap: 14 },
-  spine: { position: 'absolute', left: 5, top: 14, bottom: 14, width: 2, backgroundColor: C.line },
-  row: { flexDirection: 'row', gap: 8, paddingBottom: 10 },
-  rail: { width: RAIL, flexDirection: 'row', gap: 8, paddingTop: 14 },
-  node: {
-    width: 12,
-    height: 12,
-    borderRadius: 6,
-    backgroundColor: C.bg,
-    borderWidth: 2,
-    borderColor: C.faint,
-    marginTop: 1,
-  },
-  nodeOn: { backgroundColor: C.ink, borderColor: C.ink },
-  nodeActive: { backgroundColor: C.accent, borderColor: C.ink },
-  time: { flex: 1, fontSize: 10, fontFamily: F.semibold, color: C.muted, lineHeight: 14 },
-  body: { flex: 1 },
-  fixed: { backgroundColor: C.surfaceAlt, borderRadius: R.md, paddingHorizontal: 16, paddingVertical: 12, gap: 2 },
-  fixedTitle: { fontSize: 13, fontFamily: F.semibold, color: C.ink },
-  fixedSub: { fontSize: 11, color: C.muted },
-  open: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 10,
-    borderRadius: R.md,
-    paddingLeft: 16,
-    paddingRight: 10,
-    paddingVertical: 12,
-    backgroundColor: C.surface,
-  },
-  openActive: { backgroundColor: C.accent },
-  openTitle: { fontSize: 14, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.3 },
-  openSub: { fontSize: 12, color: C.muted },
-  plus: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
-    backgroundColor: C.accent,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  plusText: { fontSize: 18, fontFamily: F.semibold, color: C.ink },
-  background: { backgroundColor: C.surface, borderRadius: R.md, padding: 14, gap: 8 },
-  backgroundTitle: { fontSize: 10, fontFamily: F.semibold, color: C.muted, letterSpacing: 1 },
-  backgroundRow: { flexDirection: 'row', gap: 10, alignItems: 'flex-start' },
-  box: {
-    width: 20,
-    height: 20,
-    borderRadius: 6,
-    borderWidth: 1.5,
-    borderColor: C.faint,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  boxOn: { backgroundColor: C.ink, borderColor: C.ink },
-  boxCheck: { color: C.accent, fontSize: 11, fontFamily: F.bold },
-  backgroundText: { flex: 1, fontSize: 12, color: C.body, lineHeight: 18 },
-});
+const makeStyles = (C: Theme) =>
+  StyleSheet.create({
+    wrap: { gap: 14 },
+    spine: { position: 'absolute', left: 5, top: 14, bottom: 14, width: 2, backgroundColor: C.line },
+    row: { flexDirection: 'row', gap: 8, paddingBottom: 10 },
+    rail: { width: RAIL, flexDirection: 'row', gap: 8, paddingTop: 14 },
+    node: {
+      width: 12,
+      height: 12,
+      borderRadius: 6,
+      backgroundColor: C.bg,
+      borderWidth: 2,
+      borderColor: C.faint,
+      marginTop: 1,
+    },
+    nodeOn: { backgroundColor: C.ink, borderColor: C.ink },
+    nodeActive: { backgroundColor: C.accent, borderColor: C.ink },
+    time: { flex: 1, fontSize: 10, fontFamily: F.semibold, color: C.muted, lineHeight: 14 },
+    body: { flex: 1 },
+    fixed: { backgroundColor: C.surfaceAlt, borderRadius: R.md, paddingHorizontal: 16, paddingVertical: 12, gap: 2 },
+    fixedTitle: { fontSize: 13, fontFamily: F.semibold, color: C.ink },
+    fixedSub: { fontSize: 11, color: C.muted },
+    open: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 10,
+      borderRadius: R.md,
+      paddingLeft: 16,
+      paddingRight: 10,
+      paddingVertical: 12,
+      backgroundColor: C.surface,
+    },
+    openActive: { backgroundColor: C.accent },
+    openTitle: { fontSize: 14, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.3 },
+    openSub: { fontSize: 12, color: C.muted },
+    plus: {
+      width: 36,
+      height: 36,
+      borderRadius: 18,
+      backgroundColor: C.accent,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    plusText: { fontSize: 18, fontFamily: F.semibold, color: C.onAccent },
+    background: { backgroundColor: C.surface, borderRadius: R.md, padding: 14, gap: 8 },
+    backgroundTitle: { fontSize: 10, fontFamily: F.semibold, color: C.muted, letterSpacing: 1 },
+    backgroundRow: { flexDirection: 'row', gap: 10, alignItems: 'flex-start' },
+    box: {
+      width: 20,
+      height: 20,
+      borderRadius: 6,
+      borderWidth: 1.5,
+      borderColor: C.faint,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    boxOn: { backgroundColor: C.ink, borderColor: C.ink },
+    boxCheck: { color: C.accent, fontSize: 11, fontFamily: F.bold },
+    backgroundText: { flex: 1, fontSize: 12, color: C.body, lineHeight: 18 },
+  });

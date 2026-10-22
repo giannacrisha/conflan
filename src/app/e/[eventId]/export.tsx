@@ -7,6 +7,7 @@ import Animated, { FadeIn } from 'react-native-reanimated';
 
 import { shareQuery } from '@/core/compare';
 import { toIcs } from '@/core/ics';
+import { mix } from '@/core/palette';
 import { shareCardSvg } from '@/core/share-card';
 import { formatDay, formatTime } from '@/core/time';
 import { wallpaperSvg } from '@/core/wallpaper';
@@ -17,7 +18,9 @@ import { daySchedule, usePlan } from '@/lib/use-plan';
 import { enter, haptic } from '@/ui/motion';
 import { Button, Chip, IconButton, Kicker, Title } from '@/ui/primitives';
 import { Screen } from '@/ui/screen';
-import { C, F, R } from '@/ui/theme';
+import { F, R, type Theme } from '@/ui/theme';
+import { useStyles, useTheme } from '@/ui/theme-context';
+import { ThemeSwitcher } from '@/ui/theme-switcher';
 
 const slug = (s: string) =>
   s
@@ -28,6 +31,8 @@ const slug = (s: string) =>
 const monthDay = (day: string) => formatDay(day, 'long').split(', ')[1];
 
 export default function Export() {
+  const C = useTheme();
+  const styles = useStyles(makeStyles);
   const { eventId } = useLocalSearchParams<{ eventId: string }>();
   const { model } = usePlan(eventId);
   const name = usePlanner((s) => s.profile.name);
@@ -52,8 +57,9 @@ export default function Export() {
           label: formatDay(day.day, 'long'),
           items: sessions.map((s) => ({ time: formatTime(s.start, model.tz), title: s.title, room: s.room })),
         })),
+      colors: { bg: C.ink, panel: mix(C.ink, '#FFFFFF', 0.1), accent: C.accent, onAccent: C.onAccent },
     });
-  }, [model, name]);
+  }, [model, name, C]);
 
   if (!model || !card) {
     return (
@@ -86,7 +92,7 @@ export default function Export() {
     const svg = wallpaperSvg({
       eventName: event.name,
       dayLabel: formatDay(day.day, 'long'),
-      accent: model.accent,
+      accent: C.ink,
       items: sessions.map((s) => ({ time: formatTime(s.start, model.tz), title: s.title, room: s.room })),
     });
     return run('Wallpaper saved. Set it as your lock screen from Photos.', () =>
@@ -118,6 +124,8 @@ export default function Export() {
           ? `${total} session${total === 1 ? '' : 's'} in your plan.`
           : 'Your plan is empty. Pick some sessions first.'}
       </Text>
+
+      <ThemeSwitcher eventId={eventId} />
 
       <Animated.View entering={enter(0)} style={styles.dark}>
         <Text style={styles.darkTitle}>One-page image</Text>
@@ -229,6 +237,7 @@ function Section({
   index: number;
   children: ReactNode;
 }) {
+  const styles = useStyles(makeStyles);
   return (
     <Animated.View entering={enter(index)} style={styles.section}>
       <Text style={styles.sectionTitle}>{title}</Text>
@@ -238,23 +247,24 @@ function Section({
   );
 }
 
-const styles = StyleSheet.create({
-  header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  muted: { fontSize: 13, color: C.muted, lineHeight: 19 },
-  row: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
-  dark: { backgroundColor: C.ink, borderRadius: R.lg, padding: 20, gap: 12 },
-  darkTitle: { fontSize: 20, fontFamily: F.semibold, color: C.white, letterSpacing: -0.6 },
-  darkBody: { fontSize: 13, color: C.faint, lineHeight: 19 },
-  previewWrap: {
-    borderRadius: R.md,
-    overflow: 'hidden',
-    backgroundColor: C.ink2,
-    maxHeight: 520,
-    alignItems: 'center',
-  },
-  preview: { width: '100%', maxWidth: 360, maxHeight: 520 },
-  section: { backgroundColor: C.surface, borderRadius: R.lg, padding: 20, gap: 10 },
-  sectionTitle: { fontSize: 17, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.5 },
-  status: { backgroundColor: C.accent, borderRadius: R.md, padding: 14 },
-  statusText: { fontSize: 13, fontFamily: F.medium, color: C.ink },
-});
+const makeStyles = (C: Theme) =>
+  StyleSheet.create({
+    header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+    muted: { fontSize: 13, color: C.muted, lineHeight: 19 },
+    row: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
+    dark: { backgroundColor: C.ink, borderRadius: R.lg, padding: 20, gap: 12 },
+    darkTitle: { fontSize: 20, fontFamily: F.semibold, color: C.white, letterSpacing: -0.6 },
+    darkBody: { fontSize: 13, color: C.faint, lineHeight: 19 },
+    previewWrap: {
+      borderRadius: R.md,
+      overflow: 'hidden',
+      backgroundColor: C.ink2,
+      maxHeight: 520,
+      alignItems: 'center',
+    },
+    preview: { width: '100%', maxWidth: 360, maxHeight: 520 },
+    section: { backgroundColor: C.surface, borderRadius: R.lg, padding: 20, gap: 10 },
+    sectionTitle: { fontSize: 17, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.5 },
+    status: { backgroundColor: C.accent, borderRadius: R.md, padding: 14 },
+    statusText: { fontSize: 13, fontFamily: F.medium, color: C.onAccent },
+  });

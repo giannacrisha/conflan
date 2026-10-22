@@ -33,4 +33,18 @@ describe('shareCardSvg', () => {
     expect(svg.match(/\+ 7 more/g)).toHaveLength(4);
     expect(height).toBeGreaterThan(CARD.minHeight);
   });
+
+  it('paints in the event colors', () => {
+    const colors = { bg: '#0B6B5E', panel: '#2A7D72', accent: '#F4A6C8', onAccent: '#123456' };
+    const { svg } = shareCardSvg({
+      eventName: 'X',
+      dates: 'Oct',
+      days: [{ label: 'Fri', items: [item('A')] }],
+      colors,
+    });
+    expect(svg).toContain('fill="#0B6B5E"');
+    expect(svg).toContain('fill="#2A7D72"');
+    expect(svg).toContain('fill="#F4A6C8"');
+    expect(svg).toContain('fill="#123456"');
+  });
 });

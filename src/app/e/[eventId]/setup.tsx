@@ -8,9 +8,12 @@ import { usePlanner } from '@/lib/store';
 import { Button, Chip, Kicker, Title } from '@/ui/primitives';
 import { Screen } from '@/ui/screen';
 import { enter } from '@/ui/motion';
-import { C, F, groupColor, R } from '@/ui/theme';
+import { F, groupColor, R, type Theme } from '@/ui/theme';
+import { useStyles, useTheme } from '@/ui/theme-context';
 
 export default function EventSetup() {
+  const C = useTheme();
+  const styles = useStyles(makeStyles);
   const { eventId } = useLocalSearchParams<{ eventId: string }>();
   const { data, error } = useEventData(eventId);
   const saved = usePlanner((s) => s.tracks[eventId]);
@@ -68,20 +71,21 @@ export default function EventSetup() {
   );
 }
 
-const styles = StyleSheet.create({
-  lede: { fontSize: 15, lineHeight: 22, color: C.muted },
-  error: { color: C.warn, fontSize: 13 },
-  group: {
-    backgroundColor: C.surface,
-    borderRadius: R.lg,
-    borderWidth: 2,
-    borderColor: C.surface,
-    padding: 18,
-    gap: 14,
-  },
-  groupHeader: { flexDirection: 'row', alignItems: 'center', gap: 10 },
-  square: { width: 24, height: 24, borderRadius: 12 },
-  groupName: { flex: 1, fontSize: 17, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.5 },
-  count: { fontSize: 12, fontFamily: F.medium },
-  chips: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
-});
+const makeStyles = (C: Theme) =>
+  StyleSheet.create({
+    lede: { fontSize: 15, lineHeight: 22, color: C.muted },
+    error: { color: C.warn, fontSize: 13 },
+    group: {
+      backgroundColor: C.surface,
+      borderRadius: R.lg,
+      borderWidth: 2,
+      borderColor: C.surface,
+      padding: 18,
+      gap: 14,
+    },
+    groupHeader: { flexDirection: 'row', alignItems: 'center', gap: 10 },
+    square: { width: 24, height: 24, borderRadius: 12 },
+    groupName: { flex: 1, fontSize: 17, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.5 },
+    count: { fontSize: 12, fontFamily: F.medium },
+    chips: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
+  });

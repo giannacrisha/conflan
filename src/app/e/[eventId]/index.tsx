@@ -11,14 +11,19 @@ import { haptic, Progress, PressableScale } from '@/ui/motion';
 import { Button, IconButton, Kicker, Title } from '@/ui/primitives';
 import { SlotPicker } from '@/ui/slot-picker';
 import { Timeline } from '@/ui/timeline';
-import { C, F, LINKS, R, WIDE } from '@/ui/theme';
+import { F, LINKS, R, WIDE, type Theme } from '@/ui/theme';
+import { useEventVariants, useStyles, useTheme } from '@/ui/theme-context';
+import { ThemeSwitcher } from '@/ui/theme-switcher';
 
 const plannedIn = (model: PlanModel, slots: PlanModel['days'][number]['slots']) =>
   slots.filter((s) => s.sessionIds.some((id) => model.picked.has(id))).length;
 
 export default function Planner() {
+  const C = useTheme();
+  const styles = useStyles(makeStyles);
   const { eventId, picks: shared, from } = useLocalSearchParams<{ eventId: string; picks?: string; from?: string }>();
   const { model, loading, error } = usePlan(eventId);
+  const hasColors = useEventVariants(eventId).variants.length > 1;
   const { width } = useWindowDimensions();
   const [dayIndex, setDayIndex] = useState<number | undefined>();
   const [openSlotId, setOpenSlotId] = useState<string | undefined>();
@@ -101,7 +106,11 @@ export default function Planner() {
             <Text style={styles.eventName} numberOfLines={1}>
               {model.data.event.name}
             </Text>
-            <IconButton glyph="?" label="Request a feature" onPress={() => Linking.openURL(LINKS.featureRequest)} />
+            {hasColors ? (
+              <ThemeSwitcher eventId={eventId} compact />
+            ) : (
+              <IconButton glyph="?" label="Request a feature" onPress={() => Linking.openURL(LINKS.featureRequest)} />
+            )}
           </View>
 
           <View style={styles.hero}>
@@ -168,6 +177,7 @@ export default function Planner() {
 }
 
 function NavItem({ label, onPress }: { label: string; onPress: () => void }) {
+  const styles = useStyles(makeStyles);
   return (
     <Pressable
       onPress={() => {
@@ -183,6 +193,8 @@ function NavItem({ label, onPress }: { label: string; onPress: () => void }) {
 
 /** Day picker as tall pills: weekday over date, marigold when active, dot when fully planned */
 function DayPills({ model, index, onSelect }: { model: PlanModel; index: number; onSelect: (i: number) => void }) {
+  const C = useTheme();
+  const styles = useStyles(makeStyles);
   return (
     <View style={styles.pillsWrap}>
       <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.pills}>
@@ -201,8 +213,8 @@ function DayPills({ model, index, onSelect }: { model: PlanModel; index: number;
               accessibilityState={{ selected: active }}
               accessibilityLabel={formatDay(d.day, 'long')}
               style={[styles.pill, active && styles.pillActive]}>
-              <Text style={styles.pillDate}>{date}</Text>
-              <Text style={styles.pillDay}>{weekday}</Text>
+              <Text style={[styles.pillDate, active && { color: C.onAccent }]}>{date}</Text>
+              <Text style={[styles.pillDay, active && { color: C.onAccent }]}>{weekday}</Text>
               <View style={[styles.pillDot, done && { backgroundColor: C.ink }]} />
             </PressableScale>
           );
@@ -223,6 +235,8 @@ function Sidebar({
   onSelectDay: (i: number) => void;
   go: (screen: 'setup' | 'people' | 'export') => void;
 }) {
+  const C = useTheme();
+  const styles = useStyles(makeStyles);
   const profile = usePlanner((s) => s.profile);
   const tracks = usePlanner((s) => s.tracks[model.data.event.id]) ?? [];
   return (
@@ -233,6 +247,7 @@ function Sidebar({
           {model.data.event.name}
         </Text>
       </View>
+      <ThemeSwitcher eventId={model.data.event.id} />
       <PressableScale onPress={() => go('setup')} accessibilityRole="button" style={styles.profileCard}>
         <Text style={styles.profileName}>{profile.name || 'Your plan'}</Text>
         <Text style={styles.profileSub}>
@@ -284,6 +299,8 @@ function Sidebar({
 }
 
 function Banners({ model }: { model: PlanModel }) {
+  const C = useTheme();
+  const styles = useStyles(makeStyles);
   const unpick = usePlanner((s) => s.unpick);
   const eventId = model.data.event.id;
   const cancelled = model.data.event.status === 'cancelled';
@@ -314,124 +331,125 @@ function Banners({ model }: { model: PlanModel }) {
   );
 }
 
-const styles = StyleSheet.create({
-  flex: { flex: 1, backgroundColor: C.bg },
-  center: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 12, backgroundColor: C.bg, padding: 24 },
-  muted: { fontSize: 13, color: C.muted, lineHeight: 19 },
-  topRow: { flexDirection: 'row', alignItems: 'center', gap: 10 },
-  eventName: { flex: 1, fontSize: 14, fontFamily: F.semibold, color: C.ink, textAlign: 'center' },
-  mobileContent: { padding: 16, gap: 14, paddingBottom: 120 },
-  hero: { backgroundColor: C.ink, borderRadius: R.lg, padding: 20, gap: 10 },
-  heroTop: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
-  heroKicker: { fontSize: 11, fontFamily: F.semibold, letterSpacing: 1.2, color: C.faint },
-  heroCount: {
-    fontSize: 13,
-    fontFamily: F.semibold,
-    color: C.ink,
-    backgroundColor: C.accent,
-    paddingHorizontal: 12,
-    paddingVertical: 5,
-    borderRadius: R.pill,
-    overflow: 'hidden',
-  },
-  heroTitle: { fontSize: 28, fontFamily: F.semibold, color: C.white, letterSpacing: -0.6 },
-  heroSub: { fontSize: 12, color: C.faint },
-  pillsWrap: { backgroundColor: C.bg, marginHorizontal: -16, paddingVertical: 6 },
-  pills: { gap: 8, paddingHorizontal: 16 },
-  pill: {
-    width: 60,
-    paddingVertical: 12,
-    borderRadius: R.pill,
-    backgroundColor: C.surface,
-    alignItems: 'center',
-    gap: 2,
-  },
-  pillActive: { backgroundColor: C.accent },
-  pillDate: { fontSize: 20, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.4 },
-  pillDay: { fontSize: 11, fontFamily: F.medium, color: C.body },
-  pillDot: { width: 6, height: 6, borderRadius: 3, marginTop: 4, backgroundColor: 'transparent' },
-  navWrap: { position: 'absolute', left: 0, right: 0, bottom: 0, alignItems: 'center' },
-  nav: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 4,
-    backgroundColor: C.ink,
-    borderRadius: R.pill,
-    padding: 6,
-    marginBottom: 12,
-    shadowColor: '#000',
-    shadowOpacity: 0.18,
-    shadowRadius: 16,
-    shadowOffset: { width: 0, height: 8 },
-    elevation: 8,
-  },
-  navItem: { paddingHorizontal: 16, paddingVertical: 12 },
-  navText: { fontSize: 13, fontFamily: F.medium, color: C.white },
-  navCta: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-    backgroundColor: C.accent,
-    borderRadius: R.pill,
-    paddingLeft: 16,
-    paddingRight: 4,
-    paddingVertical: 4,
-  },
-  navCtaText: { fontSize: 13, fontFamily: F.semibold, color: C.ink },
-  navCtaIcon: {
-    width: 36,
-    height: 36,
-    borderRadius: 18,
-    backgroundColor: C.ink,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  navCtaGlyph: { color: C.accent, fontSize: 16, fontFamily: F.bold },
-  link: { fontSize: 13, fontFamily: F.medium, color: C.muted },
-  sheet: { flex: 1, backgroundColor: C.bg },
-  sheetBar: {
-    alignItems: 'center',
-    paddingHorizontal: 16,
-    paddingTop: 8,
-    paddingBottom: 4,
-    gap: 8,
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
-  },
-  grabber: {
-    position: 'absolute',
-    top: 6,
-    left: '50%',
-    marginLeft: -20,
-    width: 40,
-    height: 5,
-    borderRadius: 3,
-    backgroundColor: C.faint,
-  },
-  sheetContent: { paddingHorizontal: 16, paddingBottom: 40 },
-  split: { flex: 1, flexDirection: 'row', backgroundColor: C.bg },
-  sidebar: { width: 300, flexGrow: 0 },
-  sidebarContent: { padding: 20, gap: 12 },
-  sideTitle: { flex: 1, fontSize: 18, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.6 },
-  profileCard: { backgroundColor: C.accent, borderRadius: R.md, padding: 16, gap: 4 },
-  profileName: { fontSize: 16, fontFamily: F.semibold, color: C.ink },
-  profileSub: { fontSize: 12, color: C.body, lineHeight: 17 },
-  editLink: { fontSize: 12, fontFamily: F.semibold, color: C.ink, paddingTop: 4 },
-  dayRow: { borderRadius: R.md, backgroundColor: C.surface, padding: 14, gap: 10 },
-  dayRowTop: { flexDirection: 'row', justifyContent: 'space-between' },
-  dayName: { fontSize: 13, fontFamily: F.semibold, color: C.ink },
-  dayCount: { fontSize: 12, fontFamily: F.medium, color: C.muted },
-  centerCol: { width: 500, flexGrow: 0 },
-  centerContent: { padding: 28, gap: 14 },
-  panel: {
-    flex: 1,
-    backgroundColor: C.surfaceAlt,
-    borderTopLeftRadius: R.lg,
-    borderBottomLeftRadius: R.lg,
-    margin: 12,
-    marginLeft: 0,
-  },
-  panelContent: { padding: 28, maxWidth: 760 },
-  banner: { backgroundColor: C.accentTint, borderRadius: R.md, padding: 14, gap: 8 },
-  bannerText: { fontSize: 13, color: C.ink, fontFamily: F.medium },
-});
+const makeStyles = (C: Theme) =>
+  StyleSheet.create({
+    flex: { flex: 1, backgroundColor: C.bg },
+    center: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 12, backgroundColor: C.bg, padding: 24 },
+    muted: { fontSize: 13, color: C.muted, lineHeight: 19 },
+    topRow: { flexDirection: 'row', alignItems: 'center', gap: 10 },
+    eventName: { flex: 1, fontSize: 14, fontFamily: F.semibold, color: C.ink, textAlign: 'center' },
+    mobileContent: { padding: 16, gap: 14, paddingBottom: 120 },
+    hero: { backgroundColor: C.ink, borderRadius: R.lg, padding: 20, gap: 10 },
+    heroTop: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
+    heroKicker: { fontSize: 11, fontFamily: F.semibold, letterSpacing: 1.2, color: C.faint },
+    heroCount: {
+      fontSize: 13,
+      fontFamily: F.semibold,
+      color: C.onAccent,
+      backgroundColor: C.accent,
+      paddingHorizontal: 12,
+      paddingVertical: 5,
+      borderRadius: R.pill,
+      overflow: 'hidden',
+    },
+    heroTitle: { fontSize: 28, fontFamily: F.semibold, color: C.white, letterSpacing: -0.6 },
+    heroSub: { fontSize: 12, color: C.faint },
+    pillsWrap: { backgroundColor: C.bg, marginHorizontal: -16, paddingVertical: 6 },
+    pills: { gap: 8, paddingHorizontal: 16 },
+    pill: {
+      width: 60,
+      paddingVertical: 12,
+      borderRadius: R.pill,
+      backgroundColor: C.surface,
+      alignItems: 'center',
+      gap: 2,
+    },
+    pillActive: { backgroundColor: C.accent },
+    pillDate: { fontSize: 20, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.4 },
+    pillDay: { fontSize: 11, fontFamily: F.medium, color: C.body },
+    pillDot: { width: 6, height: 6, borderRadius: 3, marginTop: 4, backgroundColor: 'transparent' },
+    navWrap: { position: 'absolute', left: 0, right: 0, bottom: 0, alignItems: 'center' },
+    nav: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 4,
+      backgroundColor: C.ink,
+      borderRadius: R.pill,
+      padding: 6,
+      marginBottom: 12,
+      shadowColor: '#000',
+      shadowOpacity: 0.18,
+      shadowRadius: 16,
+      shadowOffset: { width: 0, height: 8 },
+      elevation: 8,
+    },
+    navItem: { paddingHorizontal: 16, paddingVertical: 12 },
+    navText: { fontSize: 13, fontFamily: F.medium, color: C.white },
+    navCta: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 8,
+      backgroundColor: C.accent,
+      borderRadius: R.pill,
+      paddingLeft: 16,
+      paddingRight: 4,
+      paddingVertical: 4,
+    },
+    navCtaText: { fontSize: 13, fontFamily: F.semibold, color: C.onAccent },
+    navCtaIcon: {
+      width: 36,
+      height: 36,
+      borderRadius: 18,
+      backgroundColor: C.ink,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    navCtaGlyph: { color: C.accent, fontSize: 16, fontFamily: F.bold },
+    link: { fontSize: 13, fontFamily: F.medium, color: C.muted },
+    sheet: { flex: 1, backgroundColor: C.bg },
+    sheetBar: {
+      alignItems: 'center',
+      paddingHorizontal: 16,
+      paddingTop: 8,
+      paddingBottom: 4,
+      gap: 8,
+      flexDirection: 'row',
+      justifyContent: 'flex-end',
+    },
+    grabber: {
+      position: 'absolute',
+      top: 6,
+      left: '50%',
+      marginLeft: -20,
+      width: 40,
+      height: 5,
+      borderRadius: 3,
+      backgroundColor: C.faint,
+    },
+    sheetContent: { paddingHorizontal: 16, paddingBottom: 40 },
+    split: { flex: 1, flexDirection: 'row', backgroundColor: C.bg },
+    sidebar: { width: 300, flexGrow: 0 },
+    sidebarContent: { padding: 20, gap: 12 },
+    sideTitle: { flex: 1, fontSize: 18, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.6 },
+    profileCard: { backgroundColor: C.accent, borderRadius: R.md, padding: 16, gap: 4 },
+    profileName: { fontSize: 16, fontFamily: F.semibold, color: C.onAccent },
+    profileSub: { fontSize: 12, color: C.onAccent, lineHeight: 17, opacity: 0.85 },
+    editLink: { fontSize: 12, fontFamily: F.semibold, color: C.onAccent, paddingTop: 4 },
+    dayRow: { borderRadius: R.md, backgroundColor: C.surface, padding: 14, gap: 10 },
+    dayRowTop: { flexDirection: 'row', justifyContent: 'space-between' },
+    dayName: { fontSize: 13, fontFamily: F.semibold, color: C.ink },
+    dayCount: { fontSize: 12, fontFamily: F.medium, color: C.muted },
+    centerCol: { width: 500, flexGrow: 0 },
+    centerContent: { padding: 28, gap: 14 },
+    panel: {
+      flex: 1,
+      backgroundColor: C.surfaceAlt,
+      borderTopLeftRadius: R.lg,
+      borderBottomLeftRadius: R.lg,
+      margin: 12,
+      marginLeft: 0,
+    },
+    panelContent: { padding: 28, maxWidth: 760 },
+    banner: { backgroundColor: C.accentTint, borderRadius: R.md, padding: 14, gap: 8 },
+    bannerText: { fontSize: 13, color: C.ink, fontFamily: F.medium },
+  });

@@ -15,6 +15,8 @@ type PlannerState = {
   tracks: Record<string, string[] | undefined>;
   /** Picked session ids per event */
   picks: Record<string, string[]>;
+  /** Index of the event color option the attendee chose */
+  themeVariant: Record<string, number>;
 
   saveProfile: (profile: Profile) => void;
   addEvent: (eventId: string) => void;
@@ -24,6 +26,7 @@ type PlannerState = {
   pick: (eventId: string, sessionId: string, sameSlot: string[]) => void;
   unpick: (eventId: string, sessionId: string) => void;
   importPicks: (eventId: string, sessionIds: string[]) => void;
+  setThemeVariant: (eventId: string, index: number) => void;
 };
 
 export const usePlanner = create<PlannerState>()(
@@ -34,6 +37,7 @@ export const usePlanner = create<PlannerState>()(
       myEvents: [],
       tracks: {},
       picks: {},
+      themeVariant: {},
 
       saveProfile: (profile) => set({ profile, onboarded: true }),
       addEvent: (eventId) => set((s) => (s.myEvents.includes(eventId) ? s : { myEvents: [...s.myEvents, eventId] })),
@@ -58,6 +62,7 @@ export const usePlanner = create<PlannerState>()(
             myEvents: s.myEvents.includes(eventId) ? s.myEvents : [...s.myEvents, eventId],
           };
         }),
+      setThemeVariant: (eventId, index) => set((s) => ({ themeVariant: { ...s.themeVariant, [eventId]: index } })),
     }),
     {
       // Old app name kept on purpose: renaming the key would wipe saved plans

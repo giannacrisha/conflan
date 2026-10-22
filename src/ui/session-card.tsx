@@ -5,7 +5,8 @@ import Animated, { FadeIn, LinearTransition, ZoomIn } from 'react-native-reanima
 import { formatTime } from '@/core/time';
 import type { Session, TrackGroup } from '@/core/types';
 import { haptic, PressableScale } from './motion';
-import { C, F, groupColor, R } from './theme';
+import { F, groupColor, R, type Theme } from './theme';
+import { useStyles, useTheme } from './theme-context';
 
 export function sessionLabel(session: Session, trackGroups: TrackGroup[]) {
   const index = trackGroups.findIndex((g) => session.tracks.some((t) => t === g.name || g.tracks.includes(t)));
@@ -15,7 +16,7 @@ export function sessionLabel(session: Session, trackGroups: TrackGroup[]) {
   const parts = [name, session.type !== name ? session.type : undefined].filter(Boolean);
   return {
     label: parts.join(' · ').toUpperCase(),
-    color: name ? groupColor(group && trackGroups.length > 1 ? group.name : name, Math.max(index, 0)) : C.muted,
+    color: name ? groupColor(group && trackGroups.length > 1 ? group.name : name, Math.max(index, 0)) : undefined,
   };
 }
 
@@ -53,8 +54,11 @@ export function SessionCard({
   onPick,
   onUnpick,
 }: Props) {
+  const C = useTheme();
+  const styles = useStyles(makeStyles);
   const [open, setOpen] = useState(false);
-  const { label, color } = sessionLabel(session, trackGroups);
+  const { label, color: trackColor } = sessionLabel(session, trackGroups);
+  const color = trackColor ?? C.muted;
   const meta = [
     `${formatTime(session.start, tz)}–${formatTime(session.end, tz)}`,
     session.room,
@@ -149,7 +153,7 @@ export function SessionCard({
               }}
               style={[styles.action, { backgroundColor: C.accent }]}
               accessibilityRole="button">
-              <Text style={styles.actionText}>Add to plan +</Text>
+              <Text style={[styles.actionText, { color: C.onAccent }]}>Add to plan +</Text>
             </PressableScale>
           )}
         </View>
@@ -158,35 +162,36 @@ export function SessionCard({
   );
 }
 
-const styles = StyleSheet.create({
-  card: { backgroundColor: C.surface, borderRadius: R.md, paddingHorizontal: 16, paddingVertical: 14, gap: 8 },
-  cardDark: { backgroundColor: C.ink },
-  content: { gap: 6 },
-  top: { flexDirection: 'row', alignItems: 'center', gap: 6, minHeight: 24 },
-  dot: { width: 8, height: 8, borderRadius: 4 },
-  label: { fontSize: 10, fontFamily: F.semibold, letterSpacing: 0.6, flexShrink: 1 },
-  badge: { paddingHorizontal: 8, paddingVertical: 3, borderRadius: R.pill },
-  badgeText: { color: C.accent, fontSize: 10, fontFamily: F.semibold },
-  check: {
-    width: 26,
-    height: 26,
-    borderRadius: 13,
-    backgroundColor: C.accent,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  checkText: { color: C.ink, fontSize: 13, fontFamily: F.bold },
-  title: { fontSize: 15, fontFamily: F.semibold, lineHeight: 20, letterSpacing: -0.4 },
-  meta: { fontSize: 12, lineHeight: 17 },
-  why: { fontSize: 11, fontFamily: F.medium },
-  warn: { fontSize: 11, fontFamily: F.semibold, color: C.warn },
-  details: { gap: 8, paddingTop: 4 },
-  abstract: { fontSize: 13, lineHeight: 19 },
-  speakers: { fontSize: 12, lineHeight: 18 },
-  linkText: { fontSize: 13, fontFamily: F.semibold },
-  actions: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingTop: 4 },
-  more: { fontSize: 12, fontFamily: F.medium, padding: 4 },
-  action: { borderRadius: R.pill, paddingHorizontal: 16, paddingVertical: 10 },
-  actionGhost: { borderWidth: 1.5, borderColor: C.ink2, backgroundColor: C.ink2 },
-  actionText: { fontSize: 13, fontFamily: F.semibold, color: C.ink },
-});
+const makeStyles = (C: Theme) =>
+  StyleSheet.create({
+    card: { backgroundColor: C.surface, borderRadius: R.md, paddingHorizontal: 16, paddingVertical: 14, gap: 8 },
+    cardDark: { backgroundColor: C.ink },
+    content: { gap: 6 },
+    top: { flexDirection: 'row', alignItems: 'center', gap: 6, minHeight: 24 },
+    dot: { width: 8, height: 8, borderRadius: 4 },
+    label: { fontSize: 10, fontFamily: F.semibold, letterSpacing: 0.6, flexShrink: 1 },
+    badge: { paddingHorizontal: 8, paddingVertical: 3, borderRadius: R.pill },
+    badgeText: { color: C.accent, fontSize: 10, fontFamily: F.semibold },
+    check: {
+      width: 26,
+      height: 26,
+      borderRadius: 13,
+      backgroundColor: C.accent,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    checkText: { color: C.onAccent, fontSize: 13, fontFamily: F.bold },
+    title: { fontSize: 15, fontFamily: F.semibold, lineHeight: 20, letterSpacing: -0.4 },
+    meta: { fontSize: 12, lineHeight: 17 },
+    why: { fontSize: 11, fontFamily: F.medium },
+    warn: { fontSize: 11, fontFamily: F.semibold, color: C.warn },
+    details: { gap: 8, paddingTop: 4 },
+    abstract: { fontSize: 13, lineHeight: 19 },
+    speakers: { fontSize: 12, lineHeight: 18 },
+    linkText: { fontSize: 13, fontFamily: F.semibold },
+    actions: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingTop: 4 },
+    more: { fontSize: 12, fontFamily: F.medium, padding: 4 },
+    action: { borderRadius: R.pill, paddingHorizontal: 16, paddingVertical: 10 },
+    actionGhost: { borderWidth: 1.5, borderColor: C.ink2, backgroundColor: C.ink2 },
+    actionText: { fontSize: 13, fontFamily: F.semibold, color: C.ink },
+  });
