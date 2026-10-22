@@ -11,7 +11,16 @@ export const EVENTS: EventConfig[] = [
     timezone: 'America/Los_Angeles',
     start: '2026-10-23',
     end: '2026-10-25',
-    theme: { accent: '#1F6F5C' },
+    // From the "Tides of Transition" banner: teal headline, magenta, hummingbird
+    // mint, coral-bean red and gold on a pale sky background
+    theme: {
+      accent: '#0B6B5E',
+      variants: [
+        { name: 'Tides', ink: '#0B6B5E', accent: '#F4A6C8', bg: '#E4EDF2' },
+        { name: 'Hummingbird', ink: '#A3285F', accent: '#7FD8C3', bg: '#E4EDF2' },
+        { name: 'Coral bean', ink: '#B3282C', accent: '#E9C25A', bg: '#F1ECE6' },
+      ],
+    },
     source: { platform: 'whova', eventId: 'wXgDwfNAQx29AWtlzgMbHAdZISvovGIh3eZI4wtyirQ=' },
   },
   {

@@ -14,11 +14,13 @@ import { usePlan, type PlanModel } from '@/lib/use-plan';
 import { enter, haptic, PressableScale } from '@/ui/motion';
 import { Button, IconButton, Kicker, Segmented, Stat, Title } from '@/ui/primitives';
 import { Screen } from '@/ui/screen';
-import { C, F, R } from '@/ui/theme';
+import { F, R, type Theme } from '@/ui/theme';
+import { useStyles, useTheme } from '@/ui/theme-context';
 
 type View_ = 'theirs' | 'compare';
 
 export default function Shared() {
+  const styles = useStyles(makeStyles);
   const { eventId, picks, from } = useLocalSearchParams<{ eventId: string; picks?: string; from?: string }>();
   const { model, loading, error } = usePlan(eventId);
   const pick = usePlanner((s) => s.pick);
@@ -141,6 +143,7 @@ function Days({
   showStatus: boolean;
   onAdd: (row: CompareRow) => void;
 }) {
+  const styles = useStyles(makeStyles);
   const byDay = new Map<string, CompareRow[]>();
   for (const r of rows) {
     const key = dayKey(r.session.start, model.tz);
@@ -177,6 +180,8 @@ function Row({
   showStatus: boolean;
   onAdd: () => void;
 }) {
+  const C = useTheme();
+  const styles = useStyles(makeStyles);
   const { session: s, status } = row;
   const together = showStatus && status === 'both';
   return (
@@ -191,7 +196,7 @@ function Row({
         {s.room ? <Text style={[styles.muted, together && { color: C.faint }]}>{s.room}</Text> : null}
         {showStatus ? (
           status === 'both' ? (
-            <Text style={[styles.tag, { backgroundColor: C.accent }]}>✓ You’re both going</Text>
+            <Text style={[styles.tag, { backgroundColor: C.accent, color: C.onAccent }]}>✓ You’re both going</Text>
           ) : status === 'clash' ? (
             <Text style={[styles.tag, styles.clash]} numberOfLines={2}>
               Clashes with your {row.clashesWith.map((c) => formatTime(c.start, model.tz)).join(' and ')} pick
@@ -216,52 +221,53 @@ function Row({
   );
 }
 
-const styles = StyleSheet.create({
-  header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  muted: { fontSize: 12, color: C.muted, lineHeight: 17 },
-  stats: { flexDirection: 'row', gap: 8 },
-  notice: { backgroundColor: C.accentTint, borderRadius: R.md, padding: 16, gap: 10, alignItems: 'flex-start' },
-  noticeText: { fontSize: 13, color: C.ink, lineHeight: 19 },
-  dayHead: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
-  dayPill: {
-    fontSize: 12,
-    fontFamily: F.semibold,
-    color: C.accent,
-    backgroundColor: C.ink,
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: R.pill,
-    overflow: 'hidden',
-  },
-  row: {
-    flexDirection: 'row',
-    gap: 12,
-    backgroundColor: C.surface,
-    borderRadius: R.md,
-    padding: 14,
-    alignItems: 'center',
-  },
-  rowTogether: { backgroundColor: C.ink },
-  time: { width: 64, fontSize: 11, fontFamily: F.semibold, color: C.muted, lineHeight: 16 },
-  title: { fontSize: 14, fontFamily: F.semibold, color: C.ink, lineHeight: 19, letterSpacing: -0.3 },
-  tag: {
-    alignSelf: 'flex-start',
-    fontSize: 11,
-    fontFamily: F.medium,
-    color: C.ink,
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    borderRadius: R.pill,
-    overflow: 'hidden',
-  },
-  clash: { backgroundColor: C.warnTint, color: C.warn, borderRadius: 10 },
-  add: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
-    backgroundColor: C.accent,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  addText: { fontSize: 18, fontFamily: F.semibold, color: C.ink },
-});
+const makeStyles = (C: Theme) =>
+  StyleSheet.create({
+    header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+    muted: { fontSize: 12, color: C.muted, lineHeight: 17 },
+    stats: { flexDirection: 'row', gap: 8 },
+    notice: { backgroundColor: C.accentTint, borderRadius: R.md, padding: 16, gap: 10, alignItems: 'flex-start' },
+    noticeText: { fontSize: 13, color: C.ink, lineHeight: 19 },
+    dayHead: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
+    dayPill: {
+      fontSize: 12,
+      fontFamily: F.semibold,
+      color: C.accent,
+      backgroundColor: C.ink,
+      paddingHorizontal: 12,
+      paddingVertical: 6,
+      borderRadius: R.pill,
+      overflow: 'hidden',
+    },
+    row: {
+      flexDirection: 'row',
+      gap: 12,
+      backgroundColor: C.surface,
+      borderRadius: R.md,
+      padding: 14,
+      alignItems: 'center',
+    },
+    rowTogether: { backgroundColor: C.ink },
+    time: { width: 64, fontSize: 11, fontFamily: F.semibold, color: C.muted, lineHeight: 16 },
+    title: { fontSize: 14, fontFamily: F.semibold, color: C.ink, lineHeight: 19, letterSpacing: -0.3 },
+    tag: {
+      alignSelf: 'flex-start',
+      fontSize: 11,
+      fontFamily: F.medium,
+      color: C.ink,
+      paddingHorizontal: 10,
+      paddingVertical: 4,
+      borderRadius: R.pill,
+      overflow: 'hidden',
+    },
+    clash: { backgroundColor: C.warnTint, color: C.warn, borderRadius: 10 },
+    add: {
+      width: 40,
+      height: 40,
+      borderRadius: 20,
+      backgroundColor: C.accent,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    addText: { fontSize: 18, fontFamily: F.semibold, color: C.onAccent },
+  });

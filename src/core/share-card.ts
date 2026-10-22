@@ -14,14 +14,28 @@ export type ShareCardInput = {
   url?: string;
   /** Items listed per day before collapsing into "+N more" */
   perDay?: number;
+  /** Event colors; defaults to the app theme */
+  colors?: ShareCardColors;
 };
 
-export const CARD = { width: 1080, minHeight: 1350, accent: '#FFBE2E', ink: '#241C17', panel: '#33281F' };
+export type ShareCardColors = { bg: string; panel: string; accent: string; onAccent: string };
+
+export const CARD = { width: 1080, minHeight: 1350 };
+const DEFAULT_COLORS: ShareCardColors = { bg: '#241C17', panel: '#33281F', accent: '#FFBE2E', onAccent: '#241C17' };
 
 const SANS = "'Instrument Sans', -apple-system, 'Helvetica Neue', Arial, sans-serif";
 
-export function shareCardSvg({ eventName, owner, dates, days, url, perDay = 8 }: ShareCardInput) {
-  const { width, accent, ink, panel } = CARD;
+export function shareCardSvg({
+  eventName,
+  owner,
+  dates,
+  days,
+  url,
+  perDay = 8,
+  colors = DEFAULT_COLORS,
+}: ShareCardInput) {
+  const { width } = CARD;
+  const { bg, panel, accent, onAccent } = colors;
   const pad = 72;
   const parts: string[] = [];
   const text = (x: number, y: number, size: number, fill: string, value: string, weight = 400, anchor = 'start') =>
@@ -43,7 +57,7 @@ export function shareCardSvg({ eventName, owner, dates, days, url, perDay = 8 }:
   const stat = `${total} session${total === 1 ? '' : 's'} · ${days.length} day${days.length === 1 ? '' : 's'}`;
   const statW = stat.length * 16 + 48;
   parts.push(`<rect x="${pad}" y="${y}" width="${statW}" height="52" rx="26" fill="${accent}"/>`);
-  text(pad + 24, y + 34, 26, ink, stat, 700);
+  text(pad + 24, y + 34, 26, onAccent, stat, 700);
   if (owner) text(pad + statW + 20, y + 34, 26, 'rgba(255,255,255,0.75)', owner, 500);
   y += 92;
 
@@ -83,7 +97,7 @@ export function shareCardSvg({ eventName, owner, dates, days, url, perDay = 8 }:
     height,
     svg: [
       `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">`,
-      `<rect width="100%" height="100%" fill="${ink}"/>`,
+      `<rect width="100%" height="100%" fill="${bg}"/>`,
       `<circle cx="${width - 40}" cy="40" r="180" fill="${accent}" opacity="0.08"/>`,
       ...parts,
       '</svg>',

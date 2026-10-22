@@ -10,11 +10,13 @@ import { usePlanner } from '@/lib/store';
 import { enter } from './motion';
 import { Chip, Kicker, Title } from './primitives';
 import { SessionCard } from './session-card';
-import { C } from './theme';
+import { type Theme } from './theme';
+import { useStyles } from './theme-context';
 
 type Filter = 'for-you' | 'all' | string;
 
 export function SlotPicker({ model, slot }: { model: PlanModel; slot: Slot }) {
+  const styles = useStyles(makeStyles);
   const ranked = model.ranked.get(slot.id) ?? [];
   const forYouCount = ranked.filter((r) => r.forYou).length;
   const [filter, setFilter] = useState<Filter>('all');
@@ -77,10 +79,11 @@ export function SlotPicker({ model, slot }: { model: PlanModel; slot: Slot }) {
   );
 }
 
-const styles = StyleSheet.create({
-  wrap: { gap: 14 },
-  header: { gap: 10 },
-  filters: { gap: 6, paddingVertical: 4 },
-  hint: { fontSize: 12, color: C.muted },
-  list: { gap: 10 },
-});
+const makeStyles = (C: Theme) =>
+  StyleSheet.create({
+    wrap: { gap: 14 },
+    header: { gap: 10 },
+    filters: { gap: 6, paddingVertical: 4 },
+    hint: { fontSize: 12, color: C.muted },
+    list: { gap: 10 },
+  });

@@ -13,9 +13,11 @@ import { usePlan, type PlanModel } from '@/lib/use-plan';
 import { enter, haptic } from '@/ui/motion';
 import { Button, IconButton, Kicker, Title } from '@/ui/primitives';
 import { Screen } from '@/ui/screen';
-import { C, F, initials, R } from '@/ui/theme';
+import { F, initials, R, type Theme } from '@/ui/theme';
+import { useStyles, useTheme } from '@/ui/theme-context';
 
 export default function People() {
+  const styles = useStyles(makeStyles);
   const { eventId } = useLocalSearchParams<{ eventId: string }>();
   const { model } = usePlan(eventId);
   const profile = usePlanner((s) => s.profile);
@@ -89,6 +91,8 @@ function Person({
   profile: Profile;
   featured: boolean;
 }) {
+  const C = useTheme();
+  const styles = useStyles(makeStyles);
   const [expanded, setExpanded] = useState(false);
   const [copied, setCopied] = useState(false);
   const { tz } = model;
@@ -167,39 +171,40 @@ function Person({
   );
 }
 
-const styles = StyleSheet.create({
-  header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  muted: { fontSize: 13, color: C.muted, lineHeight: 19 },
-  empty: { gap: 12, alignItems: 'flex-start' },
-  card: { backgroundColor: C.surface, borderRadius: R.lg, padding: 18, gap: 12 },
-  featured: { backgroundColor: C.accent },
-  head: { flexDirection: 'row', gap: 12, alignItems: 'center' },
-  avatar: {
-    width: 52,
-    height: 52,
-    borderRadius: 26,
-    backgroundColor: C.surfaceAlt,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  initials: { color: C.ink, fontFamily: F.bold, fontSize: 16 },
-  name: { fontSize: 17, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.5 },
-  role: { fontSize: 12, color: C.body, lineHeight: 17 },
-  bio: { fontSize: 13, color: C.body, lineHeight: 19 },
-  more: { fontFamily: F.semibold, color: C.ink },
-  noBio: { fontSize: 12, color: C.muted, fontStyle: 'italic' },
-  reasons: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
-  reason: {
-    fontSize: 11,
-    fontFamily: F.medium,
-    color: C.ink,
-    backgroundColor: C.bg,
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    borderRadius: R.pill,
-    overflow: 'hidden',
-  },
-  session: { fontSize: 12, color: C.body, lineHeight: 18 },
-  actions: { flexDirection: 'row', gap: 8, flexWrap: 'wrap' },
-  copied: { fontSize: 12, color: C.body },
-});
+const makeStyles = (C: Theme) =>
+  StyleSheet.create({
+    header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+    muted: { fontSize: 13, color: C.muted, lineHeight: 19 },
+    empty: { gap: 12, alignItems: 'flex-start' },
+    card: { backgroundColor: C.surface, borderRadius: R.lg, padding: 18, gap: 12 },
+    featured: { backgroundColor: C.accentTint },
+    head: { flexDirection: 'row', gap: 12, alignItems: 'center' },
+    avatar: {
+      width: 52,
+      height: 52,
+      borderRadius: 26,
+      backgroundColor: C.surfaceAlt,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    initials: { color: C.ink, fontFamily: F.bold, fontSize: 16 },
+    name: { fontSize: 17, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.5 },
+    role: { fontSize: 12, color: C.body, lineHeight: 17 },
+    bio: { fontSize: 13, color: C.body, lineHeight: 19 },
+    more: { fontFamily: F.semibold, color: C.ink },
+    noBio: { fontSize: 12, color: C.muted, fontStyle: 'italic' },
+    reasons: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
+    reason: {
+      fontSize: 11,
+      fontFamily: F.medium,
+      color: C.ink,
+      backgroundColor: C.bg,
+      paddingHorizontal: 10,
+      paddingVertical: 4,
+      borderRadius: R.pill,
+      overflow: 'hidden',
+    },
+    session: { fontSize: 12, color: C.body, lineHeight: 18 },
+    actions: { flexDirection: 'row', gap: 8, flexWrap: 'wrap' },
+    copied: { fontSize: 12, color: C.body },
+  });

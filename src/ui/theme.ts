@@ -2,7 +2,12 @@
 // highlights, big rounded cards and pill controls. Each event keeps its own
 // accent for its swatch and track dots.
 
-export const C = {
+import type { Theme } from '@/core/palette';
+
+export type { Theme };
+
+/** App default, used outside event screens and for events without their own colors */
+export const C: Theme = {
   ink: '#241C17',
   ink2: '#43362E',
   body: '#3A302A',
@@ -10,6 +15,7 @@ export const C = {
   faint: '#BDAFA3',
   accent: '#FFBE2E',
   accentTint: '#FFF1CF',
+  onAccent: '#241C17',
   bg: '#F2EEE8',
   surface: '#FFFFFF',
   surfaceAlt: '#E8E2D8',
