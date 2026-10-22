@@ -34,18 +34,24 @@ export async function saveSvgAsPng(filename: string, svg: string, width: number,
   download(filename, await renderPng(svg, width, height));
 }
 
-/** Opens the system share sheet with the image where the browser supports it (most phones), else downloads it */
-export async function shareSvgAsPng(filename: string, svg: string, width: number, height: number, text?: string) {
-  const blob = await renderPng(svg, width, height);
-  const file = new File([blob], filename, { type: 'image/png' });
-  if (typeof navigator !== 'undefined' && navigator.canShare?.({ files: [file] })) {
+export type PngSource = { filename: string; svg: string; width: number; height: number };
+
+export async function savePngs(images: PngSource[]) {
+  for (const i of images) download(i.filename, await renderPng(i.svg, i.width, i.height));
+}
+
+/** Opens the system share sheet with the images where the browser supports it (most phones), else downloads them */
+export async function sharePngs(images: PngSource[], text?: string) {
+  const blobs = await Promise.all(images.map((i) => renderPng(i.svg, i.width, i.height)));
+  const files = blobs.map((b, n) => new File([b], images[n].filename, { type: 'image/png' }));
+  if (typeof navigator !== 'undefined' && navigator.canShare?.({ files })) {
     try {
-      await navigator.share({ files: [file], text });
+      await navigator.share({ files, text });
       return;
     } catch (err) {
       // Closing the share sheet is not an error worth showing
       if ((err as Error).name === 'AbortError') return;
     }
   }
-  download(filename, blob);
+  blobs.forEach((b, n) => download(images[n].filename, b));
 }

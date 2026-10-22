@@ -22,6 +22,12 @@ export async function saveSvgAsPng(_filename: string, _svg: string, _width: numb
   throw new Error('Image export is only available on the web for now');
 }
 
-export async function shareSvgAsPng(_filename: string, _svg: string, _width: number, _height: number, _text?: string) {
+export type PngSource = { filename: string; svg: string; width: number; height: number };
+
+export async function savePngs(_images: PngSource[]) {
+  throw new Error('Image export is only available on the web for now');
+}
+
+export async function sharePngs(_images: PngSource[], _text?: string) {
   throw new Error('Image export is only available on the web for now');
 }

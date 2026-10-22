@@ -46,5 +46,6 @@ describe('shareCardSvg', () => {
     expect(svg).toContain('fill="#2A7D72"');
     expect(svg).toContain('fill="#F4A6C8"');
     expect(svg).toContain('fill="#123456"');
+    expect(svg).not.toContain('<circle');
   });
 });
