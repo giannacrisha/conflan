@@ -114,7 +114,7 @@ export default function Planner() {
             <Text style={styles.heroTitle}>
               {planned === slots.length && slots.length ? 'Day planned' : 'Build your day'}
             </Text>
-            <Progress value={slots.length ? planned / slots.length : 0} color={C.lime} track={C.ink2} />
+            <Progress value={slots.length ? planned / slots.length : 0} color={C.accent} track={C.ink2} />
             <Text style={styles.heroSub}>
               {slots.length - planned
                 ? `${slots.length - planned} time blocks left to choose`
@@ -181,7 +181,7 @@ function NavItem({ label, onPress }: { label: string; onPress: () => void }) {
   );
 }
 
-/** Day picker as tall pills: weekday over date, lime when active, dot when fully planned */
+/** Day picker as tall pills: weekday over date, marigold when active, dot when fully planned */
 function DayPills({ model, index, onSelect }: { model: PlanModel; index: number; onSelect: (i: number) => void }) {
   return (
     <View style={styles.pillsWrap}>
@@ -258,13 +258,13 @@ function Sidebar({
             accessibilityState={{ selected: active }}>
             <View style={styles.dayRowTop}>
               <Text style={[styles.dayName, active && { color: C.white }]}>{formatDay(d.day)}</Text>
-              <Text style={[styles.dayCount, active && { color: C.lime }]}>
+              <Text style={[styles.dayCount, active && { color: C.accent }]}>
                 {done}/{d.slots.length}
               </Text>
             </View>
             <Progress
               value={d.slots.length ? done / d.slots.length : 0}
-              color={active ? C.lime : C.ink}
+              color={active ? C.accent : C.ink}
               track={active ? C.ink2 : C.surfaceAlt}
               height={4}
             />
@@ -328,13 +328,13 @@ const styles = StyleSheet.create({
     fontSize: 13,
     fontFamily: F.semibold,
     color: C.ink,
-    backgroundColor: C.lime,
+    backgroundColor: C.accent,
     paddingHorizontal: 12,
     paddingVertical: 5,
     borderRadius: R.pill,
     overflow: 'hidden',
   },
-  heroTitle: { fontSize: 28, fontFamily: F.semibold, color: C.white, letterSpacing: -1.2 },
+  heroTitle: { fontSize: 28, fontFamily: F.semibold, color: C.white, letterSpacing: -0.6 },
   heroSub: { fontSize: 12, color: C.faint },
   pillsWrap: { backgroundColor: C.bg, marginHorizontal: -16, paddingVertical: 6 },
   pills: { gap: 8, paddingHorizontal: 16 },
@@ -346,8 +346,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 2,
   },
-  pillActive: { backgroundColor: C.lime },
-  pillDate: { fontSize: 20, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.8 },
+  pillActive: { backgroundColor: C.accent },
+  pillDate: { fontSize: 20, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.4 },
   pillDay: { fontSize: 11, fontFamily: F.medium, color: C.body },
   pillDot: { width: 6, height: 6, borderRadius: 3, marginTop: 4, backgroundColor: 'transparent' },
   navWrap: { position: 'absolute', left: 0, right: 0, bottom: 0, alignItems: 'center' },
@@ -371,7 +371,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
-    backgroundColor: C.lime,
+    backgroundColor: C.accent,
     borderRadius: R.pill,
     paddingLeft: 16,
     paddingRight: 4,
@@ -386,7 +386,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  navCtaGlyph: { color: C.lime, fontSize: 16, fontFamily: F.bold },
+  navCtaGlyph: { color: C.accent, fontSize: 16, fontFamily: F.bold },
   link: { fontSize: 13, fontFamily: F.medium, color: C.muted },
   sheet: { flex: 1, backgroundColor: C.bg },
   sheetBar: {
@@ -413,7 +413,7 @@ const styles = StyleSheet.create({
   sidebar: { width: 300, flexGrow: 0 },
   sidebarContent: { padding: 20, gap: 12 },
   sideTitle: { flex: 1, fontSize: 18, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.6 },
-  profileCard: { backgroundColor: C.lime, borderRadius: R.md, padding: 16, gap: 4 },
+  profileCard: { backgroundColor: C.accent, borderRadius: R.md, padding: 16, gap: 4 },
   profileName: { fontSize: 16, fontFamily: F.semibold, color: C.ink },
   profileSub: { fontSize: 12, color: C.body, lineHeight: 17 },
   editLink: { fontSize: 12, fontFamily: F.semibold, color: C.ink, paddingTop: 4 },
@@ -432,6 +432,6 @@ const styles = StyleSheet.create({
     marginLeft: 0,
   },
   panelContent: { padding: 28, maxWidth: 760 },
-  banner: { backgroundColor: C.limeTint, borderRadius: R.md, padding: 14, gap: 8 },
+  banner: { backgroundColor: C.accentTint, borderRadius: R.md, padding: 14, gap: 8 },
   bannerText: { fontSize: 13, color: C.ink, fontFamily: F.medium },
 });

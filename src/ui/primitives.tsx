@@ -7,8 +7,8 @@ import { C, F, R } from './theme';
 type ButtonProps = {
   label: string;
   onPress?: () => void;
-  /** primary: ink pill · lime: lime pill · ghost: outlined · ghostLight: outlined on dark · link: text only */
-  variant?: 'primary' | 'lime' | 'ghost' | 'ghostLight' | 'link';
+  /** primary: ink pill · accent: marigold pill · ghost: outlined · ghostLight: outlined on dark · link: text only */
+  variant?: 'primary' | 'accent' | 'ghost' | 'ghostLight' | 'link';
   /** Glyph in a circle at the end of the pill, like ↗ or + */
   icon?: string;
   disabled?: boolean;
@@ -43,7 +43,7 @@ export function Button({
         small && styles.buttonSmall,
         icon ? styles.withIcon : null,
         variant === 'primary' && { backgroundColor: C.ink },
-        variant === 'lime' && { backgroundColor: C.lime },
+        variant === 'accent' && { backgroundColor: C.accent },
         variant === 'ghost' && { borderWidth: 1.5, borderColor: C.ink },
         variant === 'ghostLight' && { borderWidth: 1.5, borderColor: C.white },
         variant === 'link' && styles.link,
@@ -52,8 +52,8 @@ export function Button({
       ]}>
       <Text style={[styles.buttonText, small && { fontSize: 13 }, { color: fg }]}>{label}</Text>
       {icon ? (
-        <View style={[styles.icon, { backgroundColor: variant === 'primary' ? C.lime : C.ink }]}>
-          <Text style={[styles.iconText, { color: variant === 'primary' ? C.ink : C.lime }]}>{icon}</Text>
+        <View style={[styles.icon, { backgroundColor: variant === 'primary' ? C.accent : C.ink }]}>
+          <Text style={[styles.iconText, { color: variant === 'primary' ? C.ink : C.accent }]}>{icon}</Text>
         </View>
       ) : null}
     </PressableScale>
@@ -81,7 +81,7 @@ export function IconButton({
         onPress();
       }}
       style={[styles.iconButton, dark && { backgroundColor: C.ink }]}>
-      <Text style={[styles.iconButtonText, dark && { color: C.lime }]}>{glyph}</Text>
+      <Text style={[styles.iconButtonText, dark && { color: C.accent }]}>{glyph}</Text>
     </PressableScale>
   );
 }
@@ -97,8 +97,11 @@ export function Chip({ label, selected, onPress, dark }: ChipProps) {
         haptic.tap();
         onPress?.();
       }}
-      style={[styles.chip, selected && { backgroundColor: dark ? C.ink : C.lime, borderColor: dark ? C.ink : C.lime }]}>
-      <Text style={[styles.chipText, selected && dark && { color: C.lime }]}>
+      style={[
+        styles.chip,
+        selected && { backgroundColor: dark ? C.ink : C.accent, borderColor: dark ? C.ink : C.accent },
+      ]}>
+      <Text style={[styles.chipText, selected && dark && { color: C.accent }]}>
         {selected ? '✓ ' : ''}
         {label}
       </Text>
@@ -152,17 +155,17 @@ export function Title({ children, color = C.ink, size = 30 }: { children: ReactN
   return <Text style={[styles.title, { color, fontSize: size, lineHeight: Math.round(size * 1.15) }]}>{children}</Text>;
 }
 
-/** Rounded surface; `tone` picks white, ink or lime */
+/** Rounded surface; `tone` picks white, ink or marigold */
 export function Card({
   children,
   tone = 'light',
   style,
 }: {
   children: ReactNode;
-  tone?: 'light' | 'dark' | 'lime' | 'muted';
+  tone?: 'light' | 'dark' | 'accent' | 'muted';
   style?: StyleProp<ViewStyle>;
 }) {
-  const bg = { light: C.surface, dark: C.ink, lime: C.lime, muted: C.surfaceAlt }[tone];
+  const bg = { light: C.surface, dark: C.ink, accent: C.accent, muted: C.surfaceAlt }[tone];
   return <View style={[styles.card, { backgroundColor: bg }, style]}>{children}</View>;
 }
 
@@ -171,7 +174,7 @@ export function Stat({ value, label, tone = 'light' }: { value: ReactNode; label
   const dark = tone === 'dark';
   return (
     <View style={[styles.stat, { backgroundColor: dark ? C.ink : C.surface }]}>
-      <Text style={[styles.statValue, dark && { color: C.lime }]}>{value}</Text>
+      <Text style={[styles.statValue, dark && { color: C.accent }]}>{value}</Text>
       <Text style={[styles.statLabel, dark && { color: C.faint }]}>{label}</Text>
     </View>
   );
@@ -217,9 +220,9 @@ export const styles = StyleSheet.create({
   segmentText: { fontSize: 13, fontFamily: F.medium, color: C.muted },
   fieldLabel: { fontSize: 12, fontFamily: F.semibold, color: C.body, letterSpacing: 0.4 },
   kicker: { fontSize: 11, fontFamily: F.semibold, letterSpacing: 1.2 },
-  title: { fontFamily: F.semibold, letterSpacing: -1 },
+  title: { fontFamily: F.semibold, letterSpacing: -0.5 },
   card: { borderRadius: R.lg, padding: 20, gap: 10 },
   stat: { flex: 1, borderRadius: R.md, padding: 16, gap: 2, minHeight: 92, justifyContent: 'space-between' },
-  statValue: { fontSize: 32, fontFamily: F.semibold, color: C.ink, letterSpacing: -1.5 },
+  statValue: { fontSize: 32, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.75 },
   statLabel: { fontSize: 11, fontFamily: F.medium, color: C.muted },
 });

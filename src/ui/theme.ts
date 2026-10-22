@@ -1,32 +1,33 @@
-// Design tokens. Ink and lime on a soft sage-gray canvas, big rounded cards and
-// pill controls. Each event keeps its own accent for its swatch and track dots.
+// Design tokens: the Sunrise theme. Cream canvas, cocoa surfaces and marigold
+// highlights, big rounded cards and pill controls. Each event keeps its own
+// accent for its swatch and track dots.
 
 export const C = {
-  ink: '#111111',
-  ink2: '#1F1F1F',
-  body: '#2B2B2B',
-  muted: '#6B7067',
-  faint: '#A3A79E',
-  lime: '#D8F26A',
-  limeTint: '#F2FAD3',
-  bg: '#ECEEE8',
+  ink: '#241C17',
+  ink2: '#43362E',
+  body: '#3A302A',
+  muted: '#7C7066',
+  faint: '#BDAFA3',
+  accent: '#FFBE2E',
+  accentTint: '#FFF1CF',
+  bg: '#F2EEE8',
   surface: '#FFFFFF',
-  surfaceAlt: '#E2E5DE',
-  sage: '#8E978B',
-  line: '#DADDD5',
+  surfaceAlt: '#E8E2D8',
+  sage: '#9A8F84',
+  line: '#E2DBD0',
   white: '#FFFFFF',
-  warn: '#C2410C',
-  warnTint: '#FCE9DF',
+  warn: '#B4401A',
+  warnTint: '#FBE7DD',
 };
 
 export const R = { sm: 12, md: 20, lg: 28, pill: 999 };
 
-/** Geist Mono, loaded in the root layout. Set the family instead of fontWeight so Android picks the right file. */
+/** Instrument Sans, loaded in the root layout. Set the family instead of fontWeight so Android picks the right file. */
 export const F = {
-  regular: 'GeistMono_400Regular',
-  medium: 'GeistMono_500Medium',
-  semibold: 'GeistMono_600SemiBold',
-  bold: 'GeistMono_700Bold',
+  regular: 'InstrumentSans_400Regular',
+  medium: 'InstrumentSans_500Medium',
+  semibold: 'InstrumentSans_600SemiBold',
+  bold: 'InstrumentSans_700Bold',
 };
 
 /** Split view (Option E) at this width and up; timeline (Option A) below */

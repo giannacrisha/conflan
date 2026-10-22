@@ -1,10 +1,10 @@
 import {
-  GeistMono_400Regular,
-  GeistMono_500Medium,
-  GeistMono_600SemiBold,
-  GeistMono_700Bold,
+  InstrumentSans_400Regular,
+  InstrumentSans_500Medium,
+  InstrumentSans_600SemiBold,
+  InstrumentSans_700Bold,
   useFonts,
-} from '@expo-google-fonts/geist-mono';
+} from '@expo-google-fonts/instrument-sans';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 
@@ -12,10 +12,10 @@ import { C } from '@/ui/theme';
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    GeistMono_400Regular,
-    GeistMono_500Medium,
-    GeistMono_600SemiBold,
-    GeistMono_700Bold,
+    InstrumentSans_400Regular,
+    InstrumentSans_500Medium,
+    InstrumentSans_600SemiBold,
+    InstrumentSans_700Bold,
   });
   // Fall back to system fonts if loading fails rather than blocking the app
   if (!loaded && !error) return null;

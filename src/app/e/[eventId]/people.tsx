@@ -110,7 +110,7 @@ function Person({
     <Animated.View layout={LinearTransition.springify().damping(20)} style={[styles.card, featured && styles.featured]}>
       <View style={styles.head}>
         <View style={[styles.avatar, featured && { backgroundColor: C.ink }]}>
-          <Text style={[styles.initials, featured && { color: C.lime }]}>{initials(m.speaker.name)}</Text>
+          <Text style={[styles.initials, featured && { color: C.accent }]}>{initials(m.speaker.name)}</Text>
         </View>
         <View style={{ flex: 1, gap: 2 }}>
           <Text style={styles.name}>{m.speaker.name}</Text>
@@ -172,7 +172,7 @@ const styles = StyleSheet.create({
   muted: { fontSize: 13, color: C.muted, lineHeight: 19 },
   empty: { gap: 12, alignItems: 'flex-start' },
   card: { backgroundColor: C.surface, borderRadius: R.lg, padding: 18, gap: 12 },
-  featured: { backgroundColor: C.lime },
+  featured: { backgroundColor: C.accent },
   head: { flexDirection: 'row', gap: 12, alignItems: 'center' },
   avatar: {
     width: 52,
