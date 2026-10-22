@@ -43,7 +43,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-22T13:19:32.939Z"
+    "updatedAt": "2026-10-22T17:02:17.932Z"
   },
   "sessions": [
     {
@@ -294,7 +294,9 @@
       "levels": [],
       "speakers": [
         {
-          "name": "Noah Martin"
+          "name": "Noah Martin",
+          "title": "Associate Director of Environmental Curriculum Design at the Earth Commons & Senior Designer for Learning Ecosystems at the Red House",
+          "company": "Georgetown University"
         },
         {
           "name": "Ijeoma Njaka",
