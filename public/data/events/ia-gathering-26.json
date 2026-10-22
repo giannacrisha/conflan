@@ -43,7 +43,7 @@
         ]
       }
     ],
-    "updatedAt": "2026-10-22T17:02:17.932Z"
+    "updatedAt": "2026-10-22T21:27:09.693Z"
   },
   "sessions": [
     {
@@ -76,7 +76,7 @@
       "id": "5561558",
       "eventId": "ia-gathering-26",
       "title": "Opening Plenary, Keynote by Alexis Pauline Gumbs",
-      "abstract": "A welcome to the Yolo Bioregion by Wintun/Maidu culture-bearer Diana Almendariz, and a welcome to Imagining America by IA Faculty Director Erica Kohl-Arenas, followed by keynote speaker Alexis Pauline Gumbs on “Every Night”: June Jordan and the Orbit of Freedom.",
+      "abstract": "A welcome to the Yolo Bioregion by Wintun/Maidu culture-bearer Diana Almendariz, and a welcome to Imagining America by IA Faculty Director Erica Kohl-Arenas, followed by keynote speaker Alexis Pauline Gumbs on “Every Night”: June Jordan and the Orbit of Freedom.\n\nThe Opening Plenary will be livestreamed on Vimeo, in case you are not able to make it in person.",
       "start": "2026-10-23T16:30:00.000Z",
       "end": "2026-10-23T17:45:00.000Z",
       "room": "Wright Hall, Main Theater",
@@ -335,7 +335,7 @@
         },
         {
           "name": "Barbara Clauer",
-          "title": "Professor",
+          "title": "Professor — English",
           "company": "Lansing Community College",
           "bio": "Barbara Clauer is an English professor at Lansing Community College and creator of the LCC Community-Generated Poetry Project, which was inspired by a session she attended at an Imagining America conference held at UC Davis in 2017."
         },
@@ -1270,9 +1270,9 @@
         },
         {
           "name": "Rosemary F. Riel",
-          "title": "Assoc Director, Career Education and Equity",
+          "title": "Assoc Director, Career Education and Equity, Career Center",
           "company": "Towson University",
-          "bio": "Rosemary F. Riel is Filipina American, born and raised in Columbus, OH and transplanted to Baltimore, MD in 2004. Her 'world of work' for 20+ years has involved multilevel experiential education initiatives that mobilize iinterdisciplinary professionals, university students, and community leaders to unpack health inequities. She is most inspired when cultivating personal introspection and…"
+          "bio": "Rosemary F. Riel is Filipina American, born and raised in Columbus, OH and transplanted to Baltimore, MD in 2004. Her world-of-work for 20+ years has involved multilevel experiential education initiatives that mobilize interdisciplinary professionals, students, and community partners to unpack health inequities. She is most inspired when cultivating challenging introspection and organizational…"
         },
         {
           "name": "David Hoffman",
@@ -2152,12 +2152,12 @@
         },
         {
           "name": "Alexandra Byrum",
-          "title": "Director of Communications and Community Relations",
-          "company": "Bonner Center for Civic Engagement, University of Richmond",
+          "title": "Director of Communications and Community Relations, Bonner Center for Civic Engagement",
+          "company": "University of Richmond",
           "bio": "Alexandra Byrum is the director of communications and community relations for the Bonner Center for Civic Engagement (CCE) at the University of Richmond. She directs the CCE's internal and external communications, supports key community engagement initiatives, and serves as the CCE's liaison to arts and culture partners to amplify learning opportunities and deepen regional collaboration.\n\nShe…"
         },
         {
-          "name": "April Kim",
+          "name": "Aprjl Kim",
           "company": "Bonner Center for Civic Engagement, University of Richmond"
         },
         {
