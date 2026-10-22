@@ -100,7 +100,7 @@ export default function Home() {
                 <PressableScale
                   onPress={() => open(e.id)}
                   accessibilityRole="button"
-                  style={[styles.eventCard, hero && { backgroundColor: C.lime }, cancelled && styles.cancelled]}>
+                  style={[styles.eventCard, hero && { backgroundColor: C.accent }, cancelled && styles.cancelled]}>
                   <View style={styles.eventTop}>
                     <View style={[styles.dot, { backgroundColor: e.theme.accent }]} />
                     <Text style={styles.datePill}>{dates(e)}</Text>
@@ -183,7 +183,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  avatarText: { color: C.lime, fontFamily: F.bold, fontSize: 16 },
+  avatarText: { color: C.accent, fontFamily: F.bold, fontSize: 16 },
   profile: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -230,9 +230,9 @@ const styles = StyleSheet.create({
     borderRadius: R.pill,
     overflow: 'hidden',
   },
-  eventName: { fontSize: 24, lineHeight: 28, fontFamily: F.semibold, color: C.ink, letterSpacing: -1 },
+  eventName: { fontSize: 24, lineHeight: 28, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.5 },
   eventBottom: { flexDirection: 'row', alignItems: 'center', gap: 8 },
-  big: { fontSize: 40, fontFamily: F.semibold, color: C.ink, letterSpacing: -2 },
+  big: { fontSize: 40, fontFamily: F.semibold, color: C.ink, letterSpacing: -1 },
   bigLabel: { fontSize: 11, fontFamily: F.medium, color: C.body, lineHeight: 14 },
   removeWrap: { position: 'absolute', right: 76, bottom: 32 },
   remove: { fontSize: 12, fontFamily: F.medium, color: C.muted, textDecorationLine: 'underline', padding: 6 },
@@ -244,7 +244,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  arrowText: { color: C.lime, fontSize: 18, fontFamily: F.bold },
+  arrowText: { color: C.accent, fontSize: 18, fontFamily: F.bold },
   addCard: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -259,7 +259,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: C.lime,
+    backgroundColor: C.accent,
     alignItems: 'center',
     justifyContent: 'center',
   },

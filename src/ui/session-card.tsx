@@ -40,7 +40,7 @@ type Props = {
   onUnpick?: () => void;
 };
 
-/** Picked sessions render as ink cards with a lime check, choices as white cards */
+/** Picked sessions render as ink cards with a marigold check, choices as white cards */
 export function SessionCard({
   session,
   tz,
@@ -100,7 +100,7 @@ export function SessionCard({
         <Text style={[styles.title, { color: fg }]}>{session.title}</Text>
         <Text style={[styles.meta, { color: sub }]}>{meta}</Text>
         {why?.length ? (
-          <Text style={[styles.why, { color: dark ? C.lime : C.body }]}>Why: {why.join(' · ')}</Text>
+          <Text style={[styles.why, { color: dark ? C.accent : C.body }]}>Why: {why.join(' · ')}</Text>
         ) : null}
         {formatWarning ? <Text style={styles.warn}>{formatWarning}</Text> : null}
         {conflict ? <Text style={styles.warn}>⚠ Overlaps another session in your plan</Text> : null}
@@ -118,7 +118,7 @@ export function SessionCard({
           ) : null}
           {session.sourceUrl ? (
             <Pressable onPress={() => Linking.openURL(session.sourceUrl!)} accessibilityRole="link">
-              <Text style={[styles.linkText, { color: dark ? C.lime : C.ink }]}>
+              <Text style={[styles.linkText, { color: dark ? C.accent : C.ink }]}>
                 Reserve or view in the official catalog ↗
               </Text>
             </Pressable>
@@ -147,7 +147,7 @@ export function SessionCard({
                 haptic.success();
                 onPick?.();
               }}
-              style={[styles.action, { backgroundColor: C.lime }]}
+              style={[styles.action, { backgroundColor: C.accent }]}
               accessibilityRole="button">
               <Text style={styles.actionText}>Add to plan +</Text>
             </PressableScale>
@@ -166,12 +166,12 @@ const styles = StyleSheet.create({
   dot: { width: 8, height: 8, borderRadius: 4 },
   label: { fontSize: 10, fontFamily: F.semibold, letterSpacing: 0.6, flexShrink: 1 },
   badge: { paddingHorizontal: 8, paddingVertical: 3, borderRadius: R.pill },
-  badgeText: { color: C.lime, fontSize: 10, fontFamily: F.semibold },
+  badgeText: { color: C.accent, fontSize: 10, fontFamily: F.semibold },
   check: {
     width: 26,
     height: 26,
     borderRadius: 13,
-    backgroundColor: C.lime,
+    backgroundColor: C.accent,
     alignItems: 'center',
     justifyContent: 'center',
   },

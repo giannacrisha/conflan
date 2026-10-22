@@ -159,7 +159,7 @@ function SlotRow({
         </Text>
       </View>
       <View style={[styles.plus, active && { backgroundColor: C.ink }]}>
-        <Text style={[styles.plusText, active && { color: C.lime }]}>+</Text>
+        <Text style={[styles.plusText, active && { color: C.accent }]}>+</Text>
       </View>
     </PressableScale>
   );
@@ -182,7 +182,7 @@ const styles = StyleSheet.create({
     marginTop: 1,
   },
   nodeOn: { backgroundColor: C.ink, borderColor: C.ink },
-  nodeActive: { backgroundColor: C.lime, borderColor: C.ink },
+  nodeActive: { backgroundColor: C.accent, borderColor: C.ink },
   time: { flex: 1, fontSize: 10, fontFamily: F.semibold, color: C.muted, lineHeight: 14 },
   body: { flex: 1 },
   fixed: { backgroundColor: C.surfaceAlt, borderRadius: R.md, paddingHorizontal: 16, paddingVertical: 12, gap: 2 },
@@ -198,14 +198,14 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     backgroundColor: C.surface,
   },
-  openActive: { backgroundColor: C.lime },
+  openActive: { backgroundColor: C.accent },
   openTitle: { fontSize: 14, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.3 },
   openSub: { fontSize: 12, color: C.muted },
   plus: {
     width: 36,
     height: 36,
     borderRadius: 18,
-    backgroundColor: C.lime,
+    backgroundColor: C.accent,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -223,6 +223,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   boxOn: { backgroundColor: C.ink, borderColor: C.ink },
-  boxCheck: { color: C.lime, fontSize: 11, fontFamily: F.bold },
+  boxCheck: { color: C.accent, fontSize: 11, fontFamily: F.bold },
   backgroundText: { flex: 1, fontSize: 12, color: C.body, lineHeight: 18 },
 });

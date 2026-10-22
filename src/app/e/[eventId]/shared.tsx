@@ -74,7 +74,7 @@ export default function Shared() {
           {view === 'compare' && fits.length ? (
             <Button
               label={`Add ${fits.length} that fit`}
-              variant="lime"
+              variant="accent"
               icon="+"
               onPress={() => {
                 haptic.success();
@@ -191,10 +191,10 @@ function Row({
         {s.room ? <Text style={[styles.muted, together && { color: C.faint }]}>{s.room}</Text> : null}
         {showStatus ? (
           status === 'both' ? (
-            <Text style={[styles.tag, { backgroundColor: C.lime }]}>✓ You’re both going</Text>
+            <Text style={[styles.tag, { backgroundColor: C.accent }]}>✓ You’re both going</Text>
           ) : status === 'clash' ? (
             <Text style={[styles.tag, styles.clash]} numberOfLines={2}>
-              Clashes with {row.clashesWith.map((c) => c.title).join(', ')}
+              Clashes with your {row.clashesWith.map((c) => formatTime(c.start, model.tz)).join(' and ')} pick
             </Text>
           ) : (
             <Text style={[styles.tag, { backgroundColor: C.surfaceAlt }]}>Fits your plan</Text>
@@ -207,7 +207,7 @@ function Row({
           accessibilityRole="button"
           accessibilityLabel={status === 'clash' ? `Swap in ${s.title}` : `Add ${s.title}`}
           style={[styles.add, status === 'clash' && { backgroundColor: C.ink }]}>
-          <Text style={[styles.addText, status === 'clash' && { color: C.lime }]}>
+          <Text style={[styles.addText, status === 'clash' && { color: C.accent }]}>
             {status === 'clash' ? '⇄' : '+'}
           </Text>
         </PressableScale>
@@ -220,13 +220,13 @@ const styles = StyleSheet.create({
   header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   muted: { fontSize: 12, color: C.muted, lineHeight: 17 },
   stats: { flexDirection: 'row', gap: 8 },
-  notice: { backgroundColor: C.limeTint, borderRadius: R.md, padding: 16, gap: 10, alignItems: 'flex-start' },
+  notice: { backgroundColor: C.accentTint, borderRadius: R.md, padding: 16, gap: 10, alignItems: 'flex-start' },
   noticeText: { fontSize: 13, color: C.ink, lineHeight: 19 },
   dayHead: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
   dayPill: {
     fontSize: 12,
     fontFamily: F.semibold,
-    color: C.lime,
+    color: C.accent,
     backgroundColor: C.ink,
     paddingHorizontal: 12,
     paddingVertical: 6,
@@ -259,7 +259,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: C.lime,
+    backgroundColor: C.accent,
     alignItems: 'center',
     justifyContent: 'center',
   },

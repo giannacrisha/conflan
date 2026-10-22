@@ -135,7 +135,7 @@ export default function Export() {
         <View style={styles.row}>
           <Button
             label="Share image"
-            variant="lime"
+            variant="accent"
             icon="↗"
             disabled={!total || !canSaveImage}
             onPress={() =>
@@ -255,6 +255,6 @@ const styles = StyleSheet.create({
   preview: { width: '100%', maxWidth: 360, maxHeight: 520 },
   section: { backgroundColor: C.surface, borderRadius: R.lg, padding: 20, gap: 10 },
   sectionTitle: { fontSize: 17, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.5 },
-  status: { backgroundColor: C.lime, borderRadius: R.md, padding: 14 },
+  status: { backgroundColor: C.accent, borderRadius: R.md, padding: 14 },
   statusText: { fontSize: 13, fontFamily: F.medium, color: C.ink },
 });
