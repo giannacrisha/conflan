@@ -6,7 +6,7 @@ import type { CareerLevel, Profile } from '@/core/types';
 import { usePlanner } from '@/lib/store';
 import { Button, Chip, Field, Kicker, Segmented, Title } from '@/ui/primitives';
 import { Screen } from '@/ui/screen';
-import { C } from '@/ui/theme';
+import { C, F, R } from '@/ui/theme';
 
 const LEVELS: { value: CareerLevel; label: string }[] = [
   { value: 'student', label: 'Student' },
@@ -49,12 +49,12 @@ export default function Onboarding() {
       footer={
         <>
           <Button label="Skip for now" variant="link" onPress={() => finish(saved)} />
-          <Button label="Save profile" onPress={() => finish(profile)} />
+          <Button label="Save profile" icon="→" onPress={() => finish(profile)} />
         </>
       }>
       <View style={{ gap: 8 }}>
-        <Kicker>CONFLAN</Kicker>
-        <Title size={28}>Plan any conference in minutes</Title>
+        <Kicker>CONPLAN · YOUR CONFERENCE PLANNER</Kicker>
+        <Title size={32}>Plan any conference in minutes</Title>
         <Text style={styles.lede}>
           Tell us a bit about you once. Every event you add gets sessions ranked by how well they fit. You can skip this
           and still build a schedule.
@@ -115,13 +115,12 @@ export default function Onboarding() {
 const styles = StyleSheet.create({
   lede: { fontSize: 15, lineHeight: 22, color: C.muted },
   input: {
-    backgroundColor: C.white,
-    borderWidth: 1,
-    borderColor: C.border,
-    borderRadius: 10,
-    paddingHorizontal: 14,
-    paddingVertical: 12,
+    backgroundColor: C.surface,
+    borderRadius: R.pill,
+    paddingHorizontal: 18,
+    paddingVertical: 14,
     fontSize: 15,
+    fontFamily: F.regular,
     color: C.ink,
   },
   chips: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 },

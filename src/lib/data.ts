@@ -8,7 +8,7 @@ import { Platform } from 'react-native';
 import type { ConferenceEvent, EventData } from '@/core/types';
 import { storage } from './storage';
 
-export const SITE_URL = 'https://giannacrisha.github.io/conflan';
+export const SITE_URL = 'https://giannacrisha.github.io/conplan';
 
 export type EventIndexEntry = Omit<ConferenceEvent, 'trackGroups'> & { sessionCount: number };
 

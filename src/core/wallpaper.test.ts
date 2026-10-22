@@ -19,11 +19,11 @@ describe('wallpaperSvg', () => {
     expect(svg.startsWith('<svg')).toBe(true);
     expect(svg).toContain('Agents &amp; &lt;Pipelines&gt;');
     expect(svg).toContain('206AB');
-    expect(svg).not.toContain('more in Conflan');
+    expect(svg).not.toContain('more in Conplan');
   });
 
   it('notes items that do not fit', () => {
     const items = Array.from({ length: 20 }, (_, i) => ({ time: '9:00 AM', title: `Talk ${i}`, room: 'Hall' }));
-    expect(wallpaperSvg({ ...base, items })).toMatch(/\+ \d+ more in Conflan/);
+    expect(wallpaperSvg({ ...base, items })).toMatch(/\+ \d+ more in Conplan/);
   });
 });

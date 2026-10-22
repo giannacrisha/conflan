@@ -88,7 +88,7 @@ export function wallpaperSvg({
     shown++;
   }
   if (shown < items.length) {
-    text(pad, y + 20, 32, 'rgba(255,255,255,0.75)', `+ ${items.length - shown} more in Conflan`, SANS, 600);
+    text(pad, y + 20, 32, 'rgba(255,255,255,0.75)', `+ ${items.length - shown} more in Conplan`, SANS, 600);
   }
 
   return [

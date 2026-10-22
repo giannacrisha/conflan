@@ -1,21 +1,27 @@
-# Conflan
+# Conplan
 
 One schedule planner for every conference and hackathon. Set up your profile once, add an event, and build your schedule one time block at a time, with sessions recommended for you. Export to your calendar or a phone wallpaper.
 
 Unofficial and open source. Not affiliated with AnitaB.org, Whova, RainFocus or any event listed here. If an event needs seat reservations, make them in the official app.
 
-**Try it:** https://giannacrisha.github.io/conflan
+**Try it:** https://giannacrisha.github.io/conplan
 
 **Status:** The web version is live (Phases 1 and 2). App Store and Play Store releases are next. See [PLAN.md](PLAN.md) for the roadmap.
 
 ## Events
 
-| Event | Dates | Platform |
-|---|---|---|
-| 2026 IA National Gathering | Oct 23-25, 2026 | Whova |
-| Grace Hopper Celebration 2026 | Oct 26-30, 2026 | RainFocus |
+| Event                                     | Dates           | Platform  |
+| ----------------------------------------- | --------------- | --------- |
+| 2026 IA National Gathering                | Oct 23-25, 2026 | Whova     |
+| Grace Hopper Celebration 2026 (cancelled) | Oct 26-30, 2026 | RainFocus |
 
-Want another one? [Open an "Add an event" issue](../../issues/new?template=new_event.yml).
+Want another one? [Open an "Add an event" issue](../../issues/new?template=new_event.yml), or find its agenda yourself:
+
+```bash
+npm run add-event -- https://conference-website.example  # detects Whova, RainFocus or Sessionize and prints a config entry
+```
+
+Paste the entry into `src/events.config.ts`; the scheduled sync fetches the agenda from then on.
 
 ## Run it
 

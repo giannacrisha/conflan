@@ -1,50 +1,108 @@
 import { type ReactNode } from 'react';
 import { Pressable, StyleSheet, Text, View, type StyleProp, type ViewStyle } from 'react-native';
 
-import { C, serif } from './theme';
+import { haptic, PressableScale } from './motion';
+import { C, F, R } from './theme';
 
 type ButtonProps = {
   label: string;
   onPress?: () => void;
-  variant?: 'primary' | 'ghost' | 'link';
-  accent?: string;
+  /** primary: ink pill · lime: lime pill · ghost: outlined · ghostLight: outlined on dark · link: text only */
+  variant?: 'primary' | 'lime' | 'ghost' | 'ghostLight' | 'link';
+  /** Glyph in a circle at the end of the pill, like ↗ or + */
+  icon?: string;
   disabled?: boolean;
+  small?: boolean;
   style?: StyleProp<ViewStyle>;
+  accessibilityLabel?: string;
 };
 
-export function Button({ label, onPress, variant = 'primary', accent = C.plum, disabled, style }: ButtonProps) {
+export function Button({
+  label,
+  onPress,
+  variant = 'primary',
+  icon,
+  disabled,
+  small,
+  style,
+  accessibilityLabel,
+}: ButtonProps) {
+  const fg = variant === 'primary' || variant === 'ghostLight' ? C.white : variant === 'link' ? C.muted : C.ink;
   return (
-    <Pressable
+    <PressableScale
       accessibilityRole="button"
-      onPress={onPress}
+      accessibilityLabel={accessibilityLabel}
+      accessibilityState={{ disabled: !!disabled }}
+      onPress={() => {
+        haptic.tap();
+        onPress?.();
+      }}
       disabled={disabled}
-      style={({ pressed }) => [
+      style={[
         styles.button,
-        variant === 'primary' && { backgroundColor: accent },
-        variant === 'ghost' && { borderWidth: 1, borderColor: accent },
+        small && styles.buttonSmall,
+        icon ? styles.withIcon : null,
+        variant === 'primary' && { backgroundColor: C.ink },
+        variant === 'lime' && { backgroundColor: C.lime },
+        variant === 'ghost' && { borderWidth: 1.5, borderColor: C.ink },
+        variant === 'ghostLight' && { borderWidth: 1.5, borderColor: C.white },
         variant === 'link' && styles.link,
-        (pressed || disabled) && { opacity: 0.6 },
+        disabled && { opacity: 0.4 },
         style,
       ]}>
-      <Text
-        style={[styles.buttonText, { color: variant === 'primary' ? C.white : variant === 'link' ? C.muted : accent }]}>
-        {label}
-      </Text>
-    </Pressable>
+      <Text style={[styles.buttonText, small && { fontSize: 13 }, { color: fg }]}>{label}</Text>
+      {icon ? (
+        <View style={[styles.icon, { backgroundColor: variant === 'primary' ? C.lime : C.ink }]}>
+          <Text style={[styles.iconText, { color: variant === 'primary' ? C.ink : C.lime }]}>{icon}</Text>
+        </View>
+      ) : null}
+    </PressableScale>
   );
 }
 
-type ChipProps = { label: string; selected?: boolean; onPress?: () => void; accent?: string };
-
-export function Chip({ label, selected, onPress, accent = C.plum }: ChipProps) {
+/** Round icon button, like the back and info circles in the header */
+export function IconButton({
+  glyph,
+  onPress,
+  label,
+  dark,
+}: {
+  glyph: string;
+  onPress: () => void;
+  label: string;
+  dark?: boolean;
+}) {
   return (
-    <Pressable
+    <PressableScale
+      accessibilityRole="button"
+      accessibilityLabel={label}
+      onPress={() => {
+        haptic.tap();
+        onPress();
+      }}
+      style={[styles.iconButton, dark && { backgroundColor: C.ink }]}>
+      <Text style={[styles.iconButtonText, dark && { color: C.lime }]}>{glyph}</Text>
+    </PressableScale>
+  );
+}
+
+type ChipProps = { label: string; selected?: boolean; onPress?: () => void; dark?: boolean };
+
+export function Chip({ label, selected, onPress, dark }: ChipProps) {
+  return (
+    <PressableScale
       accessibilityRole="checkbox"
       accessibilityState={{ checked: !!selected }}
-      onPress={onPress}
-      style={[styles.chip, selected && { backgroundColor: accent, borderColor: accent }]}>
-      <Text style={[styles.chipText, { color: selected ? C.white : accent }]}>{label}</Text>
-    </Pressable>
+      onPress={() => {
+        haptic.tap();
+        onPress?.();
+      }}
+      style={[styles.chip, selected && { backgroundColor: dark ? C.ink : C.lime, borderColor: dark ? C.ink : C.lime }]}>
+      <Text style={[styles.chipText, selected && dark && { color: C.lime }]}>
+        {selected ? '✓ ' : ''}
+        {label}
+      </Text>
+    </PressableScale>
   );
 }
 
@@ -52,10 +110,9 @@ type SegmentedProps<T extends string> = {
   options: { value: T; label: string }[];
   value: T | undefined;
   onChange: (value: T) => void;
-  accent?: string;
 };
 
-export function Segmented<T extends string>({ options, value, onChange, accent = C.plum }: SegmentedProps<T>) {
+export function Segmented<T extends string>({ options, value, onChange }: SegmentedProps<T>) {
   return (
     <View style={styles.segmented} accessibilityRole="radiogroup">
       {options.map((o) => {
@@ -65,9 +122,12 @@ export function Segmented<T extends string>({ options, value, onChange, accent =
             key={o.value}
             accessibilityRole="radio"
             accessibilityState={{ selected: active }}
-            onPress={() => onChange(o.value)}
+            onPress={() => {
+              haptic.tap();
+              onChange(o.value);
+            }}
             style={[styles.segment, active && styles.segmentActive]}>
-            <Text style={[styles.segmentText, active && { color: accent, fontWeight: '600' }]}>{o.label}</Text>
+            <Text style={[styles.segmentText, active && { color: C.white }]}>{o.label}</Text>
           </Pressable>
         );
       })}
@@ -77,45 +137,89 @@ export function Segmented<T extends string>({ options, value, onChange, accent =
 
 export function Field({ label, children }: { label: string; children: ReactNode }) {
   return (
-    <View style={{ gap: 8 }}>
+    <View style={{ gap: 10 }}>
       <Text style={styles.fieldLabel}>{label}</Text>
       {children}
     </View>
   );
 }
 
-export function Kicker({ children, color = C.plum }: { children: ReactNode; color?: string }) {
+export function Kicker({ children, color = C.muted }: { children: ReactNode; color?: string }) {
   return <Text style={[styles.kicker, { color }]}>{children}</Text>;
 }
 
-export function Title({ children, color = C.ink, size = 26 }: { children: ReactNode; color?: string; size?: number }) {
-  return <Text style={[styles.title, { color, fontSize: size }]}>{children}</Text>;
+export function Title({ children, color = C.ink, size = 30 }: { children: ReactNode; color?: string; size?: number }) {
+  return <Text style={[styles.title, { color, fontSize: size, lineHeight: Math.round(size * 1.15) }]}>{children}</Text>;
+}
+
+/** Rounded surface; `tone` picks white, ink or lime */
+export function Card({
+  children,
+  tone = 'light',
+  style,
+}: {
+  children: ReactNode;
+  tone?: 'light' | 'dark' | 'lime' | 'muted';
+  style?: StyleProp<ViewStyle>;
+}) {
+  const bg = { light: C.surface, dark: C.ink, lime: C.lime, muted: C.surfaceAlt }[tone];
+  return <View style={[styles.card, { backgroundColor: bg }, style]}>{children}</View>;
+}
+
+/** Big number with a label, like "4 Finished" */
+export function Stat({ value, label, tone = 'light' }: { value: ReactNode; label: string; tone?: 'light' | 'dark' }) {
+  const dark = tone === 'dark';
+  return (
+    <View style={[styles.stat, { backgroundColor: dark ? C.ink : C.surface }]}>
+      <Text style={[styles.statValue, dark && { color: C.lime }]}>{value}</Text>
+      <Text style={[styles.statLabel, dark && { color: C.faint }]}>{label}</Text>
+    </View>
+  );
 }
 
 export const styles = StyleSheet.create({
   button: {
-    paddingHorizontal: 20,
-    paddingVertical: 12,
-    borderRadius: 10,
+    minHeight: 48,
+    paddingHorizontal: 22,
+    borderRadius: R.pill,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 10,
+  },
+  buttonSmall: { minHeight: 38, paddingHorizontal: 16 },
+  withIcon: { paddingRight: 6 },
+  link: { paddingHorizontal: 8, minHeight: 40 },
+  buttonText: { fontSize: 14, fontFamily: F.semibold, letterSpacing: -0.2 },
+  icon: { width: 36, height: 36, borderRadius: 18, alignItems: 'center', justifyContent: 'center' },
+  iconText: { fontSize: 16, fontFamily: F.bold },
+  iconButton: {
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    backgroundColor: C.surface,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  link: { paddingHorizontal: 8 },
-  buttonText: { fontSize: 14, fontWeight: '600' },
+  iconButtonText: { fontSize: 18, fontFamily: F.semibold, color: C.ink },
   chip: {
-    paddingHorizontal: 12,
-    paddingVertical: 7,
-    borderRadius: 999,
+    paddingHorizontal: 14,
+    paddingVertical: 9,
+    borderRadius: R.pill,
     borderWidth: 1,
-    borderColor: C.border,
-    backgroundColor: C.white,
+    borderColor: C.line,
+    backgroundColor: C.surface,
   },
-  chipText: { fontSize: 12, fontWeight: '600' },
-  segmented: { flexDirection: 'row', backgroundColor: C.plumTint, borderRadius: 10, padding: 4, gap: 4 },
-  segment: { flex: 1, paddingVertical: 9, borderRadius: 8, alignItems: 'center' },
-  segmentActive: { backgroundColor: C.white },
-  segmentText: { fontSize: 13, fontWeight: '500', color: C.muted },
-  fieldLabel: { fontSize: 12, fontWeight: '600', color: C.body },
-  kicker: { fontSize: 11, fontWeight: '700', letterSpacing: 1 },
-  title: { fontFamily: serif, fontWeight: '700', lineHeight: 34 },
+  chipText: { fontSize: 12, fontFamily: F.medium, color: C.ink },
+  segmented: { flexDirection: 'row', backgroundColor: C.surface, borderRadius: R.pill, padding: 4, gap: 4 },
+  segment: { flex: 1, paddingVertical: 11, borderRadius: R.pill, alignItems: 'center' },
+  segmentActive: { backgroundColor: C.ink },
+  segmentText: { fontSize: 13, fontFamily: F.medium, color: C.muted },
+  fieldLabel: { fontSize: 12, fontFamily: F.semibold, color: C.body, letterSpacing: 0.4 },
+  kicker: { fontSize: 11, fontFamily: F.semibold, letterSpacing: 1.2 },
+  title: { fontFamily: F.semibold, letterSpacing: -1 },
+  card: { borderRadius: R.lg, padding: 20, gap: 10 },
+  stat: { flex: 1, borderRadius: R.md, padding: 16, gap: 2, minHeight: 92, justifyContent: 'space-between' },
+  statValue: { fontSize: 32, fontFamily: F.semibold, color: C.ink, letterSpacing: -1.5 },
+  statLabel: { fontSize: 11, fontFamily: F.medium, color: C.muted },
 });

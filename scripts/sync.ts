@@ -26,10 +26,26 @@ async function main() {
   const targets = only.length ? EVENTS.filter((e) => only.includes(e.id)) : EVENTS;
   await mkdir(`${OUT}/events`, { recursive: true });
 
-  const index = new Map((await readIndex()).map((e) => [e.id, e]));
+  // Events removed from the config drop out of the index too
+  const index = new Map((await readIndex()).filter((e) => EVENTS.some((c) => c.id === e.id)).map((e) => [e.id, e]));
   let failed = 0;
 
   for (const config of targets) {
+    const listed = index.get(config.id);
+    if (config.status === 'cancelled') {
+      // Keep the last agenda for people who planned already, but stop fetching it
+      if (listed) index.set(config.id, { ...listed, status: 'cancelled' });
+      const path = `${OUT}/events/${config.id}.json`;
+      const data = await readFile(path, 'utf8')
+        .then((raw) => JSON.parse(raw) as EventData)
+        .catch(() => undefined);
+      if (data && data.event.status !== 'cancelled') {
+        data.event.status = 'cancelled';
+        await writeFile(path, JSON.stringify(data, null, 2) + '\n');
+      }
+      console.log(`- ${config.id}: cancelled, not synced`);
+      continue;
+    }
     try {
       const data = await loadEvent(config);
       data.sessions.sort((a, b) => a.start.localeCompare(b.start) || a.id.localeCompare(b.id));

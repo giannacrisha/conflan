@@ -1,6 +1,7 @@
 import type { EventConfig, EventData } from '../core/types';
 import { loadManual } from './manual';
 import { loadRainFocus } from './rainfocus';
+import { loadSessionize } from './sessionize';
 import { loadWhova } from './whova';
 
 export function loadEvent(config: EventConfig): Promise<EventData> {
@@ -9,6 +10,8 @@ export function loadEvent(config: EventConfig): Promise<EventData> {
       return loadRainFocus(config);
     case 'whova':
       return loadWhova(config);
+    case 'sessionize':
+      return loadSessionize(config);
     case 'manual':
       return loadManual(config);
   }

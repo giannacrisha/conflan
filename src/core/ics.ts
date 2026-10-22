@@ -43,7 +43,7 @@ export function toIcs(
   const lines = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//conflan//EN',
+    'PRODID:-//conplan//EN',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
     `X-WR-CALNAME:${escapeText(calendarName)}`,
@@ -53,6 +53,7 @@ export function toIcs(
     const description = [speakers && `Speakers: ${speakers}`, s.abstract, s.sourceUrl].filter(Boolean).join('\n\n');
     lines.push(
       'BEGIN:VEVENT',
+      // UID keeps the old app name so re-imported files update events instead of duplicating them
       `UID:${s.eventId}-${s.id}@conflan`,
       `DTSTAMP:${stamp}`,
       `DTSTART:${icsDate(s.start)}`,
