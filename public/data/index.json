@@ -6,10 +6,30 @@
     "start": "2026-10-23",
     "end": "2026-10-25",
     "theme": {
-      "accent": "#1F6F5C"
+      "accent": "#0B6B5E",
+      "variants": [
+        {
+          "name": "Tides",
+          "ink": "#0B6B5E",
+          "accent": "#F4A6C8",
+          "bg": "#E4EDF2"
+        },
+        {
+          "name": "Hummingbird",
+          "ink": "#A3285F",
+          "accent": "#7FD8C3",
+          "bg": "#E4EDF2"
+        },
+        {
+          "name": "Coral bean",
+          "ink": "#B3282C",
+          "accent": "#E9C25A",
+          "bg": "#F1ECE6"
+        }
+      ]
     },
     "platform": "whova",
-    "updatedAt": "2026-10-22T03:01:23.397Z",
+    "updatedAt": "2026-10-22T13:19:32.939Z",
     "sessionCount": 96
   },
   {
