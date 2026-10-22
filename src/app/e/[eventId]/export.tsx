@@ -8,11 +8,11 @@ import Animated, { FadeIn } from 'react-native-reanimated';
 import { shareQuery } from '@/core/compare';
 import { toIcs } from '@/core/ics';
 import { mix } from '@/core/palette';
-import { shareCardSvg } from '@/core/share-card';
+import { renderShare, SHARE_FORMATS, type ShareFormat } from '@/core/share-formats';
 import { formatDay, formatTime } from '@/core/time';
 import { wallpaperSvg } from '@/core/wallpaper';
 import { SITE_URL } from '@/lib/data';
-import { canSaveImage, saveSvgAsPng, saveText, shareSvgAsPng } from '@/lib/download';
+import { canSaveImage, savePngs, saveSvgAsPng, saveText, sharePngs } from '@/lib/download';
 import { usePlanner } from '@/lib/store';
 import { daySchedule, usePlan } from '@/lib/use-plan';
 import { enter, haptic } from '@/ui/motion';
@@ -38,15 +38,16 @@ export default function Export() {
   const name = usePlanner((s) => s.profile.name);
   const [includeFixed, setIncludeFixed] = useState(true);
   const [status, setStatus] = useState<string>();
+  const [format, setFormat] = useState<ShareFormat>('portrait');
 
   const days = useMemo(
     () => model?.days.map((d) => ({ day: d, sessions: daySchedule(model, d, includeFixed) })) ?? [],
     [model, includeFixed],
   );
 
-  const card = useMemo(() => {
+  const images = useMemo(() => {
     if (!model) return undefined;
-    return shareCardSvg({
+    return renderShare(format, {
       eventName: model.data.event.name,
       owner: name ? `${name}'s plan` : undefined,
       dates: `${monthDay(model.data.event.start)} to ${monthDay(model.data.event.end)}`,
@@ -55,13 +56,16 @@ export default function Export() {
         .filter((d) => d.sessions.length)
         .map(({ day, sessions }) => ({
           label: formatDay(day.day, 'long'),
+          weekday: formatDay(day.day).split(' ')[0],
+          date: formatDay(day.day).split(' ')[1],
           items: sessions.map((s) => ({ time: formatTime(s.start, model.tz), title: s.title, room: s.room })),
         })),
+      url: SITE_URL.replace(/^https:\/\//, ''),
       colors: { bg: C.ink, panel: mix(C.ink, '#FFFFFF', 0.1), accent: C.accent, onAccent: C.onAccent },
     });
-  }, [model, name, C]);
+  }, [model, name, C, format]);
 
-  if (!model || !card) {
+  if (!model || !images) {
     return (
       <Screen>
         <Text style={styles.muted}>Loading…</Text>
@@ -107,8 +111,8 @@ export default function Export() {
       else await Share.share({ message: `My ${event.name} plan: ${shareUrl}` });
     });
 
-  const imageName = `${slug(event.name)}-plan.png`;
-  const preview = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(card.svg)}`;
+  const files = images.map((i) => ({ ...i, filename: `${slug(event.name)}-${i.name}.png` }));
+  const picked = SHARE_FORMATS.find((f) => f.id === format)!;
 
   return (
     <Screen footer={<Button label="Back to planner" variant="link" onPress={() => router.back()} />}>
@@ -128,33 +132,43 @@ export default function Export() {
       <ThemeSwitcher eventId={eventId} />
 
       <Animated.View entering={enter(0)} style={styles.dark}>
-        <Text style={styles.darkTitle}>One-page image</Text>
-        <Text style={styles.darkBody}>Your whole schedule on one PNG. Post it or send it to friends.</Text>
+        <Text style={styles.darkTitle}>Share as an image</Text>
+        <View style={styles.row}>
+          {SHARE_FORMATS.map((f) => (
+            <Chip key={f.id} label={f.label} selected={format === f.id} onPress={() => setFormat(f.id)} />
+          ))}
+        </View>
+        <Text style={styles.darkBody}>
+          {picked.hint}
+          {files.length > 1 ? ` (${files.length} images)` : ''}.
+        </Text>
         {Platform.OS === 'web' && total ? (
-          <Animated.View entering={FadeIn.duration(300)} style={styles.previewWrap}>
-            <Image
-              source={{ uri: preview }}
-              style={[styles.preview, { aspectRatio: card.width / card.height }]}
-              contentFit="contain"
-              accessibilityLabel="Preview of your schedule image"
-            />
+          <Animated.View key={format} entering={FadeIn.duration(300)} style={styles.previewRow}>
+            {files.map((f) => (
+              <View key={f.name} style={[styles.previewWrap, { flex: files.length > 1 ? 1 : undefined }]}>
+                <Image
+                  source={{ uri: `data:image/svg+xml;charset=utf-8,${encodeURIComponent(f.svg)}` }}
+                  style={[styles.preview, { aspectRatio: f.width / f.height }]}
+                  contentFit="contain"
+                  accessibilityLabel={`Preview of ${f.name}`}
+                />
+              </View>
+            ))}
           </Animated.View>
         ) : null}
         <View style={styles.row}>
           <Button
-            label="Share image"
+            label={files.length > 1 ? 'Share images' : 'Share image'}
             variant="accent"
             icon="↗"
             disabled={!total || !canSaveImage}
-            onPress={() =>
-              run('Image ready.', () => shareSvgAsPng(imageName, card.svg, card.width, card.height, shareUrl))
-            }
+            onPress={() => run('Images ready.', () => sharePngs(files, shareUrl))}
           />
           <Button
-            label="Download PNG"
+            label={files.length > 1 ? `Download ${files.length} PNGs` : 'Download PNG'}
             variant="ghostLight"
             disabled={!total || !canSaveImage}
-            onPress={() => run('Image saved.', () => saveSvgAsPng(imageName, card.svg, card.width, card.height))}
+            onPress={() => run('Saved.', () => savePngs(files))}
           />
         </View>
         {!canSaveImage ? (
@@ -255,6 +269,7 @@ const makeStyles = (C: Theme) =>
     dark: { backgroundColor: C.ink, borderRadius: R.lg, padding: 20, gap: 12 },
     darkTitle: { fontSize: 20, fontFamily: F.semibold, color: C.white, letterSpacing: -0.6 },
     darkBody: { fontSize: 13, color: C.faint, lineHeight: 19 },
+    previewRow: { flexDirection: 'row', gap: 8, justifyContent: 'center' },
     previewWrap: {
       borderRadius: R.md,
       overflow: 'hidden',

@@ -98,7 +98,6 @@ export function shareCardSvg({
     svg: [
       `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">`,
       `<rect width="100%" height="100%" fill="${bg}"/>`,
-      `<circle cx="${width - 40}" cy="40" r="180" fill="${accent}" opacity="0.08"/>`,
       ...parts,
       '</svg>',
     ].join(''),
