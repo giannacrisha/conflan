@@ -1,5 +1,6 @@
 // Events the sync script imports. To add one, append an entry here and,
-// if its platform is new, add an adapter in src/adapters/.
+// if its platform is new, add an adapter in src/adapters/. `npm run add-event -- <url>`
+// detects the platform and ids from the event's website.
 
 import type { EventConfig } from './core/types';
 
@@ -20,6 +21,7 @@ export const EVENTS: EventConfig[] = [
     start: '2026-10-26',
     end: '2026-10-30',
     theme: { accent: '#41263F' },
+    status: 'cancelled',
     source: {
       platform: 'rainfocus',
       // Public ids from the catalog page source (apiToken, widgetId)

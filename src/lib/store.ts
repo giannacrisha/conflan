@@ -60,6 +60,7 @@ export const usePlanner = create<PlannerState>()(
         }),
     }),
     {
+      // Old app name kept on purpose: renaming the key would wipe saved plans
       name: 'conflan-planner',
       version: 1,
       storage: createJSONStorage(() => storage),

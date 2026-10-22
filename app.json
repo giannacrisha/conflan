@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "Conflan",
-    "slug": "conflan",
+    "name": "Conplan",
+    "slug": "conplan",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "conflan",
+    "scheme": "conplan",
     "userInterfaceStyle": "light",
     "ios": {
-      "bundleIdentifier": "app.conflan.ios",
+      "bundleIdentifier": "app.conplan.ios",
       "supportsTablet": false,
       "config": {
         "usesNonExemptEncryption": false
@@ -40,7 +40,7 @@
     ],
     "experiments": {
       "reactCompiler": true,
-      "baseUrl": "/conflan"
+      "baseUrl": "/conplan"
     }
   }
 }

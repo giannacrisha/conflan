@@ -1,22 +1,32 @@
-import { router, useLocalSearchParams } from 'expo-router';
+import { Redirect, router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { Linking, Modal, Pressable, ScrollView, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import Animated, { FadeIn } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { dayKey, formatDay } from '@/core/time';
 import { usePlanner } from '@/lib/store';
 import { usePlan, type PlanModel } from '@/lib/use-plan';
-import { Button, Kicker, Title } from '@/ui/primitives';
+import { haptic, Progress, PressableScale } from '@/ui/motion';
+import { Button, IconButton, Kicker, Title } from '@/ui/primitives';
 import { SlotPicker } from '@/ui/slot-picker';
 import { Timeline } from '@/ui/timeline';
-import { C, LINKS, serif, WIDE } from '@/ui/theme';
+import { C, F, LINKS, R, WIDE } from '@/ui/theme';
+
+const plannedIn = (model: PlanModel, slots: PlanModel['days'][number]['slots']) =>
+  slots.filter((s) => s.sessionIds.some((id) => model.picked.has(id))).length;
 
 export default function Planner() {
-  const { eventId, picks: shared } = useLocalSearchParams<{ eventId: string; picks?: string }>();
+  const { eventId, picks: shared, from } = useLocalSearchParams<{ eventId: string; picks?: string; from?: string }>();
   const { model, loading, error } = usePlan(eventId);
   const { width } = useWindowDimensions();
   const [dayIndex, setDayIndex] = useState<number | undefined>();
   const [openSlotId, setOpenSlotId] = useState<string | undefined>();
+
+  // Links shared before the read-only view existed point here with ?picks=
+  if (shared) {
+    return <Redirect href={{ pathname: '/e/[eventId]/shared', params: { eventId, picks: shared, from } }} />;
+  }
 
   if (!model) {
     return (
@@ -47,7 +57,8 @@ export default function Planner() {
     setDayIndex(i);
     setOpenSlotId(undefined);
   };
-  const banners = <Banners model={model} shared={shared} />;
+  const go = (screen: 'setup' | 'people' | 'export') =>
+    router.push({ pathname: `/e/[eventId]/${screen}`, params: { eventId } });
 
   if (!day) {
     return (
@@ -56,20 +67,23 @@ export default function Planner() {
       </SafeAreaView>
     );
   }
+  const planned = plannedIn(model, slots);
 
   if (wide) {
     return (
       <View style={styles.split}>
-        <Sidebar model={model} index={index} onSelectDay={selectDay} />
-        <ScrollView style={styles.center_col} contentContainerStyle={styles.centerContent}>
-          <Kicker color={model.accent}>{formatDay(day.day, 'long').toUpperCase()}</Kicker>
+        <Sidebar model={model} index={index} onSelectDay={selectDay} go={go} />
+        <ScrollView style={styles.centerCol} contentContainerStyle={styles.centerContent}>
+          <Kicker>{formatDay(day.day, 'long').toUpperCase()}</Kicker>
           <Title>Your day</Title>
-          {banners}
-          <Timeline model={model} day={day} activeSlotId={activeSlot?.id} onOpenSlot={setOpenSlotId} />
+          <Banners model={model} />
+          <Timeline key={day.day} model={model} day={day} activeSlotId={activeSlot?.id} onOpenSlot={setOpenSlotId} />
         </ScrollView>
         <ScrollView style={styles.panel} contentContainerStyle={styles.panelContent}>
           {activeSlot ? (
-            <SlotPicker model={model} slot={activeSlot} />
+            <Animated.View key={activeSlot.id} entering={FadeIn.duration(220)}>
+              <SlotPicker model={model} slot={activeSlot} />
+            </Animated.View>
           ) : (
             <Text style={styles.muted}>No choices on this day.</Text>
           )}
@@ -78,45 +92,59 @@ export default function Planner() {
     );
   }
 
-  const planned = slots.filter((s) => s.sessionIds.some((id) => model.picked.has(id))).length;
   return (
     <View style={styles.flex}>
-      <SafeAreaView edges={['top']} style={{ backgroundColor: model.accent }}>
-        <View style={styles.appBar}>
-          <Text style={styles.back} onPress={() => router.replace('/')}>
-            ‹ My events
-          </Text>
-          <Text style={styles.appKicker}>
-            {model.data.event.name.toUpperCase()} · {planned} OF {slots.length} SLOTS PLANNED
-          </Text>
-          <Text style={styles.appTitle}>{formatDay(day.day, 'long')}</Text>
-        </View>
+      <SafeAreaView edges={['top']} style={styles.flex}>
+        <ScrollView style={styles.flex} contentContainerStyle={styles.mobileContent} stickyHeaderIndices={[2]}>
+          <View style={styles.topRow}>
+            <IconButton glyph="‹" label="Back to my events" onPress={() => router.replace('/')} />
+            <Text style={styles.eventName} numberOfLines={1}>
+              {model.data.event.name}
+            </Text>
+            <IconButton glyph="?" label="Request a feature" onPress={() => Linking.openURL(LINKS.featureRequest)} />
+          </View>
+
+          <View style={styles.hero}>
+            <View style={styles.heroTop}>
+              <Text style={styles.heroKicker}>{formatDay(day.day, 'long').toUpperCase()}</Text>
+              <Text style={styles.heroCount}>
+                {planned}/{slots.length}
+              </Text>
+            </View>
+            <Text style={styles.heroTitle}>
+              {planned === slots.length && slots.length ? 'Day planned' : 'Build your day'}
+            </Text>
+            <Progress value={slots.length ? planned / slots.length : 0} color={C.lime} track={C.ink2} />
+            <Text style={styles.heroSub}>
+              {slots.length - planned
+                ? `${slots.length - planned} time blocks left to choose`
+                : 'Every block has a pick. Share it with a friend.'}
+            </Text>
+          </View>
+
+          <DayPills model={model} index={index} onSelect={selectDay} />
+
+          <Banners model={model} />
+          <Timeline key={day.day} model={model} day={day} onOpenSlot={setOpenSlotId} />
+        </ScrollView>
       </SafeAreaView>
-      <DayTabs model={model} index={index} onSelect={selectDay} />
-      <ScrollView style={styles.flex} contentContainerStyle={styles.mobileContent}>
-        {banners}
-        <Timeline model={model} day={day} onOpenSlot={setOpenSlotId} />
-      </ScrollView>
-      <SafeAreaView edges={['bottom']} style={styles.bottomBar}>
-        <View style={styles.bottomRow}>
-          <Text style={styles.link} onPress={() => Linking.openURL(LINKS.featureRequest)}>
-            💡 Feature
-          </Text>
-          <Text
-            style={styles.link}
-            onPress={() => router.push({ pathname: '/e/[eventId]/setup', params: { eventId } })}>
-            Topics
-          </Text>
-          <Text
-            style={styles.link}
-            onPress={() => router.push({ pathname: '/e/[eventId]/people', params: { eventId } })}>
-            People
-          </Text>
-          <Button
-            label="Export ⤓"
-            accent={model.accent}
-            onPress={() => router.push({ pathname: '/e/[eventId]/export', params: { eventId } })}
-          />
+
+      <SafeAreaView edges={['bottom']} style={styles.navWrap} pointerEvents="box-none">
+        <View style={styles.nav}>
+          <NavItem label="Topics" onPress={() => go('setup')} />
+          <NavItem label="People" onPress={() => go('people')} />
+          <PressableScale
+            onPress={() => {
+              haptic.tap();
+              go('export');
+            }}
+            accessibilityRole="button"
+            style={styles.navCta}>
+            <Text style={styles.navCtaText}>Share</Text>
+            <View style={styles.navCtaIcon}>
+              <Text style={styles.navCtaGlyph}>↗</Text>
+            </View>
+          </PressableScale>
         </View>
       </SafeAreaView>
 
@@ -127,9 +155,8 @@ export default function Planner() {
         onRequestClose={() => setOpenSlotId(undefined)}>
         <SafeAreaView style={styles.sheet}>
           <View style={styles.sheetBar}>
-            <Text style={[styles.link, { color: model.accent }]} onPress={() => setOpenSlotId(undefined)}>
-              Done
-            </Text>
+            <View style={styles.grabber} />
+            <Button label="Done" small onPress={() => setOpenSlotId(undefined)} />
           </View>
           <ScrollView contentContainerStyle={styles.sheetContent}>
             {activeSlot ? <SlotPicker model={model} slot={activeSlot} /> : null}
@@ -140,122 +167,133 @@ export default function Planner() {
   );
 }
 
-function DayTabs({ model, index, onSelect }: { model: PlanModel; index: number; onSelect: (i: number) => void }) {
+function NavItem({ label, onPress }: { label: string; onPress: () => void }) {
   return (
-    <View style={styles.tabsWrap}>
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.tabs}>
-        {model.days.map((d, i) => (
-          <Pressable
-            key={d.day}
-            onPress={() => onSelect(i)}
-            accessibilityRole="tab"
-            accessibilityState={{ selected: i === index }}
-            style={[styles.tab, i === index && { backgroundColor: model.accent }]}>
-            <Text style={[styles.tabText, i === index && { color: C.white }]}>{formatDay(d.day)}</Text>
-          </Pressable>
-        ))}
+    <Pressable
+      onPress={() => {
+        haptic.tap();
+        onPress();
+      }}
+      accessibilityRole="button"
+      style={styles.navItem}>
+      <Text style={styles.navText}>{label}</Text>
+    </Pressable>
+  );
+}
+
+/** Day picker as tall pills: weekday over date, lime when active, dot when fully planned */
+function DayPills({ model, index, onSelect }: { model: PlanModel; index: number; onSelect: (i: number) => void }) {
+  return (
+    <View style={styles.pillsWrap}>
+      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.pills}>
+        {model.days.map((d, i) => {
+          const [weekday, date] = formatDay(d.day).split(' ');
+          const active = i === index;
+          const done = d.slots.length > 0 && plannedIn(model, d.slots) === d.slots.length;
+          return (
+            <PressableScale
+              key={d.day}
+              onPress={() => {
+                haptic.tap();
+                onSelect(i);
+              }}
+              accessibilityRole="tab"
+              accessibilityState={{ selected: active }}
+              accessibilityLabel={formatDay(d.day, 'long')}
+              style={[styles.pill, active && styles.pillActive]}>
+              <Text style={styles.pillDate}>{date}</Text>
+              <Text style={styles.pillDay}>{weekday}</Text>
+              <View style={[styles.pillDot, done && { backgroundColor: C.ink }]} />
+            </PressableScale>
+          );
+        })}
       </ScrollView>
     </View>
   );
 }
 
-function Sidebar({ model, index, onSelectDay }: { model: PlanModel; index: number; onSelectDay: (i: number) => void }) {
+function Sidebar({
+  model,
+  index,
+  onSelectDay,
+  go,
+}: {
+  model: PlanModel;
+  index: number;
+  onSelectDay: (i: number) => void;
+  go: (screen: 'setup' | 'people' | 'export') => void;
+}) {
   const profile = usePlanner((s) => s.profile);
   const tracks = usePlanner((s) => s.tracks[model.data.event.id]) ?? [];
-  const eventId = model.data.event.id;
   return (
     <ScrollView style={styles.sidebar} contentContainerStyle={styles.sidebarContent}>
-      <Text style={[styles.back, { color: C.muted }]} onPress={() => router.replace('/')}>
-        ‹ My events
-      </Text>
-      <Text style={[styles.sideTitle, { color: model.accent }]}>{model.data.event.name}</Text>
-      <Pressable
-        style={styles.profileCard}
-        onPress={() => router.push({ pathname: '/e/[eventId]/setup', params: { eventId } })}
-        accessibilityRole="button">
+      <View style={styles.topRow}>
+        <IconButton glyph="‹" label="Back to my events" onPress={() => router.replace('/')} />
+        <Text style={styles.sideTitle} numberOfLines={2}>
+          {model.data.event.name}
+        </Text>
+      </View>
+      <PressableScale onPress={() => go('setup')} accessibilityRole="button" style={styles.profileCard}>
         <Text style={styles.profileName}>{profile.name || 'Your plan'}</Text>
-        <Text style={styles.muted}>
+        <Text style={styles.profileSub}>
           {tracks.length
             ? `${tracks.length} topics: ${tracks.slice(0, 2).join(', ')}${tracks.length > 2 ? '…' : ''}`
             : 'No topics picked'}
         </Text>
-        <Text style={[styles.editLink, { color: model.accent }]}>Edit topics</Text>
-      </Pressable>
-      <Text style={styles.sideKicker}>YOUR DAYS</Text>
+        <Text style={styles.editLink}>Edit topics ↗</Text>
+      </PressableScale>
+      <Kicker>YOUR DAYS</Kicker>
       {model.days.map((d, i) => {
-        const done = d.slots.filter((s) => s.sessionIds.some((id) => model.picked.has(id))).length;
+        const done = plannedIn(model, d.slots);
         const active = i === index;
         return (
-          <Pressable
+          <PressableScale
             key={d.day}
-            onPress={() => onSelectDay(i)}
-            style={[styles.dayRow, active && { backgroundColor: model.accent, borderColor: model.accent }]}
+            onPress={() => {
+              haptic.tap();
+              onSelectDay(i);
+            }}
+            style={[styles.dayRow, active && { backgroundColor: C.ink }]}
             accessibilityRole="tab"
             accessibilityState={{ selected: active }}>
             <View style={styles.dayRowTop}>
               <Text style={[styles.dayName, active && { color: C.white }]}>{formatDay(d.day)}</Text>
-              <Text style={[styles.dayCount, active && { color: C.plumTint }]}>
-                {done} of {d.slots.length} slots
+              <Text style={[styles.dayCount, active && { color: C.lime }]}>
+                {done}/{d.slots.length}
               </Text>
             </View>
-            <View style={[styles.track, active && { backgroundColor: 'rgba(255,255,255,0.25)' }]}>
-              <View
-                style={[
-                  styles.fill,
-                  {
-                    width: `${d.slots.length ? (100 * done) / d.slots.length : 0}%`,
-                    backgroundColor: active ? C.white : model.accent,
-                  },
-                ]}
-              />
-            </View>
-          </Pressable>
+            <Progress
+              value={d.slots.length ? done / d.slots.length : 0}
+              color={active ? C.lime : C.ink}
+              track={active ? C.ink2 : C.surfaceAlt}
+              height={4}
+            />
+          </PressableScale>
         );
       })}
-      <Button
-        label="Export ⤓"
-        accent={model.accent}
-        onPress={() => router.push({ pathname: '/e/[eventId]/export', params: { eventId } })}
-      />
-      <Button
-        label="People to meet"
-        variant="ghost"
-        accent={model.accent}
-        onPress={() => router.push({ pathname: '/e/[eventId]/people', params: { eventId } })}
-      />
+      <Button label="Share and export" icon="↗" onPress={() => go('export')} />
+      <Button label="People to meet" variant="ghost" onPress={() => go('people')} />
       <Text style={styles.link} onPress={() => Linking.openURL(LINKS.featureRequest)}>
-        💡 Request a feature
+        Request a feature ↗
       </Text>
       <Text style={styles.link} onPress={() => Linking.openURL(LINKS.repo)}>
-        ★ Contribute on GitHub
+        Contribute on GitHub ↗
       </Text>
     </ScrollView>
   );
 }
 
-function Banners({ model, shared }: { model: PlanModel; shared?: string }) {
-  const importPicks = usePlanner((s) => s.importPicks);
+function Banners({ model }: { model: PlanModel }) {
   const unpick = usePlanner((s) => s.unpick);
-  const [dismissed, setDismissed] = useState(false);
   const eventId = model.data.event.id;
-  const incoming = (shared ?? '').split(',').filter((id) => model.byId.has(id) && !model.picked.has(id));
-
+  const cancelled = model.data.event.status === 'cancelled';
   return (
     <>
-      {incoming.length && !dismissed ? (
-        <View style={styles.banner}>
-          <Text style={styles.bannerText}>Someone shared {incoming.length} sessions with you.</Text>
-          <View style={styles.bannerActions}>
-            <Button label="Not now" variant="link" onPress={() => setDismissed(true)} />
-            <Button
-              label="Add to my plan"
-              accent={model.accent}
-              onPress={() => {
-                importPicks(eventId, incoming);
-                setDismissed(true);
-              }}
-            />
-          </View>
+      {cancelled ? (
+        <View style={[styles.banner, { backgroundColor: C.warnTint }]}>
+          <Text style={[styles.bannerText, { color: C.warn }]}>
+            This event was cancelled. Your plan is kept here for reference.
+          </Text>
         </View>
       ) : null}
       {model.missing.length ? (
@@ -264,7 +302,12 @@ function Banners({ model, shared }: { model: PlanModel; shared?: string }) {
             {model.missing.length} session{model.missing.length > 1 ? 's' : ''} you picked{' '}
             {model.missing.length > 1 ? 'were' : 'was'} removed from the agenda.
           </Text>
-          <Button label="Clear" variant="link" onPress={() => model.missing.forEach((id) => unpick(eventId, id))} />
+          <Button
+            label="Clear"
+            variant="link"
+            small
+            onPress={() => model.missing.forEach((id) => unpick(eventId, id))}
+          />
         </View>
       ) : null}
     </>
@@ -275,46 +318,120 @@ const styles = StyleSheet.create({
   flex: { flex: 1, backgroundColor: C.bg },
   center: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 12, backgroundColor: C.bg, padding: 24 },
   muted: { fontSize: 13, color: C.muted, lineHeight: 19 },
-  appBar: { paddingHorizontal: 20, paddingTop: 8, paddingBottom: 16, gap: 4 },
-  back: { fontSize: 13, fontWeight: '600', color: C.plumTint, opacity: 0.9, marginBottom: 6 },
-  appKicker: { fontSize: 11, fontWeight: '600', letterSpacing: 0.8, color: '#E6D8E4' },
-  appTitle: { fontFamily: serif, fontSize: 24, fontWeight: '700', color: C.white },
-  tabsWrap: { backgroundColor: C.white, borderBottomWidth: 1, borderBottomColor: C.line },
-  tabs: { gap: 6, paddingHorizontal: 16, paddingVertical: 12 },
-  tab: { paddingHorizontal: 14, paddingVertical: 8, borderRadius: 999, backgroundColor: C.bg },
-  tabText: { fontSize: 12, fontWeight: '600', color: C.muted },
-  mobileContent: { padding: 16, gap: 12, paddingBottom: 32 },
-  bottomBar: { backgroundColor: C.white, borderTopWidth: 1, borderTopColor: C.line },
-  bottomRow: {
+  topRow: { flexDirection: 'row', alignItems: 'center', gap: 10 },
+  eventName: { flex: 1, fontSize: 14, fontFamily: F.semibold, color: C.ink, textAlign: 'center' },
+  mobileContent: { padding: 16, gap: 14, paddingBottom: 120 },
+  hero: { backgroundColor: C.ink, borderRadius: R.lg, padding: 20, gap: 10 },
+  heroTop: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
+  heroKicker: { fontSize: 11, fontFamily: F.semibold, letterSpacing: 1.2, color: C.faint },
+  heroCount: {
+    fontSize: 13,
+    fontFamily: F.semibold,
+    color: C.ink,
+    backgroundColor: C.lime,
+    paddingHorizontal: 12,
+    paddingVertical: 5,
+    borderRadius: R.pill,
+    overflow: 'hidden',
+  },
+  heroTitle: { fontSize: 28, fontFamily: F.semibold, color: C.white, letterSpacing: -1.2 },
+  heroSub: { fontSize: 12, color: C.faint },
+  pillsWrap: { backgroundColor: C.bg, marginHorizontal: -16, paddingVertical: 6 },
+  pills: { gap: 8, paddingHorizontal: 16 },
+  pill: {
+    width: 60,
+    paddingVertical: 12,
+    borderRadius: R.pill,
+    backgroundColor: C.surface,
+    alignItems: 'center',
+    gap: 2,
+  },
+  pillActive: { backgroundColor: C.lime },
+  pillDate: { fontSize: 20, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.8 },
+  pillDay: { fontSize: 11, fontFamily: F.medium, color: C.body },
+  pillDot: { width: 6, height: 6, borderRadius: 3, marginTop: 4, backgroundColor: 'transparent' },
+  navWrap: { position: 'absolute', left: 0, right: 0, bottom: 0, alignItems: 'center' },
+  nav: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingHorizontal: 20,
-    paddingVertical: 10,
+    gap: 4,
+    backgroundColor: C.ink,
+    borderRadius: R.pill,
+    padding: 6,
+    marginBottom: 12,
+    shadowColor: '#000',
+    shadowOpacity: 0.18,
+    shadowRadius: 16,
+    shadowOffset: { width: 0, height: 8 },
+    elevation: 8,
   },
-  link: { fontSize: 13, fontWeight: '600', color: C.muted },
+  navItem: { paddingHorizontal: 16, paddingVertical: 12 },
+  navText: { fontSize: 13, fontFamily: F.medium, color: C.white },
+  navCta: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    backgroundColor: C.lime,
+    borderRadius: R.pill,
+    paddingLeft: 16,
+    paddingRight: 4,
+    paddingVertical: 4,
+  },
+  navCtaText: { fontSize: 13, fontFamily: F.semibold, color: C.ink },
+  navCtaIcon: {
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    backgroundColor: C.ink,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  navCtaGlyph: { color: C.lime, fontSize: 16, fontFamily: F.bold },
+  link: { fontSize: 13, fontFamily: F.medium, color: C.muted },
   sheet: { flex: 1, backgroundColor: C.bg },
-  sheetBar: { flexDirection: 'row', justifyContent: 'flex-end', paddingHorizontal: 20, paddingVertical: 12 },
+  sheetBar: {
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingTop: 8,
+    paddingBottom: 4,
+    gap: 8,
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+  },
+  grabber: {
+    position: 'absolute',
+    top: 6,
+    left: '50%',
+    marginLeft: -20,
+    width: 40,
+    height: 5,
+    borderRadius: 3,
+    backgroundColor: C.faint,
+  },
   sheetContent: { paddingHorizontal: 16, paddingBottom: 40 },
   split: { flex: 1, flexDirection: 'row', backgroundColor: C.bg },
-  sidebar: { width: 290, flexGrow: 0, backgroundColor: C.white, borderRightWidth: 1, borderRightColor: C.line },
-  sidebarContent: { padding: 22, gap: 14 },
-  sideTitle: { fontFamily: serif, fontSize: 20, fontWeight: '700' },
-  profileCard: { backgroundColor: C.plumTint, borderRadius: 12, padding: 14, gap: 4 },
-  profileName: { fontSize: 15, fontWeight: '700', color: C.ink },
-  editLink: { fontSize: 12, fontWeight: '700', paddingTop: 2 },
-  sideKicker: { fontSize: 11, fontWeight: '700', color: C.muted, letterSpacing: 0.8, paddingTop: 6 },
-  dayRow: { borderRadius: 10, borderWidth: 1, borderColor: C.line, padding: 12, gap: 8 },
+  sidebar: { width: 300, flexGrow: 0 },
+  sidebarContent: { padding: 20, gap: 12 },
+  sideTitle: { flex: 1, fontSize: 18, fontFamily: F.semibold, color: C.ink, letterSpacing: -0.6 },
+  profileCard: { backgroundColor: C.lime, borderRadius: R.md, padding: 16, gap: 4 },
+  profileName: { fontSize: 16, fontFamily: F.semibold, color: C.ink },
+  profileSub: { fontSize: 12, color: C.body, lineHeight: 17 },
+  editLink: { fontSize: 12, fontFamily: F.semibold, color: C.ink, paddingTop: 4 },
+  dayRow: { borderRadius: R.md, backgroundColor: C.surface, padding: 14, gap: 10 },
   dayRowTop: { flexDirection: 'row', justifyContent: 'space-between' },
-  dayName: { fontSize: 13, fontWeight: '600', color: C.ink },
-  dayCount: { fontSize: 11, color: C.muted },
-  track: { height: 4, borderRadius: 2, backgroundColor: C.plumTint, overflow: 'hidden' },
-  fill: { height: 4, borderRadius: 2 },
-  center_col: { width: 480, flexGrow: 0 },
-  centerContent: { padding: 28, gap: 12 },
-  panel: { flex: 1, backgroundColor: C.white, borderLeftWidth: 1, borderLeftColor: C.line },
+  dayName: { fontSize: 13, fontFamily: F.semibold, color: C.ink },
+  dayCount: { fontSize: 12, fontFamily: F.medium, color: C.muted },
+  centerCol: { width: 500, flexGrow: 0 },
+  centerContent: { padding: 28, gap: 14 },
+  panel: {
+    flex: 1,
+    backgroundColor: C.surfaceAlt,
+    borderTopLeftRadius: R.lg,
+    borderBottomLeftRadius: R.lg,
+    margin: 12,
+    marginLeft: 0,
+  },
   panelContent: { padding: 28, maxWidth: 760 },
-  banner: { backgroundColor: C.plumTint, borderRadius: 12, padding: 14, gap: 8 },
-  bannerText: { fontSize: 13, color: C.plum, fontWeight: '600' },
-  bannerActions: { flexDirection: 'row', justifyContent: 'flex-end', gap: 8 },
+  banner: { backgroundColor: C.limeTint, borderRadius: R.md, padding: 14, gap: 8 },
+  bannerText: { fontSize: 13, color: C.ink, fontFamily: F.medium },
 });

@@ -19,5 +19,9 @@ export async function saveText(filename: string, text: string, mimeType: string)
 export const canSaveImage = false;
 
 export async function saveSvgAsPng(_filename: string, _svg: string, _width: number, _height: number) {
-  throw new Error('Wallpaper export is only available on the web for now');
+  throw new Error('Image export is only available on the web for now');
+}
+
+export async function shareSvgAsPng(_filename: string, _svg: string, _width: number, _height: number, _text?: string) {
+  throw new Error('Image export is only available on the web for now');
 }

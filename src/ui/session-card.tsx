@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { Linking, Pressable, StyleSheet, Text, View } from 'react-native';
+import Animated, { FadeIn, LinearTransition, ZoomIn } from 'react-native-reanimated';
 
 import { formatTime } from '@/core/time';
 import type { Session, TrackGroup } from '@/core/types';
-import { C, groupColor } from './theme';
+import { haptic, PressableScale } from './motion';
+import { C, F, groupColor, R } from './theme';
 
 export function sessionLabel(session: Session, trackGroups: TrackGroup[]) {
   const index = trackGroups.findIndex((g) => session.tracks.some((t) => t === g.name || g.tracks.includes(t)));
@@ -28,7 +30,6 @@ type Props = {
   session: Session;
   tz: string;
   trackGroups: TrackGroup[];
-  accent: string;
   reasons?: string[];
   forYou?: boolean;
   picked?: boolean;
@@ -39,11 +40,11 @@ type Props = {
   onUnpick?: () => void;
 };
 
+/** Picked sessions render as ink cards with a lime check, choices as white cards */
 export function SessionCard({
   session,
   tz,
   trackGroups,
-  accent,
   reasons,
   forYou,
   picked,
@@ -62,10 +63,15 @@ export function SessionCard({
     .filter(Boolean)
     .join(' · ');
   const why = reasons?.filter((r) => !/only$/.test(r));
+  const formatWarning = reasons?.find((r) => /only$/.test(r));
+  const dark = !!picked;
+  const fg = dark ? C.white : C.ink;
+  const sub = dark ? C.faint : C.muted;
 
   return (
-    <View style={[styles.card, picked && { borderColor: accent, borderWidth: 2 }]}>
-      <Pressable
+    <Animated.View layout={LinearTransition.springify().damping(20)} style={[styles.card, dark && styles.cardDark]}>
+      <PressableScale
+        scaleTo={0.98}
         onPress={onPress ?? (() => setOpen((o) => !o))}
         accessibilityRole="button"
         accessibilityHint={onPress ? 'Opens the session picker' : 'Shows details'}
@@ -74,93 +80,113 @@ export function SessionCard({
           {label ? (
             <>
               <View style={[styles.dot, { backgroundColor: color }]} />
-              <Text style={[styles.label, { color }]} numberOfLines={1}>
+              <Text style={[styles.label, { color: dark ? C.faint : color }]} numberOfLines={1}>
                 {label}
               </Text>
             </>
           ) : null}
           {forYou ? (
-            <View style={[styles.badge, { backgroundColor: accent }]}>
+            <View style={[styles.badge, { backgroundColor: dark ? C.ink2 : C.ink }]}>
               <Text style={styles.badgeText}>★ For you</Text>
             </View>
           ) : null}
-          {picked ? <Text style={[styles.picked, { color: accent }]}>✓ In your plan</Text> : null}
+          <View style={{ flex: 1 }} />
+          {picked ? (
+            <Animated.View entering={ZoomIn.springify()} style={styles.check}>
+              <Text style={styles.checkText}>✓</Text>
+            </Animated.View>
+          ) : null}
         </View>
-        <Text style={styles.title}>{session.title}</Text>
-        <Text style={styles.meta}>{meta}</Text>
-        {why?.length ? <Text style={[styles.why, { color: accent }]}>Why: {why.join(' · ')}</Text> : null}
-        {reasons?.some((r) => /only$/.test(r)) ? (
-          <Text style={styles.warn}>{reasons.find((r) => /only$/.test(r))}</Text>
+        <Text style={[styles.title, { color: fg }]}>{session.title}</Text>
+        <Text style={[styles.meta, { color: sub }]}>{meta}</Text>
+        {why?.length ? (
+          <Text style={[styles.why, { color: dark ? C.lime : C.body }]}>Why: {why.join(' · ')}</Text>
         ) : null}
-        {conflict ? <Text style={styles.warn}>Overlaps another session in your plan</Text> : null}
-      </Pressable>
+        {formatWarning ? <Text style={styles.warn}>{formatWarning}</Text> : null}
+        {conflict ? <Text style={styles.warn}>⚠ Overlaps another session in your plan</Text> : null}
+      </PressableScale>
 
       {open && !onPress ? (
-        <View style={styles.details}>
-          {session.abstract ? <Text style={styles.abstract}>{session.abstract}</Text> : null}
+        <Animated.View entering={FadeIn.duration(200)} style={styles.details}>
+          {session.abstract ? (
+            <Text style={[styles.abstract, { color: dark ? '#E5E5E5' : C.body }]}>{session.abstract}</Text>
+          ) : null}
           {session.speakers.length ? (
-            <Text style={styles.speakers}>
+            <Text style={[styles.speakers, { color: sub }]}>
               {session.speakers.map((p) => [p.name, p.title, p.company].filter(Boolean).join(', ')).join('\n')}
             </Text>
           ) : null}
           {session.sourceUrl ? (
             <Pressable onPress={() => Linking.openURL(session.sourceUrl!)} accessibilityRole="link">
-              <Text style={[styles.linkText, { color: accent }]}>Reserve or view in the official catalog ↗</Text>
+              <Text style={[styles.linkText, { color: dark ? C.lime : C.ink }]}>
+                Reserve or view in the official catalog ↗
+              </Text>
             </Pressable>
           ) : null}
-        </View>
+        </Animated.View>
       ) : null}
 
       {onPick || onUnpick ? (
         <View style={styles.actions}>
-          <Text style={styles.more} onPress={() => setOpen((o) => !o)}>
-            {!onPress ? (open ? 'Less' : 'Details') : ''}
+          <Text style={[styles.more, { color: sub }]} onPress={() => setOpen((o) => !o)}>
+            {open ? 'Less' : 'Details'}
           </Text>
           {picked ? (
-            <Pressable onPress={onUnpick} style={[styles.action, { borderColor: accent }]} accessibilityRole="button">
-              <Text style={[styles.actionText, { color: accent }]}>Remove</Text>
-            </Pressable>
-          ) : (
-            <Pressable
-              onPress={onPick}
-              style={[styles.action, { backgroundColor: accent, borderColor: accent }]}
+            <PressableScale
+              onPress={() => {
+                haptic.tap();
+                onUnpick?.();
+              }}
+              style={[styles.action, styles.actionGhost]}
               accessibilityRole="button">
-              <Text style={[styles.actionText, { color: C.white }]}>Add to plan</Text>
-            </Pressable>
+              <Text style={[styles.actionText, { color: C.white }]}>Remove</Text>
+            </PressableScale>
+          ) : (
+            <PressableScale
+              onPress={() => {
+                haptic.success();
+                onPick?.();
+              }}
+              style={[styles.action, { backgroundColor: C.lime }]}
+              accessibilityRole="button">
+              <Text style={styles.actionText}>Add to plan +</Text>
+            </PressableScale>
           )}
         </View>
       ) : null}
-    </View>
+    </Animated.View>
   );
 }
 
 const styles = StyleSheet.create({
-  card: {
-    backgroundColor: C.white,
-    borderRadius: 12,
-    borderWidth: 1,
-    borderColor: C.line,
-    paddingHorizontal: 14,
-    paddingVertical: 12,
-    gap: 6,
-  },
+  card: { backgroundColor: C.surface, borderRadius: R.md, paddingHorizontal: 16, paddingVertical: 14, gap: 8 },
+  cardDark: { backgroundColor: C.ink },
   content: { gap: 6 },
-  top: { flexDirection: 'row', alignItems: 'center', gap: 6, flexWrap: 'wrap' },
+  top: { flexDirection: 'row', alignItems: 'center', gap: 6, minHeight: 24 },
   dot: { width: 8, height: 8, borderRadius: 4 },
-  label: { fontSize: 10, fontWeight: '700', letterSpacing: 0.6, flexShrink: 1 },
-  badge: { paddingHorizontal: 8, paddingVertical: 3, borderRadius: 999 },
-  badgeText: { color: C.white, fontSize: 10, fontWeight: '700' },
-  picked: { fontSize: 11, fontWeight: '700' },
-  title: { fontSize: 15, fontWeight: '600', color: C.ink, lineHeight: 20 },
-  meta: { fontSize: 12, color: C.muted, lineHeight: 17 },
-  why: { fontSize: 11, fontWeight: '500' },
-  warn: { fontSize: 11, fontWeight: '600', color: C.warn },
+  label: { fontSize: 10, fontFamily: F.semibold, letterSpacing: 0.6, flexShrink: 1 },
+  badge: { paddingHorizontal: 8, paddingVertical: 3, borderRadius: R.pill },
+  badgeText: { color: C.lime, fontSize: 10, fontFamily: F.semibold },
+  check: {
+    width: 26,
+    height: 26,
+    borderRadius: 13,
+    backgroundColor: C.lime,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  checkText: { color: C.ink, fontSize: 13, fontFamily: F.bold },
+  title: { fontSize: 15, fontFamily: F.semibold, lineHeight: 20, letterSpacing: -0.4 },
+  meta: { fontSize: 12, lineHeight: 17 },
+  why: { fontSize: 11, fontFamily: F.medium },
+  warn: { fontSize: 11, fontFamily: F.semibold, color: C.warn },
   details: { gap: 8, paddingTop: 4 },
-  abstract: { fontSize: 13, color: C.body, lineHeight: 19 },
-  speakers: { fontSize: 12, color: C.muted, lineHeight: 18 },
-  linkText: { fontSize: 13, fontWeight: '600' },
+  abstract: { fontSize: 13, lineHeight: 19 },
+  speakers: { fontSize: 12, lineHeight: 18 },
+  linkText: { fontSize: 13, fontFamily: F.semibold },
   actions: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingTop: 4 },
-  more: { fontSize: 12, color: C.muted, fontWeight: '600' },
-  action: { borderWidth: 1, borderRadius: 8, paddingHorizontal: 14, paddingVertical: 7 },
-  actionText: { fontSize: 13, fontWeight: '600' },
+  more: { fontSize: 12, fontFamily: F.medium, padding: 4 },
+  action: { borderRadius: R.pill, paddingHorizontal: 16, paddingVertical: 10 },
+  actionGhost: { borderWidth: 1.5, borderColor: C.ink2, backgroundColor: C.ink2 },
+  actionText: { fontSize: 13, fontFamily: F.semibold, color: C.ink },
 });

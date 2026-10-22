@@ -59,12 +59,18 @@ export type WhovaSource = {
   eventId: string;
 };
 
+export type SessionizeSource = {
+  platform: 'sessionize';
+  /** Id from the organizer's public API endpoint, sessionize.com/api/v2/<apiId>/view/All */
+  apiId: string;
+};
+
 export type ManualSource = {
   platform: 'manual';
   path: string;
 };
 
-export type EventSource = RainFocusSource | WhovaSource | ManualSource;
+export type EventSource = RainFocusSource | WhovaSource | SessionizeSource | ManualSource;
 
 export type EventConfig = {
   id: string;
@@ -74,6 +80,8 @@ export type EventConfig = {
   start: string;
   end: string;
   theme: { accent: string; logo?: string };
+  /** Cancelled events stay readable for people who added them but aren't offered or re-synced */
+  status?: 'cancelled';
   source: EventSource;
 };
 

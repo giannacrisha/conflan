@@ -4,7 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { C } from './theme';
 
-/** Scrollable page with a readable max width on large screens */
+/** Scrollable page with a readable max width on large screens and a floating footer */
 export function Screen({ children, footer }: { children: ReactNode; footer?: ReactNode }) {
   return (
     <SafeAreaView style={styles.safe} edges={['top', 'left', 'right']}>
@@ -22,14 +22,14 @@ export function Screen({ children, footer }: { children: ReactNode; footer?: Rea
 
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: C.bg },
-  scroll: { flexGrow: 1, paddingHorizontal: 20, paddingTop: 28, paddingBottom: 32 },
-  column: { width: '100%', maxWidth: 640, alignSelf: 'center', gap: 18 },
-  footerWrap: { backgroundColor: C.white, borderTopWidth: 1, borderTopColor: C.line },
+  scroll: { flexGrow: 1, paddingHorizontal: 16, paddingTop: 20, paddingBottom: 32 },
+  column: { width: '100%', maxWidth: 640, alignSelf: 'center', gap: 16 },
+  footerWrap: { backgroundColor: C.bg, paddingHorizontal: 16 },
   footer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingHorizontal: 20,
-    paddingVertical: 12,
+    gap: 8,
+    paddingVertical: 10,
   },
 });
